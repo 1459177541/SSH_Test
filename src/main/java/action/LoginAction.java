@@ -3,10 +3,12 @@ package action;
 import com.opensymphony.xwork2.ModelDriven;
 import entity.User;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 import service.UserService;
 
 @Component
+@Scope("prototype")
 public class LoginAction implements ModelDriven<User> {
 
     @Autowired
@@ -23,6 +25,7 @@ public class LoginAction implements ModelDriven<User> {
     public User getModel() {
         return user;
     }
+
 
     public String login(){
         if (userService.login(user)) {
