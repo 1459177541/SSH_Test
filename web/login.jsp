@@ -12,8 +12,12 @@
     <title>login</title>
 </head>
 <body>
-    <s:form action="LoginAction" method="POST">
-
-    </s:form>
+    <div align="center">
+        <s:form action="login" method="POST">
+            <s:textfield name="user.name" label="用户名："/>
+            <s:password name="user.password" label="密码:"/>
+            <s:submit label="登录"/>
+        </s:form>
+    </div>
 </body>
 </html>

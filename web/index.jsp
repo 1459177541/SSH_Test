@@ -14,5 +14,6 @@
 <body>
     <h1>Hello World</h1>
     现在是：<%=new Date()%>
+    <a href="login.jsp">登陆>>></a>
 </body>
 </html>
