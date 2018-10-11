@@ -2,8 +2,9 @@ package action;
 
 import com.opensymphony.xwork2.ModelDriven;
 import entity.User;
-import org.apache.log4j.Logger;
 import org.apache.struts2.dispatcher.DefaultActionSupport;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
@@ -13,7 +14,7 @@ import service.UserService;
 @Scope("prototype")
 public class LoginAction extends DefaultActionSupport implements ModelDriven<User> {
 
-    private static Logger LOGGER = Logger.getLogger(LoginAction.class);
+    private static Logger LOGGER = LoggerFactory.getLogger(LoginAction.class);
 
     @Autowired
     private UserService userService;
