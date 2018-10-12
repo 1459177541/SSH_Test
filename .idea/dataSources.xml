@@ -18,6 +18,8 @@
     <data-source source="LOCAL" name="Kali" uuid="48afbc8a-e81e-488e-8d15-09c6cceffe98">
       <driver-ref>mysql</driver-ref>
       <synchronize>true</synchronize>
+      <remarks>c3p0  
+/media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/resources/spring.xml</remarks>
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
       <jdbc-url>jdbc:mysql://localhost:3306/ssh</jdbc-url>
       <driver-properties>

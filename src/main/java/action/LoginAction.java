@@ -20,6 +20,7 @@ public class LoginAction extends DefaultActionSupport implements ModelDriven<Use
     private UserService userService;
 
     public LoginAction setUserService(UserService userService) {
+        LOGGER.info("setService={}", userService);
         this.userService = userService;
         return this;
     }
