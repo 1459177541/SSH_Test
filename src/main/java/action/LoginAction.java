@@ -43,7 +43,7 @@ public class LoginAction extends DefaultActionSupport implements ModelDriven<Use
 
 
     public String login(){
-        LOGGER.info(user+"尝试登录");
+        LOGGER.info("{}尝试登录",user);
         if (userService.login(user)) {
             return SUCCESS;
         }else {
@@ -52,6 +52,7 @@ public class LoginAction extends DefaultActionSupport implements ModelDriven<Use
     }
 
     public String register(){
+        LOGGER.info("{}注册",user);
         userService.register(user);
         return "login";
     }
