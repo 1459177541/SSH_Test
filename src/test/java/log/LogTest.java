@@ -12,7 +12,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class LogTest {
 
     private static Logger LOGGER = LoggerFactory.getLogger(LogTest.class);
-    private static ApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
+    private static ApplicationContext context = new ClassPathXmlApplicationContext("ApplicationContext.xml");
 
     @Test
     public void loginSuccessTest(){
