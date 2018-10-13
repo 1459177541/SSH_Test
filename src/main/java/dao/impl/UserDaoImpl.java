@@ -3,7 +3,7 @@ package dao.impl;
 import dao.DaoUtil;
 import dao.UserDao;
 import entity.User;
-import org.hibernate.Query;
+import org.hibernate.query.Query;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,16 +26,16 @@ public class UserDaoImpl implements UserDao {
     @Override
     public Optional<User> get(int id) {
         Session session = util.getSession();
-        User user = (User) session.get(User.class, id);
+        User user = session.get(User.class, id);
         return Optional.ofNullable(user);
     }
 
     @Override
     public Optional<User> get(String name) {
         Session session = util.getSession();
-        Query query = session.createQuery("from User u where u.name=?");
-        query.setString(0, name);
-        return Optional.ofNullable((User)query.list().get(0));
+        Query<User> query = session.createQuery("from User u where u.name=:name", User.class);
+        query.setParameter("name", name);
+        return Optional.ofNullable(query.getResultList().get(0));
     }
 
     @Override

@@ -31,7 +31,7 @@ public class UserServiceImpl implements UserService {
         userOptional = dao.get(user.getName());
         if (userOptional.isPresent()){
             User user1 = userOptional.get();
-            if (user1.getPassword().equals(user.getPassword())) return true;
+            return user1.getPassword().equals(user.getPassword());
         }
         return false;
     }

@@ -14,6 +14,7 @@ public class User {
     private String name;
     private String password;
     private String email;
+    private int ground;
 
     public User() {
     }
@@ -66,6 +67,17 @@ public class User {
 
     public User setEmail(String email) {
         this.email = email;
+        return this;
+    }
+
+    @Basic
+    @Column(name = "ground")
+    public int getGround() {
+        return ground;
+    }
+
+    public User setGround(int ground) {
+        this.ground = ground;
         return this;
     }
 

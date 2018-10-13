@@ -22,7 +22,6 @@ public class LogTest {
         Assertions.assertEquals("success", loginAction.login());
     }
 
-    // TODO Fail: java.lang.IllegalArgumentException
     @Test
     public void loginFailTest(){
         LoginAction loginAction1 = context.getBean(LoginAction.class);
@@ -37,6 +36,7 @@ public class LogTest {
         user.setId(0);
         user.setName("test1");
         user.setPassword("123456");
+        user.setGround(0);
         loginAction.register();
     }
 
