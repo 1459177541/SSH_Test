@@ -2,6 +2,7 @@ package dao;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.Resource;
@@ -9,7 +10,8 @@ import javax.annotation.Resource;
 @Component("daoUtil")
 public class DaoUtil {
 
-    @Resource(name="sessionFactory")
+//    @Resource(name="sessionFactory")
+    @Autowired
     private SessionFactory sessionFactory;
 
     private ThreadLocal<Session> sessionThreadLocal = new ThreadLocal<>();
