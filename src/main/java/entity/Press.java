@@ -5,11 +5,22 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import java.util.Objects;
+import java.util.Set;
 
 @Entity
 public class Press {
     private int id;
     private String name;
+    private Set<Book> books;
+
+    public Set<Book> getBooks() {
+        return books;
+    }
+
+    public Press setBooks(Set<Book> books) {
+        this.books = books;
+        return this;
+    }
 
     @Id
     @Column(name = "id")

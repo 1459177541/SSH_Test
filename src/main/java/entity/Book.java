@@ -10,6 +10,29 @@ import java.util.Objects;
 public class Book {
     private int id;
     private String name;
+    private Author author;
+
+    @Column(name = "author")
+    public Author getAuthor() {
+        return author;
+    }
+
+    public Book setAuthor(Author author) {
+        this.author = author;
+        return this;
+    }
+
+    @Column(name = "press")
+    public Press getPress() {
+        return press;
+    }
+
+    public Book setPress(Press press) {
+        this.press = press;
+        return this;
+    }
+
+    private Press press;
     private Integer tag;
     private Integer price;
 

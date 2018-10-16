@@ -10,5 +10,9 @@
         <property name="birthday" column="birthday"/>
         <property name="address" column="address"/>
         <property name="introduction" column="introduction"/>
+        <set name="books">
+            <key column="author"/>
+            <one-to-many class="entity.Book"/>
+        </set>
     </class>
 </hibernate-mapping>

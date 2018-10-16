@@ -1009,7 +1009,7 @@
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="253" parent="241" name="autor">
+    <column id="253" parent="241" name="author">
       <Position>3</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
@@ -1032,7 +1032,7 @@
       <ColumnKind>normal</ColumnKind>
     </column>
     <index id="257" parent="241" name="Book_Autor">
-      <ColNames>autor</ColNames>
+      <ColNames>author</ColNames>
       <Type>btree</Type>
     </index>
     <index id="258" parent="241" name="Book_Press_id_fk">
@@ -1045,7 +1045,7 @@
       <Primary>1</Primary>
     </key>
     <foreign-key id="260" parent="241" name="Book_Autor">
-      <ColNames>autor</ColNames>
+      <ColNames>author</ColNames>
       <RefSchemaName>ssh</RefSchemaName>
       <RefTableName>Author</RefTableName>
       <RefColNames>id</RefColNames>
@@ -1056,7 +1056,7 @@
       <RefTableName>Press</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <column id="262" parent="242" name="uid">
+    <column id="262" parent="242" name="id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
@@ -1068,11 +1068,11 @@
       <ColumnKind>normal</ColumnKind>
     </column>
     <index id="264" parent="242" name="PowerGround_id_index">
-      <ColNames>uid</ColNames>
+      <ColNames>id</ColNames>
       <Type>btree</Type>
     </index>
     <foreign-key id="265" parent="242" name="PowerGround_User_id_fk">
-      <ColNames>uid</ColNames>
+      <ColNames>id</ColNames>
       <RefSchemaName>ssh</RefSchemaName>
       <RefTableName>User</RefTableName>
       <RefColNames>id</RefColNames>

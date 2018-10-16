@@ -6,6 +6,7 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import java.sql.Date;
 import java.util.Objects;
+import java.util.Set;
 
 @Entity
 public class Author {
@@ -14,6 +15,7 @@ public class Author {
     private Date birthday;
     private String address;
     private String introduction;
+    private Set<Book> books;
 
     @Id
     @Column(name = "id")
@@ -67,6 +69,15 @@ public class Author {
 
     public Author setIntroduction(String introduction) {
         this.introduction = introduction;
+        return this;
+    }
+
+    public Set<Book> getBooks() {
+        return books;
+    }
+
+    public Author setBooks(Set<Book> books) {
+        this.books = books;
         return this;
     }
 

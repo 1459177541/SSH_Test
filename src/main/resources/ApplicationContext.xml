@@ -57,7 +57,6 @@
             <list>
                 <value>classpath:entity/Autor.hbm.xml</value>
                 <value>classpath:entity/Book.hbm.xml</value>
-                <value>classpath:entity/PowerGround.hbm.xml</value>
                 <value>classpath:entity/Press.hbm.xml</value>
             </list>
         </property>

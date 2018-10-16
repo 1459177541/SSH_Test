@@ -7,5 +7,9 @@
     <class name="entity.Press" table="Press" schema="ssh">
         <id name="id" column="id"/>
         <property name="name" column="name"/>
+        <set name="books">
+            <key column="press"/>
+            <one-to-many class="entity.Book"/>
+        </set>
     </class>
 </hibernate-mapping>

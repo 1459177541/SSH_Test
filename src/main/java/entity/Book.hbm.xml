@@ -5,9 +5,13 @@
 <hibernate-mapping>
 
     <class name="entity.Book" table="Book" schema="ssh">
-        <id name="id" column="id"/>
+        <id name="id" column="id">
+            <generator class="native"/>
+        </id>
         <property name="name" column="name"/>
         <property name="tag" column="tag"/>
         <property name="price" column="price"/>
+        <many-to-one name="author" column="author" cascade="all"/>
+        <many-to-one name="press" column="press" cascade="all"/>
     </class>
 </hibernate-mapping>
