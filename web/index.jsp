@@ -1,4 +1,5 @@
 <%@ page import="java.util.Date" %>
+<%@ page import="entity.User" %>
 <%--
   Created by IntelliJ IDEA.
   User: 杨星辰
@@ -10,10 +11,20 @@
 <html>
 <head>
     <title>Index</title>
+    <style type="text/css">
+        *{
+            align-content: center
+        }
+    </style>
 </head>
 <body>
-    <h1>Hello World</h1>
-    现在是：<%=new Date()%>
-    <a href="login.jsp">登陆>>></a>
+    <h1>
+        Hello,
+        <%
+            User user = (User)session.getAttribute("user");
+            out.print(user != null ? user.getName() : "World");
+        %>
+    </h1>
+    现在是：<%=new Date()%><a href="login/login.jsp">登陆>>></a>
 </body>
 </html>

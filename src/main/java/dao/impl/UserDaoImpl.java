@@ -10,6 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import java.util.Collection;
+import java.util.List;
 import java.util.Optional;
 
 @Repository
@@ -35,7 +36,11 @@ public class UserDaoImpl implements UserDao {
         Session session = util.getSession();
         Query<User> query = session.createQuery("from User u where u.name=:name", User.class);
         query.setParameter("name", name);
-        return Optional.ofNullable(query.getResultList().get(0));
+        List<User> list = query.getResultList();
+        if (list == null || list.size() == 0) {
+            return Optional.empty();
+        }
+        return Optional.ofNullable(list.get(0));
     }
 
     @Override

@@ -2,6 +2,7 @@ package action;
 
 import com.opensymphony.xwork2.ModelDriven;
 import entity.User;
+import org.apache.struts2.ServletActionContext;
 import org.apache.struts2.dispatcher.DefaultActionSupport;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -9,6 +10,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 import service.UserService;
+
+import java.util.Objects;
 
 @Component
 @Scope("prototype")
@@ -18,6 +21,17 @@ public class LoginAction extends DefaultActionSupport implements ModelDriven<Use
 
     @Autowired
     private UserService userService;
+
+    public String getPassword() {
+        return password;
+    }
+
+    public LoginAction setPassword(String password) {
+        this.password = password;
+        return this;
+    }
+
+    private String password;
 
     public LoginAction setUserService(UserService userService) {
         LOGGER.info("setService={}", userService);
@@ -46,6 +60,7 @@ public class LoginAction extends DefaultActionSupport implements ModelDriven<Use
     public String login(){
         LOGGER.info("{}尝试登录",user);
         if (userService.login(user)) {
+            ServletActionContext.getRequest().getSession().setAttribute("user", user);
             return SUCCESS;
         }else {
             return INPUT;
@@ -53,8 +68,12 @@ public class LoginAction extends DefaultActionSupport implements ModelDriven<Use
     }
 
     public String register(){
+        if (!Objects.equals(password, user.getPassword())){
+            return INPUT;
+        }
         LOGGER.info("{}注册",user);
         userService.register(user);
-        return "login";
+        ServletActionContext.getRequest().getSession().setAttribute("user", user);
+        return SUCCESS;
     }
 }
