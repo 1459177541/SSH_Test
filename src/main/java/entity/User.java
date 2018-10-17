@@ -4,7 +4,9 @@ import javax.persistence.Basic;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import java.util.HashSet;
 import java.util.Objects;
+import java.util.Set;
 
 
 @Entity
@@ -14,6 +16,8 @@ public class User {
     private String name;
     private String password;
     private String email;
+
+    private Set<Power> powers = new HashSet<>();
 
     public User() {
     }
@@ -66,6 +70,16 @@ public class User {
 
     public User setEmail(String email) {
         this.email = email;
+        return this;
+    }
+
+    @Basic
+    public Set<Power> getPowers() {
+        return powers;
+    }
+
+    public User setPowers(Set<Power> powers) {
+        this.powers = powers;
         return this;
     }
 

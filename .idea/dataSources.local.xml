@@ -30,10 +30,5 @@
       <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" family="MYSQL" exact-version="0.0" />
       <first-sync>true</first-sync>
     </data-source>
-    <data-source name="dataSource" uuid="c050ca86-b75f-4317-b713-6278f0887520">
-      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" family="MYSQL" exact-version="0.0" />
-      <user-name>root</user-name>
-      <introspection-schemas>*:</introspection-schemas>
-    </data-source>
   </component>
 </project>

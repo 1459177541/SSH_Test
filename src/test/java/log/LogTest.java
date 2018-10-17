@@ -1,6 +1,7 @@
 package log;
 
 import action.LoginAction;
+import entity.Power;
 import entity.User;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
@@ -8,6 +9,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import java.util.Set;
 
 public class LogTest {
 
@@ -36,7 +39,11 @@ public class LogTest {
         user.setId(0);
         user.setName("test1");
         user.setPassword("123456");
-        user.setGround(0);
+        Power power = new Power();
+        power.setId(0);
+        power.setName("test");
+        user.getPowers().add(power);
+//        user.setPowers(Set.of(power));
         loginAction.register();
     }
 

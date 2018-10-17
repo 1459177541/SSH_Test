@@ -67,13 +67,5 @@
         <property name="tinyInt1isBit" value="false" />
       </driver-properties>
     </data-source>
-    <data-source source="LOCAL" name="dataSource" uuid="c050ca86-b75f-4317-b713-6278f0887520">
-      <imported>true</imported>
-      <remarks>c3p0
-
-/media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/resources/ApplicationContext.xml</remarks>
-      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://localhost:3306/ssh?useSSL=true&amp;characterEncoding=UTF-8&amp;serverTimezone=GMT</jdbc-url>
-    </data-source>
   </component>
 </project>

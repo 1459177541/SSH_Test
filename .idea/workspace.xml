@@ -6,12 +6,20 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="25defb74-8661-49ea-a980-ffd802b910b3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/demo_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/demo_war_exploded.xml" afterDir="false" />
+    <list default="true" id="25defb74-8661-49ea-a980-ffd802b910b3" name="Default Changelist" comment="调整实体映射关系">
+      <change afterPath="$PROJECT_DIR$/src/main/java/entity/Power.hbm.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/entity/Power.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/48afbc8a-e81e-488e-8d15-09c6cceffe98.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/48afbc8a-e81e-488e-8d15-09c6cceffe98.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entity/Autor.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/Author.hbm.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entity/Book.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/Book.hbm.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entity/Press.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/Press.hbm.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entity/User.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/User.hbm.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/ApplicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ApplicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/log/LogTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/log/LogTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -33,10 +41,6 @@
       <set />
     </option>
     <expand>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="dataSource" type="feb32156:DbDataSourceImpl" />
-      </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="Kali" type="feb32156:DbDataSourceImpl" />
@@ -65,6 +69,13 @@
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="ssh: schema" type="c314c289:MysqlImplModel$Schema" />
         <item name="Book: table" type="98d5ac3d:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="Kali" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="ssh: schema" type="c314c289:MysqlImplModel$Schema" />
+        <item name="Power: table" type="98d5ac3d:MysqlImplModel$Table" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
@@ -182,16 +193,16 @@
           <entry key="gitignore" value="2" />
           <entry key="groovy" value="1" />
           <entry key="iml" value="4" />
-          <entry key="java" value="220" />
+          <entry key="java" value="239" />
           <entry key="jsp" value="58" />
           <entry key="log" value="14" />
           <entry key="md" value="2" />
-          <entry key="properties" value="21" />
+          <entry key="properties" value="22" />
           <entry key="sql" value="4" />
           <entry key="table_name" value="1" />
           <entry key="user" value="7" />
           <entry key="xhtml" value="1" />
-          <entry key="xml" value="186" />
+          <entry key="xml" value="240" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -199,39 +210,39 @@
           <entry key="CLASS" value="10" />
           <entry key="Database Element" value="14" />
           <entry key="IDEA_MODULE" value="4" />
-          <entry key="JAVA" value="220" />
+          <entry key="JAVA" value="239" />
           <entry key="JSP" value="58" />
           <entry key="Markdown" value="2" />
           <entry key="PLAIN_TEXT" value="17" />
-          <entry key="Properties" value="21" />
+          <entry key="Properties" value="22" />
           <entry key="SQL" value="2" />
           <entry key="Scratch" value="3" />
           <entry key="UML" value="5" />
           <entry key="XHTML" value="1" />
-          <entry key="XML" value="186" />
+          <entry key="XML" value="240" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="gitignore" value="13" />
-          <entry key="java" value="1412" />
+          <entry key="java" value="1565" />
           <entry key="jsp" value="512" />
           <entry key="properties" value="69" />
-          <entry key="sql" value="43" />
-          <entry key="txt" value="330" />
+          <entry key="sql" value="47" />
+          <entry key="txt" value="347" />
           <entry key="xhtml" value="7" />
-          <entry key="xml" value="1046" />
+          <entry key="xml" value="1180" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1412" />
+          <entry key="JAVA" value="1565" />
           <entry key="JSP" value="512" />
-          <entry key="PLAIN_TEXT" value="343" />
+          <entry key="PLAIN_TEXT" value="360" />
           <entry key="Properties" value="69" />
-          <entry key="SQL" value="43" />
+          <entry key="SQL" value="47" />
           <entry key="XHTML" value="7" />
-          <entry key="XML" value="1046" />
+          <entry key="XML" value="1180" />
         </counts>
       </usages-collector>
     </session>
@@ -242,10 +253,10 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/index.jsp">
+        <entry file="file://$PROJECT_DIR$/src/main/java/entity/Power.hbm.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="486">
-              <caret line="27" column="58" lean-forward="true" selection-start-line="27" selection-start-column="58" selection-end-line="27" selection-end-column="58" />
+            <state relative-caret-position="162">
+              <caret line="9" column="43" lean-forward="true" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -314,7 +325,6 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/main/java/dao/DaoUtil.java" />
         <option value="$PROJECT_DIR$/src/main/resources/log4j.properties" />
-        <option value="$PROJECT_DIR$/src/test/java/log/LogTest.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/web/login/register.xhtml" />
         <option value="$PROJECT_DIR$/web/login/login.jsp" />
@@ -326,18 +336,22 @@
         <option value="$PROJECT_DIR$/src/main/java/entity/Autor.java" />
         <option value="$PROJECT_DIR$/src/main/java/dao/impl/UserDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/entity/Book.java" />
-        <option value="$PROJECT_DIR$/src/main/java/entity/Book.hbm.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/entity/Press.hbm.xml" />
         <option value="$PROJECT_DIR$/src/main/java/entity/Press.java" />
         <option value="$PROJECT_DIR$/src/main/java/entity/PowerGround.hbm.xml" />
         <option value="$PROJECT_DIR$/src/main/java/entity/PowerGround.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/ApplicationContext.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/entity/User.hbm.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/entity/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/entity/Autor.hbm.xml" />
         <option value="$PROJECT_DIR$/src/main/java/entity/Author.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/web/index.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/entity/User.java" />
+        <option value="$PROJECT_DIR$/src/main/java/entity/Power.java" />
+        <option value="$PROJECT_DIR$/src/test/java/log/LogTest.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/ApplicationContext.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/entity/User.hbm.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/entity/Press.hbm.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/entity/Power.hbm.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/entity/Book.hbm.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/entity/Author.hbm.xml" />
       </list>
     </option>
   </component>
@@ -613,32 +627,32 @@
     <property name="JPA.DatabaseSchemaImportDialog" value="48afbc8a-e81e-488e-8d15-09c6cceffe98" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539679258957" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539791693122" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="CSS&#10;JSP" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/web" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Facets" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.importing" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/web/WEB-INF" />
+      <recent name="$PROJECT_DIR$/src/main/java" />
+    </key>
+    <key name="ImportMappingsDialog.RecentPackages">
+      <recent name="entity" />
+      <recent name="" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/web/login" />
       <recent name="$PROJECT_DIR$/web" />
       <recent name="D:\JAVA\JAVA\SSH_Demo\src\main\java" />
       <recent name="D:\JAVA\JAVA\SSH_Demo\src\main\resources" />
       <recent name="D:\JAVA\JAVA\SSH_Demo\web" />
-    </key>
-    <key name="ImportMappingsDialog.RecentPackages">
-      <recent name="entity" />
-      <recent name="" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/web/WEB-INF" />
-      <recent name="$PROJECT_DIR$/src/main/java" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -653,7 +667,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Tomcat Server.Linux">
+  <component name="RunManager" selected="JUnit.LogTest.registerTest">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -996,9 +1010,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.LogTest.registerTest" />
         <item itemvalue="JUnit.LogTest.loginSuccessTest" />
         <item itemvalue="JUnit.LogTest.loginFailTest" />
-        <item itemvalue="JUnit.LogTest.registerTest" />
         <item itemvalue="JUnit.LogTest.loginTest" />
       </list>
     </recent_temporary>
@@ -1036,7 +1050,7 @@
       <workItem from="1539670905043" duration="8405000" />
       <workItem from="1539784848192" duration="633000" />
       <workItem from="1539785513730" duration="421000" />
-      <workItem from="1539785956396" duration="2897000" />
+      <workItem from="1539785956396" duration="5353000" />
     </task>
     <task id="LOCAL-00001" summary="Test IDEA Commit">
       <created>1539256030611</created>
@@ -1108,25 +1122,17 @@
       <option name="project" value="LOCAL" />
       <updated>1539679290640</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="更新包依赖关系">
+      <created>1539789094395</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1539789094395</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="LogTest_registerTest - 2018.10.13 at 18h 33m 23s.xml">
-      <configuration name="LogTest.registerTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LogTest_registerTest - 2018.10.13 at 18h 33m 54s.xml">
-      <configuration name="LogTest.registerTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LogTest_loginFailTest - 2018.10.13 at 18h 46m 23s.xml">
-      <configuration name="LogTest.loginFailTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LogTest_loginFailTest - 2018.10.13 at 18h 49m 33s.xml">
-      <configuration name="LogTest.loginFailTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LogTest_loginFailTest - 2018.10.13 at 18h 53m 22s.xml">
-      <configuration name="LogTest.loginFailTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="LogTest_loginSuccessTest - 2018.10.13 at 19h 12m 26s.xml">
       <configuration name="LogTest.loginSuccessTest" configurationId="JUnit" />
     </history-entry>
@@ -1142,9 +1148,24 @@
     <history-entry file="LogTest_loginSuccessTest - 2018.10.15 at 19h 48m 03s.xml">
       <configuration name="LogTest.loginSuccessTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="LogTest_registerTest - 2018.10.17 at 23h 26m 57s.xml">
+      <configuration name="LogTest.registerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LogTest_registerTest - 2018.10.17 at 23h 35m 11s.xml">
+      <configuration name="LogTest.registerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LogTest_registerTest - 2018.10.17 at 23h 38m 32s.xml">
+      <configuration name="LogTest.registerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LogTest_registerTest - 2018.10.17 at 23h 42m 41s.xml">
+      <configuration name="LogTest.registerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LogTest_registerTest - 2018.10.17 at 23h 50m 32s.xml">
+      <configuration name="LogTest.registerTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78615000" />
+    <option name="totallyTimeSpent" value="81071000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -1157,7 +1178,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="0" width="1920" height="1080" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Image Layers" order="0" />
       <window_info id="Designer" order="1" />
@@ -1166,7 +1186,7 @@
       <window_info id="Favorites" order="4" side_tool="true" weight="0.32994652" />
       <window_info id="Structure" order="5" side_tool="true" weight="0.24973261" />
       <window_info id="Web" order="6" side_tool="true" weight="0.32994652" />
-      <window_info id="Persistence" order="7" side_tool="true" weight="0.328877" />
+      <window_info active="true" id="Persistence" order="7" side_tool="true" visible="true" weight="0.12780748" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32882884" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49893048" weight="0.3486339" />
@@ -1181,15 +1201,15 @@
       <window_info anchor="bottom" id="Java Enterprise" order="11" weight="0.32896176" />
       <window_info anchor="bottom" id="Database Changes" order="12" weight="0.32896176" />
       <window_info anchor="bottom" id="Version Control" order="13" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Messages" order="14" sideWeight="0.49946523" weight="0.32882884" />
+      <window_info anchor="bottom" id="Messages" order="14" sideWeight="0.49946523" weight="0.32786885" />
       <window_info anchor="bottom" id="Spring" order="15" weight="0.32896176" />
       <window_info anchor="bottom" id="Database Console" order="16" weight="0.32942432" />
       <window_info anchor="right" id="Palette" order="0" />
       <window_info anchor="right" id="Theme Preview" order="1" />
       <window_info anchor="right" id="Capture Analysis" order="2" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
-      <window_info active="true" anchor="right" content_ui="combo" id="Project" order="4" visible="true" weight="0.25882354" />
-      <window_info anchor="right" id="Database" order="5" weight="0.32994652" />
+      <window_info anchor="right" content_ui="combo" id="Project" order="4" weight="0.25882354" />
+      <window_info anchor="right" id="Database" order="5" visible="true" weight="0.2604278" />
       <window_info anchor="right" id="Maven Projects" order="6" weight="0.32994652" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="7" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="8" weight="0.24973261" />
@@ -1219,31 +1239,15 @@
     <MESSAGE value="Tomcat start...success. 注解扫描不能使用通配符&quot;*&quot;" />
     <MESSAGE value="添加实体信息" />
     <MESSAGE value="修改映射文件。。。。未完成" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改映射文件。。。。未完成" />
+    <MESSAGE value="更新包依赖关系" />
+    <MESSAGE value="调整实体映射关系" />
+    <option name="LAST_COMMIT_MESSAGE" value="调整实体映射关系" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/UserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="10" column="36" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/.idea/misc.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/.idea/modules.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1347,13 +1351,6 @@
     <entry file="file://$PROJECT_DIR$/logs/info.log">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/log/LogTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="das://48afbc8a-e81e-488e-8d15-09c6cceffe98/schema/ssh/table/User">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -1427,13 +1424,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/entity/Press.hbm.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="24" lean-forward="true" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/entity/Press.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -1443,55 +1433,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/entity/PowerGround.hbm.xml" />
     <entry file="file://$PROJECT_DIR$/src/main/java/entity/PowerGround.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/entity/User.hbm.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="13" column="12" lean-forward="true" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/entity/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/ApplicationContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1062">
-          <caret line="59" column="61" lean-forward="true" selection-start-line="59" selection-start-column="61" selection-end-line="59" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/entity/Book.hbm.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="64" selection-start-line="14" selection-start-column="64" selection-end-line="14" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/entity/Book.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="30" column="23" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/entity/Autor.hbm.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="13" column="31" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/entity/Author.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="446">
-          <caret line="68" selection-start-line="68" selection-end-line="68" />
-        </state>
-      </provider>
-    </entry>
     <entry file="uml://MAVEN/SSH:demo:1.0-SNAPSHOT">
       <provider selected="true" editor-type-id="UmlEditorProvider">
         <state>
@@ -2130,8 +2071,100 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="27" column="58" lean-forward="true" selection-start-line="27" selection-start-column="58" selection-end-line="27" selection-end-column="58" />
+        <state relative-caret-position="540">
+          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/jdbc.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="41" lean-forward="true" selection-start-line="1" selection-start-column="41" selection-end-line="1" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/entity/Power.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="39" column="10" selection-start-line="39" selection-start-column="10" selection-end-line="39" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/entity/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="73" column="5" lean-forward="true" selection-start-line="73" selection-start-column="5" selection-end-line="73" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/ApplicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="46" column="57" selection-start-line="46" selection-start-column="57" selection-end-line="46" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/entity/User.hbm.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="62" selection-start-line="11" selection-start-column="62" selection-end-line="11" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/entity/Press.hbm.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="54" selection-start-line="8" selection-start-column="54" selection-end-line="8" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/entity/Book.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="62" column="19" selection-start-line="62" selection-start-column="19" selection-end-line="62" selection-end-column="19" />
+          <folding>
+            <element signature="e#1145#1146#0" expanded="true" />
+            <element signature="e#1171#1172#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/entity/Book.hbm.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="25" lean-forward="true" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/entity/Author.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="446">
+          <caret line="65" column="18" selection-start-line="65" selection-start-column="18" selection-end-line="65" selection-end-column="18" />
+          <folding>
+            <element signature="e#1276#1277#0" expanded="true" />
+            <element signature="e#1311#1312#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/entity/Author.hbm.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="54" selection-start-line="8" selection-start-column="54" selection-end-line="8" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/log/LogTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="32" column="5" lean-forward="true" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/entity/Power.hbm.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="43" lean-forward="true" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
         </state>
       </provider>
     </entry>
@@ -2154,7 +2187,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>Web (demo)|Web</last-edited>
+          <last-edited>Hibernate (demo)|Hibernate</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

@@ -4,12 +4,12 @@
     "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
 
-    <class name="entity.Press" table="Press" schema="ssh">
+    <class name="entity.Power" table="Power" schema="ssh">
         <id name="id" column="id"/>
-        <property name="name" column="name" length="32"/>
-        <set name="books">
-            <key column="press"/>
-            <one-to-many class="entity.Book"/>
+        <property name="name" column="name" length="16"/>
+        <set name="users" table="UserGroundMap">
+            <key column="pid"/>
+            <many-to-many class="entity.User" column="uid"/>
         </set>
     </class>
 </hibernate-mapping>
