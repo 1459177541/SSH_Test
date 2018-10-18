@@ -7,7 +7,7 @@
     <class name="entity.Power" table="Power" schema="ssh">
         <id name="id" column="id"/>
         <property name="name" column="name" length="16"/>
-        <set name="users" table="UserGroundMap">
+        <set name="users" table="PowerGround">
             <key column="pid"/>
             <many-to-many class="entity.User" column="uid"/>
         </set>

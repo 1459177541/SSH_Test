@@ -60,7 +60,7 @@ public class LoginAction extends DefaultActionSupport implements ModelDriven<Use
     public String login(){
         LOGGER.info("{}尝试登录",user);
         if (userService.login(user)) {
-            ServletActionContext.getRequest().getSession().setAttribute("user", user);
+//            ServletActionContext.getRequest().getSession().setAttribute("user", user);
             return SUCCESS;
         }else {
             return INPUT;
@@ -73,7 +73,7 @@ public class LoginAction extends DefaultActionSupport implements ModelDriven<Use
         }
         LOGGER.info("{}注册",user);
         userService.register(user);
-        ServletActionContext.getRequest().getSession().setAttribute("user", user);
+//        ServletActionContext.getRequest().getSession().setAttribute("user", user);
         return SUCCESS;
     }
 }

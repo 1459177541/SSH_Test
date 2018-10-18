@@ -37,6 +37,15 @@ public class Power {
         return this;
     }
 
+    @Override
+    public String toString() {
+        return "Power{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", users=" + users +
+                '}';
+    }
+
     @Basic
     public Set<User> getUsers() {
         return users;

@@ -32,15 +32,14 @@ public class UserTest {
     public void registerTest(){
         LoginAction loginAction = context.getBean(LoginAction.class);
         User user = loginAction.getModel();
-        user.setId(0);
         user.setName("test1");
         user.setPassword("123456");
+        loginAction.setPassword("123456");
         Power power = new Power();
-        power.setId(0);
         power.setName("test");
         user.getPowers().add(power);
 //        user.setPowers(Set.of(power));
-        loginAction.register();
+        Assertions.assertEquals("success",loginAction.register());
     }
 
 }

@@ -1,6 +1,8 @@
 package service.impl;
 
+import dao.PowerDao;
 import dao.UserDao;
+import entity.Power;
 import entity.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
@@ -8,27 +10,35 @@ import org.springframework.stereotype.Service;
 import service.UserService;
 
 import java.util.Optional;
+import java.util.Set;
+import java.util.function.Predicate;
 
 @Service
 @Repository
 public class UserServiceImpl implements UserService {
 
     @Autowired
-    private UserDao dao;
+    private UserDao userDao;
+    @Autowired
+    private PowerDao powerDao;
 
-    public UserServiceImpl setDao(UserDao dao) {
-        this.dao = dao;
+    public UserServiceImpl setPowerDao(PowerDao powerDao) {
+        this.powerDao = powerDao;
+        return this;
+    }
+    public UserServiceImpl setUserDao(UserDao userDao) {
+        this.userDao = userDao;
         return this;
     }
 
     @Override
     public boolean login(User user) {
-        Optional<User> userOptional = dao.get(user.getId());
+        Optional<User> userOptional = userDao.get(user.getId());
         if (userOptional.isPresent()){
             User user1 = userOptional.get();
             if (user1.getPassword().equals(user.getPassword())) return true;
         }
-        userOptional = dao.get(user.getName());
+        userOptional = userDao.get(user.getName());
         if (userOptional.isPresent()){
             User user1 = userOptional.get();
             return user1.getPassword().equals(user.getPassword());
@@ -38,6 +48,9 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public boolean register(User user) {
-        return dao.add(user);
+        Set<Power> powers = user.getPowers();
+        Optional optional = powers.stream().map(powerDao::add).filter(Predicate.isEqual(false)).findAny();
+        if (optional.isPresent()) return false;
+        return userDao.add(user);
     }
 }

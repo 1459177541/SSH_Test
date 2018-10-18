@@ -1006,37 +1006,34 @@
     </column>
     <column id="253" parent="241" name="name">
       <Position>2</Position>
-      <DataType>varchar(128)|0s</DataType>
-      <NotNull>1</NotNull>
+      <DataType>varchar(64)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="254" parent="241" name="author">
+    <column id="254" parent="241" name="tag">
       <Position>3</Position>
       <DataType>int(11)|0s</DataType>
-      <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="255" parent="241" name="press">
+    <column id="255" parent="241" name="price">
       <Position>4</Position>
       <DataType>int(11)|0s</DataType>
-      <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="256" parent="241" name="tag">
+    <column id="256" parent="241" name="author">
       <Position>5</Position>
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="257" parent="241" name="price">
+    <column id="257" parent="241" name="press">
       <Position>6</Position>
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="258" parent="241" name="Book_Autor">
+    <index id="258" parent="241" name="FKfnwaiynd3osriwvwus3se6eq1">
       <ColNames>author</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="259" parent="241" name="Book_Press_id_fk">
+    <index id="259" parent="241" name="FKkviewxv5jbr4h2aybh2k4k1nw">
       <ColNames>press</ColNames>
       <Type>btree</Type>
     </index>
@@ -1045,13 +1042,13 @@
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="261" parent="241" name="Book_Autor">
+    <foreign-key id="261" parent="241" name="FKfnwaiynd3osriwvwus3se6eq1">
       <ColNames>author</ColNames>
       <RefSchemaName>ssh</RefSchemaName>
       <RefTableName>Author</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <foreign-key id="262" parent="241" name="Book_Press_id_fk">
+    <foreign-key id="262" parent="241" name="FKkviewxv5jbr4h2aybh2k4k1nw">
       <ColNames>press</ColNames>
       <RefSchemaName>ssh</RefSchemaName>
       <RefTableName>Press</RefTableName>
@@ -1061,13 +1058,11 @@
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
-      <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="264" parent="242" name="name">
       <Position>2</Position>
       <DataType>varchar(16)|0s</DataType>
-      <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
     <key id="265" parent="242" name="PRIMARY">
@@ -1075,66 +1070,79 @@
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="266" parent="243" name="id">
+    <column id="266" parent="243" name="uid">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="267" parent="243" name="powerId">
+    <column id="267" parent="243" name="pid">
       <Position>2</Position>
       <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="268" parent="243" name="PowerGround_id_index">
-      <ColNames>id</ColNames>
+    <index id="268" parent="243" name="FKd6snajne3t90a8udum8fqk8hn">
+      <ColNames>uid</ColNames>
       <Type>btree</Type>
     </index>
-    <foreign-key id="269" parent="243" name="PowerGround_User_id_fk">
-      <ColNames>id</ColNames>
+    <key id="269" parent="243" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>pid
+uid</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="270" parent="243" name="FKd6snajne3t90a8udum8fqk8hn">
+      <ColNames>uid</ColNames>
       <RefSchemaName>ssh</RefSchemaName>
       <RefTableName>User</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <column id="270" parent="244" name="id">
+    <foreign-key id="271" parent="243" name="FKfmh4pema6lcqosu8ty4riralr">
+      <ColNames>pid</ColNames>
+      <RefSchemaName>ssh</RefSchemaName>
+      <RefTableName>Power</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="272" parent="244" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="273" parent="244" name="name">
+      <Position>2</Position>
+      <DataType>varchar(32)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="274" parent="244" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="275" parent="245" name="id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="271" parent="244" name="name">
+    <column id="276" parent="245" name="name">
       <Position>2</Position>
       <DataType>varchar(32)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="272" parent="244" name="PRIMARY">
-      <NameSurrogate>1</NameSurrogate>
-      <ColNames>id</ColNames>
-      <Primary>1</Primary>
-    </key>
-    <column id="273" parent="245" name="id">
-      <Position>1</Position>
-      <DataType>int(11)|0s</DataType>
-      <NotNull>1</NotNull>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="274" parent="245" name="email">
-      <Position>2</Position>
-      <DataType>varchar(255)|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="275" parent="245" name="name">
+    <column id="277" parent="245" name="password">
       <Position>3</Position>
-      <DataType>varchar(255)|0s</DataType>
+      <DataType>varchar(32)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="276" parent="245" name="password">
+    <column id="278" parent="245" name="email">
       <Position>4</Position>
-      <DataType>varchar(255)|0s</DataType>
+      <DataType>varchar(64)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="277" parent="245" name="PRIMARY">
+    <key id="279" parent="245" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>

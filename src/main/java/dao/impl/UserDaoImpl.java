@@ -1,8 +1,8 @@
 package dao.impl;
 
-import dao.DaoUtil;
 import dao.UserDao;
 import entity.User;
+import org.hibernate.SessionFactory;
 import org.hibernate.query.Query;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
@@ -14,26 +14,25 @@ import java.util.List;
 import java.util.Optional;
 
 @Repository
-public class UserDaoImpl implements UserDao {
+public class UserDaoImpl extends AbstractDaoImpl<User> implements UserDao {
 
-    private DaoUtil util;
-
+    @Override
     @Autowired
-    public UserDaoImpl setUtil(DaoUtil util) {
-        this.util = util;
+    public AbstractDaoImpl<User> setFactory(SessionFactory factory) {
+        this.factory = factory;
         return this;
     }
 
     @Override
     public Optional<User> get(int id) {
-        Session session = util.getSession();
+        Session session = factory.openSession();
         User user = session.get(User.class, id);
         return Optional.ofNullable(user);
     }
 
     @Override
     public Optional<User> get(String name) {
-        Session session = util.getSession();
+        Session session = factory.openSession();
         Query<User> query = session.createQuery("from User u where u.name=:name", User.class);
         query.setParameter("name", name);
         List<User> list = query.getResultList();
@@ -48,47 +47,4 @@ public class UserDaoImpl implements UserDao {
         return delete(get(id).orElse(null));
     }
 
-    @Override
-    public boolean add(User user) {
-        if (user == null) {
-            return false;
-        }
-        Session session = util.getSession();
-        Transaction transaction = session.beginTransaction();
-        session.save(user);
-        transaction.commit();
-        return true;
-    }
-
-    @Override
-    public boolean delete(User user) {
-        if (user == null) {
-            return false;
-        }
-        Session session = util.getSession();
-        Transaction transaction = session.beginTransaction();
-        session.delete(user);
-        transaction.commit();
-        return true;
-    }
-
-    @Override
-    public boolean update(User user) {
-        if (user == null) {
-            return false;
-        }
-        Session session = util.getSession();
-        Transaction transaction = session.beginTransaction();
-        session.update(user);
-        transaction.commit();
-        return true;
-    }
-
-    @Override
-    public Collection<User> get() {
-        Session session = util.getSession();
-        Query query = session.createQuery("from User");
-        //noinspection unchecked
-        return (Collection<User>) query.list();
-    }
 }
