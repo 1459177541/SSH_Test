@@ -1,8 +1,6 @@
-package log;
+package entity;
 
 import action.LoginAction;
-import entity.Power;
-import entity.User;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.slf4j.Logger;
@@ -10,11 +8,9 @@ import org.slf4j.LoggerFactory;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import java.util.Set;
+public class UserTest {
 
-public class LogTest {
-
-    private static Logger LOGGER = LoggerFactory.getLogger(LogTest.class);
+    private static Logger LOGGER = LoggerFactory.getLogger(UserTest.class);
     private static ApplicationContext context = new ClassPathXmlApplicationContext("ApplicationContext.xml");
 
     @Test

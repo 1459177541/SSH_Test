@@ -45,7 +45,7 @@
             <props>
                 <prop key="dialect">org.hibernate.dialect.MySQLDialect</prop>
                 <prop key="hibernate.show_sql">true</prop><!-- 是否展示SQL -->
-                <prop key="hibernate.hbm2ddl.auto">create</prop><!-- 是否自动创建表结构 -->
+                <prop key="hibernate.hbm2ddl.auto">update</prop><!-- 是否自动创建表结构 -->
                 <prop key="show_sql">true</prop><!-- 显示SQL代码 -->
                 <prop key="format_sql">true</prop>
                 <prop key="hibernate.connection.url">jdbc:mysql://localhost:3306/ssh</prop>

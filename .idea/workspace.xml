@@ -6,20 +6,38 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="25defb74-8661-49ea-a980-ffd802b910b3" name="Default Changelist" comment="调整实体映射关系">
-      <change afterPath="$PROJECT_DIR$/src/main/java/entity/Power.hbm.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/entity/Power.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/48afbc8a-e81e-488e-8d15-09c6cceffe98.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/48afbc8a-e81e-488e-8d15-09c6cceffe98.xml" afterDir="false" />
+    <list default="true" id="25defb74-8661-49ea-a980-ffd802b910b3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/demo_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/demo_war_exploded.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/Autor.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/Author.hbm.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/Book.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/Book.hbm.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/Press.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/Press.hbm.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/User.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/User.hbm.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entity/Author.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/Author.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/ApplicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ApplicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/log/LogTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/log/LogTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/log/LogTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/entity/UserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/demo.war" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/demo/WEB-INF/lib/common-java5-2.19.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/demo/WEB-INF/lib/freemarker-2.3.26-incubating.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/demo/WEB-INF/lib/junit-platform-commons-1.0.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/demo/WEB-INF/lib/junit-platform-engine-1.0.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/demo/WEB-INF/lib/junit-platform-launcher-1.0.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/demo/WEB-INF/lib/junit-platform-surefire-provider-1.0.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/demo/WEB-INF/lib/log4j-api-2.10.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/demo/WEB-INF/lib/log4j-core-2.11.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/demo/WEB-INF/lib/mysql-connector-java-8.0.12.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/demo/WEB-INF/lib/opentest4j-1.0.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/demo/WEB-INF/lib/protobuf-java-2.6.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/demo/WEB-INF/lib/spring-aop-4.3.13.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/demo/WEB-INF/lib/spring-beans-5.1.0.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/demo/WEB-INF/lib/spring-context-4.3.13.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/demo/WEB-INF/lib/spring-core-5.1.0.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/demo/WEB-INF/lib/spring-expression-4.3.13.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/demo/WEB-INF/lib/spring-jcl-5.1.0.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/demo/WEB-INF/lib/spring-jdbc-5.1.0.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/demo/WEB-INF/lib/spring-orm-5.1.0.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/demo/WEB-INF/lib/spring-tx-5.1.0.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/demo/WEB-INF/lib/spring-web-5.1.0.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/demo/WEB-INF/lib/struts2-core-2.5.17.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/demo/WEB-INF/lib/struts2-spring-plugin-2.5.17.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/demo/WEB-INF/lib/surefire-api-2.19.1.jar" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -171,7 +189,7 @@
     <session id="1326090610">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="14" />
+          <entry key="project.closed" value="15" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.11" value="2" />
           <entry key="project.open.time.12" value="1" />
@@ -179,8 +197,8 @@
           <entry key="project.open.time.6" value="2" />
           <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.8" value="2" />
-          <entry key="project.open.time.9" value="4" />
-          <entry key="project.opened" value="15" />
+          <entry key="project.open.time.9" value="5" />
+          <entry key="project.opened" value="16" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -188,42 +206,45 @@
           <entry key="0-SNAPSHOT" value="4" />
           <entry key="2018-10-13" value="1" />
           <entry key="Persistence/JavaeeElement:/1a002afe/sessionFactory/demo/hibernate/Hibernate/PersistenceModel" value="1" />
-          <entry key="User" value="6" />
+          <entry key="Power" value="1" />
+          <entry key="PowerGround" value="1" />
+          <entry key="User" value="7" />
           <entry key="class" value="10" />
           <entry key="gitignore" value="2" />
           <entry key="groovy" value="1" />
           <entry key="iml" value="4" />
-          <entry key="java" value="239" />
+          <entry key="java" value="247" />
           <entry key="jsp" value="58" />
           <entry key="log" value="14" />
           <entry key="md" value="2" />
-          <entry key="properties" value="22" />
+          <entry key="properties" value="23" />
           <entry key="sql" value="4" />
           <entry key="table_name" value="1" />
           <entry key="user" value="7" />
           <entry key="xhtml" value="1" />
-          <entry key="xml" value="240" />
+          <entry key="xml" value="251" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="10" />
-          <entry key="Database Element" value="14" />
+          <entry key="Database Element" value="17" />
           <entry key="IDEA_MODULE" value="4" />
-          <entry key="JAVA" value="239" />
+          <entry key="JAVA" value="247" />
           <entry key="JSP" value="58" />
           <entry key="Markdown" value="2" />
           <entry key="PLAIN_TEXT" value="17" />
-          <entry key="Properties" value="22" />
+          <entry key="Properties" value="23" />
           <entry key="SQL" value="2" />
           <entry key="Scratch" value="3" />
           <entry key="UML" value="5" />
           <entry key="XHTML" value="1" />
-          <entry key="XML" value="240" />
+          <entry key="XML" value="251" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+          <entry key="dummy" value="8" />
           <entry key="gitignore" value="13" />
           <entry key="java" value="1565" />
           <entry key="jsp" value="512" />
@@ -231,18 +252,18 @@
           <entry key="sql" value="47" />
           <entry key="txt" value="347" />
           <entry key="xhtml" value="7" />
-          <entry key="xml" value="1180" />
+          <entry key="xml" value="1217" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="1565" />
           <entry key="JSP" value="512" />
-          <entry key="PLAIN_TEXT" value="360" />
+          <entry key="PLAIN_TEXT" value="368" />
           <entry key="Properties" value="69" />
           <entry key="SQL" value="47" />
           <entry key="XHTML" value="7" />
-          <entry key="XML" value="1180" />
+          <entry key="XML" value="1217" />
         </counts>
       </usages-collector>
     </session>
@@ -253,10 +274,10 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/entity/Power.hbm.xml">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/ApplicationContext.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="9" column="43" lean-forward="true" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
+            <state relative-caret-position="648">
+              <caret line="57" column="18" lean-forward="true" selection-start-line="57" selection-start-column="18" selection-end-line="57" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -340,18 +361,18 @@
         <option value="$PROJECT_DIR$/src/main/java/entity/PowerGround.hbm.xml" />
         <option value="$PROJECT_DIR$/src/main/java/entity/PowerGround.java" />
         <option value="$PROJECT_DIR$/src/main/java/entity/Autor.hbm.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/entity/Author.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/web/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/entity/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/entity/Power.java" />
         <option value="$PROJECT_DIR$/src/test/java/log/LogTest.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/ApplicationContext.xml" />
         <option value="$PROJECT_DIR$/src/main/java/entity/User.hbm.xml" />
         <option value="$PROJECT_DIR$/src/main/java/entity/Press.hbm.xml" />
         <option value="$PROJECT_DIR$/src/main/java/entity/Power.hbm.xml" />
         <option value="$PROJECT_DIR$/src/main/java/entity/Book.hbm.xml" />
         <option value="$PROJECT_DIR$/src/main/java/entity/Author.hbm.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/entity/Author.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/ApplicationContext.xml" />
       </list>
     </option>
   </component>
@@ -504,8 +525,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -597,29 +616,24 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="log" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SSH_Demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SSH_Demo" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SSH_Demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="SSH_Demo" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SSH_Demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SSH_Demo" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="login" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SSH_Demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SSH_Demo" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -627,7 +641,7 @@
     <property name="JPA.DatabaseSchemaImportDialog" value="48afbc8a-e81e-488e-8d15-09c6cceffe98" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539791693122" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539858662550" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="CSS&#10;JSP" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/web" />
@@ -639,20 +653,21 @@
     <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.importing" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/web/WEB-INF" />
-      <recent name="$PROJECT_DIR$/src/main/java" />
-    </key>
-    <key name="ImportMappingsDialog.RecentPackages">
-      <recent name="entity" />
-      <recent name="" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/web/login" />
       <recent name="$PROJECT_DIR$/web" />
       <recent name="D:\JAVA\JAVA\SSH_Demo\src\main\java" />
       <recent name="D:\JAVA\JAVA\SSH_Demo\src\main\resources" />
       <recent name="D:\JAVA\JAVA\SSH_Demo\web" />
+    </key>
+    <key name="ImportMappingsDialog.RecentPackages">
+      <recent name="entity" />
+      <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/target/classes/entity" />
+      <recent name="$PROJECT_DIR$/web/WEB-INF" />
+      <recent name="$PROJECT_DIR$/src/main/java" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -667,23 +682,23 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.LogTest.registerTest">
+  <component name="RunManager" selected="JUnit.UserTest.registerTest">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LogTest.loginFailTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserTest.loginFailTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="log.*" />
+          <option name="PATTERN" value="entity.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="log" />
-      <option name="MAIN_CLASS_NAME" value="log.LogTest" />
+      <option name="PACKAGE_NAME" value="entity" />
+      <option name="MAIN_CLASS_NAME" value="entity.UserTest" />
       <option name="METHOD_NAME" value="loginFailTest" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -691,16 +706,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LogTest.loginSuccessTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserTest.loginSuccessTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="log.*" />
+          <option name="PATTERN" value="entity.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="log" />
-      <option name="MAIN_CLASS_NAME" value="log.LogTest" />
+      <option name="PACKAGE_NAME" value="entity" />
+      <option name="MAIN_CLASS_NAME" value="entity.UserTest" />
       <option name="METHOD_NAME" value="loginSuccessTest" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -708,16 +723,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LogTest.loginTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserTest.loginTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="log.*" />
+          <option name="PATTERN" value="entity.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="log" />
-      <option name="MAIN_CLASS_NAME" value="log.LogTest" />
+      <option name="PACKAGE_NAME" value="entity" />
+      <option name="MAIN_CLASS_NAME" value="entity.UserTest" />
       <option name="METHOD_NAME" value="loginTest" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -725,16 +740,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LogTest.registerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserTest.registerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="log.*" />
+          <option name="PATTERN" value="entity.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="log" />
-      <option name="MAIN_CLASS_NAME" value="log.LogTest" />
+      <option name="PACKAGE_NAME" value="entity" />
+      <option name="MAIN_CLASS_NAME" value="entity.UserTest" />
       <option name="METHOD_NAME" value="registerTest" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -1003,17 +1018,17 @@
     <list>
       <item itemvalue="Tomcat Server.SSH_Demo" />
       <item itemvalue="Tomcat Server.Linux" />
-      <item itemvalue="JUnit.LogTest.registerTest" />
-      <item itemvalue="JUnit.LogTest.loginTest" />
-      <item itemvalue="JUnit.LogTest.loginSuccessTest" />
-      <item itemvalue="JUnit.LogTest.loginFailTest" />
+      <item itemvalue="JUnit.UserTest.registerTest" />
+      <item itemvalue="JUnit.UserTest.loginTest" />
+      <item itemvalue="JUnit.UserTest.loginSuccessTest" />
+      <item itemvalue="JUnit.UserTest.loginFailTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.LogTest.registerTest" />
-        <item itemvalue="JUnit.LogTest.loginSuccessTest" />
-        <item itemvalue="JUnit.LogTest.loginFailTest" />
-        <item itemvalue="JUnit.LogTest.loginTest" />
+        <item itemvalue="JUnit.UserTest.registerTest" />
+        <item itemvalue="JUnit.UserTest.loginSuccessTest" />
+        <item itemvalue="JUnit.UserTest.loginFailTest" />
+        <item itemvalue="JUnit.UserTest.loginTest" />
       </list>
     </recent_temporary>
   </component>
@@ -1050,7 +1065,8 @@
       <workItem from="1539670905043" duration="8405000" />
       <workItem from="1539784848192" duration="633000" />
       <workItem from="1539785513730" duration="421000" />
-      <workItem from="1539785956396" duration="5353000" />
+      <workItem from="1539785956396" duration="5577000" />
+      <workItem from="1539857942730" duration="708000" />
     </task>
     <task id="LOCAL-00001" summary="Test IDEA Commit">
       <created>1539256030611</created>
@@ -1129,19 +1145,17 @@
       <option name="project" value="LOCAL" />
       <updated>1539789094395</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="调整实体映射关系">
+      <created>1539791719057</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1539791719057</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="LogTest_loginSuccessTest - 2018.10.13 at 19h 12m 26s.xml">
-      <configuration name="LogTest.loginSuccessTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LogTest_loginSuccessTest - 2018.10.13 at 19h 15m 03s.xml">
-      <configuration name="LogTest.loginSuccessTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LogTest_loginSuccessTest - 2018.10.13 at 19h 15m 54s.xml">
-      <configuration name="LogTest.loginSuccessTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="LogTest_loginSuccessTest - 2018.10.15 at 19h 46m 49s.xml">
       <configuration name="LogTest.loginSuccessTest" configurationId="JUnit" />
     </history-entry>
@@ -1163,9 +1177,18 @@
     <history-entry file="LogTest_registerTest - 2018.10.17 at 23h 50m 32s.xml">
       <configuration name="LogTest.registerTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="LogTest_registerTest - 2018.10.17 at 23h 54m 59s.xml">
+      <configuration name="LogTest.registerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LogTest_registerTest - 2018.10.18 at 18h 19m 39s.xml">
+      <configuration name="LogTest.registerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LogTest_registerTest - 2018.10.18 at 18h 25m 23s.xml">
+      <configuration name="LogTest.registerTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="81071000" />
+    <option name="totallyTimeSpent" value="82003000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -1178,6 +1201,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="0" width="1920" height="1080" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Image Layers" order="0" />
       <window_info id="Designer" order="1" />
@@ -1186,9 +1210,9 @@
       <window_info id="Favorites" order="4" side_tool="true" weight="0.32994652" />
       <window_info id="Structure" order="5" side_tool="true" weight="0.24973261" />
       <window_info id="Web" order="6" side_tool="true" weight="0.32994652" />
-      <window_info active="true" id="Persistence" order="7" side_tool="true" visible="true" weight="0.12780748" />
+      <window_info id="Persistence" order="7" side_tool="true" weight="0.12780748" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32882884" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32786885" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49893048" weight="0.3486339" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -1208,8 +1232,8 @@
       <window_info anchor="right" id="Theme Preview" order="1" />
       <window_info anchor="right" id="Capture Analysis" order="2" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
-      <window_info anchor="right" content_ui="combo" id="Project" order="4" weight="0.25882354" />
-      <window_info anchor="right" id="Database" order="5" visible="true" weight="0.2604278" />
+      <window_info active="true" anchor="right" content_ui="combo" id="Project" order="4" visible="true" weight="0.25882354" />
+      <window_info anchor="right" id="Database" order="5" weight="0.2604278" />
       <window_info anchor="right" id="Maven Projects" order="6" weight="0.32994652" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="7" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="8" weight="0.24973261" />
@@ -1248,17 +1272,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/.idea/modules.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/.idea/vcs.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3914" />
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/logging/log4j/log4j-web/2.9.1/log4j-web-2.9.1.jar!/org/apache/logging/log4j/web/Log4jServletFilter.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
@@ -1350,13 +1363,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/logs/info.log">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="das://48afbc8a-e81e-488e-8d15-09c6cceffe98/schema/ssh/table/User">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/logs/DEBUG.log">
       <provider selected="true" editor-type-id="text-editor">
@@ -2041,24 +2047,11 @@
               <point x="52.0" y="16.5" />
             </edge>
           </edges>
-          <settings layout="Hierarchic Group" zoom="1.0" x="1779.0" y="424.5" />
+          <settings layout="Hierarchic Group" zoom="1.0" x="1779.0" y="425.0" />
           <SelectedNodes />
           <Categories />
+          <SCOPE>All</SCOPE>
           <VISIBILITY>All</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="711">
-          <caret line="43" column="16" selection-start-line="43" selection-start-column="16" selection-end-line="43" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-162">
-          <caret line="72" column="56" selection-start-line="72" selection-start-column="56" selection-end-line="72" selection-end-column="56" />
         </state>
       </provider>
     </entry>
@@ -2076,13 +2069,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/jdbc.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="41" lean-forward="true" selection-start-line="1" selection-start-column="41" selection-end-line="1" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/entity/Power.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="437">
@@ -2094,13 +2080,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="414">
           <caret line="73" column="5" lean-forward="true" selection-start-line="73" selection-start-column="5" selection-end-line="73" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/ApplicationContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="46" column="57" selection-start-line="46" selection-start-column="57" selection-end-line="46" selection-end-column="57" />
         </state>
       </provider>
     </entry>
@@ -2118,17 +2097,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/entity/Book.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="62" column="19" selection-start-line="62" selection-start-column="19" selection-end-line="62" selection-end-column="19" />
-          <folding>
-            <element signature="e#1145#1146#0" expanded="true" />
-            <element signature="e#1171#1172#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/entity/Book.hbm.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -2136,16 +2104,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/entity/Author.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/entity/Power.hbm.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="446">
-          <caret line="65" column="18" selection-start-line="65" selection-start-column="18" selection-end-line="65" selection-end-column="18" />
-          <folding>
-            <element signature="e#1276#1277#0" expanded="true" />
-            <element signature="e#1311#1312#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="162">
+          <caret line="9" column="43" lean-forward="true" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/jdbc.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="41" lean-forward="true" selection-start-line="1" selection-start-column="41" selection-end-line="1" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-180">
+          <caret line="17" column="37" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="810">
+          <caret line="45" column="17" lean-forward="true" selection-start-line="45" selection-start-column="17" selection-end-line="45" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/classes/entity/User.hbm.xml">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/entity/Author.hbm.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -2154,17 +2142,60 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/log/LogTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/entity/Author.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="32" column="5" lean-forward="true" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
+        <state relative-caret-position="630">
+          <caret line="47" column="46" lean-forward="true" selection-start-line="47" selection-start-column="46" selection-end-line="47" selection-end-column="46" />
+          <folding>
+            <element signature="e#1276#1277#0" expanded="true" />
+            <element signature="e#1311#1312#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/entity/Power.hbm.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/entity/Book.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="43" lean-forward="true" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
+        <state relative-caret-position="900">
+          <caret line="62" column="19" selection-start-line="62" selection-start-column="19" selection-end-line="62" selection-end-column="19" />
+          <folding>
+            <element signature="e#1145#1146#0" expanded="true" />
+            <element signature="e#1171#1172#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://48afbc8a-e81e-488e-8d15-09c6cceffe98/schema/ssh/table/PowerGround">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://48afbc8a-e81e-488e-8d15-09c6cceffe98/schema/ssh/table/User">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://48afbc8a-e81e-488e-8d15-09c6cceffe98/schema/ssh/table/Power">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/entity/UserTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="20" column="64" lean-forward="true" selection-start-line="20" selection-start-column="64" selection-end-line="20" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/ApplicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="648">
+          <caret line="57" column="18" lean-forward="true" selection-start-line="57" selection-start-column="18" selection-end-line="57" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -2222,7 +2253,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>demo</last-edited>
+          <last-edited>Hibernate|demo</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

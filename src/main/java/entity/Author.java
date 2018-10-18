@@ -45,8 +45,8 @@ public class Author {
         return birthday;
     }
 
-    public Author setBirthday(Date brithday) {
-        this.birthday = brithday;
+    public Author setBirthday(Date birthday) {
+        this.birthday = birthday;
         return this;
     }
 
