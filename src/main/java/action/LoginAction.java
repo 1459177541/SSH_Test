@@ -12,6 +12,7 @@ import org.springframework.stereotype.Component;
 import service.UserService;
 
 import java.util.Objects;
+import java.util.Optional;
 
 @Component
 @Scope("prototype")
@@ -74,6 +75,25 @@ public class LoginAction extends DefaultActionSupport implements ModelDriven<Use
         LOGGER.info("{}注册",user);
         userService.register(user);
 //        ServletActionContext.getRequest().getSession().setAttribute("user", user);
+        return SUCCESS;
+    }
+
+    public String alterUser(){
+        Optional<User> oldUser = userService.get(user.getId());
+        if (!oldUser.isPresent()) {
+            return INPUT;
+        }
+        if (user.getName() == null) {
+            user.setPassword(oldUser.get().getName());
+        }
+        if (user.getPassword() == null) {
+            user.setPassword(oldUser.get().getPassword());
+        }
+        if (user.getEmail() == null) {
+            user.setPassword(oldUser.get().getEmail());
+        }
+        LOGGER.info("{}修改",user);
+        userService.update(user);
         return SUCCESS;
     }
 }

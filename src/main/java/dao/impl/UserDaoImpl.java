@@ -47,4 +47,17 @@ public class UserDaoImpl extends AbstractDaoImpl<User> implements UserDao {
         return delete(get(id).orElse(null));
     }
 
+    @Override
+    public boolean update(User user) {
+        if (user == null) {
+            return false;
+        }
+        Session session = factory.openSession();
+        Transaction transaction = session.beginTransaction();
+        user.getPowers().forEach(session::persist);
+        session.update(user);
+        transaction.commit();
+        return true;
+
+    }
 }

@@ -9,6 +9,7 @@ import org.springframework.stereotype.Repository;
 import org.springframework.stereotype.Service;
 import service.UserService;
 
+import java.util.Collection;
 import java.util.Optional;
 import java.util.Set;
 import java.util.function.Predicate;
@@ -32,6 +33,11 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
+    public Optional<User> get(int id) {
+        return userDao.get(id);
+    }
+
+    @Override
     public boolean login(User user) {
         Optional<User> userOptional = userDao.get(user.getId());
         if (userOptional.isPresent()){
@@ -52,5 +58,26 @@ public class UserServiceImpl implements UserService {
         Optional optional = powers.stream().map(powerDao::add).filter(Predicate.isEqual(false)).findAny();
         if (optional.isPresent()) return false;
         return userDao.add(user);
+    }
+
+
+    @Override
+    public boolean add(User user) {
+        return register(user);
+    }
+
+    @Override
+    public boolean delete(User user) {
+        return userDao.delete(user.getId());
+    }
+
+    @Override
+    public boolean update(User user) {
+        return userDao.update(user);
+    }
+
+    @Override
+    public Collection<User> get() {
+        return userDao.get();
     }
 }

@@ -2,7 +2,11 @@ package service;
 
 import entity.User;
 
-public interface UserService {
+import java.util.Optional;
+
+public interface UserService extends Service<User>{
+
+    Optional<User> get(int id);
 
     boolean login(User user);
 

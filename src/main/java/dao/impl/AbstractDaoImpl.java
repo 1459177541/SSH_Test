@@ -21,40 +21,40 @@ public abstract class AbstractDaoImpl<T> implements Dao<T> {
     public abstract AbstractDaoImpl<T> setFactory(SessionFactory factory) ;
 
     @Override
-    public boolean add(T user) {
-        if (user == null) {
+    public boolean add(T t) {
+        if (t == null) {
             return false;
         }
-        LOGGER.info("添加{}", user);
+        LOGGER.info("添加{}", t);
         Session session = factory.openSession();
         Transaction transaction = session.beginTransaction();
-        session.save(user);
+        session.save(t);
         transaction.commit();
         return true;
     }
 
     @Override
-    public boolean delete(T user) {
-        if (user == null) {
+    public boolean delete(T t) {
+        if (t == null) {
             return false;
         }
-        LOGGER.info("删除{}", user);
+        LOGGER.info("删除{}", t);
         Session session = factory.openSession();
         Transaction transaction = session.beginTransaction();
-        session.delete(user);
+        session.delete(t);
         transaction.commit();
         return true;
     }
 
     @Override
-    public boolean update(T user) {
-        if (user == null) {
+    public boolean update(T t) {
+        if (t == null) {
             return false;
         }
-        LOGGER.info("更新{}", user);
+        LOGGER.info("更新{}", t);
         Session session = factory.openSession();
         Transaction transaction = session.beginTransaction();
-        session.update(user);
+        session.update(t);
         transaction.commit();
         return true;
     }
