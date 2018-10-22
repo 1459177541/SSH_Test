@@ -1,20 +1,13 @@
 package dao.impl;
 
+
 import dao.Dao;
-import org.hibernate.Session;
 import org.hibernate.SessionFactory;
-import org.hibernate.Transaction;
-import org.hibernate.query.Query;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import org.springframework.orm.hibernate5.support.HibernateDaoSupport;
 import org.springframework.stereotype.Repository;
 
-import java.util.Collection;
-
 @Repository
-public abstract class AbstractDaoImpl<T> implements Dao<T> {
-
-    private Logger LOGGER = LoggerFactory.getLogger(AbstractDaoImpl.class);
+public abstract class AbstractDaoImpl<T> extends HibernateDaoSupport implements Dao<T> {
 
     protected SessionFactory factory;
 
@@ -22,49 +15,28 @@ public abstract class AbstractDaoImpl<T> implements Dao<T> {
 
     @Override
     public boolean add(T t) {
-        if (t == null) {
-            return false;
-        }
-        LOGGER.info("添加{}", t);
-        Session session = factory.openSession();
-        Transaction transaction = session.beginTransaction();
-        session.save(t);
-        transaction.commit();
+//        LOGGER.info("添加{}", t);
+//        Session session = factory.openSession();
+//        Transaction transaction = session.beginTransaction();
+//        session.save(t);
+//        transaction.commit();
+        assert getHibernateTemplate() != null;
+        getHibernateTemplate().save(t);
         return true;
     }
 
     @Override
     public boolean delete(T t) {
-        if (t == null) {
-            return false;
-        }
-        LOGGER.info("删除{}", t);
-        Session session = factory.openSession();
-        Transaction transaction = session.beginTransaction();
-        session.delete(t);
-        transaction.commit();
+        assert getHibernateTemplate() != null;
+        getHibernateTemplate().delete(t);
         return true;
     }
 
     @Override
     public boolean update(T t) {
-        if (t == null) {
-            return false;
-        }
-        LOGGER.info("更新{}", t);
-        Session session = factory.openSession();
-        Transaction transaction = session.beginTransaction();
-        session.update(t);
-        transaction.commit();
+        assert getHibernateTemplate() != null;
+        getHibernateTemplate().update(t);
         return true;
-    }
-
-    @Override
-    public Collection<T> get() {
-        Session session = factory.openSession();
-        Query query = session.createQuery("from User");
-        //noinspection unchecked
-        return (Collection<T>) query.list();
     }
 
 }

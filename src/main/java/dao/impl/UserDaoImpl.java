@@ -3,9 +3,9 @@ package dao.impl;
 import dao.UserDao;
 import entity.User;
 import org.hibernate.SessionFactory;
-import org.hibernate.query.Query;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
+import org.hibernate.query.Query;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
@@ -32,10 +32,16 @@ public class UserDaoImpl extends AbstractDaoImpl<User> implements UserDao {
 
     @Override
     public Optional<User> get(String name) {
-        Session session = factory.openSession();
-        Query<User> query = session.createQuery("from User u where u.name=:name", User.class);
-        query.setParameter("name", name);
-        List<User> list = query.getResultList();
+//        Session session = factory.openSession();
+//        Query<User> query = session.createQuery("from User u where u.name=:name", User.class);
+//        query.setParameter("name", name);
+//        List<User> list = query.getResultList();
+        assert getHibernateTemplate() != null;
+        List<User> list = getHibernateTemplate().execute(session -> {
+            Query<User> query = session.createQuery("from User u where u.name=:name", User.class);
+            query.setParameter("name", name);
+            return query.getResultList();
+        });
         if (list == null || list.size() == 0) {
             return Optional.empty();
         }
@@ -52,12 +58,26 @@ public class UserDaoImpl extends AbstractDaoImpl<User> implements UserDao {
         if (user == null) {
             return false;
         }
-        Session session = factory.openSession();
-        Transaction transaction = session.beginTransaction();
-        user.getPowers().forEach(session::persist);
-        session.update(user);
-        transaction.commit();
+//        Session session = factory.openSession();
+//        Transaction transaction = session.beginTransaction();
+//        user.getPowers().forEach(session::persist);
+//        session.update(user);
+//        transaction.commit();
+        assert getHibernateTemplate() != null;
+        getHibernateTemplate().execute(session -> {
+            Transaction transaction = session.beginTransaction();
+            user.getPowers().forEach(session::persist);
+            session.update(user);
+            transaction.commit();
+            return null;
+        });
         return true;
 
+    }
+
+    @Override
+    public Collection<User> get() {
+        assert getHibernateTemplate() != null;
+        return getHibernateTemplate().loadAll(User.class);
     }
 }

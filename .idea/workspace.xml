@@ -7,17 +7,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="25defb74-8661-49ea-a980-ffd802b910b3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/entity/BookTag.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/demo_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/SSH_Demo_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SSH_Demo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SSH_Demo.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/Author.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/Author.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/Power.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/Power.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/Press.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/Press.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/ApplicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ApplicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/PowerDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/PowerDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/impl/AbstractDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/impl/AbstractDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/impl/PowerDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/impl/PowerDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/impl/UserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/impl/UserDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/entity/UserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/entity/UserTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -121,29 +116,29 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="SpringLocalModels/module=SSH_Demo" value="2" />
-          <entry key="class" value="6" />
+          <entry key="class" value="22" />
           <entry key="css" value="1" />
-          <entry key="java" value="183" />
+          <entry key="java" value="270" />
           <entry key="jsp" value="21" />
           <entry key="properpies" value="2" />
           <entry key="properties" value="25" />
           <entry key="sql" value="3" />
           <entry key="user" value="1" />
-          <entry key="xml" value="88" />
+          <entry key="xml" value="92" />
           <entry key="xml;appContextName=spring" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="6" />
+          <entry key="CLASS" value="22" />
           <entry key="Database Element" value="1" />
-          <entry key="JAVA" value="183" />
+          <entry key="JAVA" value="270" />
           <entry key="JSP" value="20" />
           <entry key="PLAIN_TEXT" value="2" />
           <entry key="Properties" value="25" />
           <entry key="Scratch" value="5" />
           <entry key="UML" value="3" />
-          <entry key="XML" value="88" />
+          <entry key="XML" value="92" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts" />
@@ -152,19 +147,19 @@
       <usages-collector id="statistics.vcs.git.usages" />
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="1949" />
+          <entry key="java" value="2359" />
           <entry key="jsp" value="67" />
           <entry key="properties" value="21" />
           <entry key="sql" value="10" />
-          <entry key="txt" value="12" />
+          <entry key="txt" value="35" />
           <entry key="xml" value="352" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1949" />
+          <entry key="JAVA" value="2359" />
           <entry key="JSP" value="67" />
-          <entry key="PLAIN_TEXT" value="12" />
+          <entry key="PLAIN_TEXT" value="35" />
           <entry key="Properties" value="21" />
           <entry key="SQL" value="10" />
           <entry key="XML" value="352" />
@@ -264,10 +259,13 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/ApplicationContext.xml">
+        <entry file="file://$PROJECT_DIR$/src/main/java/dao/impl/UserDaoImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1210">
-              <caret line="55" column="63" lean-forward="true" selection-start-line="55" selection-start-column="63" selection-end-line="55" selection-end-column="63" />
+            <state relative-caret-position="406">
+              <caret line="43" column="11" lean-forward="true" selection-start-line="43" selection-start-column="11" selection-end-line="43" selection-end-column="11" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -348,13 +346,8 @@
         <option value="$PROJECT_DIR$/src/main/java/entity/Press.hbm.xml" />
         <option value="$PROJECT_DIR$/src/main/java/entity/Book.hbm.xml" />
         <option value="$PROJECT_DIR$/src/main/java/entity/Author.hbm.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/dao/PowerDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dao/impl/PowerDaoImpl.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/entity/Power.hbm.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/entity/UserTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dao/impl/AbstractDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dao/impl/UserDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/entity/User.hbm.xml" />
         <option value="$PROJECT_DIR$/src/main/java/service/UserService.java" />
         <option value="$PROJECT_DIR$/src/main/java/service/impl/UserServiceImpl.java" />
@@ -366,6 +359,11 @@
         <option value="$PROJECT_DIR$/src/main/java/entity/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/entity/BookTag.java" />
         <option value="$PROJECT_DIR$/src/main/java/entity/Book.java" />
+        <option value="$PROJECT_DIR$/src/test/java/entity/UserTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/PowerDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/impl/AbstractDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/impl/PowerDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/impl/UserDaoImpl.java" />
       </list>
     </option>
   </component>
@@ -599,6 +597,14 @@
               <item name="SSH_Demo" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SSH_Demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SSH_Demo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -641,7 +647,7 @@
     <property name="JPA.DatabaseSchemaImportDialog" value="48afbc8a-e81e-488e-8d15-09c6cceffe98" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540210657849" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540214686466" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="CSS&#10;JSP" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/web" />
@@ -1087,7 +1093,7 @@
       <workItem from="1539785956396" duration="5577000" />
       <workItem from="1539857942730" duration="6027000" />
       <workItem from="1539916873836" duration="3228000" />
-      <workItem from="1540206877877" duration="4024000" />
+      <workItem from="1540206877877" duration="8024000" />
     </task>
     <task id="LOCAL-00001" summary="Test IDEA Commit">
       <created>1539256030611</created>
@@ -1208,7 +1214,14 @@
       <option name="project" value="LOCAL" />
       <updated>1539920086368</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="更新为使用hibernate注解注册实体映射">
+      <created>1540210977178</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1540210977178</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1244,7 +1257,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="94574000" />
+    <option name="totallyTimeSpent" value="98574000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -1264,7 +1277,7 @@
       <window_info id="UI Designer" order="2" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" weight="0.32994652" />
-      <window_info id="Structure" order="5" side_tool="true" weight="0.24973261" />
+      <window_info id="Structure" order="5" side_tool="true" weight="0.24946696" />
       <window_info id="Web" order="6" side_tool="true" weight="0.32994652" />
       <window_info id="Persistence" order="7" side_tool="true" weight="0.12780748" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -1325,683 +1338,14 @@
     <MESSAGE value="更新依赖" />
     <MESSAGE value="完成注册功能。。。因为之前power主键没设置自增" />
     <MESSAGE value="添加修改权限功能。。。失败:权限重复添加。" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加修改权限功能。。。失败:权限重复添加。" />
+    <MESSAGE value="更新为使用hibernate注解注册实体映射" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新为使用hibernate注解注册实体映射" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/login/register.xhtml" />
-    <entry file="file://$PROJECT_DIR$/web/login/frame.jsp" />
-    <entry file="file://$PROJECT_DIR$/web/login/register.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="19" column="30" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/struts.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="18" column="33" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
-        </state>
-      </provider>
-      <provider editor-type-id="com.intellij.struts2.graph.fileEditor.Struts2GraphFileEditorProvider" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/login/registerSuccess.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="7" lean-forward="true" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="43" lean-forward="true" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/entity/PowerGround.hbm.xml" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/entity/PowerGround.java" />
-    <entry file="uml://MAVEN/SSH:demo:1.0-SNAPSHOT">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>MAVEN</ID>
-          <OriginalElement>SSH:demo:1.0-SNAPSHOT</OriginalElement>
-          <nodes>
-            <node x="1442.3247223790695" y="605.0">SSH:demo:1.0-SNAPSHOT</node>
-            <node x="4867.3247223790695" y="422.0">org.junit.jupiter:junit-jupiter-api:jar:5.3.1</node>
-            <node x="4807.0747223790695" y="206.0">org.junit.jupiter:junit-jupiter-api:jar:5.3.1/org.apiguardian:apiguardian-api:jar:1.0.0</node>
-            <node x="4951.8247223790695" y="299.0">org.junit.jupiter:junit-jupiter-api:jar:5.3.1/org.opentest4j:opentest4j:jar:1.1.1</node>
-            <node x="4716.8247223790695" y="299.0">org.junit.jupiter:junit-jupiter-api:jar:5.3.1/org.junit.platform:junit-platform-commons:jar:1.3.1</node>
-            <node x="679.6895182974354" y="0.0">org.springframework:spring-core:jar:4.2.1.RELEASE</node>
-            <node x="643.6666666666665" y="422.0">org.springframework:spring-web:jar:4.2.1.RELEASE</node>
-            <node x="573.6666666666665" y="206.0">org.springframework:spring-web:jar:4.2.1.RELEASE/org.springframework:spring-aop:jar:4.2.1.RELEASE</node>
-            <node x="502.6666666666665" y="113.0">org.springframework:spring-web:jar:4.2.1.RELEASE/org.springframework:spring-aop:jar:4.2.1.RELEASE/aopalliance:aopalliance:jar:1.0</node>
-            <node x="1224.6458333333333" y="113.0">org.springframework:spring-web:jar:4.2.1.RELEASE/org.springframework:spring-beans:jar:4.2.1.RELEASE</node>
-            <node x="660.9166666666665" y="299.0">org.springframework:spring-web:jar:4.2.1.RELEASE/org.springframework:spring-context:jar:4.2.1.RELEASE</node>
-            <node x="707.6666666666665" y="113.0">org.springframework:spring-web:jar:4.2.1.RELEASE/org.springframework:spring-context:jar:4.2.1.RELEASE/org.springframework:spring-expression:jar:4.2.1.RELEASE</node>
-            <node x="1713.0395408163263" y="422.0">org.springframework:spring-orm:jar:4.2.1.RELEASE</node>
-            <node x="1676.1392406765049" y="299.0">org.springframework:spring-orm:jar:4.2.1.RELEASE/org.springframework:spring-jdbc:jar:4.2.1.RELEASE</node>
-            <node x="1736.8892406765049" y="206.0">org.springframework:spring-orm:jar:4.2.1.RELEASE/org.springframework:spring-tx:jar:4.2.1.RELEASE</node>
-            <node x="3689.7482304186474" y="299.0">org.apache.struts:struts2-core:jar:2.5.12</node>
-            <node x="3181.641813543599" y="206.0">org.apache.struts:struts2-core:jar:2.5.12/org.freemarker:freemarker:jar:2.3.23</node>
-            <node x="3802.8247223790695" y="206.0">org.apache.struts:struts2-core:jar:2.5.12/ognl:ognl:jar:3.1.12</node>
-            <node x="3786.8247223790695" y="113.0">org.apache.struts:struts2-core:jar:2.5.12/ognl:ognl:jar:3.1.12/org.javassist:javassist:jar:3.20.0-GA</node>
-            <node x="3887.8247223790695" y="206.0">org.apache.struts:struts2-core:jar:2.5.12/org.apache.logging.log4j:log4j-api:jar:2.8.2</node>
-            <node x="3316.641813543599" y="206.0">org.apache.struts:struts2-core:jar:2.5.12/commons-fileupload:commons-fileupload:jar:1.3.3</node>
-            <node x="3347.141813543599" y="113.0">org.apache.struts:struts2-core:jar:2.5.12/commons-fileupload:commons-fileupload:jar:1.3.3/commons-io:commons-io:jar:2.2</node>
-            <node x="3658.8247223790695" y="206.0">org.apache.struts:struts2-core:jar:2.5.12/commons-io:commons-io:jar:2.4</node>
-            <node x="4004.8247223790695" y="206.0">org.apache.struts:struts2-core:jar:2.5.12/org.apache.commons:commons-lang3:jar:3.6</node>
-            <node x="1117.0395408163263" y="422.0">org.apache.struts:struts2-dojo-plugin:jar:2.3.36</node>
-            <node x="1143.5395408163263" y="299.0">org.apache.struts:struts2-dojo-plugin:jar:2.3.36/org.apache.struts:struts2-core:jar:2.3.36</node>
-            <node x="4255.89393939394" y="422.0">org.apache.struts:struts2-spring-plugin:jar:2.5.12</node>
-            <node x="4292.8247223790695" y="299.0">org.apache.struts:struts2-spring-plugin:jar:2.5.12/org.springframework:spring-beans:jar:4.1.6.RELEASE</node>
-            <node x="4443.8247223790695" y="299.0">org.apache.struts:struts2-spring-plugin:jar:2.5.12/org.springframework:spring-core:jar:4.1.6.RELEASE</node>
-            <node x="4130.8247223790695" y="299.0">org.apache.struts:struts2-spring-plugin:jar:2.5.12/org.springframework:spring-context:jar:4.1.6.RELEASE</node>
-            <node x="4580.8247223790695" y="299.0">org.apache.struts:struts2-spring-plugin:jar:2.5.12/org.springframework:spring-web:jar:4.1.6.RELEASE</node>
-            <node x="2728.5747223790695" y="422.0">org.hibernate:hibernate-core:jar:5.3.6.Final</node>
-            <node x="2575.9290134037774" y="299.0">org.hibernate:hibernate-core:jar:5.3.6.Final/org.jboss.logging:jboss-logging:jar:3.3.2.Final</node>
-            <node x="3048.9290134037774" y="299.0">org.hibernate:hibernate-core:jar:5.3.6.Final/javax.persistence:javax.persistence-api:jar:2.2</node>
-            <node x="2828.9290134037774" y="299.0">org.hibernate:hibernate-core:jar:5.3.6.Final/org.javassist:javassist:jar:3.23.1-GA</node>
-            <node x="3545.9290134037774" y="299.0">org.hibernate:hibernate-core:jar:5.3.6.Final/net.bytebuddy:byte-buddy:jar:1.8.17</node>
-            <node x="2488.9290134037774" y="299.0">org.hibernate:hibernate-core:jar:5.3.6.Final/antlr:antlr:jar:2.7.7</node>
-            <node x="3260.9290134037774" y="299.0">org.hibernate:hibernate-core:jar:5.3.6.Final/org.jboss.spec.javax.transaction:jboss-transaction-api_1.2_spec:jar:1.1.1.Final</node>
-            <node x="2945.9290134037774" y="299.0">org.hibernate:hibernate-core:jar:5.3.6.Final/org.jboss:jandex:jar:2.0.5.Final</node>
-            <node x="1862.9290134037778" y="299.0">org.hibernate:hibernate-core:jar:5.3.6.Final/com.fasterxml:classmate:jar:1.3.4</node>
-            <node x="2289.9290134037774" y="299.0">org.hibernate:hibernate-core:jar:5.3.6.Final/javax.activation:javax.activation-api:jar:1.2.0</node>
-            <node x="2728.9290134037774" y="299.0">org.hibernate:hibernate-core:jar:5.3.6.Final/dom4j:dom4j:jar:1.6.1</node>
-            <node x="1990.9290134037776" y="299.0">org.hibernate:hibernate-core:jar:5.3.6.Final/org.hibernate.common:hibernate-commons-annotations:jar:5.0.4.Final</node>
-            <node x="2063.9290134037774" y="206.0">org.hibernate:hibernate-core:jar:5.3.6.Final/org.hibernate.common:hibernate-commons-annotations:jar:5.0.4.Final/org.jboss.logging:jboss-logging:jar:3.3.1.Final</node>
-            <node x="4526.8918135436" y="422.0">mysql:mysql-connector-java:jar:8.0.9-rc</node>
-            <node x="979.5395408163263" y="422.0">com.mchange:c3p0:jar:0.9.5.2</node>
-            <node x="905.5395408163263" y="299.0">com.mchange:c3p0:jar:0.9.5.2/com.mchange:mchange-commons-java:jar:0.2.11</node>
-            <node x="0.0" y="422.0">org.aspectj:aspectjweaver:jar:1.9.1</node>
-            <node x="1313.0395408163263" y="422.0">org.slf4j:jcl-over-slf4j:jar:1.8.0-beta2</node>
-            <node x="1400.0395408163263" y="299.0">org.slf4j:slf4j-api:jar:1.8.0-beta2</node>
-            <node x="1456.0395408163263" y="422.0">org.slf4j:slf4j-log4j12:jar:1.8.0-beta2</node>
-            <node x="1515.2895408163263" y="299.0">org.slf4j:slf4j-log4j12:jar:1.8.0-beta2/log4j:log4j:jar:1.2.17</node>
-            <node x="223.5" y="299.0">org.apache.logging.log4j:log4j-core:jar:2.9.1</node>
-            <node x="177.125" y="206.0">org.apache.logging.log4j:log4j-api:jar:2.9.1</node>
-            <node x="161.0" y="422.0">org.apache.logging.log4j:log4j-web:jar:2.9.1</node>
-            <node x="327.6666666666665" y="422.0">org.apache.logging.log4j:log4j-slf4j-impl:jar:2.9.1</node>
-            <node x="349.5" y="299.0">org.apache.logging.log4j:log4j-slf4j-impl:jar:2.9.1/org.slf4j:slf4j-api:jar:1.7.25</node>
-            <node x="5084.8247223790695" y="422.0">javax:javaee-api:jar:8.0</node>
-            <node x="5084.8247223790695" y="299.0">javax:javaee-api:jar:8.0/com.sun.mail:javax.mail:jar:1.6.0</node>
-            <node x="5086.3247223790695" y="206.0">javax:javaee-api:jar:8.0/com.sun.mail:javax.mail:jar:1.6.0/javax.activation:activation:jar:1.1</node>
-            <node x="1601.0395408163263" y="422.0">javax.xml.bind:jaxb-api:jar:2.3.0</node>
-            <node x="779.6666666666665" y="422.0">com.sun.xml.bind:jaxb-impl:jar:2.3.0</node>
-            <node x="2230.7622223790695" y="422.0">com.sun.xml.bind:jaxb-core:jar:2.3.0</node>
-            <node x="3260.6997223790695" y="422.0">javax.activation:activation:jar:1.1.1</node>
-          </nodes>
-          <notes />
-          <edges>
-            <edge source="org.apache.struts:struts2-core:jar:2.5.12" target="org.apache.struts:struts2-core:jar:2.5.12/org.apache.logging.log4j:log4j-api:jar:2.8.2">
-              <point x="30.75" y="-16.5" />
-              <point x="3781.9982304186474" y="269.0" />
-              <point x="3936.3247223790695" y="269.0" />
-              <point x="0.0" y="16.5" />
-            </edge>
-            <edge source="SSH:demo:1.0-SNAPSHOT" target="org.apache.struts:struts2-spring-plugin:jar:2.5.12">
-              <point x="26.08695652173924" y="-16.5" />
-              <point x="1505.9116789008087" y="555.0" />
-              <point x="4351.89393939394" y="555.0" />
-              <point x="0.0" y="16.5" />
-            </edge>
-            <edge source="org.springframework:spring-orm:jar:4.2.1.RELEASE/org.springframework:spring-jdbc:jar:4.2.1.RELEASE" target="org.springframework:spring-core:jar:4.2.1.RELEASE">
-              <point x="0.0" y="-16.5" />
-              <point x="1734.6392406765049" y="279.0" />
-              <point x="1720.6392406765049" y="279.0" />
-              <point x="1720.6392406765049" y="73.0" />
-              <point x="764.1895182974354" y="73.0" />
-              <point x="26.0" y="16.5" />
-            </edge>
-            <edge source="com.mchange:c3p0:jar:0.9.5.2" target="com.mchange:c3p0:jar:0.9.5.2/com.mchange:mchange-commons-java:jar:0.2.11">
-              <point x="0.0" y="-16.5" />
-              <point x="0.0" y="16.5" />
-            </edge>
-            <edge source="org.junit.jupiter:junit-jupiter-api:jar:5.3.1/org.junit.platform:junit-platform-commons:jar:1.3.1" target="org.junit.jupiter:junit-jupiter-api:jar:5.3.1/org.apiguardian:apiguardian-api:jar:1.0.0">
-              <point x="0.0" y="-16.5" />
-              <point x="4823.8247223790695" y="279.0" />
-              <point x="4844.8247223790695" y="279.0" />
-              <point x="-37.75" y="16.5" />
-            </edge>
-            <edge source="org.apache.logging.log4j:log4j-slf4j-impl:jar:2.9.1" target="org.apache.logging.log4j:log4j-core:jar:2.9.1">
-              <point x="-47.66666666666663" y="-16.5" />
-              <point x="351.5" y="402.0" />
-              <point x="311.8333333333335" y="402.0" />
-              <point x="35.33333333333337" y="16.5" />
-            </edge>
-            <edge source="org.springframework:spring-web:jar:4.2.1.RELEASE/org.springframework:spring-context:jar:4.2.1.RELEASE" target="org.springframework:spring-web:jar:4.2.1.RELEASE/org.springframework:spring-context:jar:4.2.1.RELEASE/org.springframework:spring-expression:jar:4.2.1.RELEASE">
-              <point x="17.75" y="-16.5" />
-              <point x="749.6666666666665" y="269.0" />
-              <point x="791.1666666666665" y="269.0" />
-              <point x="0.0" y="16.5" />
-            </edge>
-            <edge source="org.springframework:spring-orm:jar:4.2.1.RELEASE/org.springframework:spring-tx:jar:4.2.1.RELEASE" target="org.springframework:spring-core:jar:4.2.1.RELEASE">
-              <point x="25.0" y="-16.5" />
-              <point x="1811.8892406765049" y="63.0" />
-              <point x="777.1895182974354" y="63.0" />
-              <point x="39.0" y="16.5" />
-            </edge>
-            <edge source="org.apache.logging.log4j:log4j-core:jar:2.9.1" target="org.apache.logging.log4j:log4j-api:jar:2.9.1">
-              <point x="0.0" y="-16.5" />
-              <point x="276.5" y="279.0" />
-              <point x="237.75" y="279.0" />
-              <point x="12.125" y="16.5" />
-            </edge>
-            <edge source="org.hibernate:hibernate-core:jar:5.3.6.Final" target="org.hibernate:hibernate-core:jar:5.3.6.Final/org.jboss.logging:jboss-logging:jar:3.3.2.Final">
-              <point x="-12.909090909090992" y="-16.5" />
-              <point x="2786.6656314699785" y="362.0" />
-              <point x="2642.4290134037774" y="362.0" />
-              <point x="0.0" y="16.5" />
-            </edge>
-            <edge source="org.springframework:spring-orm:jar:4.2.1.RELEASE" target="org.springframework:spring-orm:jar:4.2.1.RELEASE/org.springframework:spring-tx:jar:4.2.1.RELEASE">
-              <point x="14.375" y="-16.5" />
-              <point x="1784.9145408163263" y="392.0" />
-              <point x="1811.8892406765049" y="392.0" />
-              <point x="25.0" y="16.5" />
-            </edge>
-            <edge source="org.springframework:spring-web:jar:4.2.1.RELEASE" target="org.springframework:spring-web:jar:4.2.1.RELEASE/org.springframework:spring-beans:jar:4.2.1.RELEASE">
-              <point x="43.5" y="-16.5" />
-              <point x="745.1666666666665" y="402.0" />
-              <point x="881.7642406765049" y="402.0" />
-              <point x="881.7642406765049" y="186.0" />
-              <point x="1279.2291666666667" y="186.0" />
-              <point x="-10.916666666666515" y="16.5" />
-            </edge>
-            <edge source="org.hibernate:hibernate-core:jar:5.3.6.Final" target="org.hibernate:hibernate-core:jar:5.3.6.Final/javax.activation:javax.activation-api:jar:1.2.0">
-              <point x="-38.72727272727252" y="-16.5" />
-              <point x="2760.847449651797" y="382.0" />
-              <point x="2379.4290134037774" y="382.0" />
-              <point x="0.0" y="16.5" />
-            </edge>
-            <edge source="org.junit.jupiter:junit-jupiter-api:jar:5.3.1" target="org.junit.jupiter:junit-jupiter-api:jar:5.3.1/org.apiguardian:apiguardian-api:jar:1.0.0">
-              <point x="0.0" y="-16.5" />
-              <point x="4941.3247223790695" y="279.0" />
-              <point x="4920.3247223790695" y="279.0" />
-              <point x="37.75" y="16.5" />
-            </edge>
-            <edge source="SSH:demo:1.0-SNAPSHOT" target="com.sun.xml.bind:jaxb-core:jar:2.3.0">
-              <point x="13.043478260869506" y="-16.5" />
-              <point x="1492.868200639939" y="515.0" />
-              <point x="2281.2622223790695" y="515.0" />
-              <point x="0.0" y="16.5" />
-            </edge>
-            <edge source="org.apache.struts:struts2-core:jar:2.5.12" target="org.apache.struts:struts2-core:jar:2.5.12/org.freemarker:freemarker:jar:2.3.23">
-              <point x="-51.25" y="-16.5" />
-              <point x="3699.9982304186474" y="279.0" />
-              <point x="3239.141813543599" y="279.0" />
-              <point x="0.0" y="16.5" />
-            </edge>
-            <edge source="SSH:demo:1.0-SNAPSHOT" target="org.apache.logging.log4j:log4j-core:jar:2.9.1">
-              <point x="-26.086956521739012" y="-16.5" />
-              <point x="1453.7377658573305" y="555.0" />
-              <point x="276.5" y="555.0" />
-              <point x="0.0" y="16.5" />
-            </edge>
-            <edge source="org.springframework:spring-web:jar:4.2.1.RELEASE/org.springframework:spring-context:jar:4.2.1.RELEASE" target="org.springframework:spring-core:jar:4.2.1.RELEASE">
-              <point x="-17.75" y="-16.5" />
-              <point x="714.1666666666665" y="279.0" />
-              <point x="697.1666666666665" y="279.0" />
-              <point x="697.1666666666665" y="93.0" />
-              <point x="725.1895182974354" y="93.0" />
-              <point x="-13.0" y="16.5" />
-            </edge>
-            <edge source="org.hibernate:hibernate-core:jar:5.3.6.Final" target="org.hibernate:hibernate-core:jar:5.3.6.Final/com.fasterxml:classmate:jar:1.3.4">
-              <point x="-64.5454545454545" y="-16.5" />
-              <point x="2735.029267833615" y="402.0" />
-              <point x="1916.9290134037778" y="402.0" />
-              <point x="0.0" y="16.5" />
-            </edge>
-            <edge source="org.apache.struts:struts2-core:jar:2.5.12" target="org.apache.struts:struts2-core:jar:2.5.12/org.apache.commons:commons-lang3:jar:3.6">
-              <point x="51.25" y="-16.5" />
-              <point x="3802.4982304186474" y="279.0" />
-              <point x="4043.3247223790695" y="279.0" />
-              <point x="-38.5" y="16.5" />
-            </edge>
-            <edge source="javax:javaee-api:jar:8.0/com.sun.mail:javax.mail:jar:1.6.0" target="javax:javaee-api:jar:8.0/com.sun.mail:javax.mail:jar:1.6.0/javax.activation:activation:jar:1.1">
-              <point x="0.0" y="-16.5" />
-              <point x="0.0" y="16.5" />
-            </edge>
-            <edge source="SSH:demo:1.0-SNAPSHOT" target="org.slf4j:jcl-over-slf4j:jar:1.8.0-beta2">
-              <point x="-3.26086956521749" y="-16.5" />
-              <point x="1476.563852813852" y="485.0" />
-              <point x="1374.0395408163263" y="485.0" />
-              <point x="0.0" y="16.5" />
-            </edge>
-            <edge source="org.apache.struts:struts2-spring-plugin:jar:2.5.12" target="org.apache.struts:struts2-spring-plugin:jar:2.5.12/org.springframework:spring-context:jar:4.1.6.RELEASE">
-              <point x="-16.0" y="-16.5" />
-              <point x="4335.89393939394" y="382.0" />
-              <point x="4201.8247223790695" y="382.0" />
-              <point x="0.0" y="16.5" />
-            </edge>
-            <edge source="SSH:demo:1.0-SNAPSHOT" target="org.apache.logging.log4j:log4j-slf4j-impl:jar:2.9.1">
-              <point x="-22.82608695652175" y="-16.5" />
-              <point x="1456.9986354225477" y="545.0" />
-              <point x="399.1666666666665" y="545.0" />
-              <point x="0.0" y="16.5" />
-            </edge>
-            <edge source="SSH:demo:1.0-SNAPSHOT" target="org.aspectj:aspectjweaver:jar:1.9.1">
-              <point x="-35.869565217391255" y="-16.5" />
-              <point x="1443.9551571616782" y="585.0" />
-              <point x="70.0" y="585.0" />
-              <point x="0.0" y="16.5" />
-            </edge>
-            <edge source="org.slf4j:jcl-over-slf4j:jar:1.8.0-beta2" target="org.slf4j:slf4j-api:jar:1.8.0-beta2">
-              <point x="0.0" y="-16.5" />
-              <point x="1374.0395408163263" y="402.0" />
-              <point x="1415.2062074829928" y="402.0" />
-              <point x="-30.33333333333337" y="16.5" />
-            </edge>
-            <edge source="org.hibernate:hibernate-core:jar:5.3.6.Final" target="org.hibernate:hibernate-core:jar:5.3.6.Final/javax.persistence:javax.persistence-api:jar:2.2">
-              <point x="38.72727272727252" y="-16.5" />
-              <point x="2838.301995106342" y="382.0" />
-              <point x="3144.9290134037774" y="382.0" />
-              <point x="0.0" y="16.5" />
-            </edge>
-            <edge source="SSH:demo:1.0-SNAPSHOT" target="javax.activation:activation:jar:1.1.1">
-              <point x="19.56521739130426" y="-16.5" />
-              <point x="1499.3899397703738" y="535.0" />
-              <point x="3313.6997223790695" y="535.0" />
-              <point x="0.0" y="16.5" />
-            </edge>
-            <edge source="org.apache.struts:struts2-spring-plugin:jar:2.5.12" target="org.apache.struts:struts2-spring-plugin:jar:2.5.12/org.springframework:spring-web:jar:4.1.6.RELEASE">
-              <point x="80.0" y="-16.5" />
-              <point x="4431.89393939394" y="402.0" />
-              <point x="4638.8247223790695" y="402.0" />
-              <point x="0.0" y="16.5" />
-            </edge>
-            <edge source="org.apache.struts:struts2-core:jar:2.5.12" target="org.apache.struts:struts2-core:jar:2.5.12/commons-io:commons-io:jar:2.4">
-              <point x="-10.25" y="-16.5" />
-              <point x="3740.9982304186474" y="259.0" />
-              <point x="3720.8247223790695" y="259.0" />
-              <point x="0.0" y="16.5" />
-            </edge>
-            <edge source="org.apache.struts:struts2-core:jar:2.5.12" target="org.apache.struts:struts2-core:jar:2.5.12/ognl:ognl:jar:3.1.12">
-              <point x="10.25" y="-16.5" />
-              <point x="3761.4982304186474" y="259.0" />
-              <point x="3835.3247223790695" y="259.0" />
-              <point x="0.0" y="16.5" />
-            </edge>
-            <edge source="org.springframework:spring-web:jar:4.2.1.RELEASE/org.springframework:spring-context:jar:4.2.1.RELEASE" target="org.springframework:spring-web:jar:4.2.1.RELEASE/org.springframework:spring-beans:jar:4.2.1.RELEASE">
-              <point x="53.25" y="-16.5" />
-              <point x="785.1666666666665" y="279.0" />
-              <point x="839.4145408163263" y="279.0" />
-              <point x="839.4145408163263" y="176.0" />
-              <point x="1257.3958333333333" y="176.0" />
-              <point x="-32.75" y="16.5" />
-            </edge>
-            <edge source="SSH:demo:1.0-SNAPSHOT" target="org.springframework:spring-orm:jar:4.2.1.RELEASE">
-              <point x="9.782608695652243" y="-16.5" />
-              <point x="1489.6073310747217" y="505.0" />
-              <point x="1770.5395408163263" y="505.0" />
-              <point x="0.0" y="16.5" />
-            </edge>
-            <edge source="org.apache.struts:struts2-core:jar:2.5.12/ognl:ognl:jar:3.1.12" target="org.apache.struts:struts2-core:jar:2.5.12/ognl:ognl:jar:3.1.12/org.javassist:javassist:jar:3.20.0-GA">
-              <point x="0.0" y="-16.5" />
-              <point x="0.0" y="16.5" />
-            </edge>
-            <edge source="org.apache.struts:struts2-spring-plugin:jar:2.5.12" target="org.apache.struts:struts2-spring-plugin:jar:2.5.12/org.springframework:spring-beans:jar:4.1.6.RELEASE">
-              <point x="16.0" y="-16.5" />
-              <point x="4367.89393939394" y="402.0" />
-              <point x="4358.3247223790695" y="402.0" />
-              <point x="0.0" y="16.5" />
-            </edge>
-            <edge source="org.junit.jupiter:junit-jupiter-api:jar:5.3.1" target="org.junit.jupiter:junit-jupiter-api:jar:5.3.1/org.opentest4j:opentest4j:jar:1.1.1">
-              <point x="49.33333333333303" y="-16.5" />
-              <point x="4990.6580557124025" y="402.0" />
-              <point x="5008.3247223790695" y="402.0" />
-              <point x="0.0" y="16.5" />
-            </edge>
-            <edge source="org.springframework:spring-web:jar:4.2.1.RELEASE/org.springframework:spring-aop:jar:4.2.1.RELEASE" target="org.springframework:spring-web:jar:4.2.1.RELEASE/org.springframework:spring-beans:jar:4.2.1.RELEASE">
-              <point x="37.666666666666515" y="-16.5" />
-              <point x="667.833333333333" y="166.0" />
-              <point x="1235.5624999999998" y="166.0" />
-              <point x="-54.583333333333485" y="16.5" />
-            </edge>
-            <edge source="org.hibernate:hibernate-core:jar:5.3.6.Final" target="org.hibernate:hibernate-core:jar:5.3.6.Final/net.bytebuddy:byte-buddy:jar:1.8.17">
-              <point x="64.5454545454545" y="-16.5" />
-              <point x="2864.120176924524" y="402.0" />
-              <point x="3605.9290134037774" y="402.0" />
-              <point x="0.0" y="16.5" />
-            </edge>
-            <edge source="org.springframework:spring-orm:jar:4.2.1.RELEASE" target="org.springframework:spring-orm:jar:4.2.1.RELEASE/org.springframework:spring-jdbc:jar:4.2.1.RELEASE">
-              <point x="-14.375" y="-16.5" />
-              <point x="1756.1645408163263" y="402.0" />
-              <point x="1734.6392406765049" y="402.0" />
-              <point x="0.0" y="16.5" />
-            </edge>
-            <edge source="org.springframework:spring-web:jar:4.2.1.RELEASE/org.springframework:spring-aop:jar:4.2.1.RELEASE" target="org.springframework:spring-web:jar:4.2.1.RELEASE/org.springframework:spring-aop:jar:4.2.1.RELEASE/aopalliance:aopalliance:jar:1.0">
-              <point x="-37.666666666666515" y="-16.5" />
-              <point x="592.5" y="186.0" />
-              <point x="561.1666666666665" y="186.0" />
-              <point x="0.0" y="16.5" />
-            </edge>
-            <edge source="org.springframework:spring-web:jar:4.2.1.RELEASE/org.springframework:spring-context:jar:4.2.1.RELEASE/org.springframework:spring-expression:jar:4.2.1.RELEASE" target="org.springframework:spring-core:jar:4.2.1.RELEASE">
-              <point x="0.0" y="-16.5" />
-              <point x="791.1666666666665" y="93.0" />
-              <point x="738.1895182974354" y="93.0" />
-              <point x="0.0" y="16.5" />
-            </edge>
-            <edge source="org.slf4j:slf4j-log4j12:jar:1.8.0-beta2" target="org.slf4j:slf4j-log4j12:jar:1.8.0-beta2/log4j:log4j:jar:1.2.17">
-              <point x="31.25" y="-16.5" />
-              <point x="0.0" y="16.5" />
-            </edge>
-            <edge source="org.hibernate:hibernate-core:jar:5.3.6.Final" target="org.hibernate:hibernate-core:jar:5.3.6.Final/org.jboss:jandex:jar:2.0.5.Final">
-              <point x="25.818181818181984" y="-16.5" />
-              <point x="2825.3929041972515" y="372.0" />
-              <point x="2987.4290134037774" y="372.0" />
-              <point x="0.0" y="16.5" />
-            </edge>
-            <edge source="SSH:demo:1.0-SNAPSHOT" target="com.sun.xml.bind:jaxb-impl:jar:2.3.0">
-              <point x="-13.043478260869506" y="-16.5" />
-              <point x="1466.7812441182" y="515.0" />
-              <point x="830.6666666666665" y="515.0" />
-              <point x="0.0" y="16.5" />
-            </edge>
-            <edge source="org.apache.logging.log4j:log4j-slf4j-impl:jar:2.9.1" target="org.apache.logging.log4j:log4j-api:jar:2.9.1">
-              <point x="47.666666666666515" y="-16.5" />
-              <point x="446.83333333333303" y="402.0" />
-              <point x="451.0" y="402.0" />
-              <point x="451.0" y="269.0" />
-              <point x="262.0" y="269.0" />
-              <point x="36.375" y="16.5" />
-            </edge>
-            <edge source="org.hibernate:hibernate-core:jar:5.3.6.Final" target="org.hibernate:hibernate-core:jar:5.3.6.Final/dom4j:dom4j:jar:1.6.1">
-              <point x="0.0" y="-16.5" />
-              <point x="2799.5747223790695" y="352.0" />
-              <point x="2768.9290134037774" y="352.0" />
-              <point x="0.0" y="16.5" />
-            </edge>
-            <edge source="SSH:demo:1.0-SNAPSHOT" target="org.slf4j:slf4j-api:jar:1.8.0-beta2">
-              <point x="0.0" y="-16.5" />
-              <point x="1479.8247223790695" y="475.0" />
-              <point x="1445.5395408163263" y="475.0" />
-              <point x="0.0" y="16.5" />
-            </edge>
-            <edge source="org.springframework:spring-web:jar:4.2.1.RELEASE" target="org.springframework:spring-core:jar:4.2.1.RELEASE">
-              <point x="-43.5" y="-16.5" />
-              <point x="658.1666666666665" y="402.0" />
-              <point x="492.1666666666665" y="402.0" />
-              <point x="492.1666666666665" y="73.0" />
-              <point x="699.1895182974354" y="73.0" />
-              <point x="-39.0" y="16.5" />
-            </edge>
-            <edge source="SSH:demo:1.0-SNAPSHOT" target="org.hibernate:hibernate-core:jar:5.3.6.Final">
-              <point x="16.304347826086996" y="-16.5" />
-              <point x="1496.1290702051565" y="525.0" />
-              <point x="2799.5747223790695" y="525.0" />
-              <point x="0.0" y="16.5" />
-            </edge>
-            <edge source="SSH:demo:1.0-SNAPSHOT" target="org.apache.struts:struts2-core:jar:2.5.12">
-              <point x="22.82608695652175" y="-16.5" />
-              <point x="1502.6508093355912" y="545.0" />
-              <point x="3720.4982304186474" y="545.0" />
-              <point x="-30.75" y="16.5" />
-            </edge>
-            <edge source="org.springframework:spring-orm:jar:4.2.1.RELEASE/org.springframework:spring-tx:jar:4.2.1.RELEASE" target="org.springframework:spring-web:jar:4.2.1.RELEASE/org.springframework:spring-beans:jar:4.2.1.RELEASE">
-              <point x="-25.0" y="-16.5" />
-              <point x="1761.8892406765049" y="166.0" />
-              <point x="1344.7291666666667" y="166.0" />
-              <point x="54.583333333333485" y="16.5" />
-            </edge>
-            <edge source="SSH:demo:1.0-SNAPSHOT" target="org.springframework:spring-web:jar:4.2.1.RELEASE">
-              <point x="-16.304347826086996" y="-16.5" />
-              <point x="1463.5203745529825" y="525.0" />
-              <point x="701.6666666666665" y="525.0" />
-              <point x="0.0" y="16.5" />
-            </edge>
-            <edge source="org.apache.struts:struts2-spring-plugin:jar:2.5.12" target="org.apache.struts:struts2-core:jar:2.5.12">
-              <point x="-80.0" y="-16.5" />
-              <point x="4271.89393939394" y="402.0" />
-              <point x="3781.9982304186474" y="402.0" />
-              <point x="30.75" y="16.5" />
-            </edge>
-            <edge source="org.apache.struts:struts2-dojo-plugin:jar:2.3.36" target="org.apache.struts:struts2-dojo-plugin:jar:2.3.36/org.apache.struts:struts2-core:jar:2.3.36">
-              <point x="0.0" y="-16.5" />
-              <point x="0.0" y="16.5" />
-            </edge>
-            <edge source="SSH:demo:1.0-SNAPSHOT" target="javax:javaee-api:jar:8.0">
-              <point x="35.869565217391255" y="-16.5" />
-              <point x="1515.6942875964608" y="585.0" />
-              <point x="5139.3247223790695" y="585.0" />
-              <point x="0.0" y="16.5" />
-            </edge>
-            <edge source="org.slf4j:slf4j-log4j12:jar:1.8.0-beta2" target="org.slf4j:slf4j-api:jar:1.8.0-beta2">
-              <point x="-31.25" y="-16.5" />
-              <point x="1487.2895408163263" y="402.0" />
-              <point x="1475.8728741496598" y="402.0" />
-              <point x="30.33333333333337" y="16.5" />
-            </edge>
-            <edge source="org.springframework:spring-web:jar:4.2.1.RELEASE/org.springframework:spring-aop:jar:4.2.1.RELEASE" target="org.springframework:spring-core:jar:4.2.1.RELEASE">
-              <point x="0.0" y="-16.5" />
-              <point x="630.1666666666665" y="83.0" />
-              <point x="712.1895182974354" y="83.0" />
-              <point x="-26.0" y="16.5" />
-            </edge>
-            <edge source="org.junit.jupiter:junit-jupiter-api:jar:5.3.1" target="org.junit.jupiter:junit-jupiter-api:jar:5.3.1/org.junit.platform:junit-platform-commons:jar:1.3.1">
-              <point x="-49.33333333333303" y="-16.5" />
-              <point x="4891.9913890457365" y="402.0" />
-              <point x="4823.8247223790695" y="402.0" />
-              <point x="0.0" y="16.5" />
-            </edge>
-            <edge source="org.apache.struts:struts2-core:jar:2.5.12" target="org.apache.struts:struts2-core:jar:2.5.12/commons-fileupload:commons-fileupload:jar:1.3.3">
-              <point x="-30.75" y="-16.5" />
-              <point x="3720.4982304186474" y="269.0" />
-              <point x="3409.141813543599" y="269.0" />
-              <point x="0.0" y="16.5" />
-            </edge>
-            <edge source="org.springframework:spring-orm:jar:4.2.1.RELEASE/org.springframework:spring-jdbc:jar:4.2.1.RELEASE" target="org.springframework:spring-orm:jar:4.2.1.RELEASE/org.springframework:spring-tx:jar:4.2.1.RELEASE">
-              <point x="39.0" y="-16.5" />
-              <point x="1773.6392406765049" y="279.0" />
-              <point x="1761.8892406765049" y="279.0" />
-              <point x="-25.0" y="16.5" />
-            </edge>
-            <edge source="SSH:demo:1.0-SNAPSHOT" target="org.apache.logging.log4j:log4j-web:jar:2.9.1">
-              <point x="-29.347826086956502" y="-16.5" />
-              <point x="1450.476896292113" y="565.0" />
-              <point x="213.5" y="565.0" />
-              <point x="0.0" y="16.5" />
-            </edge>
-            <edge source="org.hibernate:hibernate-core:jar:5.3.6.Final" target="org.hibernate:hibernate-core:jar:5.3.6.Final/org.jboss.spec.javax.transaction:jboss-transaction-api_1.2_spec:jar:1.1.1.Final">
-              <point x="51.63636363636351" y="-16.5" />
-              <point x="2851.211086015433" y="392.0" />
-              <point x="3393.4290134037774" y="392.0" />
-              <point x="0.0" y="16.5" />
-            </edge>
-            <edge source="org.springframework:spring-orm:jar:4.2.1.RELEASE/org.springframework:spring-jdbc:jar:4.2.1.RELEASE" target="org.springframework:spring-web:jar:4.2.1.RELEASE/org.springframework:spring-beans:jar:4.2.1.RELEASE">
-              <point x="-39.0" y="-16.5" />
-              <point x="1695.6392406765049" y="279.0" />
-              <point x="1669.1041666666665" y="279.0" />
-              <point x="1669.1041666666665" y="176.0" />
-              <point x="1322.8958333333333" y="176.0" />
-              <point x="32.75" y="16.5" />
-            </edge>
-            <edge source="org.springframework:spring-web:jar:4.2.1.RELEASE" target="org.springframework:spring-web:jar:4.2.1.RELEASE/org.springframework:spring-aop:jar:4.2.1.RELEASE">
-              <point x="-14.5" y="-16.5" />
-              <point x="687.1666666666665" y="392.0" />
-              <point x="601.9166666666665" y="392.0" />
-              <point x="-28.25" y="16.5" />
-            </edge>
-            <edge source="org.hibernate:hibernate-core:jar:5.3.6.Final" target="org.hibernate:hibernate-core:jar:5.3.6.Final/org.hibernate.common:hibernate-commons-annotations:jar:5.0.4.Final">
-              <point x="-51.63636363636351" y="-16.5" />
-              <point x="2747.938358742706" y="392.0" />
-              <point x="2130.4290134037774" y="392.0" />
-              <point x="0.0" y="16.5" />
-            </edge>
-            <edge source="org.springframework:spring-web:jar:4.2.1.RELEASE" target="org.springframework:spring-web:jar:4.2.1.RELEASE/org.springframework:spring-context:jar:4.2.1.RELEASE">
-              <point x="14.5" y="-16.5" />
-              <point x="716.1666666666665" y="402.0" />
-              <point x="731.9166666666665" y="402.0" />
-              <point x="0.0" y="16.5" />
-            </edge>
-            <edge source="org.springframework:spring-orm:jar:4.2.1.RELEASE" target="org.springframework:spring-web:jar:4.2.1.RELEASE/org.springframework:spring-beans:jar:4.2.1.RELEASE">
-              <point x="-43.125" y="-16.5" />
-              <point x="1727.4145408163263" y="402.0" />
-              <point x="1646.8872223790695" y="402.0" />
-              <point x="1646.8872223790695" y="186.0" />
-              <point x="1301.0624999999998" y="186.0" />
-              <point x="10.916666666666515" y="16.5" />
-            </edge>
-            <edge source="org.hibernate:hibernate-core:jar:5.3.6.Final" target="org.hibernate:hibernate-core:jar:5.3.6.Final/antlr:antlr:jar:2.7.7">
-              <point x="-25.818181818181984" y="-16.5" />
-              <point x="2773.7565405608875" y="372.0" />
-              <point x="2522.4290134037774" y="372.0" />
-              <point x="0.0" y="16.5" />
-            </edge>
-            <edge source="org.springframework:spring-web:jar:4.2.1.RELEASE/org.springframework:spring-beans:jar:4.2.1.RELEASE" target="org.springframework:spring-core:jar:4.2.1.RELEASE">
-              <point x="0.0" y="-16.5" />
-              <point x="1290.1458333333333" y="83.0" />
-              <point x="751.1895182974354" y="83.0" />
-              <point x="13.0" y="16.5" />
-            </edge>
-            <edge source="SSH:demo:1.0-SNAPSHOT" target="mysql:mysql-connector-java:jar:8.0.9-rc">
-              <point x="29.347826086956502" y="-16.5" />
-              <point x="1509.172548466026" y="565.0" />
-              <point x="4623.8918135436" y="565.0" />
-              <point x="0.0" y="16.5" />
-            </edge>
-            <edge source="javax:javaee-api:jar:8.0" target="javax:javaee-api:jar:8.0/com.sun.mail:javax.mail:jar:1.6.0">
-              <point x="0.0" y="-16.5" />
-              <point x="0.0" y="16.5" />
-            </edge>
-            <edge source="org.apache.logging.log4j:log4j-web:jar:2.9.1" target="org.apache.logging.log4j:log4j-core:jar:2.9.1">
-              <point x="26.25" y="-16.5" />
-              <point x="239.75" y="402.0" />
-              <point x="241.16666666666674" y="402.0" />
-              <point x="-35.333333333333314" y="16.5" />
-            </edge>
-            <edge source="org.apache.struts:struts2-spring-plugin:jar:2.5.12" target="org.apache.struts:struts2-core:jar:2.5.12/org.apache.commons:commons-lang3:jar:3.6">
-              <point x="-48.0" y="-16.5" />
-              <point x="4303.89393939394" y="392.0" />
-              <point x="4120.3247223790695" y="392.0" />
-              <point x="38.5" y="16.5" />
-            </edge>
-            <edge source="org.apache.logging.log4j:log4j-web:jar:2.9.1" target="org.apache.logging.log4j:log4j-api:jar:2.9.1">
-              <point x="-26.25" y="-16.5" />
-              <point x="187.25" y="279.0" />
-              <point x="213.5" y="279.0" />
-              <point x="-12.125" y="16.5" />
-            </edge>
-            <edge source="SSH:demo:1.0-SNAPSHOT" target="com.mchange:c3p0:jar:0.9.5.2">
-              <point x="-9.782608695652243" y="-16.5" />
-              <point x="1470.0421136834173" y="505.0" />
-              <point x="1014.5395408163263" y="505.0" />
-              <point x="0.0" y="16.5" />
-            </edge>
-            <edge source="SSH:demo:1.0-SNAPSHOT" target="org.apache.struts:struts2-dojo-plugin:jar:2.3.36">
-              <point x="-6.521739130434753" y="-16.5" />
-              <point x="1473.3029832486347" y="495.0" />
-              <point x="1205.0395408163263" y="495.0" />
-              <point x="0.0" y="16.5" />
-            </edge>
-            <edge source="org.hibernate:hibernate-core:jar:5.3.6.Final/org.hibernate.common:hibernate-commons-annotations:jar:5.0.4.Final" target="org.hibernate:hibernate-core:jar:5.3.6.Final/org.hibernate.common:hibernate-commons-annotations:jar:5.0.4.Final/org.jboss.logging:jboss-logging:jar:3.3.1.Final">
-              <point x="0.0" y="-16.5" />
-              <point x="0.0" y="16.5" />
-            </edge>
-            <edge source="SSH:demo:1.0-SNAPSHOT" target="org.slf4j:slf4j-log4j12:jar:1.8.0-beta2">
-              <point x="3.26086956521749" y="-16.5" />
-              <point x="1483.085591944287" y="485.0" />
-              <point x="1518.5395408163263" y="485.0" />
-              <point x="0.0" y="16.5" />
-            </edge>
-            <edge source="org.apache.logging.log4j:log4j-slf4j-impl:jar:2.9.1" target="org.apache.logging.log4j:log4j-slf4j-impl:jar:2.9.1/org.slf4j:slf4j-api:jar:1.7.25">
-              <point x="0.0" y="-16.5" />
-              <point x="399.1666666666665" y="402.0" />
-              <point x="395.0" y="402.0" />
-              <point x="0.0" y="16.5" />
-            </edge>
-            <edge source="org.hibernate:hibernate-core:jar:5.3.6.Final" target="org.hibernate:hibernate-core:jar:5.3.6.Final/org.javassist:javassist:jar:3.23.1-GA">
-              <point x="12.909090909090992" y="-16.5" />
-              <point x="2812.4838132881605" y="362.0" />
-              <point x="2877.4290134037774" y="362.0" />
-              <point x="0.0" y="16.5" />
-            </edge>
-            <edge source="SSH:demo:1.0-SNAPSHOT" target="org.springframework:spring-core:jar:4.2.1.RELEASE">
-              <point x="-19.56521739130426" y="-16.5" />
-              <point x="1460.2595049877652" y="535.0" />
-              <point x="481.1666666666665" y="535.0" />
-              <point x="481.1666666666665" y="63.0" />
-              <point x="686.1895182974354" y="63.0" />
-              <point x="-52.0" y="16.5" />
-            </edge>
-            <edge source="SSH:demo:1.0-SNAPSHOT" target="javax.xml.bind:jaxb-api:jar:2.3.0">
-              <point x="6.521739130434753" y="-16.5" />
-              <point x="1486.3464615095043" y="495.0" />
-              <point x="1647.0395408163263" y="495.0" />
-              <point x="0.0" y="16.5" />
-            </edge>
-            <edge source="SSH:demo:1.0-SNAPSHOT" target="org.apache.logging.log4j:log4j-api:jar:2.9.1">
-              <point x="-32.60869565217399" y="-16.5" />
-              <point x="1447.2160267268955" y="575.0" />
-              <point x="150.5" y="575.0" />
-              <point x="150.5" y="269.0" />
-              <point x="189.25" y="269.0" />
-              <point x="-36.375" y="16.5" />
-            </edge>
-            <edge source="org.apache.struts:struts2-spring-plugin:jar:2.5.12" target="org.apache.struts:struts2-spring-plugin:jar:2.5.12/org.springframework:spring-core:jar:4.1.6.RELEASE">
-              <point x="48.0" y="-16.5" />
-              <point x="4399.89393939394" y="392.0" />
-              <point x="4502.3247223790695" y="392.0" />
-              <point x="0.0" y="16.5" />
-            </edge>
-            <edge source="org.apache.struts:struts2-core:jar:2.5.12/commons-fileupload:commons-fileupload:jar:1.3.3" target="org.apache.struts:struts2-core:jar:2.5.12/commons-fileupload:commons-fileupload:jar:1.3.3/commons-io:commons-io:jar:2.2">
-              <point x="0.0" y="-16.5" />
-              <point x="0.0" y="16.5" />
-            </edge>
-            <edge source="SSH:demo:1.0-SNAPSHOT" target="org.junit.jupiter:junit-jupiter-api:jar:5.3.1">
-              <point x="32.60869565217399" y="-16.5" />
-              <point x="1512.4334180312435" y="575.0" />
-              <point x="4941.3247223790695" y="575.0" />
-              <point x="0.0" y="16.5" />
-            </edge>
-            <edge source="org.springframework:spring-web:jar:4.2.1.RELEASE/org.springframework:spring-context:jar:4.2.1.RELEASE" target="org.springframework:spring-web:jar:4.2.1.RELEASE/org.springframework:spring-aop:jar:4.2.1.RELEASE">
-              <point x="-53.25" y="-16.5" />
-              <point x="678.6666666666665" y="279.0" />
-              <point x="658.4166666666665" y="279.0" />
-              <point x="28.25" y="16.5" />
-            </edge>
-            <edge source="org.springframework:spring-orm:jar:4.2.1.RELEASE" target="org.springframework:spring-core:jar:4.2.1.RELEASE">
-              <point x="43.125" y="-16.5" />
-              <point x="1813.6645408163263" y="402.0" />
-              <point x="1847.3892406765049" y="402.0" />
-              <point x="1847.3892406765049" y="53.0" />
-              <point x="790.1895182974354" y="53.0" />
-              <point x="52.0" y="16.5" />
-            </edge>
-          </edges>
-          <settings layout="Hierarchic Group" zoom="1.0" x="1779.0" y="425.0" />
-          <SelectedNodes />
-          <Categories />
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>All</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/login/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="54" lean-forward="true" selection-start-line="17" selection-start-column="54" selection-end-line="17" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/entity/Press.hbm.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="54" selection-start-line="8" selection-start-column="54" selection-end-line="8" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/jdbc.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
@@ -2043,7 +1387,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/dao/DaoUtil.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/PowerDao.java" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/4.1.6.RELEASE/spring-context-4.1.6.RELEASE.jar!/org/springframework/stereotype/Repository.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -2069,49 +1412,6 @@
         <state relative-caret-position="-21438" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/service/Service.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="24" lean-forward="true" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/impl/PowerDaoImpl.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/impl/AbstractDaoImpl.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/impl/UserDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="671">
-          <caret line="56" column="49" selection-start-line="56" selection-start-column="49" selection-end-line="56" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/service/impl/UserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="36" column="29" selection-start-line="36" selection-start-column="29" selection-end-line="36" selection-end-column="29" />
-          <folding>
-            <element signature="e#867#868#0" expanded="true" />
-            <element signature="e#906#907#0" expanded="true" />
-            <element signature="e#1691#1692#0" expanded="true" />
-            <element signature="e#1728#1729#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/action/LoginAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="689">
-          <caret line="94" column="33" lean-forward="true" selection-start-line="94" selection-start-column="33" selection-end-line="94" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="das://48afbc8a-e81e-488e-8d15-09c6cceffe98/schema/ssh/table/User">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -2119,7 +1419,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/entity/UserTest.java" />
     <entry file="das://48afbc8a-e81e-488e-8d15-09c6cceffe98/schema/ssh/table/PowerGround">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -2164,13 +1463,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/entity/Power.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="15" column="38" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/entity/BookTag.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -2195,13 +1487,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/entity/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="538">
@@ -2209,10 +1494,191 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-core/5.0.8.RELEASE/spring-core-5.0.8.RELEASE.jar!/org/springframework/lang/Nullable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="23" column="18" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-orm/5.0.8.RELEASE/spring-orm-5.0.8.RELEASE.jar!/org/springframework/orm/hibernate5/LocalSessionFactoryBean.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5928">
+          <caret line="34" column="13" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/com/mchange/c3p0/0.9.5.2/c3p0-0.9.5.2.jar!/com/mchange/v2/c3p0/AbstractComboPooledDataSource.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2442">
+          <caret line="30" column="22" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/com/mchange/c3p0/0.9.5.2/c3p0-0.9.5.2.jar!/com/mchange/v2/c3p0/ComboPooledDataSource.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="13" column="63" lean-forward="true" selection-start-line="13" selection-start-column="63" selection-end-line="13" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/action/LoginAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="670">
+          <caret line="94" column="33" lean-forward="true" selection-start-line="94" selection-start-column="33" selection-end-line="94" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/service/Service.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/PowerDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/entity/UserTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="692">
+          <caret line="50" column="56" lean-forward="true" selection-start-line="50" selection-start-column="56" selection-end-line="50" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/service/impl/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="21" column="28" lean-forward="true" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
+          <folding>
+            <element signature="e#867#868#0" expanded="true" />
+            <element signature="e#905#906#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-orm/5.0.8.RELEASE/spring-orm-5.0.8.RELEASE.jar!/org/springframework/orm/hibernate5/support/HibernateDaoSupport.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="474">
+          <caret line="44" column="27" selection-start-line="44" selection-start-column="27" selection-end-line="44" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/org/hibernate/hibernate-core/5.3.6.Final/hibernate-core-5.3.6.Final.jar!/org/hibernate/Session.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="90" column="9" selection-start-line="90" selection-start-column="9" selection-end-line="90" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-orm/5.0.8.RELEASE/spring-orm-5.0.8.RELEASE.jar!/org/springframework/orm/hibernate5/HibernateOperations.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="118" column="12" selection-start-line="118" selection-start-column="12" selection-end-line="118" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/ApplicationContext.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1210">
-          <caret line="55" column="63" lean-forward="true" selection-start-line="55" selection-start-column="63" selection-end-line="55" selection-end-column="63" />
+        <state relative-caret-position="-34">
+          <caret line="30" column="4" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/impl/AbstractDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="18" column="50" lean-forward="true" selection-start-line="18" selection-start-column="50" selection-end-line="18" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/impl/PowerDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="33" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-orm/5.0.8.RELEASE/spring-orm-5.0.8.RELEASE-sources.jar!/org/springframework/orm/hibernate5/HibernateCallback.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="386">
+          <caret line="35" column="17" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-orm/5.0.8.RELEASE/spring-orm-5.0.8.RELEASE.jar!/org/springframework/orm/hibernate5/HibernateTemplate.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="573" column="19" selection-start-line="573" selection-start-column="19" selection-end-line="573" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-orm/5.0.8.RELEASE/spring-orm-5.0.8.RELEASE-sources.jar!/org/springframework/orm/hibernate5/HibernateOperations.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2592">
+          <caret line="91" column="10" selection-start-line="91" selection-start-column="10" selection-end-line="91" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-orm/5.0.8.RELEASE/spring-orm-5.0.8.RELEASE-sources.jar!/org/springframework/orm/hibernate5/HibernateTemplate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="422">
+          <caret line="333" column="17" selection-start-line="333" selection-start-column="17" selection-end-line="333" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-orm/5.0.8.RELEASE/spring-orm-5.0.8.RELEASE-sources.jar!/org/springframework/orm/hibernate5/support/HibernateDaoSupport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="114" column="35" selection-start-line="114" selection-start-column="35" selection-end-line="114" selection-end-column="35" />
+          <folding>
+            <element signature="e#4653#4654#0" expanded="true" />
+            <element signature="e#4690#4691#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/entity/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/entity/Power.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="15" column="38" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/impl/UserDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="43" column="11" lean-forward="true" selection-start-line="43" selection-start-column="11" selection-end-line="43" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
