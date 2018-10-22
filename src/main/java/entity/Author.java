@@ -1,24 +1,37 @@
 package entity;
 
-import javax.persistence.Basic;
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.sql.Date;
 import java.util.Objects;
 import java.util.Set;
 
 @Entity
 public class Author {
-    private int id;
-    private String name;
-    private Date birthday;
-    private String address;
-    private String introduction;
-    private Set<Book> books;
 
     @Id
     @Column(name = "id")
+    private int id;
+
+    @Basic
+    @Column(name = "name", length = 15)
+    private String name;
+
+    @Basic
+    @Column(name = "birthday")
+    private Date birthday;
+
+    @Basic
+    @Column(name = "address", length = 127)
+    private String address;
+
+    @Basic
+    @Column(name = "introduction", length = 255)
+    private String introduction;
+
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @JoinColumn(name = "author")
+    private Set<Book> books;
+
     public int getId() {
         return id;
     }
@@ -28,8 +41,6 @@ public class Author {
         return this;
     }
 
-    @Basic
-    @Column(name = "name")
     public String getName() {
         return name;
     }
@@ -39,8 +50,6 @@ public class Author {
         return this;
     }
 
-    @Basic
-    @Column(name = "birthday")
     public Date getBirthday() {
         return birthday;
     }
@@ -50,8 +59,6 @@ public class Author {
         return this;
     }
 
-    @Basic
-    @Column(name = "address")
     public String getAddress() {
         return address;
     }
@@ -61,8 +68,6 @@ public class Author {
         return this;
     }
 
-    @Basic
-    @Column(name = "introduction")
     public String getIntroduction() {
         return introduction;
     }

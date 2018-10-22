@@ -1,29 +1,23 @@
 package entity;
 
-import javax.persistence.Basic;
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.util.Objects;
 import java.util.Set;
 
 @Entity
 public class Press {
-    private int id;
-    private String name;
-    private Set<Book> books;
-
-    public Set<Book> getBooks() {
-        return books;
-    }
-
-    public Press setBooks(Set<Book> books) {
-        this.books = books;
-        return this;
-    }
 
     @Id
     @Column(name = "id")
+    private int id;
+
+    @Basic
+    @Column(name = "name", length = 15)
+    private String name;
+
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    private Set<Book> books;
+
     public int getId() {
         return id;
     }
@@ -33,14 +27,21 @@ public class Press {
         return this;
     }
 
-    @Basic
-    @Column(name = "name")
     public String getName() {
         return name;
     }
 
     public Press setName(String name) {
         this.name = name;
+        return this;
+    }
+
+    public Set<Book> getBooks() {
+        return books;
+    }
+
+    public Press setBooks(Set<Book> books) {
+        this.books = books;
         return this;
     }
 

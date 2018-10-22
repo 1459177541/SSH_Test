@@ -1,43 +1,44 @@
 package entity;
 
-import javax.persistence.Basic;
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.util.Objects;
+import java.util.Set;
 
 @Entity
 public class Book {
-    private int id;
-    private String name;
-    private Author author;
-
-    @Column(name = "author")
-    public Author getAuthor() {
-        return author;
-    }
-
-    public Book setAuthor(Author author) {
-        this.author = author;
-        return this;
-    }
-
-    @Column(name = "press")
-    public Press getPress() {
-        return press;
-    }
-
-    public Book setPress(Press press) {
-        this.press = press;
-        return this;
-    }
-
-    private Press press;
-    private Integer tag;
-    private Integer price;
 
     @Id
     @Column(name = "id")
+    private int id;
+
+    @Basic
+    @Column(name = "name", length = 31)
+    private String name;
+
+    @Column(name = "author")
+    @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    @JoinColumn(name = "author")
+    private Author author;
+
+    @Column(name = "press")
+    @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    @JoinColumn(name = "press")
+    private Press press;
+
+    @Basic
+    @Column(name = "tag")
+    @ManyToMany
+    @JoinTable(
+            name = "BookTagMap",
+            joinColumns = @JoinColumn(name = "bid"),
+            inverseJoinColumns = @JoinColumn(name = "tid")
+    )
+    private Set<BookTag> tag;
+
+    @Basic
+    @Column(name = "price")
+    private Integer price;
+
     public int getId() {
         return id;
     }
@@ -47,8 +48,6 @@ public class Book {
         return this;
     }
 
-    @Basic
-    @Column(name = "name")
     public String getName() {
         return name;
     }
@@ -58,19 +57,33 @@ public class Book {
         return this;
     }
 
-    @Basic
-    @Column(name = "tag")
-    public Integer getTag() {
+    public Author getAuthor() {
+        return author;
+    }
+
+    public Book setAuthor(Author author) {
+        this.author = author;
+        return this;
+    }
+
+    public Press getPress() {
+        return press;
+    }
+
+    public Book setPress(Press press) {
+        this.press = press;
+        return this;
+    }
+
+    public Set<BookTag> getTag() {
         return tag;
     }
 
-    public Book setTag(Integer tag) {
+    public Book setTag(Set<BookTag> tag) {
         this.tag = tag;
         return this;
     }
 
-    @Basic
-    @Column(name = "price")
     public Integer getPrice() {
         return price;
     }

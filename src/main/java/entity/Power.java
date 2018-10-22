@@ -1,22 +1,24 @@
 package entity;
 
-import javax.persistence.Basic;
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
 
 @Entity
 public class Power {
-    private int id;
-    private String name;
-
-    private Set<User> users = new HashSet<>();
 
     @Id
     @Column(name = "id")
+    private int id;
+
+    @Basic
+    @Column(name = "name", length = 15)
+    private String name;
+
+    @ManyToMany(mappedBy = "powers")
+    private Set<User> users = new HashSet<>();
+
     public int getId() {
         return id;
     }
@@ -26,14 +28,21 @@ public class Power {
         return this;
     }
 
-    @Basic
-    @Column(name = "name")
     public String getName() {
         return name;
     }
 
     public Power setName(String name) {
         this.name = name;
+        return this;
+    }
+
+    public Set<User> getUsers() {
+        return users;
+    }
+
+    public Power setUsers(Set<User> users) {
+        this.users = users;
         return this;
     }
 
@@ -44,16 +53,6 @@ public class Power {
                 ", name='" + name + '\'' +
                 ", users=" + users +
                 '}';
-    }
-
-    @Basic
-    public Set<User> getUsers() {
-        return users;
-    }
-
-    public Power setUsers(Set<User> users) {
-        this.users = users;
-        return this;
     }
 
     @Override

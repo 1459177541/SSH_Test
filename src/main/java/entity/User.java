@@ -1,9 +1,6 @@
 package entity;
 
-import javax.persistence.Basic;
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
@@ -12,11 +9,28 @@ import java.util.Set;
 @Entity
 public class User {
 
+    @Id
+    @Column(name = "id")
     private int id;
+
+    @Basic
+    @Column(name = "name", length = 31)
     private String name;
+
+    @Basic
+    @Column(name = "password", length = 31)
     private String password;
+
+    @Basic
+    @Column(name = "email", length = 63)
     private String email;
 
+    @ManyToMany
+    @JoinTable(
+            name = "PowerGround",
+            joinColumns = @JoinColumn(name = "uid"),
+            inverseJoinColumns = @JoinColumn(name = "pid")
+    )
     private Set<Power> powers = new HashSet<>();
 
     public User() {
@@ -29,8 +43,6 @@ public class User {
         this.email = email;
     }
 
-    @Id
-    @Column(name = "id")
     public int getId() {
         return id;
     }
@@ -40,8 +52,6 @@ public class User {
         return this;
     }
 
-    @Basic
-    @Column(name = "name")
     public String getName() {
         return name;
     }
@@ -51,8 +61,6 @@ public class User {
         return this;
     }
 
-    @Basic
-    @Column(name = "password")
     public String getPassword() {
         return password;
     }
@@ -62,8 +70,6 @@ public class User {
         return this;
     }
 
-    @Basic
-    @Column(name = "email")
     public String getEmail() {
         return email;
     }
@@ -73,7 +79,6 @@ public class User {
         return this;
     }
 
-    @Basic
     public Set<Power> getPowers() {
         return powers;
     }

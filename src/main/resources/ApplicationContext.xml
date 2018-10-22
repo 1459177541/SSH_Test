@@ -53,14 +53,23 @@
             </props>
         </property>
         <!-- 扫描并加载注解过的实体类 -->
-        <property name="packagesToScan" value="entity"/>
-        <property name="mappingLocations">
+        <!--<property name="packagesToScan" value="entity"/>-->
+        <!--<property name="mappingLocations">-->
+            <!--<list>-->
+                <!--<value>classpath:entity/Power.hbm.xml</value>-->
+                <!--<value>classpath:entity/Book.hbm.xml</value>-->
+                <!--<value>classpath:entity/Author.hbm.xml</value>-->
+                <!--<value>classpath:entity/Press.hbm.xml</value>-->
+            <!--</list>-->
+        <!--</property>-->
+        <!-- 扫描并加载注解实体 -->
+        <property name="annotatedClasses">
             <list>
-                <value>classpath:entity/User.hbm.xml</value>
-                <value>classpath:entity/Power.hbm.xml</value>
-                <value>classpath:entity/Book.hbm.xml</value>
-                <value>classpath:entity/Author.hbm.xml</value>
-                <value>classpath:entity/Press.hbm.xml</value>
+                <value>entity.User</value>
+                <value>entity.Power</value>
+                <value>entity.Book</value>
+                <value>entity.Author</value>
+                <value>entity.Press</value>
             </list>
         </property>
     </bean>
