@@ -52,16 +52,6 @@
                 <prop key="hibernate.connection.driver_class">com.mysql.jdbc.Driver</prop><!-- 格式化SQL代码 -->
             </props>
         </property>
-        <!-- 扫描并加载注解过的实体类 -->
-        <!--<property name="packagesToScan" value="entity"/>-->
-        <!--<property name="mappingLocations">-->
-            <!--<list>-->
-                <!--<value>classpath:entity/Power.hbm.xml</value>-->
-                <!--<value>classpath:entity/Book.hbm.xml</value>-->
-                <!--<value>classpath:entity/Author.hbm.xml</value>-->
-                <!--<value>classpath:entity/Press.hbm.xml</value>-->
-            <!--</list>-->
-        <!--</property>-->
         <!-- 扫描并加载注解实体 -->
         <property name="annotatedClasses">
             <list>

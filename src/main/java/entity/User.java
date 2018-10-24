@@ -10,6 +10,7 @@ import java.util.Set;
 public class User {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     private int id;
 
@@ -25,7 +26,7 @@ public class User {
     @Column(name = "email", length = 63)
     private String email;
 
-    @ManyToMany(cascade = CascadeType.ALL)
+    @ManyToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     @JoinTable(
             name = "PowerGround",
             joinColumns = @JoinColumn(name = "uid"),

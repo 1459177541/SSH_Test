@@ -31,21 +31,16 @@ class UserTest {
         User user = new User();
         user.setName("test1");
         user.setPassword("123456");
-        Power power = new Power();
-        power.setName("test");
-        user.getPowers().add(power);
+        user.getPowers().add(new Power().setName("test"));
+        user.getPowers().add(new Power().setName("test2"));
         Assertions.assertTrue(userService.add(user));
     }
 
     @Test
     void alter(){
-        User user = new User();
-        user.setId(0);
-        user.setName("test2");
-        user.setPassword("123");
+        User user = userService.get(1).orElseThrow();
         Set<Power> powers = user.getPowers();
-        powers.add(new Power().setId(0).setName("test"));
-        powers.add(new Power().setId(1).setName("test2"));
+        powers.add(new Power().setId(1).setName("test1"));
         Assertions.assertTrue(userService.update(user));
     }
 
