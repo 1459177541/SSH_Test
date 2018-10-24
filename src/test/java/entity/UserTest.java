@@ -1,6 +1,5 @@
 package entity;
 
-import action.LoginAction;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.context.ApplicationContext;
@@ -11,7 +10,6 @@ import java.util.Set;
 
 class UserTest {
 
-//    private static Logger LOGGER = LoggerFactory.getLogger(UserTest.class);
     private static ApplicationContext context = new ClassPathXmlApplicationContext("ApplicationContext.xml");
 
     private UserService userService = context.getBean(UserService.class);
@@ -24,7 +22,6 @@ class UserTest {
 
     @Test
     void loginFailTest(){
-        UserService loginAction1 = context.getBean(UserService.class);
         User user = new User().setName("test1").setPassword("123");
         Assertions.assertFalse(userService.login(user));
     }
@@ -43,11 +40,12 @@ class UserTest {
     @Test
     void alter(){
         User user = new User();
-        user.setId(2);
+        user.setId(0);
         user.setName("test2");
+        user.setPassword("123");
         Set<Power> powers = user.getPowers();
-        powers.add(new Power().setName("test"));
-        powers.add(new Power().setName("test2"));
+        powers.add(new Power().setId(0).setName("test"));
+        powers.add(new Power().setId(1).setName("test2"));
         Assertions.assertTrue(userService.update(user));
     }
 

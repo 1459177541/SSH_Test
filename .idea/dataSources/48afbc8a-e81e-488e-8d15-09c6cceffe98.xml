@@ -960,188 +960,272 @@
     </collation>
     <table id="240" parent="5" name="Author"/>
     <table id="241" parent="5" name="Book"/>
-    <table id="242" parent="5" name="Power"/>
-    <table id="243" parent="5" name="PowerGround"/>
-    <table id="244" parent="5" name="Press"/>
-    <table id="245" parent="5" name="User"/>
-    <column id="246" parent="240" name="id">
+    <table id="242" parent="5" name="BookTag"/>
+    <table id="243" parent="5" name="BookTagMap"/>
+    <table id="244" parent="5" name="Power"/>
+    <table id="245" parent="5" name="PowerGround"/>
+    <table id="246" parent="5" name="Press"/>
+    <table id="247" parent="5" name="Press_Book"/>
+    <table id="248" parent="5" name="User"/>
+    <column id="249" parent="240" name="id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="247" parent="240" name="name">
+    <column id="250" parent="240" name="address">
       <Position>2</Position>
-      <DataType>varchar(16)|0s</DataType>
+      <DataType>varchar(127)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="248" parent="240" name="birthday">
+    <column id="251" parent="240" name="birthday">
       <Position>3</Position>
       <DataType>date|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="249" parent="240" name="address">
+    <column id="252" parent="240" name="introduction">
       <Position>4</Position>
-      <DataType>varchar(128)|0s</DataType>
+      <DataType>varchar(255)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="250" parent="240" name="introduction">
+    <column id="253" parent="240" name="name">
       <Position>5</Position>
-      <DataType>varchar(512)|0s</DataType>
+      <DataType>varchar(15)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="251" parent="240" name="PRIMARY">
+    <key id="254" parent="240" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="252" parent="241" name="id">
+    <column id="255" parent="241" name="id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
-      <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="253" parent="241" name="name">
+    <column id="256" parent="241" name="name">
       <Position>2</Position>
-      <DataType>varchar(64)|0s</DataType>
+      <DataType>varchar(31)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="254" parent="241" name="tag">
+    <column id="257" parent="241" name="price">
       <Position>3</Position>
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="255" parent="241" name="price">
+    <column id="258" parent="241" name="author">
       <Position>4</Position>
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="256" parent="241" name="author">
+    <column id="259" parent="241" name="press">
       <Position>5</Position>
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="257" parent="241" name="press">
-      <Position>6</Position>
-      <DataType>int(11)|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <index id="258" parent="241" name="FKfnwaiynd3osriwvwus3se6eq1">
+    <index id="260" parent="241" name="FKfnwaiynd3osriwvwus3se6eq1">
       <ColNames>author</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="259" parent="241" name="FKkviewxv5jbr4h2aybh2k4k1nw">
+    <index id="261" parent="241" name="FKkviewxv5jbr4h2aybh2k4k1nw">
       <ColNames>press</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="260" parent="241" name="PRIMARY">
+    <key id="262" parent="241" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="261" parent="241" name="FKfnwaiynd3osriwvwus3se6eq1">
+    <foreign-key id="263" parent="241" name="FKfnwaiynd3osriwvwus3se6eq1">
       <ColNames>author</ColNames>
       <RefSchemaName>ssh</RefSchemaName>
       <RefTableName>Author</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <foreign-key id="262" parent="241" name="FKkviewxv5jbr4h2aybh2k4k1nw">
+    <foreign-key id="264" parent="241" name="FKkviewxv5jbr4h2aybh2k4k1nw">
       <ColNames>press</ColNames>
       <RefSchemaName>ssh</RefSchemaName>
       <RefTableName>Press</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <column id="263" parent="242" name="id">
+    <column id="265" parent="242" name="id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
-      <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="264" parent="242" name="name">
+    <column id="266" parent="242" name="name">
       <Position>2</Position>
       <DataType>varchar(16)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="265" parent="242" name="PRIMARY">
+    <key id="267" parent="242" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="266" parent="243" name="uid">
+    <column id="268" parent="243" name="bid">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="267" parent="243" name="pid">
+    <column id="269" parent="243" name="tid">
       <Position>2</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="268" parent="243" name="FKd6snajne3t90a8udum8fqk8hn">
-      <ColNames>uid</ColNames>
+    <index id="270" parent="243" name="FK7upo40p0hrqe6ort8jjvfb2k6">
+      <ColNames>tid</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="269" parent="243" name="PRIMARY">
+    <key id="271" parent="243" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
-      <ColNames>pid
-uid</ColNames>
+      <ColNames>bid
+tid</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="270" parent="243" name="FKd6snajne3t90a8udum8fqk8hn">
+    <foreign-key id="272" parent="243" name="FKbixgyg5gpoj2299r48tkqut1p">
+      <ColNames>bid</ColNames>
+      <RefSchemaName>ssh</RefSchemaName>
+      <RefTableName>Book</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <foreign-key id="273" parent="243" name="FK7upo40p0hrqe6ort8jjvfb2k6">
+      <ColNames>tid</ColNames>
+      <RefSchemaName>ssh</RefSchemaName>
+      <RefTableName>BookTag</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="274" parent="244" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="275" parent="244" name="name">
+      <Position>2</Position>
+      <DataType>varchar(15)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="276" parent="244" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="277" parent="245" name="uid">
+      <Position>1</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="278" parent="245" name="pid">
+      <Position>2</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="279" parent="245" name="FKfmh4pema6lcqosu8ty4riralr">
+      <ColNames>pid</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="280" parent="245" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>uid
+pid</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="281" parent="245" name="FKd6snajne3t90a8udum8fqk8hn">
       <ColNames>uid</ColNames>
       <RefSchemaName>ssh</RefSchemaName>
       <RefTableName>User</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <foreign-key id="271" parent="243" name="FKfmh4pema6lcqosu8ty4riralr">
+    <foreign-key id="282" parent="245" name="FKfmh4pema6lcqosu8ty4riralr">
       <ColNames>pid</ColNames>
       <RefSchemaName>ssh</RefSchemaName>
       <RefTableName>Power</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <column id="272" parent="244" name="id">
+    <column id="283" parent="246" name="id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="273" parent="244" name="name">
+    <column id="284" parent="246" name="name">
       <Position>2</Position>
-      <DataType>varchar(32)|0s</DataType>
+      <DataType>varchar(15)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="274" parent="244" name="PRIMARY">
+    <key id="285" parent="246" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="275" parent="245" name="id">
+    <column id="286" parent="247" name="Press_id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
-      <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="276" parent="245" name="name">
+    <column id="287" parent="247" name="books_id">
       <Position>2</Position>
-      <DataType>varchar(32)|0s</DataType>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="277" parent="245" name="password">
+    <index id="288" parent="247" name="UK_h05xms3qaax9pw1rlj1pr6b8b">
+      <ColNames>books_id</ColNames>
+      <Unique>1</Unique>
+      <Type>btree</Type>
+    </index>
+    <key id="289" parent="247" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>Press_id
+books_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <key id="290" parent="247" name="UK_h05xms3qaax9pw1rlj1pr6b8b">
+      <ColNames>books_id</ColNames>
+      <UnderlyingIndexName>UK_h05xms3qaax9pw1rlj1pr6b8b</UnderlyingIndexName>
+    </key>
+    <foreign-key id="291" parent="247" name="FKhti4og1bx80tbyqp3jk9ums56">
+      <ColNames>Press_id</ColNames>
+      <RefSchemaName>ssh</RefSchemaName>
+      <RefTableName>Press</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <foreign-key id="292" parent="247" name="FKe5q7r21y50aqckwwoj6h0s61h">
+      <ColNames>books_id</ColNames>
+      <RefSchemaName>ssh</RefSchemaName>
+      <RefTableName>Book</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="293" parent="248" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="294" parent="248" name="email">
+      <Position>2</Position>
+      <DataType>varchar(63)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="295" parent="248" name="name">
       <Position>3</Position>
-      <DataType>varchar(32)|0s</DataType>
+      <DataType>varchar(31)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="278" parent="245" name="email">
+    <column id="296" parent="248" name="password">
       <Position>4</Position>
-      <DataType>varchar(64)|0s</DataType>
+      <DataType>varchar(31)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="279" parent="245" name="PRIMARY">
+    <key id="297" parent="248" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>

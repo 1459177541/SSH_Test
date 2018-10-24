@@ -1,12 +1,9 @@
 package dao.impl;
 
+
 import dao.UserDao;
 import entity.User;
-import org.hibernate.SessionFactory;
-import org.hibernate.Session;
-import org.hibernate.Transaction;
 import org.hibernate.query.Query;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import java.util.Collection;
@@ -16,26 +13,15 @@ import java.util.Optional;
 @Repository
 public class UserDaoImpl extends AbstractDaoImpl<User> implements UserDao {
 
-    @Override
-    @Autowired
-    public AbstractDaoImpl<User> setFactory(SessionFactory factory) {
-        this.factory = factory;
-        return this;
-    }
 
     @Override
     public Optional<User> get(int id) {
-        Session session = factory.openSession();
-        User user = session.get(User.class, id);
-        return Optional.ofNullable(user);
+        assert getHibernateTemplate() != null;
+        return Optional.ofNullable(getHibernateTemplate().get(User.class, id));
     }
 
     @Override
     public Optional<User> get(String name) {
-//        Session session = factory.openSession();
-//        Query<User> query = session.createQuery("from User u where u.name=:name", User.class);
-//        query.setParameter("name", name);
-//        List<User> list = query.getResultList();
         assert getHibernateTemplate() != null;
         List<User> list = getHibernateTemplate().execute(session -> {
             Query<User> query = session.createQuery("from User u where u.name=:name", User.class);
@@ -58,17 +44,10 @@ public class UserDaoImpl extends AbstractDaoImpl<User> implements UserDao {
         if (user == null) {
             return false;
         }
-//        Session session = factory.openSession();
-//        Transaction transaction = session.beginTransaction();
-//        user.getPowers().forEach(session::persist);
-//        session.update(user);
-//        transaction.commit();
         assert getHibernateTemplate() != null;
         getHibernateTemplate().execute(session -> {
-            Transaction transaction = session.beginTransaction();
-            user.getPowers().forEach(session::persist);
+//            user.getPowers().forEach(session::update);
             session.update(user);
-            transaction.commit();
             return null;
         });
         return true;

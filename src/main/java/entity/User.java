@@ -25,7 +25,7 @@ public class User {
     @Column(name = "email", length = 63)
     private String email;
 
-    @ManyToMany
+    @ManyToMany(cascade = CascadeType.ALL)
     @JoinTable(
             name = "PowerGround",
             joinColumns = @JoinColumn(name = "uid"),

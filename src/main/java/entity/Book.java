@@ -15,19 +15,15 @@ public class Book {
     @Column(name = "name", length = 31)
     private String name;
 
-    @Column(name = "author")
     @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     @JoinColumn(name = "author")
     private Author author;
 
-    @Column(name = "press")
     @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     @JoinColumn(name = "press")
     private Press press;
 
-    @Basic
-    @Column(name = "tag")
-    @ManyToMany
+    @ManyToMany(cascade = CascadeType.ALL)
     @JoinTable(
             name = "BookTagMap",
             joinColumns = @JoinColumn(name = "bid"),

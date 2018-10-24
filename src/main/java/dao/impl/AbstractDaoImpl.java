@@ -6,20 +6,18 @@ import org.hibernate.SessionFactory;
 import org.springframework.orm.hibernate5.support.HibernateDaoSupport;
 import org.springframework.stereotype.Repository;
 
+import javax.annotation.Resource;
+
 @Repository
 public abstract class AbstractDaoImpl<T> extends HibernateDaoSupport implements Dao<T> {
 
-    protected SessionFactory factory;
-
-    public abstract AbstractDaoImpl<T> setFactory(SessionFactory factory) ;
+    @Resource
+    public void setFactory(SessionFactory sessionFactory) {
+        super.setSessionFactory(sessionFactory);
+    }
 
     @Override
     public boolean add(T t) {
-//        LOGGER.info("添加{}", t);
-//        Session session = factory.openSession();
-//        Transaction transaction = session.beginTransaction();
-//        session.save(t);
-//        transaction.commit();
         assert getHibernateTemplate() != null;
         getHibernateTemplate().save(t);
         return true;
