@@ -25,7 +25,7 @@ public class Author {
     private String address;
 
     @Basic
-    @Column(name = "introduction", length = 255)
+    @Column(name = "introduction", length = 511)
     private String introduction;
 
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
@@ -106,7 +106,6 @@ public class Author {
                 ", birthday=" + birthday +
                 ", address='" + address + '\'' +
                 ", introduction='" + introduction + '\'' +
-                ", books=" + books +
                 '}';
     }
 

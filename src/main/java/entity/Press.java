@@ -64,7 +64,6 @@ public class Press {
         return "Press{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
-                ", books=" + books +
                 '}';
     }
 }

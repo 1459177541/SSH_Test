@@ -52,7 +52,6 @@ public class Power {
         return "Power{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
-                ", users=" + users +
                 '}';
     }
 
@@ -61,12 +60,11 @@ public class Power {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Power power = (Power) o;
-        return id == power.id &&
-                Objects.equals(name, power.name);
+        return id == power.id;
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, name);
+        return Objects.hash(id);
     }
 }

@@ -112,7 +112,6 @@ public class Book {
                 ", name='" + name + '\'' +
                 ", author=" + author +
                 ", press=" + press +
-                ", tag=" + tag +
                 ", price=" + price +
                 '}';
     }
