@@ -12,19 +12,22 @@
 <head>
     <title>Index</title>
     <style type="text/css">
-        *{
-            align-content: center
+        .center{
+            display: block;
+            margin: auto;
         }
     </style>
 </head>
 <body>
-    <h1>
-        Hello,
-        <%
-            User user = (User)session.getAttribute("user");
-            out.print(user != null ? user.getName() : "World");
-        %>
-    </h1>
-    现在是：<%=new Date()%><a href="login/login.jsp">登陆>>></a>
+    <div class="center">
+        <h1>
+            Hello,
+            <%
+                User user = (User)session.getAttribute("user");
+                out.print(user != null ? user.getName() : "World");
+            %>
+        </h1>
+        现在是：<%=new Date()%><a href="login/login.jsp">登陆>>></a>
+    </div>
 </body>
 </html>

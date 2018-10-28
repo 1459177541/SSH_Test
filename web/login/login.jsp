@@ -13,10 +13,11 @@
 </head>
 <body>
     <div align="center">
-        <s:form action="login" method="POST">
+        <s:form method="POST">
             <s:textfield name="user.name" label="用户名"/>
             <s:password name="user.password" label="密码"/>
-            <s:submit label="登录"/>
+            <s:submit name="login" value="登录" action="login"/>
+            <s:submit name="register" value="注册" action="registerView"/>
         </s:form>
     </div>
 </body>

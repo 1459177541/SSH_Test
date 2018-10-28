@@ -3,11 +3,13 @@ package dao.impl;
 import dao.PowerDao;
 import entity.Power;
 import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Collection;
 import java.util.Optional;
 
 @Repository
+@Transactional
 public class PowerDaoImpl extends AbstractDaoImpl<Power> implements PowerDao {
 
 

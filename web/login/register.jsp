@@ -12,12 +12,14 @@
     <title>register</title>
 </head>
 <body>
-    <s:form action="register" method="POST">
-        <s:textfield name="user.name" label="用户名"/>
-        <s:password name="user.password" label="密码"/>
-        <s:password name="password" label="确认密码"/>
-        <s:textfield name="user.email" label="邮箱"/>
-        <s:submit label="注册"/>
-    </s:form>
+    <div align="center">
+        <s:form action="register" method="POST">
+            <s:textfield name="user.name" label="用户名"/>
+            <s:password name="user.password" label="密码"/>
+            <s:password name="password" label="确认密码"/>
+            <s:textfield name="user.email" label="邮箱"/>
+            <s:submit label="注册"/>
+        </s:form>
+    </div>
 </body>
 </html>

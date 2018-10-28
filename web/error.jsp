@@ -11,13 +11,16 @@
 <head>
     <title>Hello World</title>
     <style type="text/css">
-        *{
-            align-content: center
+        .center{
+            display: block;
+            margin: auto;
         }
     </style>
 </head>
 <body>
-    <h1>404</h1>
-    <h2>This Page Not Fount.</h2>
+    <div class="center">
+        <h1>404</h1>
+        <h2>This Page Not Fount.</h2>
+    </div>
 </body>
 </html>
