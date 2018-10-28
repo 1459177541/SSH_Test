@@ -4,8 +4,6 @@ import com.opensymphony.xwork2.ModelDriven;
 import entity.User;
 import org.apache.struts2.ServletActionContext;
 import org.apache.struts2.dispatcher.DefaultActionSupport;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
@@ -67,6 +65,10 @@ public class UserAction extends DefaultActionSupport implements ModelDriven<User
         }
     }
 
+    public String registerView() {
+        return SUCCESS;
+    }
+
     public String register(){
         if (!Objects.equals(password, user.getPassword())){
             return INPUT;
@@ -112,9 +114,5 @@ public class UserAction extends DefaultActionSupport implements ModelDriven<User
         if (!("".equals(user.getEmail()) || Pattern.compile(emailRegex).matcher(user.getEmail()).matches())) {
             addFieldError("user.email","请输入正确的邮箱");
         }
-    }
-
-    public String registerView() {
-        return SUCCESS;
     }
 }

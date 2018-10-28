@@ -10,12 +10,7 @@
 <html>
 <head>
     <title>Hello World</title>
-    <style type="text/css">
-        .center{
-            display: block;
-            margin: auto;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="css/general.css">
 </head>
 <body>
     <div class="center">
