@@ -1,44 +1,30 @@
 package entity;
 
 import javax.persistence.*;
-import java.util.HashSet;
+import java.io.Serializable;
 import java.util.Objects;
-import java.util.Set;
 
-
-@Entity
-public class User {
+@MappedSuperclass
+public class User implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id")
+    @Column(name = "u_id")
     private int id;
 
-    @Basic
-    @Column(name = "name", length = 31)
+    @Column(name="u_name", length = 31, nullable = false, unique = true)
     private String name;
 
-    @Basic
-    @Column(name = "password", length = 31)
+    @Column(name = "u_password", length = 31, nullable = false)
     private String password;
 
-    @Basic
-    @Column(name = "email", length = 63)
+    @Column(name = "u_email", length = 31)
     private String email;
-
-    @ManyToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
-    @JoinTable(
-            name = "PowerGround",
-            joinColumns = @JoinColumn(name = "uid"),
-            inverseJoinColumns = @JoinColumn(name = "pid")
-    )
-    private Set<Power> powers = new HashSet<>();
 
     public User() {
     }
 
-    public User(int id, String name, String password, String email) {
-        this.id = id;
+    public User(String name, String password, String email) {
         this.name = name;
         this.password = password;
         this.email = email;
@@ -80,21 +66,12 @@ public class User {
         return this;
     }
 
-    public Set<Power> getPowers() {
-        return powers;
-    }
-
-    public User setPowers(Set<Power> powers) {
-        this.powers = powers;
-        return this;
-    }
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        User user = (User) o;
-        return id == user.id;
+        User user1 = (User) o;
+        return id == user1.id;
     }
 
     @Override
@@ -107,6 +84,7 @@ public class User {
         return "User{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
+                ", email='" + email + '\'' +
                 '}';
     }
 }

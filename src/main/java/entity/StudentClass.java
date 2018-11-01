@@ -1,30 +1,36 @@
 package entity;
 
 import javax.persistence.*;
-import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
 
 @Entity
-public class Power {
+public class StudentClass {
 
     @Id
+    @Column(name = "c_id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id")
     private int id;
 
-    @Basic
-    @Column(name = "name", length = 15)
+    @Column(name = "c_name", length = 31)
     private String name;
 
-    @ManyToMany(mappedBy = "powers")
-    private Set<User> users = new HashSet<>();
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @JoinColumn(name = "class")
+    private Set<Student> students;
+
+    @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    @JoinColumn(name = "college")
+    private College college;
+
+    public StudentClass() {
+    }
 
     public int getId() {
         return id;
     }
 
-    public Power setId(int id) {
+    public StudentClass setId(int id) {
         this.id = id;
         return this;
     }
@@ -33,23 +39,23 @@ public class Power {
         return name;
     }
 
-    public Power setName(String name) {
+    public StudentClass setName(String name) {
         this.name = name;
         return this;
     }
 
-    public Set<User> getUsers() {
-        return users;
+    public Set<Student> getStudents() {
+        return students;
     }
 
-    public Power setUsers(Set<User> users) {
-        this.users = users;
+    public StudentClass setStudents(Set<Student> students) {
+        this.students = students;
         return this;
     }
 
     @Override
     public String toString() {
-        return "Power{" +
+        return "StudentClass{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
                 '}';
@@ -59,8 +65,8 @@ public class Power {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Power power = (Power) o;
-        return id == power.id;
+        StudentClass that = (StudentClass) o;
+        return id == that.id;
     }
 
     @Override

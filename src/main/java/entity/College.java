@@ -5,23 +5,27 @@ import java.util.Objects;
 import java.util.Set;
 
 @Entity
-public class BookTag {
+public class College {
 
     @Id
-    private Integer id;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int id;
 
-    @Basic
-    @Column(name = "name", length = 16)
+    @Column(name = "c_name", length = 31, nullable = false)
     private String name;
 
-    @ManyToMany(mappedBy = "tag")
-    private Set<Book> books;
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    @JoinColumn(name = "college")
+    private Set<StudentClass> classes;
 
-    public Integer getId() {
+    public College() {
+    }
+
+    public int getId() {
         return id;
     }
 
-    public BookTag setId(Integer id) {
+    public College setId(int id) {
         this.id = id;
         return this;
     }
@@ -30,17 +34,17 @@ public class BookTag {
         return name;
     }
 
-    public BookTag setName(String name) {
+    public College setName(String name) {
         this.name = name;
         return this;
     }
 
-    public Set<Book> getBooks() {
-        return books;
+    public Set<StudentClass> getClasses() {
+        return classes;
     }
 
-    public BookTag setBooks(Set<Book> books) {
-        this.books = books;
+    public College setClasses(Set<StudentClass> classes) {
+        this.classes = classes;
         return this;
     }
 
@@ -48,8 +52,8 @@ public class BookTag {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        BookTag bookTag = (BookTag) o;
-        return Objects.equals(id, bookTag.id);
+        College college = (College) o;
+        return id == college.id;
     }
 
     @Override
@@ -59,10 +63,9 @@ public class BookTag {
 
     @Override
     public String toString() {
-        return "BookTag{" +
+        return "College{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
-                ", books=" + books +
                 '}';
     }
 }

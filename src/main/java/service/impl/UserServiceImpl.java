@@ -1,8 +1,6 @@
 package service.impl;
 
-import dao.PowerDao;
 import dao.UserDao;
-import entity.Power;
 import entity.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
@@ -11,8 +9,6 @@ import service.UserService;
 
 import java.util.Collection;
 import java.util.Optional;
-import java.util.Set;
-import java.util.function.Predicate;
 
 @Service
 @Repository
@@ -20,13 +16,6 @@ public class UserServiceImpl implements UserService {
 
     @Autowired
     private UserDao userDao;
-    @Autowired
-    private PowerDao powerDao;
-
-    public UserServiceImpl setPowerDao(PowerDao powerDao) {
-        this.powerDao = powerDao;
-        return this;
-    }
     public UserServiceImpl setUserDao(UserDao userDao) {
         this.userDao = userDao;
         return this;
@@ -54,9 +43,6 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public boolean register(User user) {
-        Set<Power> powers = user.getPowers();
-        Optional optional = powers.stream().map(powerDao::add).filter(Predicate.isEqual(false)).findAny();
-        if (optional.isPresent()) return false;
         return userDao.add(user);
     }
 

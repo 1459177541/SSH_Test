@@ -6,13 +6,25 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="25defb74-8661-49ea-a980-ffd802b910b3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/web/css/general.css" afterDir="false" />
+    <list default="true" id="25defb74-8661-49ea-a980-ffd802b910b3" name="Default Changelist" comment="修改业务，由图书管理修改为学生管理。（原因：懒得找书籍信息及配图）">
+      <change afterPath="$PROJECT_DIR$/src/main/java/entity/College.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/entity/Course.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/entity/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/entity/StudentClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/entity/Teacher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/48afbc8a-e81e-488e-8d15-09c6cceffe98.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/48afbc8a-e81e-488e-8d15-09c6cceffe98.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/demo.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/action/UserAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/action/UserAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/error.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/error.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/PowerDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/impl/PowerDaoImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entity/Author.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entity/Book.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entity/BookTag.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entity/Power.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entity/Press.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/ApplicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ApplicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/entity/UserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/entity/UserTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -127,8 +139,8 @@
     <session id="1326090610">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="19" />
-          <entry key="project.open.time.10" value="1" />
+          <entry key="project.closed" value="20" />
+          <entry key="project.open.time.10" value="2" />
           <entry key="project.open.time.11" value="2" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.5" value="2" />
@@ -136,7 +148,7 @@
           <entry key="project.open.time.7" value="2" />
           <entry key="project.open.time.8" value="3" />
           <entry key="project.open.time.9" value="6" />
-          <entry key="project.opened" value="20" />
+          <entry key="project.opened" value="21" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -149,6 +161,7 @@
           <entry key="Book" value="2" />
           <entry key="BookTag" value="1" />
           <entry key="BookTagMap" value="2" />
+          <entry key="Course" value="1" />
           <entry key="Persistence/JavaeeElement:/1a002afe/sessionFactory/demo/hibernate/Hibernate/PersistenceModel" value="1" />
           <entry key="Power" value="29" />
           <entry key="PowerGround" value="24" />
@@ -157,12 +170,13 @@
           <entry key="User" value="40" />
           <entry key="UserGroundMap" value="1" />
           <entry key="class" value="17" />
+          <entry key="coursesMap" value="1" />
           <entry key="css" value="3" />
           <entry key="gitignore" value="2" />
           <entry key="groovy" value="1" />
           <entry key="hibernate_sequence" value="1" />
           <entry key="iml" value="4" />
-          <entry key="java" value="687" />
+          <entry key="java" value="840" />
           <entry key="js" value="5" />
           <entry key="jsp" value="148" />
           <entry key="log" value="23" />
@@ -172,16 +186,16 @@
           <entry key="table_name" value="1" />
           <entry key="user" value="9" />
           <entry key="xhtml" value="1" />
-          <entry key="xml" value="333" />
+          <entry key="xml" value="336" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="17" />
           <entry key="CSS" value="3" />
-          <entry key="Database Element" value="117" />
+          <entry key="Database Element" value="119" />
           <entry key="IDEA_MODULE" value="4" />
-          <entry key="JAVA" value="687" />
+          <entry key="JAVA" value="840" />
           <entry key="JSP" value="148" />
           <entry key="JavaScript" value="5" />
           <entry key="Markdown" value="2" />
@@ -191,35 +205,35 @@
           <entry key="Scratch" value="3" />
           <entry key="UML" value="5" />
           <entry key="XHTML" value="1" />
-          <entry key="XML" value="333" />
+          <entry key="XML" value="336" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="cell" value="6" />
           <entry key="css" value="16" />
-          <entry key="dummy" value="17" />
+          <entry key="dummy" value="25" />
           <entry key="gitignore" value="13" />
-          <entry key="java" value="3749" />
+          <entry key="java" value="4846" />
           <entry key="jsp" value="776" />
           <entry key="properties" value="69" />
           <entry key="sql" value="47" />
-          <entry key="txt" value="514" />
+          <entry key="txt" value="581" />
           <entry key="xhtml" value="7" />
-          <entry key="xml" value="1430" />
+          <entry key="xml" value="1455" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="16" />
-          <entry key="JAVA" value="3749" />
+          <entry key="JAVA" value="4846" />
           <entry key="JSP" value="776" />
-          <entry key="PLAIN_TEXT" value="544" />
+          <entry key="PLAIN_TEXT" value="619" />
           <entry key="Properties" value="69" />
           <entry key="SQL" value="47" />
           <entry key="Scratch" value="6" />
           <entry key="XHTML" value="7" />
-          <entry key="XML" value="1430" />
+          <entry key="XML" value="1455" />
         </counts>
       </usages-collector>
     </session>
@@ -230,13 +244,15 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/struts.xml">
+        <entry file="file://$PROJECT_DIR$/src/main/java/entity/Student.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="21" column="70" lean-forward="true" selection-start-line="21" selection-start-column="70" selection-end-line="21" selection-end-column="70" />
+            <state relative-caret-position="126">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
-          <provider editor-type-id="com.intellij.struts2.graph.fileEditor.Struts2GraphFileEditorProvider" />
         </entry>
       </file>
     </leaf>
@@ -249,9 +265,9 @@
         <option value="Interface" />
         <option value="struts_2_5" />
         <option value="jsf" />
-        <option value="Class" />
         <option value="CSS File" />
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -283,13 +299,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/dao/Dao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/service/Service.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dao/UserDao.java" />
-        <option value="49bad734-a75b-47ce-9c0c-63219d4becd2/schema/ssh/table/user.sql" />
-        <option value="48afbc8a-e81e-488e-8d15-09c6cceffe98/schema/ssh/table/table_name.sql" />
-        <option value="$PROJECT_DIR$/web/login.jsp" />
-        <option value="$PROJECT_DIR$/src/main/resources/log4j2.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/spring.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/jdbc.properties" />
         <option value="$PROJECT_DIR$/.gitignore" />
@@ -307,21 +316,15 @@
         <option value="$PROJECT_DIR$/src/main/java/entity/Author.hbm.xml" />
         <option value="$PROJECT_DIR$/src/main/java/entity/Power.hbm.xml" />
         <option value="$PROJECT_DIR$/src/main/java/entity/User.hbm.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/service/UserService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/service/impl/UserServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/dao/PowerDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/dao/impl/AbstractDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/entity/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/entity/Book.java" />
         <option value="$PROJECT_DIR$/src/main/java/entity/BookTag.java" />
         <option value="$PROJECT_DIR$/src/main/java/entity/Power.java" />
         <option value="$PROJECT_DIR$/src/main/java/entity/Press.java" />
-        <option value="$PROJECT_DIR$/src/test/java/entity/UserTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/entity/Author.java" />
         <option value="$PROJECT_DIR$/src/main/java/action/LoginAction.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/ApplicationContext.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/dao/impl/UserDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/dao/impl/PowerDaoImpl.java" />
         <option value="$PROJECT_DIR$/web/login/register.jsp" />
         <option value="$PROJECT_DIR$/web/login/registerSuccess.jsp" />
@@ -331,9 +334,22 @@
         <option value="$PROJECT_DIR$/web/index.jsp" />
         <option value="$PROJECT_DIR$/web/css/general.css" />
         <option value="$PROJECT_DIR$/web/login/loginFrame.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/action/UserAction.java" />
         <option value="$PROJECT_DIR$/web/login/login.jsp" />
         <option value="$PROJECT_DIR$/src/main/resources/struts.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/ApplicationContext.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/service/UserService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/UserDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/impl/UserDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/service/impl/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/action/UserAction.java" />
+        <option value="$PROJECT_DIR$/src/test/java/entity/EntityTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/entity/Course.java" />
+        <option value="$PROJECT_DIR$/src/main/java/entity/StudentClass.java" />
+        <option value="$PROJECT_DIR$/src/main/java/entity/Student.java" />
+        <option value="$PROJECT_DIR$/src/main/java/entity/User.java" />
+        <option value="$PROJECT_DIR$/src/main/java/entity/College.java" />
+        <option value="$PROJECT_DIR$/src/test/java/entity/UserTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/entity/Teacher.java" />
       </list>
     </option>
   </component>
@@ -493,17 +509,13 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="SSH_Demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="SSH_Demo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SSH_Demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SSH_Demo" type="462c0819:PsiDirectoryNode" />
-              <item name="logs" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SSH_Demo" type="b2602c69:ProjectViewProjectNode" />
@@ -576,6 +588,14 @@
               <item name="SSH_Demo" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SSH_Demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SSH_Demo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -627,7 +647,6 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -636,7 +655,7 @@
     <property name="SearchEverywhereHistoryKey" value="org.hibernate.collection.internal.PersistentSet&#9;PSI&#9;JAVA://org.hibernate.collection.internal.PersistentSet" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540713633526" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541084293899" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="CSS&#10;JSP" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last.edited.regexp" value="1459177541@qq.com" />
@@ -679,7 +698,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Tomcat Server.Linux">
+  <component name="RunManager" selected="JUnit.UserTest.testShemExport">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -720,40 +739,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserTest.loginFailTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="demo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="entity.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="entity" />
-      <option name="MAIN_CLASS_NAME" value="entity.UserTest" />
-      <option name="METHOD_NAME" value="loginFailTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserTest.loginSuccessTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="demo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="entity.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="entity" />
-      <option name="MAIN_CLASS_NAME" value="entity.UserTest" />
-      <option name="METHOD_NAME" value="loginSuccessTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="UserTest.registerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demo" />
       <extension name="coverage">
@@ -765,6 +750,40 @@
       <option name="PACKAGE_NAME" value="entity" />
       <option name="MAIN_CLASS_NAME" value="entity.UserTest" />
       <option name="METHOD_NAME" value="registerTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserTest.testSQL" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="entity.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="entity" />
+      <option name="MAIN_CLASS_NAME" value="entity.UserTest" />
+      <option name="METHOD_NAME" value="testSQL" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserTest.testShemExport" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="entity.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="entity" />
+      <option name="MAIN_CLASS_NAME" value="entity.UserTest" />
+      <option name="METHOD_NAME" value="testShemExport" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
@@ -1034,18 +1053,18 @@
       <item itemvalue="Tomcat Server.SSH_Demo" />
       <item itemvalue="Tomcat Server.Linux" />
       <item itemvalue="JUnit.UserTest.registerTest" />
-      <item itemvalue="JUnit.UserTest.loginSuccessTest" />
-      <item itemvalue="JUnit.UserTest.loginFailTest" />
       <item itemvalue="JUnit.UserTest.alter" />
       <item itemvalue="JUnit.UserTest.info" />
+      <item itemvalue="JUnit.UserTest.testSQL" />
+      <item itemvalue="JUnit.UserTest.testShemExport" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserTest.testShemExport" />
+        <item itemvalue="JUnit.UserTest.testSQL" />
         <item itemvalue="JUnit.UserTest.info" />
         <item itemvalue="JUnit.UserTest.alter" />
         <item itemvalue="JUnit.UserTest.registerTest" />
-        <item itemvalue="JUnit.UserTest.loginFailTest" />
-        <item itemvalue="JUnit.UserTest.loginSuccessTest" />
       </list>
     </recent_temporary>
   </component>
@@ -1091,7 +1110,8 @@
       <workItem from="1540206877877" duration="8084000" />
       <workItem from="1540388613323" duration="6072000" />
       <workItem from="1540474709674" duration="4870000" />
-      <workItem from="1540703902563" duration="9748000" />
+      <workItem from="1540703902563" duration="10219000" />
+      <workItem from="1541078694127" duration="5685000" />
     </task>
     <task id="LOCAL-00001" summary="Test IDEA Commit">
       <created>1539256030611</created>
@@ -1261,43 +1281,50 @@
       <option name="project" value="LOCAL" />
       <updated>1540709957399</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="调整页面样式，struts2找不到页面">
+      <created>1540713703244</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1540713703244</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="UserTest_alter - 2018.10.25 at 22h 07m 01s.xml">
-      <configuration name="UserTest.alter" configurationId="JUnit" />
+    <history-entry file="UserTest_testSQL - 2018.11.01 at 22h 33m 50s.xml">
+      <configuration name="UserTest.testSQL" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserTest_info - 2018.10.25 at 22h 09m 47s.xml">
-      <configuration name="UserTest.info" configurationId="JUnit" />
+    <history-entry file="UserTest_testShemExport - 2018.11.01 at 22h 43m 39s.xml">
+      <configuration name="UserTest.testShemExport" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserTest_info - 2018.10.25 at 22h 36m 26s.xml">
-      <configuration name="UserTest.info" configurationId="JUnit" />
+    <history-entry file="UserTest_testShemExport - 2018.11.01 at 22h 44m 33s.xml">
+      <configuration name="UserTest.testShemExport" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserTest_info - 2018.10.25 at 22h 38m 10s.xml">
-      <configuration name="UserTest.info" configurationId="JUnit" />
+    <history-entry file="UserTest_testShemExport - 2018.11.01 at 22h 45m 58s.xml">
+      <configuration name="UserTest.testShemExport" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserTest_info - 2018.10.25 at 22h 38m 37s.xml">
-      <configuration name="UserTest.info" configurationId="JUnit" />
+    <history-entry file="UserTest_testShemExport - 2018.11.01 at 22h 47m 45s.xml">
+      <configuration name="UserTest.testShemExport" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserTest_info - 2018.10.25 at 22h 39m 26s.xml">
-      <configuration name="UserTest.info" configurationId="JUnit" />
+    <history-entry file="UserTest_testShemExport - 2018.11.01 at 22h 48m 54s.xml">
+      <configuration name="UserTest.testShemExport" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserTest_info - 2018.10.25 at 22h 41m 57s.xml">
-      <configuration name="UserTest.info" configurationId="JUnit" />
+    <history-entry file="UserTest_testShemExport - 2018.11.01 at 22h 51m 31s.xml">
+      <configuration name="UserTest.testShemExport" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserTest_info - 2018.10.25 at 22h 43m 27s.xml">
-      <configuration name="UserTest.info" configurationId="JUnit" />
+    <history-entry file="UserTest_testShemExport - 2018.11.01 at 22h 55m 06s.xml">
+      <configuration name="UserTest.testShemExport" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserTest_info - 2018.10.25 at 22h 50m 12s.xml">
-      <configuration name="UserTest.info" configurationId="JUnit" />
+    <history-entry file="UserTest_testShemExport - 2018.11.01 at 22h 56m 26s.xml">
+      <configuration name="UserTest.testShemExport" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserTest_info - 2018.10.25 at 22h 55m 29s.xml">
-      <configuration name="UserTest.info" configurationId="JUnit" />
+    <history-entry file="UserTest_testShemExport - 2018.11.01 at 22h 57m 01s.xml">
+      <configuration name="UserTest.testShemExport" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="119324000" />
+    <option name="totallyTimeSpent" value="125480000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -1310,7 +1337,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="0" width="1920" height="1080" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Image Layers" order="0" />
       <window_info id="Designer" order="1" />
@@ -1341,8 +1367,8 @@
       <window_info anchor="right" id="Theme Preview" order="1" />
       <window_info anchor="right" id="Capture Analysis" order="2" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
-      <window_info active="true" anchor="right" content_ui="combo" id="Project" order="4" visible="true" weight="0.25828877" />
-      <window_info anchor="right" id="Database" order="5" weight="0.25989306" />
+      <window_info anchor="right" content_ui="combo" id="Project" order="4" weight="0.25828877" />
+      <window_info active="true" anchor="right" id="Database" order="5" visible="true" weight="0.25989306" />
       <window_info anchor="right" id="Maven Projects" order="6" weight="0.32994652" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="7" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="8" weight="0.24973261" />
@@ -1411,83 +1437,15 @@
     <MESSAGE value="修复信息修改BUG，测试查询信息。" />
     <MESSAGE value="添加AOP" />
     <MESSAGE value="添加拦截器，验证输入" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加拦截器，验证输入" />
+    <MESSAGE value="调整页面样式，struts2找不到页面" />
+    <MESSAGE value="修改业务，由图书管理修改为学生管理。（原因：懒得找书籍信息及配图）" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改业务，由图书管理修改为学生管理。（原因：懒得找书籍信息及配图）" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="das://48afbc8a-e81e-488e-8d15-09c6cceffe98/schema/ssh/table/Book">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/javax/persistence/javax.persistence-api/2.2/javax.persistence-api-2.2-sources.jar!/javax/persistence/GenerationType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="54" column="4" selection-start-line="54" selection-start-column="4" selection-end-line="54" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/javax/persistence/javax.persistence-api/2.2/javax.persistence-api-2.2-sources.jar!/javax/persistence/GeneratedValue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="599">
-          <caret line="69" column="40" lean-forward="true" selection-start-line="69" selection-start-column="38" selection-end-line="69" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://48afbc8a-e81e-488e-8d15-09c6cceffe98/schema/ssh/table/hibernate_sequence" />
-    <entry file="das://48afbc8a-e81e-488e-8d15-09c6cceffe98/schema/ssh/table/Press">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://48afbc8a-e81e-488e-8d15-09c6cceffe98/schema/ssh/table/Press_Book">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/impl/AbstractDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="22" column="20" lean-forward="true" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/logs/error.log">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/logs/info.log">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/entity/Book.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1764">
-          <caret line="114" column="32" selection-start-line="114" selection-start-column="32" selection-end-line="114" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/entity/BookTag.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="653">
-          <caret line="47" column="37" selection-start-line="47" selection-start-column="37" selection-end-line="47" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/entity/Power.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="972">
-          <caret line="63" column="5" lean-forward="true" selection-start-line="63" selection-start-column="5" selection-end-line="63" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/entity/Press.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1008">
@@ -1506,13 +1464,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
           <caret line="50" column="6" selection-start-line="50" selection-start-column="6" selection-end-line="50" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/entity/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="20" column="10" lean-forward="true" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
         </state>
       </provider>
     </entry>
@@ -1558,20 +1509,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/service/impl/UserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388">
-          <caret line="79" column="28" selection-start-line="79" selection-start-column="28" selection-end-line="79" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/entity/UserTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="37" column="67" lean-forward="true" selection-start-line="37" selection-start-column="67" selection-end-line="37" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/logs/DEBUG.log">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-12271" />
@@ -1611,13 +1548,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/ApplicationContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="851">
-          <caret line="87" column="76" lean-forward="true" selection-start-line="87" selection-start-column="76" selection-end-line="87" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/dao/impl/PowerDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
@@ -1632,16 +1562,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="19" column="18" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/impl/UserDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
-          <caret line="44" column="38" lean-forward="true" selection-start-line="44" selection-start-column="38" selection-end-line="44" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1697,13 +1617,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/login/loginFrame.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/web/login/loginFrame.jsp" />
     <entry file="file://$PROJECT_DIR$/web/login/registerSuccess.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
@@ -1739,18 +1653,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/action/UserAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-319">
-          <caret line="57" column="18" selection-start-line="57" selection-start-column="18" selection-end-line="57" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1573#1574#0" expanded="true" />
-            <element signature="e#1603#1604#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/login/login.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
@@ -1767,11 +1669,176 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/struts.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="21" column="70" lean-forward="true" selection-start-line="21" selection-start-column="70" selection-end-line="21" selection-end-column="70" />
+        <state relative-caret-position="432">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
         </state>
       </provider>
       <provider editor-type-id="com.intellij.struts2.graph.fileEditor.Struts2GraphFileEditorProvider" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/service/Service.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="51" lean-forward="true" selection-start-line="6" selection-start-column="51" selection-end-line="6" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/service/impl/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="17" column="28" lean-forward="true" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1281#1282#0" expanded="true" />
+            <element signature="e#1321#1322#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/entity/UserTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="37" column="67" lean-forward="true" selection-start-line="37" selection-start-column="67" selection-end-line="37" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/ApplicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="56" column="56" lean-forward="true" selection-start-line="56" selection-start-column="56" selection-end-line="56" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/5.3.6.Final/hibernate-core-5.3.6.Final-sources.jar!/org/hibernate/tool/hbm2ddl/SchemaExport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="218" column="16" selection-start-line="218" selection-start-column="16" selection-end-line="218" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/entity/College.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/entity/Course.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1477#1478#0" expanded="true" />
+            <element signature="e#1516#1517#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/entity/StudentClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="23" column="16" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/entity/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://48afbc8a-e81e-488e-8d15-09c6cceffe98/schema/ssh/table/coursesMap">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://48afbc8a-e81e-488e-8d15-09c6cceffe98/schema/ssh/table/Course">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/entity/UserTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/entity/Teacher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#395#396#0" expanded="true" />
+            <element signature="e#425#426#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/UserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="38" lean-forward="true" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/impl/UserDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="581">
+          <caret line="53" column="11" lean-forward="true" selection-start-line="53" selection-start-column="11" selection-end-line="53" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/action/UserAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="39" column="32" selection-start-line="39" selection-start-column="28" selection-end-line="39" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/entity/Student.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
   </component>
   <component name="masterDetails">
