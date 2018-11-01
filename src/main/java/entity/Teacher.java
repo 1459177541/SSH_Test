@@ -1,9 +1,6 @@
 package entity;
 
-import javax.persistence.CascadeType;
-import javax.persistence.Entity;
-import javax.persistence.FetchType;
-import javax.persistence.OneToMany;
+import javax.persistence.*;
 import java.util.Set;
 
 @Entity
@@ -11,6 +8,9 @@ public class Teacher extends User {
 
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     private Set<Course> courses;
+
+    @OneToOne(mappedBy = "headmaster", cascade = CascadeType.ALL)
+    private StudentClass studentClass;
 
     public Teacher() {
     }

@@ -19,6 +19,33 @@ public class Student extends User {
     )
     private Set<Course> courses;
 
+    @ManyToMany(mappedBy = "member")
+    private Set<Organize> organizes;
 
+    public Set<Organize> getOrganizes() {
+        return organizes;
+    }
 
+    public Student setOrganizes(Set<Organize> organizes) {
+        this.organizes = organizes;
+        return this;
+    }
+
+    public StudentClass getStudentClass() {
+        return studentClass;
+    }
+
+    public Student setStudentClass(StudentClass studentClass) {
+        this.studentClass = studentClass;
+        return this;
+    }
+
+    public Set<Course> getCourses() {
+        return courses;
+    }
+
+    public Student setCourses(Set<Course> courses) {
+        this.courses = courses;
+        return this;
+    }
 }

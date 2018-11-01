@@ -23,6 +23,28 @@ public class StudentClass {
     @JoinColumn(name = "college")
     private College college;
 
+    @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    @JoinColumn(name = "headmaster")
+    private Teacher headmaster;
+
+    public College getCollege() {
+        return college;
+    }
+
+    public StudentClass setCollege(College college) {
+        this.college = college;
+        return this;
+    }
+
+    public Teacher getHeadmaster() {
+        return headmaster;
+    }
+
+    public StudentClass setHeadmaster(Teacher headmaster) {
+        this.headmaster = headmaster;
+        return this;
+    }
+
     public StudentClass() {
     }
 
