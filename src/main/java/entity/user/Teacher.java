@@ -1,4 +1,7 @@
-package entity;
+package entity.user;
+
+import entity.Course;
+import entity.collective.StudentClass;
 
 import javax.persistence.*;
 import java.util.Set;

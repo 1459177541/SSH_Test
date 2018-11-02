@@ -1,7 +1,7 @@
 package action;
 
 import com.opensymphony.xwork2.ModelDriven;
-import entity.User;
+import entity.user.User;
 import org.apache.struts2.ServletActionContext;
 import org.apache.struts2.dispatcher.DefaultActionSupport;
 import org.springframework.beans.factory.annotation.Autowired;

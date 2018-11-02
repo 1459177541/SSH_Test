@@ -1,4 +1,4 @@
-package entity;
+package entity.user;
 
 import javax.persistence.*;
 import java.io.Serializable;

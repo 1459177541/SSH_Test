@@ -1,31 +1,27 @@
 package entity;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.util.Objects;
-import java.util.Set;
 
 @Entity
-public class College {
+public class Position implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
-    @Column(name = "c_name", length = 31, nullable = false)
+    @Column(length = 31, nullable = false)
     private String name;
 
-    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
-    @JoinColumn(name = "college")
-    private Set<StudentClass> classes;
-
-    public College() {
+    public Position() {
     }
 
     public int getId() {
         return id;
     }
 
-    public College setId(int id) {
+    public Position setId(int id) {
         this.id = id;
         return this;
     }
@@ -34,26 +30,12 @@ public class College {
         return name;
     }
 
-    public College setName(String name) {
-        this.name = name;
-        return this;
-    }
-
-    public Set<StudentClass> getClasses() {
-        return classes;
-    }
-
-    public College setClasses(Set<StudentClass> classes) {
-        this.classes = classes;
-        return this;
-    }
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        College college = (College) o;
-        return id == college.id;
+        Position position = (Position) o;
+        return id == position.id;
     }
 
     @Override
@@ -61,9 +43,14 @@ public class College {
         return Objects.hash(id);
     }
 
+    public Position setName(String name) {
+        this.name = name;
+        return this;
+    }
+
     @Override
     public String toString() {
-        return "College{" +
+        return "Position{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
                 '}';

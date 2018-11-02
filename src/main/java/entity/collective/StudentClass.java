@@ -1,4 +1,8 @@
-package entity;
+package entity.collective;
+
+import entity.relation.ClassPosition;
+import entity.user.Student;
+import entity.user.Teacher;
 
 import javax.persistence.*;
 import java.util.Objects;
@@ -15,10 +19,6 @@ public class StudentClass {
     @Column(name = "c_name", length = 31)
     private String name;
 
-    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
-    @JoinColumn(name = "class")
-    private Set<Student> students;
-
     @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     @JoinColumn(name = "college")
     private College college;
@@ -26,6 +26,14 @@ public class StudentClass {
     @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     @JoinColumn(name = "headmaster")
     private Teacher headmaster;
+
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @JoinColumn(name = "class")
+    private Set<Student> students;
+
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    @JoinColumn(name = "position")
+    private Set<ClassPosition> position;
 
     public College getCollege() {
         return college;
@@ -72,6 +80,15 @@ public class StudentClass {
 
     public StudentClass setStudents(Set<Student> students) {
         this.students = students;
+        return this;
+    }
+
+    public Set<ClassPosition> getPosition() {
+        return position;
+    }
+
+    public StudentClass setPosition(Set<ClassPosition> position) {
+        this.position = position;
         return this;
     }
 

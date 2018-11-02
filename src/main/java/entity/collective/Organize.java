@@ -1,4 +1,7 @@
-package entity;
+package entity.collective;
+
+import entity.relation.OrganizePosition;
+import entity.user.Student;
 
 import javax.persistence.*;
 import java.util.Objects;
@@ -16,11 +19,15 @@ public class Organize {
 
     @ManyToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     @JoinTable(
-            name = "organize_member",
+            name = "Organize_member",
             joinColumns = @JoinColumn(name = "o_id"),
             inverseJoinColumns = @JoinColumn(name = "s_id")
     )
     private Set<Student> member;
+
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @JoinColumn(name = "position")
+    private Set<OrganizePosition> positions;
 
     public int getId() {
         return id;
@@ -46,6 +53,15 @@ public class Organize {
 
     public Organize setMember(Set<Student> member) {
         this.member = member;
+        return this;
+    }
+
+    public Set<OrganizePosition> getPositions() {
+        return positions;
+    }
+
+    public Organize setPositions(Set<OrganizePosition> positions) {
+        this.positions = positions;
         return this;
     }
 

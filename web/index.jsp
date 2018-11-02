@@ -1,5 +1,5 @@
 <%@ page import="java.util.Date" %>
-<%@ page import="entity.User" %>
+<%@ page import="entity.user.User" %>
 <%--
   Created by IntelliJ IDEA.
   User: 杨星辰

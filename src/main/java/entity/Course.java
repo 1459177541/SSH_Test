@@ -1,5 +1,8 @@
 package entity;
 
+import entity.relation.StudentCourse;
+import entity.user.Teacher;
+
 import javax.persistence.*;
 import java.util.Objects;
 import java.util.Set;
@@ -15,12 +18,19 @@ public class Course {
     @Column(name = "c_name", length = 31, nullable = false)
     private String name;
 
+    @Column(name = "credit")
+    private double credit;
+
+    @Column(name = "period")
+    private int period;
+
     @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     @JoinColumn(name = "teacher")
     private Teacher teacher;
 
-    @ManyToMany(mappedBy = "courses")
-    private Set<Student> students;
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @JoinColumn(name = "course")
+    private Set<StudentCourse> course;
 
     public Course() {
     }
@@ -43,6 +53,24 @@ public class Course {
         return this;
     }
 
+    public double getCredit() {
+        return credit;
+    }
+
+    public Course setCredit(double credit) {
+        this.credit = credit;
+        return this;
+    }
+
+    public int getPeriod() {
+        return period;
+    }
+
+    public Course setPeriod(int period) {
+        this.period = period;
+        return this;
+    }
+
     public Teacher getTeacher() {
         return teacher;
     }
@@ -52,12 +80,12 @@ public class Course {
         return this;
     }
 
-    public Set<Student> getStudents() {
-        return students;
+    public Set<StudentCourse> getCourse() {
+        return course;
     }
 
-    public Course setStudents(Set<Student> students) {
-        this.students = students;
+    public Course setCourse(Set<StudentCourse> course) {
+        this.course = course;
         return this;
     }
 
