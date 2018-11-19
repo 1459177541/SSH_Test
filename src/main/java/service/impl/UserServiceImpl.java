@@ -31,11 +31,6 @@ public class UserServiceImpl implements UserService {
         Optional<User> userOptional = userDao.get(user.getId());
         if (userOptional.isPresent()){
             User user1 = userOptional.get();
-            if (user1.getPassword().equals(user.getPassword())) return true;
-        }
-        userOptional = userDao.get(user.getName());
-        if (userOptional.isPresent()){
-            User user1 = userOptional.get();
             return user1.getPassword().equals(user.getPassword());
         }
         return false;
@@ -45,7 +40,6 @@ public class UserServiceImpl implements UserService {
     public boolean register(User user) {
         return userDao.add(user);
     }
-
 
     @Override
     public boolean add(User user) {

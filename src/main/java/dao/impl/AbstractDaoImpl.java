@@ -26,6 +26,9 @@ public abstract class AbstractDaoImpl<T> extends HibernateDaoSupport implements 
     @Override
     public boolean delete(T t) {
         assert getHibernateTemplate() != null;
+        if (t == null) {
+            return false;
+        }
         getHibernateTemplate().delete(t);
         return true;
     }

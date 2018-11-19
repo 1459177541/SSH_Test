@@ -102,8 +102,12 @@ public class StudentClass {
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        if (this == o) {
+            return true;
+        }
+        if (o == null || getClass() != o.getClass()) {
+            return false;
+        }
         StudentClass that = (StudentClass) o;
         return id == that.id;
     }

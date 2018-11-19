@@ -64,8 +64,12 @@ public class OrganizePosition {
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        if (this == o) {
+            return true;
+        }
+        if (o == null || getClass() != o.getClass()) {
+            return false;
+        }
         OrganizePosition that = (OrganizePosition) o;
         return id == that.id &&
                 Objects.equals(organize, that.organize) &&
