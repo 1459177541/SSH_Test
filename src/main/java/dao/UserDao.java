@@ -4,10 +4,14 @@ import entity.user.User;
 
 import java.util.Optional;
 
-public interface UserDao extends Dao<User> {
+public interface UserDao<T extends User> extends Dao<T> {
 
-    Optional<User> get(int id);
+    Optional<T> get(int id);
 
     boolean delete(int id);
+
+    T login(int id, String password);
+
+    boolean register(T user);
 
 }

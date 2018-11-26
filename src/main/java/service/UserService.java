@@ -4,12 +4,12 @@ import entity.user.User;
 
 import java.util.Optional;
 
-public interface UserService extends Service<User>{
+public interface UserService<T extends User> extends Service<T>{
 
-    Optional<User> get(int id);
+    Optional<T> get(int id);
 
-    boolean login(User user);
+    boolean login(T user);
 
-    boolean register(User user);
+    boolean register(T user);
 
 }

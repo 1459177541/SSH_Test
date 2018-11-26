@@ -2,33 +2,27 @@ package service.impl;
 
 import dao.UserDao;
 import entity.user.User;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import org.springframework.stereotype.Service;
 import service.UserService;
 
-import java.util.Collection;
 import java.util.Optional;
 
 @Service
 @Repository
-public class UserServiceImpl implements UserService {
+public abstract class UserServiceImpl<T extends User> implements UserService<T> {
 
-    @Autowired
-    private UserDao userDao;
-    public UserServiceImpl setUserDao(UserDao userDao) {
-        this.userDao = userDao;
-        return this;
-    }
+    protected UserDao<T> userDao;
+    public abstract UserServiceImpl setUserDao(UserDao<T> userDao);
 
     @Override
-    public Optional<User> get(int id) {
+    public Optional<T> get(int id) {
         return userDao.get(id);
     }
 
     @Override
-    public boolean login(User user) {
-        Optional<User> userOptional = userDao.get(user.getId());
+    public boolean login(T user) {
+        Optional<T> userOptional = userDao.get(user.getId());
         if (userOptional.isPresent()){
             User user1 = userOptional.get();
             return user1.getPassword().equals(user.getPassword());
@@ -37,27 +31,24 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public boolean register(User user) {
-        return userDao.add(user);
+    public boolean register(T user) {
+        return userDao.register(user);
     }
 
     @Override
-    public boolean add(User user) {
+    public boolean add(T user) {
         return register(user);
     }
 
     @Override
-    public boolean delete(User user) {
+    public boolean delete(T user) {
         return userDao.delete(user.getId());
     }
 
     @Override
-    public boolean update(User user) {
+    public boolean update(T user) {
         return userDao.update(user);
     }
 
-    @Override
-    public Collection<User> get() {
-        return userDao.get();
-    }
+
 }
