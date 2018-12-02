@@ -9,7 +9,7 @@ public class Position implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private Integer id;
 
     @Column(length = 31, nullable = false)
     private String name;
@@ -39,7 +39,7 @@ public class Position implements Serializable {
             return false;
         }
         Position position = (Position) o;
-        return id == position.id;
+        return id.equals(position.id);
     }
 
     @Override

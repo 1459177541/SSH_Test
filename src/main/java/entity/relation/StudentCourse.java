@@ -11,7 +11,7 @@ public class StudentCourse {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private Integer id;
 
     @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     @JoinColumn(name = "student")
@@ -27,7 +27,7 @@ public class StudentCourse {
     public StudentCourse() {
     }
 
-    public int getId() {
+    public Integer getId() {
         return id;
     }
 

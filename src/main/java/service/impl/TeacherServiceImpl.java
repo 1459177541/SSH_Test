@@ -26,4 +26,9 @@ public class TeacherServiceImpl extends UserServiceImpl<Teacher> implements Teac
     public Collection<Teacher> get() {
         return userDao.get();
     }
+
+    @Override
+    public boolean login(int id, String password) {
+        return userDao.login(id, password) != null;
+    }
 }

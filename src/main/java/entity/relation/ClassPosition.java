@@ -12,7 +12,7 @@ public class ClassPosition {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private Integer id;
 
     @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     @JoinColumn(name = "class")
@@ -29,7 +29,7 @@ public class ClassPosition {
     public ClassPosition() {
     }
 
-    public int getId() {
+    public Integer getId() {
         return id;
     }
 
@@ -74,7 +74,7 @@ public class ClassPosition {
             return false;
         }
         ClassPosition that = (ClassPosition) o;
-        return id == that.id &&
+        return id.equals(that.id) &&
                 Objects.equals(studentClass, that.studentClass) &&
                 Objects.equals(student, that.student) &&
                 Objects.equals(position, that.position);

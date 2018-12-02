@@ -12,7 +12,7 @@ public class OrganizePosition {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private Integer id;
 
     @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     @JoinColumn(name = "organize")
@@ -26,7 +26,7 @@ public class OrganizePosition {
     @JoinColumn(name = "position")
     private Position position;
 
-    public int getId() {
+    public Integer getId() {
         return id;
     }
 
@@ -71,7 +71,7 @@ public class OrganizePosition {
             return false;
         }
         OrganizePosition that = (OrganizePosition) o;
-        return id == that.id &&
+        return id.equals(that.id) &&
                 Objects.equals(organize, that.organize) &&
                 Objects.equals(student, that.student) &&
                 Objects.equals(position, that.position);

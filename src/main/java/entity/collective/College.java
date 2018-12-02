@@ -9,7 +9,7 @@ public class College {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private Integer id;
 
     @Column(name = "c_name", length = 31, nullable = false)
     private String name;
@@ -21,7 +21,7 @@ public class College {
     public College() {
     }
 
-    public int getId() {
+    public Integer getId() {
         return id;
     }
 
@@ -57,7 +57,7 @@ public class College {
             return false;
         }
         College college = (College) o;
-        return id == college.id;
+        return id.equals(college.id);
     }
 
     @Override

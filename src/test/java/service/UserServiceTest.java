@@ -1,4 +1,4 @@
-package entity;
+package service;
 
 import org.hibernate.SessionFactory;
 import org.junit.jupiter.api.Test;
@@ -9,7 +9,7 @@ import org.springframework.test.context.junit.jupiter.SpringExtension;
 
 @ExtendWith(SpringExtension.class)
 @ContextConfiguration("classpath:ApplicationContext.xml")
-public class UserTest {
+public class UserServiceTest {
 
     @Autowired
     private SessionFactory sessionFactory;

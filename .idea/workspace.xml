@@ -10,35 +10,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="25defb74-8661-49ea-a980-ffd802b910b3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/dao/StudentDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dao/TeacherDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dao/impl/StudentDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dao/impl/TeacherDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/service/StudentService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/service/TeacherService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/service/impl/StudentServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/service/impl/TeacherServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/demo_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/demo_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/service/StudentServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/48afbc8a-e81e-488e-8d15-09c6cceffe98.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/48afbc8a-e81e-488e-8d15-09c6cceffe98.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/demo.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/impl/UserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/impl/UserDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/impl/StudentDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/impl/StudentDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/impl/TeacherDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/impl/TeacherDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entity/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/Course.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entity/Position.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/Position.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entity/collective/College.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/collective/College.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entity/collective/Organize.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/collective/Organize.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entity/collective/StudentClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/collective/StudentClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entity/relation/ClassPosition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/relation/ClassPosition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entity/relation/OrganizePosition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/relation/OrganizePosition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entity/relation/StudentCourse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/relation/StudentCourse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entity/user/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/user/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entity/user/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/user/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/entity/UserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/entity/UserTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/.idea/web.iml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/.idea/web.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/css/general.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/general.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/error.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/error.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/login/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/login/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login/register.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/login/registerSuccess.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login/registerSuccess.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/impl/StudentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/impl/StudentServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/impl/TeacherServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/impl/TeacherServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/ApplicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ApplicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/entity/UserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/service/UserServiceTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -78,6 +70,13 @@
         <item name="Kali" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="ssh: schema" type="c314c289:MysqlImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="Kali" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="ssh: schema" type="c314c289:MysqlImplModel$Schema" />
+        <item name="Student: table" type="98d5ac3d:MysqlImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -153,16 +152,16 @@
     <session id="1326090610">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="23" />
+          <entry key="project.closed" value="25" />
           <entry key="project.open.time.10" value="2" />
           <entry key="project.open.time.11" value="2" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.5" value="2" />
-          <entry key="project.open.time.6" value="3" />
+          <entry key="project.open.time.6" value="5" />
           <entry key="project.open.time.7" value="2" />
           <entry key="project.open.time.8" value="6" />
           <entry key="project.open.time.9" value="6" />
-          <entry key="project.opened" value="24" />
+          <entry key="project.opened" value="26" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -176,13 +175,15 @@
           <entry key="BookTag" value="1" />
           <entry key="BookTagMap" value="2" />
           <entry key="Course" value="1" />
+          <entry key="JAVA/" value="1" />
+          <entry key="JAVA/dao" value="1" />
           <entry key="JAVA/entity" value="1" />
-          <entry key="Persistence/JavaeeElement:/1a002afe/sessionFactory/demo/hibernate/Hibernate/PersistenceModel" value="5" />
+          <entry key="Persistence/JavaeeElement:/1a002afe/sessionFactory/demo/hibernate/Hibernate/PersistenceModel" value="6" />
           <entry key="Power" value="29" />
           <entry key="PowerGround" value="24" />
           <entry key="Press" value="4" />
           <entry key="Press_Book" value="3" />
-          <entry key="Student" value="3" />
+          <entry key="Student" value="6" />
           <entry key="StudentClass" value="2" />
           <entry key="StudentCourse" value="2" />
           <entry key="Teacher" value="1" />
@@ -196,10 +197,10 @@
           <entry key="groovy" value="1" />
           <entry key="hibernate_sequence" value="1" />
           <entry key="iml" value="4" />
-          <entry key="impl" value="3" />
-          <entry key="java" value="1417" />
+          <entry key="impl" value="4" />
+          <entry key="java" value="1559" />
           <entry key="js" value="5" />
-          <entry key="jsp" value="149" />
+          <entry key="jsp" value="150" />
           <entry key="log" value="23" />
           <entry key="md" value="2" />
           <entry key="organize_member" value="1" />
@@ -208,7 +209,7 @@
           <entry key="table_name" value="1" />
           <entry key="user" value="9" />
           <entry key="xhtml" value="1" />
-          <entry key="xml" value="348" />
+          <entry key="xml" value="351" />
           <entry key="xml;appContextName=ApplicationContext" value="1" />
         </counts>
       </usages-collector>
@@ -216,48 +217,48 @@
         <counts>
           <entry key="CLASS" value="17" />
           <entry key="CSS" value="3" />
-          <entry key="Database Element" value="128" />
+          <entry key="Database Element" value="131" />
           <entry key="IDEA_MODULE" value="4" />
-          <entry key="JAVA" value="1417" />
-          <entry key="JSP" value="149" />
+          <entry key="JAVA" value="1559" />
+          <entry key="JSP" value="150" />
           <entry key="JavaScript" value="5" />
           <entry key="Markdown" value="2" />
           <entry key="PLAIN_TEXT" value="29" />
           <entry key="Properties" value="23" />
           <entry key="SQL" value="2" />
           <entry key="Scratch" value="3" />
-          <entry key="UML" value="15" />
+          <entry key="UML" value="19" />
           <entry key="XHTML" value="1" />
-          <entry key="XML" value="348" />
+          <entry key="XML" value="351" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cell" value="6" />
+          <entry key="cell" value="13" />
           <entry key="css" value="16" />
           <entry key="dummy" value="33" />
           <entry key="gitignore" value="13" />
-          <entry key="java" value="7482" />
+          <entry key="java" value="8310" />
           <entry key="jsp" value="776" />
           <entry key="properties" value="69" />
           <entry key="sql" value="47" />
-          <entry key="txt" value="600" />
+          <entry key="txt" value="619" />
           <entry key="xhtml" value="7" />
-          <entry key="xml" value="1531" />
+          <entry key="xml" value="1542" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="16" />
-          <entry key="JAVA" value="7479" />
+          <entry key="JAVA" value="8307" />
           <entry key="JPA QL" value="3" />
           <entry key="JSP" value="776" />
-          <entry key="PLAIN_TEXT" value="646" />
+          <entry key="PLAIN_TEXT" value="665" />
           <entry key="Properties" value="69" />
           <entry key="SQL" value="47" />
-          <entry key="Scratch" value="6" />
+          <entry key="Scratch" value="13" />
           <entry key="XHTML" value="7" />
-          <entry key="XML" value="1531" />
+          <entry key="XML" value="1542" />
         </counts>
       </usages-collector>
     </session>
@@ -268,179 +269,13 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="uml://SPRING/appContextPath=/media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/resources/ApplicationContext.xml;appContextName=ApplicationContext">
-          <provider selected="true" editor-type-id="UmlEditorProvider">
-            <state>
-              <ID>SPRING</ID>
-              <OriginalElement>appContextPath=/media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/resources/ApplicationContext.xml;appContextName=ApplicationContext</OriginalElement>
-              <nodes>
-                <node x="0.0" y="663.0">module=demo;context=/media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/resources/ApplicationContext.xml;bean_class=org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator;tag=aop:aspectj-autoproxy;offset=3707</node>
-                <node x="316.0" y="256.0">module=demo;context=/media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/resources/ApplicationContext.xml;bean_class=org.springframework.transaction.interceptor.TransactionInterceptor;bean_name=txAdvice</node>
-                <node x="515.0" y="256.0">module=demo;context=/media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/resources/ApplicationContext.xml;bean_class=org.springframework.orm.hibernate5.HibernateTransactionManager;bean_name=transactionManager</node>
-                <node x="292.0" y="663.0">module=demo;context=/media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/resources/ApplicationContext.xml;bean_name=context:annotation-config</node>
-                <node x="22.5" y="325.0">module=demo;context=/media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/resources/ApplicationContext.xml;bean_name=(action) [Component]</node>
-                <node x="374.5" y="333.0">module=demo;context=/media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/resources/ApplicationContext.xml;bean_class=action.UserAction;bean_name=userAction</node>
-                <node x="354.0" y="397.0">module=demo;context=/media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/resources/ApplicationContext.xml;bean_class=service.impl.UserServiceImpl;bean_name=userServiceImpl</node>
-                <node x="341.0" y="461.0">module=demo;context=/media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/resources/ApplicationContext.xml;bean_class=service.impl.StudentServiceImpl;bean_name=studentServiceImpl</node>
-                <node x="342.0" y="525.0">module=demo;context=/media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/resources/ApplicationContext.xml;bean_class=service.impl.TeacherServiceImpl;bean_name=teacherServiceImpl</node>
-                <node x="19.0" y="63.41666666666667">module=demo;context=/media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/resources/ApplicationContext.xml;bean_name=(dao) [Component]</node>
-                <node x="287.5" y="64.0">module=demo;context=/media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/resources/ApplicationContext.xml;bean_class=dao.impl.StudentDaoImpl;bean_name=studentDaoImpl</node>
-                <node x="534.5" y="96.0">module=demo;context=/media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/resources/ApplicationContext.xml;bean_class=org.springframework.orm.hibernate5.LocalSessionFactoryBean;bean_name=sessionFactory</node>
-                <node x="288.5" y="128.0">module=demo;context=/media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/resources/ApplicationContext.xml;bean_class=dao.impl.TeacherDaoImpl;bean_name=teacherDaoImpl</node>
-                <node x="286.0" y="192.0">module=demo;context=/media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/resources/ApplicationContext.xml;bean_class=dao.impl.AbstractDaoImpl;bean_name=abstractDaoImpl</node>
-                <node x="300.5" y="0.0">module=demo;context=/media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/resources/ApplicationContext.xml;bean_class=dao.impl.UserDaoImpl;bean_name=userDaoImpl</node>
-                <node x="0.0" y="133.41666666666669">module=demo;context=/media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/resources/ApplicationContext.xml;bean_name=(dao.impl) [Component]</node>
-                <node x="556.0" y="663.0">module=demo;context=/media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/resources/ApplicationContext.xml;bean_name=(entity) [Component]</node>
-                <node x="19.0" y="433.0">module=demo;context=/media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/resources/ApplicationContext.xml;bean_name=(service) [Component]</node>
-                <node x="0.0" y="497.375">module=demo;context=/media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/resources/ApplicationContext.xml;bean_name=(service.impl) [Component]</node>
-                <node x="0.0" y="594.0">module=demo;context=/media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/resources/ApplicationContext.xml;bean_name=(aop) [Component]</node>
-                <node x="248.0" y="594.0">module=demo;context=/media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/resources/ApplicationContext.xml;bean_class=aop.LoggerAop;bean_name=loggerAop</node>
-                <node x="24.5" y="256.0">module=demo;context=/media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/resources/ApplicationContext.xml;tag=aop:config;offset=3478</node>
-                <node x="394.0" y="594.0">module=demo;context=/media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/resources/ApplicationContext.xml;bean_class=org.springframework.beans.factory.config.PlaceholderConfigurerSupport;tag=context:property-placeholder;offset=1318</node>
-                <node x="770.0" y="96.0">module=demo;context=/media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/resources/ApplicationContext.xml;bean_class=com.mchange.v2.c3p0.ComboPooledDataSource;bean_name=dataSource</node>
-              </nodes>
-              <notes />
-              <edges>
-                <edge source="module=demo;context=/media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/resources/ApplicationContext.xml;bean_class=action.UserAction;bean_name=userAction" target="module=demo;context=/media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/resources/ApplicationContext.xml;bean_class=service.impl.StudentServiceImpl;bean_name=studentServiceImpl">
-                  <point x="-52.0" y="8.0" />
-                  <point x="321.0" y="353.0" />
-                  <point x="321.0" y="465.0" />
-                  <point x="-85.5" y="-8.0" />
-                </edge>
-                <edge source="module=demo;context=/media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/resources/ApplicationContext.xml;bean_name=(dao) [Component]" target="module=demo;context=/media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/resources/ApplicationContext.xml;bean_class=dao.impl.UserDaoImpl;bean_name=userDaoImpl">
-                  <point x="84.0" y="-9.0" />
-                  <point x="206.0" y="66.41666666666667" />
-                  <point x="286.0" y="6.0" />
-                  <point x="-60.0" y="-6.0" />
-                </edge>
-                <edge source="module=demo;context=/media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/resources/ApplicationContext.xml;bean_class=dao.impl.TeacherDaoImpl;bean_name=teacherDaoImpl" target="module=demo;context=/media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/resources/ApplicationContext.xml;bean_class=org.springframework.orm.hibernate5.LocalSessionFactoryBean;bean_name=sessionFactory">
-                  <point x="72.0" y="-0.0" />
-                  <point x="515.0" y="111.0" />
-                  <point x="-68.0" y="3.0" />
-                </edge>
-                <edge source="module=demo;context=/media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/resources/ApplicationContext.xml;bean_name=(service.impl) [Component]" target="module=demo;context=/media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/resources/ApplicationContext.xml;bean_class=service.impl.TeacherServiceImpl;bean_name=teacherServiceImpl">
-                  <point x="115.5" y="8.0" />
-                  <point x="311.0" y="545.0" />
-                  <point x="-84.5" y="8.0" />
-                </edge>
-                <edge source="module=demo;context=/media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/resources/ApplicationContext.xml;bean_name=(action) [Component]" target="module=demo;context=/media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/resources/ApplicationContext.xml;bean_class=action.UserAction;bean_name=userAction">
-                  <point x="93.0" y="-0.0" />
-                  <point x="-52.0" y="-8.0" />
-                </edge>
-                <edge source="module=demo;context=/media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/resources/ApplicationContext.xml;bean_name=(aop) [Component]" target="module=demo;context=/media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/resources/ApplicationContext.xml;bean_class=aop.LoggerAop;bean_name=loggerAop">
-                  <point x="84.0" y="-0.0" />
-                  <point x="-50.5" y="-0.0" />
-                </edge>
-                <edge source="module=demo;context=/media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/resources/ApplicationContext.xml;bean_name=(service.impl) [Component]" target="module=demo;context=/media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/resources/ApplicationContext.xml;bean_class=service.impl.UserServiceImpl;bean_name=userServiceImpl">
-                  <point x="115.5" y="-8.0" />
-                  <point x="311.0" y="415.0" />
-                  <point x="-72.5" y="6.0" />
-                </edge>
-                <edge source="module=demo;context=/media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/resources/ApplicationContext.xml;bean_class=dao.impl.UserDaoImpl;bean_name=userDaoImpl" target="module=demo;context=/media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/resources/ApplicationContext.xml;bean_class=org.springframework.orm.hibernate5.LocalSessionFactoryBean;bean_name=sessionFactory">
-                  <point x="60.0" y="-0.0" />
-                  <point x="435.0" y="12.0" />
-                  <point x="515.0" y="99.0" />
-                  <point x="-68.0" y="-9.0" />
-                </edge>
-                <edge source="module=demo;context=/media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/resources/ApplicationContext.xml;bean_name=(dao.impl) [Component]" target="module=demo;context=/media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/resources/ApplicationContext.xml;bean_class=dao.impl.UserDaoImpl;bean_name=userDaoImpl">
-                  <point x="103.0" y="-9.0" />
-                  <point x="286.0" y="18.0" />
-                  <point x="-60.0" y="6.0" />
-                </edge>
-                <edge source="module=demo;context=/media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/resources/ApplicationContext.xml;bean_name=(service.impl) [Component]" target="module=demo;context=/media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/resources/ApplicationContext.xml;bean_class=service.impl.StudentServiceImpl;bean_name=studentServiceImpl">
-                  <point x="115.5" y="-0.0" />
-                  <point x="311.0" y="481.0" />
-                  <point x="-85.5" y="8.0" />
-                </edge>
-                <edge source="module=demo;context=/media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/resources/ApplicationContext.xml;bean_class=action.UserAction;bean_name=userAction" target="module=demo;context=/media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/resources/ApplicationContext.xml;bean_class=service.impl.TeacherServiceImpl;bean_name=teacherServiceImpl">
-                  <point x="-52.0" y="-0.0" />
-                  <point x="311.0" y="345.0" />
-                  <point x="311.0" y="529.0" />
-                  <point x="-84.5" y="-8.0" />
-                </edge>
-                <edge source="module=demo;context=/media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/resources/ApplicationContext.xml;bean_name=(dao.impl) [Component]" target="module=demo;context=/media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/resources/ApplicationContext.xml;bean_class=dao.impl.StudentDaoImpl;bean_name=studentDaoImpl">
-                  <point x="103.0" y="-3.0" />
-                  <point x="-73.0" y="6.0" />
-                </edge>
-                <edge source="module=demo;context=/media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/resources/ApplicationContext.xml;bean_name=(service) [Component]" target="module=demo;context=/media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/resources/ApplicationContext.xml;bean_class=service.impl.TeacherServiceImpl;bean_name=teacherServiceImpl">
-                  <point x="96.5" y="8.0" />
-                  <point x="231.0" y="453.0" />
-                  <point x="311.0" y="537.0" />
-                  <point x="-84.5" y="-0.0" />
-                </edge>
-                <edge source="module=demo;context=/media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/resources/ApplicationContext.xml;bean_name=(dao) [Component]" target="module=demo;context=/media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/resources/ApplicationContext.xml;bean_class=dao.impl.AbstractDaoImpl;bean_name=abstractDaoImpl">
-                  <point x="84.0" y="9.0" />
-                  <point x="206.0" y="84.41666666666667" />
-                  <point x="-74.5" y="-6.0" />
-                </edge>
-                <edge source="module=demo;context=/media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/resources/ApplicationContext.xml;bean_class=org.springframework.orm.hibernate5.HibernateTransactionManager;bean_name=transactionManager" target="module=demo;context=/media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/resources/ApplicationContext.xml;bean_class=org.springframework.orm.hibernate5.LocalSessionFactoryBean;bean_name=sessionFactory">
-                  <point x="0.0" y="-12.0" />
-                  <point x="0.0" y="12.0" />
-                </edge>
-                <edge source="module=demo;context=/media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/resources/ApplicationContext.xml;bean_class=org.springframework.transaction.interceptor.TransactionInterceptor;bean_name=txAdvice" target="module=demo;context=/media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/resources/ApplicationContext.xml;bean_class=org.springframework.orm.hibernate5.HibernateTransactionManager;bean_name=transactionManager">
-                  <point x="44.5" y="-0.0" />
-                  <point x="-87.5" y="-0.0" />
-                </edge>
-                <edge source="module=demo;context=/media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/resources/ApplicationContext.xml;bean_name=(service) [Component]" target="module=demo;context=/media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/resources/ApplicationContext.xml;bean_class=service.impl.StudentServiceImpl;bean_name=studentServiceImpl">
-                  <point x="96.5" y="-0.0" />
-                  <point x="231.0" y="445.0" />
-                  <point x="311.0" y="473.0" />
-                  <point x="-85.5" y="-0.0" />
-                </edge>
-                <edge source="module=demo;context=/media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/resources/ApplicationContext.xml;bean_name=(dao.impl) [Component]" target="module=demo;context=/media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/resources/ApplicationContext.xml;bean_class=dao.impl.TeacherDaoImpl;bean_name=teacherDaoImpl">
-                  <point x="103.0" y="3.0" />
-                  <point x="-72.0" y="6.0" />
-                </edge>
-                <edge source="module=demo;context=/media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/resources/ApplicationContext.xml;bean_name=(service) [Component]" target="module=demo;context=/media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/resources/ApplicationContext.xml;bean_class=service.impl.UserServiceImpl;bean_name=userServiceImpl">
-                  <point x="96.5" y="-8.0" />
-                  <point x="231.0" y="437.0" />
-                  <point x="311.0" y="403.0" />
-                  <point x="-72.5" y="-6.0" />
-                </edge>
-                <edge source="module=demo;context=/media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/resources/ApplicationContext.xml;tag=aop:config;offset=3478" target="module=demo;context=/media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/resources/ApplicationContext.xml;bean_class=org.springframework.transaction.interceptor.TransactionInterceptor;bean_name=txAdvice">
-                  <point x="78.5" y="-0.0" />
-                  <point x="-44.5" y="-0.0" />
-                </edge>
-                <edge source="module=demo;context=/media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/resources/ApplicationContext.xml;bean_class=dao.impl.AbstractDaoImpl;bean_name=abstractDaoImpl" target="module=demo;context=/media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/resources/ApplicationContext.xml;bean_class=org.springframework.orm.hibernate5.LocalSessionFactoryBean;bean_name=sessionFactory">
-                  <point x="74.5" y="-0.0" />
-                  <point x="515.0" y="117.0" />
-                  <point x="-68.0" y="9.0" />
-                </edge>
-                <edge source="module=demo;context=/media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/resources/ApplicationContext.xml;bean_name=(dao.impl) [Component]" target="module=demo;context=/media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/resources/ApplicationContext.xml;bean_class=dao.impl.AbstractDaoImpl;bean_name=abstractDaoImpl">
-                  <point x="103.0" y="9.0" />
-                  <point x="-74.5" y="6.0" />
-                </edge>
-                <edge source="module=demo;context=/media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/resources/ApplicationContext.xml;bean_class=action.UserAction;bean_name=userAction" target="module=demo;context=/media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/resources/ApplicationContext.xml;bean_class=service.impl.UserServiceImpl;bean_name=userServiceImpl">
-                  <point x="0.0" y="12.0" />
-                  <point x="0.0" y="-12.0" />
-                </edge>
-                <edge source="module=demo;context=/media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/resources/ApplicationContext.xml;bean_name=(dao) [Component]" target="module=demo;context=/media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/resources/ApplicationContext.xml;bean_class=dao.impl.TeacherDaoImpl;bean_name=teacherDaoImpl">
-                  <point x="84.0" y="3.0" />
-                  <point x="206.0" y="78.41666666666667" />
-                  <point x="-72.0" y="-6.0" />
-                </edge>
-                <edge source="module=demo;context=/media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/resources/ApplicationContext.xml;bean_class=dao.impl.StudentDaoImpl;bean_name=studentDaoImpl" target="module=demo;context=/media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/resources/ApplicationContext.xml;bean_class=org.springframework.orm.hibernate5.LocalSessionFactoryBean;bean_name=sessionFactory">
-                  <point x="73.0" y="-0.0" />
-                  <point x="515.0" y="105.0" />
-                  <point x="-68.0" y="-3.0" />
-                </edge>
-                <edge source="module=demo;context=/media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/resources/ApplicationContext.xml;bean_class=org.springframework.orm.hibernate5.LocalSessionFactoryBean;bean_name=sessionFactory" target="module=demo;context=/media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/resources/ApplicationContext.xml;bean_class=com.mchange.v2.c3p0.ComboPooledDataSource;bean_name=dataSource">
-                  <point x="68.0" y="-0.0" />
-                  <point x="-55.0" y="-0.0" />
-                </edge>
-                <edge source="module=demo;context=/media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/resources/ApplicationContext.xml;bean_name=(dao) [Component]" target="module=demo;context=/media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/resources/ApplicationContext.xml;bean_class=dao.impl.StudentDaoImpl;bean_name=studentDaoImpl">
-                  <point x="84.0" y="-3.0" />
-                  <point x="-73.0" y="-6.0" />
-                </edge>
-              </edges>
-              <settings layout="Hierarchic Group" zoom="1.0" x="440.0" y="343.5" />
-              <SelectedNodes>
-                <node>module=demo;context=/media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/resources/ApplicationContext.xml;bean_class=org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator;tag=aop:aspectj-autoproxy;offset=3707</node>
-              </SelectedNodes>
-              <Categories>
-                <Category>Local context</Category>
-                <Category>Properties</Category>
-              </Categories>
+        <entry file="file://$PROJECT_DIR$/src/test/java/service/StudentServiceTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="486">
+              <caret line="27" column="36" lean-forward="true" selection-start-line="27" selection-start-column="36" selection-end-line="27" selection-end-column="36" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -489,10 +324,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/entity/Power.java" />
-        <option value="$PROJECT_DIR$/src/main/java/entity/Press.java" />
-        <option value="$PROJECT_DIR$/src/main/java/entity/Author.java" />
-        <option value="$PROJECT_DIR$/src/main/java/action/LoginAction.java" />
         <option value="$PROJECT_DIR$/src/main/java/dao/impl/PowerDaoImpl.java" />
         <option value="$PROJECT_DIR$/web/login/register.jsp" />
         <option value="$PROJECT_DIR$/web/login/registerSuccess.jsp" />
@@ -503,7 +334,6 @@
         <option value="$PROJECT_DIR$/web/login/loginFrame.jsp" />
         <option value="$PROJECT_DIR$/web/login/login.jsp" />
         <option value="$PROJECT_DIR$/src/main/resources/struts.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/ApplicationContext.xml" />
         <option value="$PROJECT_DIR$/src/main/java/action/UserAction.java" />
         <option value="$PROJECT_DIR$/src/test/java/entity/EntityTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/entity/User.java" />
@@ -514,32 +344,37 @@
         <option value="$PROJECT_DIR$/src/main/java/entity/OrganizeMember.java" />
         <option value="$PROJECT_DIR$/src/main/java/entity/Student.java" />
         <option value="$PROJECT_DIR$/src/main/java/entity/StudentClass.java" />
-        <option value="$PROJECT_DIR$/src/main/java/entity/Position.java" />
         <option value="$PROJECT_DIR$/src/main/java/entity/relation/OrganizeMember.java" />
-        <option value="$PROJECT_DIR$/src/main/java/entity/relation/OrganizePosition.java" />
-        <option value="$PROJECT_DIR$/src/main/java/entity/collective/Organize.java" />
-        <option value="$PROJECT_DIR$/src/main/java/entity/Course.java" />
-        <option value="$PROJECT_DIR$/src/main/java/entity/relation/StudentCourse.java" />
-        <option value="$PROJECT_DIR$/src/main/java/entity/collective/StudentClass.java" />
-        <option value="$PROJECT_DIR$/src/main/java/entity/user/Student.java" />
-        <option value="$PROJECT_DIR$/src/main/java/entity/relation/ClassPosition.java" />
         <option value="$PROJECT_DIR$/src/main/java/aop/LoggerAop.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/entity/UserTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dao/impl/AbstractDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/entity/user/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/dao/TeacherDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/dao/StudentDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/dao/UserDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/dao/impl/UserDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dao/impl/StudentDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dao/impl/TeacherDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/service/UserService.java" />
         <option value="$PROJECT_DIR$/src/main/java/service/StudentService.java" />
         <option value="$PROJECT_DIR$/src/main/java/service/TeacherService.java" />
         <option value="$PROJECT_DIR$/src/main/java/service/impl/UserServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/service/impl/StudentServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/test/java/entity/UserTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/service/UserTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/service/UserServiceTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/service/UserService.java" />
         <option value="$PROJECT_DIR$/src/main/java/service/impl/TeacherServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/service/impl/StudentServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/entity/user/Student.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/impl/AbstractDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/test/java/service/StudentServiceTest.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/ApplicationContext.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/entity/user/User.java" />
+        <option value="$PROJECT_DIR$/src/main/java/entity/Position.java" />
+        <option value="$PROJECT_DIR$/src/main/java/entity/Course.java" />
+        <option value="$PROJECT_DIR$/src/main/java/entity/collective/College.java" />
+        <option value="$PROJECT_DIR$/src/main/java/entity/collective/Organize.java" />
+        <option value="$PROJECT_DIR$/src/main/java/entity/collective/StudentClass.java" />
+        <option value="$PROJECT_DIR$/src/main/java/entity/relation/ClassPosition.java" />
+        <option value="$PROJECT_DIR$/src/main/java/entity/relation/OrganizePosition.java" />
+        <option value="$PROJECT_DIR$/src/main/java/entity/relation/StudentCourse.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/impl/StudentDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/impl/TeacherDaoImpl.java" />
       </list>
     </option>
   </component>
@@ -699,8 +534,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -839,12 +672,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -853,10 +688,11 @@
     <property name="SearchEverywhereHistoryKey" value="org.hibernate.collection.internal.PersistentSet&#9;PSI&#9;JAVA://org.hibernate.collection.internal.PersistentSet" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543241467080" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543756264402" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="CSS&#10;JSP" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last.edited.regexp" value="1459177541@qq.com" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/test/java" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/web" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -896,24 +732,41 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.UserTest.testShemExport">
+  <component name="RunManager" selected="JUnit.StudentServiceTest.loginTest">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserTest.alter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="StudentServiceTest.loginTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="entity.relation.*" />
+          <option name="PATTERN" value="service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="entity" />
-      <option name="MAIN_CLASS_NAME" value="entity.UserTest" />
-      <option name="METHOD_NAME" value="alter" />
+      <option name="PACKAGE_NAME" value="service" />
+      <option name="MAIN_CLASS_NAME" value="service.StudentServiceTest" />
+      <option name="METHOD_NAME" value="loginTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StudentServiceTest.registerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="service" />
+      <option name="MAIN_CLASS_NAME" value="service.StudentServiceTest" />
+      <option name="METHOD_NAME" value="registerTest" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
@@ -931,23 +784,6 @@
       <option name="PACKAGE_NAME" value="entity" />
       <option name="MAIN_CLASS_NAME" value="entity.UserTest" />
       <option name="METHOD_NAME" value="info" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserTest.registerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="demo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="entity.relation.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="entity" />
-      <option name="MAIN_CLASS_NAME" value="entity.UserTest" />
-      <option name="METHOD_NAME" value="registerTest" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
@@ -1250,19 +1086,19 @@
     <list>
       <item itemvalue="Tomcat Server.SSH_Demo" />
       <item itemvalue="Tomcat Server.Linux" />
-      <item itemvalue="JUnit.UserTest.registerTest" />
-      <item itemvalue="JUnit.UserTest.alter" />
       <item itemvalue="JUnit.UserTest.info" />
       <item itemvalue="JUnit.UserTest.testSQL" />
       <item itemvalue="JUnit.UserTest.testShemExport" />
+      <item itemvalue="JUnit.StudentServiceTest.loginTest" />
+      <item itemvalue="JUnit.StudentServiceTest.registerTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.StudentServiceTest.loginTest" />
+        <item itemvalue="JUnit.StudentServiceTest.registerTest" />
         <item itemvalue="JUnit.UserTest.testShemExport" />
         <item itemvalue="JUnit.UserTest.testSQL" />
         <item itemvalue="JUnit.UserTest.info" />
-        <item itemvalue="JUnit.UserTest.alter" />
-        <item itemvalue="JUnit.UserTest.registerTest" />
       </list>
     </recent_temporary>
   </component>
@@ -1312,7 +1148,9 @@
       <workItem from="1541078694127" duration="7390000" />
       <workItem from="1541175812794" duration="7960000" />
       <workItem from="1542594516136" duration="696000" />
-      <workItem from="1543233281789" duration="7957000" />
+      <workItem from="1543233281789" duration="8742000" />
+      <workItem from="1543242269483" duration="45000" />
+      <workItem from="1543751192744" duration="5070000" />
     </task>
     <task id="LOCAL-00001" summary="Test IDEA Commit">
       <created>1539256030611</created>
@@ -1517,43 +1355,50 @@
       <option name="project" value="LOCAL" />
       <updated>1542595191275</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="更新dao层和service层">
+      <created>1543241482988</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1543241482989</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="UserTest_testShemExport - 2018.11.01 at 23h 08m 09s.xml">
-      <configuration name="UserTest.testShemExport" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserTest_testShemExport - 2018.11.01 at 23h 20m 06s.xml">
-      <configuration name="UserTest.testShemExport" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserTest_testShemExport - 2018.11.03 at 00h 44m 44s.xml">
-      <configuration name="UserTest.testShemExport" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserTest_testShemExport - 2018.11.03 at 01h 37m 27s.xml">
-      <configuration name="UserTest.testShemExport" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserTest_testShemExport - 2018.11.03 at 01h 39m 49s.xml">
-      <configuration name="UserTest.testShemExport" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserTest_testShemExport - 2018.11.03 at 01h 41m 31s.xml">
-      <configuration name="UserTest.testShemExport" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserTest_testShemExport - 2018.11.03 at 01h 59m 14s.xml">
-      <configuration name="UserTest.testShemExport" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserTest_testShemExport - 2018.11.03 at 02h 18m 45s.xml">
-      <configuration name="UserTest.testShemExport" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="UserTest_testShemExport - 2018.11.26 at 20h 14m 43s.xml">
       <configuration name="UserTest.testShemExport" configurationId="JUnit" />
     </history-entry>
     <history-entry file="UserTest_testShemExport - 2018.11.26 at 20h 18m 01s.xml">
       <configuration name="UserTest.testShemExport" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="StudentServiceTest_loginTest - 2018.12.02 at 20h 05m 29s.xml">
+      <configuration name="StudentServiceTest.loginTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="StudentServiceTest_registerTest - 2018.12.02 at 20h 11m 27s.xml">
+      <configuration name="StudentServiceTest.registerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="StudentServiceTest_registerTest - 2018.12.02 at 20h 14m 02s.xml">
+      <configuration name="StudentServiceTest.registerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="StudentServiceTest_registerTest - 2018.12.02 at 20h 21m 54s.xml">
+      <configuration name="StudentServiceTest.registerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="StudentServiceTest_registerTest - 2018.12.02 at 20h 24m 05s.xml">
+      <configuration name="StudentServiceTest.registerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="StudentServiceTest_loginTest - 2018.12.02 at 20h 24m 17s.xml">
+      <configuration name="StudentServiceTest.loginTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="StudentServiceTest_loginTest - 2018.12.02 at 20h 25m 06s.xml">
+      <configuration name="StudentServiceTest.loginTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="StudentServiceTest_loginTest - 2018.12.02 at 21h 04m 50s.xml">
+      <configuration name="StudentServiceTest.loginTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="143798000" />
+    <option name="totallyTimeSpent" value="149698000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -1578,7 +1423,7 @@
       <window_info id="Persistence" order="7" side_tool="true" weight="0.12941177" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32677597" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4983957" weight="0.43825138" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4983957" weight="0.32677597" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1599,7 +1444,7 @@
       <window_info anchor="right" id="Theme Preview" order="1" />
       <window_info anchor="right" id="Capture Analysis" order="2" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
-      <window_info anchor="right" content_ui="combo" id="Project" order="4" visible="true" weight="0.25828877" />
+      <window_info active="true" anchor="right" content_ui="combo" id="Project" order="4" visible="true" weight="0.25828877" />
       <window_info anchor="right" id="Database" order="5" weight="0.25989306" />
       <window_info anchor="right" id="Maven Projects" order="6" weight="0.32994652" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="7" type="SLIDING" weight="0.4" />
@@ -1647,7 +1492,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="log4j fail..." />
     <MESSAGE value="Test log4j..... success" />
     <MESSAGE value="Test register &amp; login(existence) success.But test login(Non-existence) fail." />
     <MESSAGE value="Use JPA-style. Error user login is fail." />
@@ -1672,568 +1516,18 @@
     <MESSAGE value="修改业务，由图书管理修改为学生管理。（原因：懒得找书籍信息及配图）" />
     <MESSAGE value="调整实体关系" />
     <MESSAGE value="遵从代码规范" />
-    <option name="LAST_COMMIT_MESSAGE" value="遵从代码规范" />
+    <MESSAGE value="更新dao层和service层" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新dao层和service层" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="das://48afbc8a-e81e-488e-8d15-09c6cceffe98/schema/ssh/table/organize_member" />
-    <entry file="das://48afbc8a-e81e-488e-8d15-09c6cceffe98/schema/ssh/table/Student">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://48afbc8a-e81e-488e-8d15-09c6cceffe98/schema/ssh/table/StudentClass">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/javax/persistence/javax.persistence-api/2.2/javax.persistence-api-2.2-sources.jar!/javax/persistence/OneToMany.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-20">
-          <caret line="90" column="18" selection-start-line="90" selection-start-column="18" selection-end-line="90" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/8.0.9-rc/mysql-connector-java-8.0.9-rc-sources.jar!/com/mysql/cj/jdbc/exceptions/SQLError.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="117" selection-start-line="117" selection-end-line="117" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/entity/Course.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="725">
-          <caret line="44" column="5" lean-forward="true" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/entity/relation/OrganizePosition.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="25" column="15" selection-start-line="25" selection-start-column="15" selection-end-line="25" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/entity/relation/StudentCourse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="60" column="49" lean-forward="true" selection-start-line="60" selection-start-column="49" selection-end-line="60" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/entity/relation/ClassPosition.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="18" column="20" lean-forward="true" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/login/registerSuccess.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="56" selection-start-line="7" selection-start-column="56" selection-end-line="7" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/action/UserAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="104" column="9" lean-forward="true" selection-start-line="104" selection-start-column="9" selection-end-line="104" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/5.3.6.Final/hibernate-core-5.3.6.Final-sources.jar!/org/hibernate/event/spi/DeleteEvent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="27" column="11" selection-start-line="27" selection-start-column="11" selection-end-line="27" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/5.3.6.Final/hibernate-core-5.3.6.Final-sources.jar!/org/hibernate/internal/SessionImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="946" column="27" selection-start-line="946" selection-start-column="27" selection-end-line="946" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://Persistence/JavaeeElement:/1a002afe/sessionFactory/demo/hibernate/Hibernate/PersistenceModel">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>Persistence</ID>
-          <OriginalElement>JavaeeElement:/1a002afe/sessionFactory/demo/hibernate/Hibernate/PersistenceModel</OriginalElement>
-          <nodes>
-            <node x="419.66666666666663" y="976.0">OrganizePosition#file:///media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/java/entity/relation/OrganizePosition.java</node>
-            <node x="21.50000000000003" y="322.0">Teacher#file:///media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/java/entity/user/Teacher.java</node>
-            <node x="408.93616071428573" y="644.0">Organize#file:///media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/java/entity/collective/Organize.java</node>
-            <node x="144.0" y="789.0">Student#file:///media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/java/entity/user/Student.java</node>
-            <node x="34.50000000000003" y="135.0">Course#file:///media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/java/entity/Course.java</node>
-            <node x="258.93616071428573" y="657.0">ClassPosition#file:///media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/java/entity/relation/ClassPosition.java</node>
-            <node x="188.34905753968255" y="509.0">StudentClass#file:///media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/java/entity/collective/StudentClass.java</node>
-            <node x="449.75" y="509.0">Position#file:///media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/java/entity/Position.java</node>
-            <node x="232.50000000000003" y="348.0">College#file:///media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/java/entity/collective/College.java</node>
-            <node x="1.8750000000000284" y="0.0">StudentCourse#file:///media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/java/entity/relation/StudentCourse.java</node>
-          </nodes>
-          <notes />
-          <edges>
-            <edge source="StudentCourse#file:///media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/java/entity/relation/StudentCourse.java" target="Student#file:///media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/java/entity/user/Student.java">
-              <point x="-20.125" y="42.5" />
-              <point x="62.25000000000003" y="115.0" />
-              <point x="11.0" y="115.0" />
-              <point x="11.0" y="759.0" />
-              <point x="184.92857142857144" y="759.0" />
-              <point x="-54.571428571428555" y="-68.5" />
-            </edge>
-            <edge source="ClassPosition#file:///media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/java/entity/relation/ClassPosition.java" target="Student#file:///media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/java/entity/user/Student.java">
-              <point x="32.50000000000006" y="29.5" />
-              <point x="356.43616071428573" y="759.0" />
-              <point x="294.07142857142856" y="759.0" />
-              <point x="54.571428571428555" y="-68.5" />
-            </edge>
-            <edge source="ClassPosition#file:///media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/java/entity/relation/ClassPosition.java" target="Position#file:///media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/java/entity/Position.java">
-              <point x="43.33333333333343" y="-29.5" />
-              <point x="367.2694940476191" y="619.0" />
-              <point x="489.0" y="619.0" />
-              <point x="-39.25" y="42.5" />
-            </edge>
-            <edge source="Course#file:///media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/java/entity/Course.java" target="Teacher#file:///media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/java/entity/user/Teacher.java">
-              <point x="41.25" y="68.5" />
-              <point x="158.25000000000003" y="297.0" />
-              <point x="164.75000000000003" y="297.0" />
-              <point x="47.75" y="-68.5" />
-            </edge>
-            <edge source="Student#file:///media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/java/entity/user/Student.java" target="Organize#file:///media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/java/entity/collective/Organize.java">
-              <point x="81.85714285714289" y="-68.5" />
-              <point x="321.3571428571429" y="769.0" />
-              <point x="435.10282738095236" y="769.0" />
-              <point x="-52.33333333333337" y="42.5" />
-            </edge>
-            <edge source="Student#file:///media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/java/entity/user/Student.java" target="ClassPosition#file:///media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/java/entity/relation/ClassPosition.java">
-              <point x="27.28571428571422" y="-68.5" />
-              <point x="266.7857142857142" y="749.0" />
-              <point x="291.43616071428573" y="749.0" />
-              <point x="-32.5" y="29.5" />
-            </edge>
-            <edge source="Organize#file:///media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/java/entity/collective/Organize.java" target="OrganizePosition#file:///media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/java/entity/relation/OrganizePosition.java">
-              <point x="0.0" y="42.5" />
-              <point x="487.43616071428573" y="769.0" />
-              <point x="495.50917658730157" y="769.0" />
-              <point x="495.50917658730157" y="956.0" />
-              <point x="499.16666666666663" y="956.0" />
-              <point x="0.0" y="-29.5" />
-            </edge>
-            <edge source="OrganizePosition#file:///media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/java/entity/relation/OrganizePosition.java" target="Student#file:///media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/java/entity/user/Student.java">
-              <point x="-63.60000000000002" y="-29.5" />
-              <point x="435.5666666666666" y="956.0" />
-              <point x="191.75" y="956.0" />
-              <point x="-47.75" y="68.5" />
-            </edge>
-            <edge source="Student#file:///media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/java/entity/user/Student.java" target="StudentCourse#file:///media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/java/entity/relation/StudentCourse.java">
-              <point x="-81.85714285714289" y="-68.5" />
-              <point x="157.6428571428571" y="769.0" />
-              <point x="0.0" y="769.0" />
-              <point x="0.0" y="105.0" />
-              <point x="22.00000000000003" y="105.0" />
-              <point x="-60.375" y="42.5" />
-            </edge>
-            <edge source="StudentClass#file:///media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/java/entity/collective/StudentClass.java" target="Student#file:///media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/java/entity/user/Student.java">
-              <point x="-19.625" y="42.5" />
-              <point x="247.22405753968255" y="619.0" />
-              <point x="239.5" y="619.0" />
-              <point x="0.0" y="-68.5" />
-            </edge>
-            <edge source="Student#file:///media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/java/entity/user/Student.java" target="StudentClass#file:///media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/java/entity/collective/StudentClass.java">
-              <point x="-27.285714285714334" y="-68.5" />
-              <point x="212.21428571428567" y="769.0" />
-              <point x="228.5" y="769.0" />
-              <point x="228.5" y="619.0" />
-              <point x="207.97405753968255" y="619.0" />
-              <point x="-58.875" y="42.5" />
-            </edge>
-            <edge source="College#file:///media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/java/entity/collective/College.java" target="StudentClass#file:///media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/java/entity/collective/StudentClass.java">
-              <point x="39.25" y="42.5" />
-              <point x="350.25" y="484.0" />
-              <point x="319.18239087301583" y="484.0" />
-              <point x="52.333333333333314" y="-42.5" />
-            </edge>
-            <edge source="Course#file:///media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/java/entity/Course.java" target="StudentCourse#file:///media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/java/entity/relation/StudentCourse.java">
-              <point x="-41.25" y="-68.5" />
-              <point x="75.75000000000003" y="115.0" />
-              <point x="102.50000000000003" y="115.0" />
-              <point x="20.125" y="42.5" />
-            </edge>
-            <edge source="OrganizePosition#file:///media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/java/entity/relation/OrganizePosition.java" target="Organize#file:///media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/java/entity/collective/Organize.java">
-              <point x="31.799999999999955" y="-29.5" />
-              <point x="530.9666666666666" y="956.0" />
-              <point x="519.1028273809524" y="956.0" />
-              <point x="519.1028273809524" y="769.0" />
-              <point x="539.7694940476191" y="769.0" />
-              <point x="52.33333333333337" y="42.5" />
-            </edge>
-            <edge source="ClassPosition#file:///media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/java/entity/relation/ClassPosition.java" target="StudentClass#file:///media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/java/entity/collective/StudentClass.java">
-              <point x="-43.333333333333314" y="-29.5" />
-              <point x="280.60282738095236" y="619.0" />
-              <point x="286.4740575396826" y="619.0" />
-              <point x="19.625" y="42.5" />
-            </edge>
-            <edge source="Teacher#file:///media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/java/entity/user/Teacher.java" target="Course#file:///media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/java/entity/Course.java">
-              <point x="-47.75" y="-68.5" />
-              <point x="69.25000000000003" y="297.0" />
-              <point x="75.75000000000003" y="297.0" />
-              <point x="-41.25" y="68.5" />
-            </edge>
-            <edge source="Student#file:///media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/java/entity/user/Student.java" target="OrganizePosition#file:///media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/java/entity/relation/OrganizePosition.java">
-              <point x="47.75" y="68.5" />
-              <point x="287.25" y="946.0" />
-              <point x="467.3666666666667" y="946.0" />
-              <point x="-31.799999999999955" y="-29.5" />
-            </edge>
-            <edge source="StudentClass#file:///media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/java/entity/collective/StudentClass.java" target="Teacher#file:///media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/java/entity/user/Teacher.java">
-              <point x="-52.33333333333337" y="-42.5" />
-              <point x="214.51572420634918" y="484.0" />
-              <point x="117.00000000000003" y="484.0" />
-              <point x="0.0" y="68.5" />
-            </edge>
-            <edge source="OrganizePosition#file:///media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/java/entity/relation/OrganizePosition.java" target="Position#file:///media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/java/entity/Position.java">
-              <point x="63.60000000000002" y="-29.5" />
-              <point x="562.7666666666667" y="956.0" />
-              <point x="576.4361607142857" y="956.0" />
-              <point x="576.4361607142857" y="619.0" />
-              <point x="567.5" y="619.0" />
-              <point x="39.25" y="42.5" />
-            </edge>
-            <edge source="StudentCourse#file:///media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/java/entity/relation/StudentCourse.java" target="Course#file:///media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/java/entity/Course.java">
-              <point x="60.375" y="42.5" />
-              <point x="142.75000000000003" y="115.0" />
-              <point x="158.25000000000003" y="115.0" />
-              <point x="41.25" y="-68.5" />
-            </edge>
-            <edge source="StudentClass#file:///media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/java/entity/collective/StudentClass.java" target="College#file:///media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/java/entity/collective/College.java">
-              <point x="0.0" y="-42.5" />
-              <point x="266.8490575396826" y="484.0" />
-              <point x="271.75" y="484.0" />
-              <point x="-39.25" y="42.5" />
-            </edge>
-            <edge source="StudentClass#file:///media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/java/entity/collective/StudentClass.java" target="ClassPosition#file:///media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/java/entity/relation/ClassPosition.java">
-              <point x="58.875" y="42.5" />
-              <point x="325.7240575396826" y="619.0" />
-              <point x="323.93616071428573" y="619.0" />
-              <point x="5.6843418860808015E-14" y="-29.5" />
-            </edge>
-          </edges>
-          <settings layout="Hierarchic Group" zoom="1.0" x="489.0" y="396.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Properties</Category>
-            <Category>Embeddables</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/mchange/c3p0/0.9.5.2/c3p0-0.9.5.2-sources.jar!/com/mchange/v2/c3p0/ComboPooledDataSource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="43" column="19" selection-start-line="43" selection-start-column="19" selection-end-line="43" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="50" column="37" selection-start-line="50" selection-start-column="37" selection-end-line="50" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/entity/ApplicationContext.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/ApplicationContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="558">
-          <caret line="31" column="65" lean-forward="true" selection-start-line="31" selection-start-column="65" selection-end-line="31" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-orm/5.0.8.RELEASE/spring-orm-5.0.8.RELEASE-sources.jar!/org/springframework/orm/hibernate5/HibernateCallback.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="35" column="17" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-orm/5.0.8.RELEASE/spring-orm-5.0.8.RELEASE-sources.jar!/org/springframework/orm/hibernate5/HibernateTemplate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="333" column="17" selection-start-line="333" selection-start-column="17" selection-end-line="333" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/5.3.6.Final/hibernate-core-5.3.6.Final-sources.jar!/org/hibernate/Session.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="770">
-          <caret line="1166" column="16" selection-start-line="1166" selection-start-column="16" selection-end-line="1166" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/5.3.6.Final/hibernate-core-5.3.6.Final-sources.jar!/org/hibernate/Query.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="534" column="6" selection-start-line="534" selection-start-column="6" selection-end-line="534" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/5.3.6.Final/hibernate-core-5.3.6.Final-sources.jar!/org/hibernate/query/Query.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="138" column="6" selection-start-line="138" selection-start-column="6" selection-end-line="138" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/entity/collective/Organize.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="27" column="11" selection-start-line="27" selection-start-column="11" selection-end-line="27" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1320#1321#0" expanded="true" />
-            <element signature="e#1352#1353#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/entity/collective/College.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/entity/collective/StudentClass.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/entity/user/Student.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="25" column="65" selection-start-line="25" selection-start-column="65" selection-end-line="25" selection-end-column="65" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/entity/user/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="7" column="34" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/entity/user/Teacher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://JAVA/dao.impl">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement>dao.impl</OriginalElement>
-          <nodes>
-            <node x="191.5" y="0.0">dao.Dao</node>
-            <node x="238.04166666666669" y="83.0">dao.impl.AbstractDaoImpl</node>
-            <node x="106.04166666666667" y="83.0">dao.UserDao</node>
-            <node x="236.79166666666669" y="249.0">dao.impl.StudentDaoImpl</node>
-            <node x="38.0" y="249.0">dao.impl.TeacherDaoImpl</node>
-            <node x="0.0" y="166.0">dao.TeacherDao</node>
-            <node x="323.0" y="166.0">dao.StudentDao</node>
-            <node x="158.0" y="166.0">dao.impl.UserDaoImpl</node>
-          </nodes>
-          <notes />
-          <edges>
-            <edge source="dao.impl.AbstractDaoImpl" target="dao.Dao">
-              <point x="0.0" y="-16.5" />
-              <point x="325.0416666666667" y="58.0" />
-              <point x="250.0" y="58.0" />
-              <point x="19.5" y="16.5" />
-            </edge>
-            <edge source="dao.UserDao" target="dao.Dao">
-              <point x="0.0" y="-16.5" />
-              <point x="162.04166666666669" y="58.0" />
-              <point x="211.0" y="58.0" />
-              <point x="-19.5" y="16.5" />
-            </edge>
-            <edge source="dao.impl.StudentDaoImpl" target="dao.StudentDao">
-              <point x="43.0" y="-16.5" />
-              <point x="365.7916666666667" y="224.0" />
-              <point x="392.5" y="224.0" />
-              <point x="0.0" y="16.5" />
-            </edge>
-            <edge source="dao.impl.UserDaoImpl" target="dao.UserDao">
-              <point x="-36.25" y="-16.5" />
-              <point x="194.25" y="146.0" />
-              <point x="162.04166666666669" y="146.0" />
-              <point x="7.105427357601002E-15" y="16.5" />
-            </edge>
-            <edge source="dao.impl.StudentDaoImpl" target="dao.impl.UserDaoImpl">
-              <point x="-43.0" y="-16.5" />
-              <point x="279.7916666666667" y="224.0" />
-              <point x="266.75" y="224.0" />
-              <point x="36.25" y="16.5" />
-            </edge>
-            <edge source="dao.TeacherDao" target="dao.UserDao">
-              <point x="0.0" y="-16.5" />
-              <point x="69.0" y="146.0" />
-              <point x="124.70833333333334" y="146.0" />
-              <point x="-37.333333333333336" y="16.5" />
-            </edge>
-            <edge source="dao.StudentDao" target="dao.UserDao">
-              <point x="0.0" y="-16.5" />
-              <point x="392.5" y="136.0" />
-              <point x="199.375" y="136.0" />
-              <point x="37.33333333333334" y="16.5" />
-            </edge>
-            <edge source="dao.impl.TeacherDaoImpl" target="dao.impl.UserDaoImpl">
-              <point x="42.75" y="-16.5" />
-              <point x="166.25" y="224.0" />
-              <point x="194.25" y="224.0" />
-              <point x="-36.25" y="16.5" />
-            </edge>
-            <edge source="dao.impl.UserDaoImpl" target="dao.impl.AbstractDaoImpl">
-              <point x="36.25" y="-16.5" />
-              <point x="266.75" y="146.0" />
-              <point x="325.0416666666667" y="146.0" />
-              <point x="0.0" y="16.5" />
-            </edge>
-            <edge source="dao.impl.TeacherDaoImpl" target="dao.TeacherDao">
-              <point x="-42.75" y="-16.5" />
-              <point x="80.75" y="224.0" />
-              <point x="69.0" y="224.0" />
-              <point x="0.0" y="16.5" />
-            </edge>
-          </edges>
-          <settings layout="Hierarchic Group" zoom="1.0" x="181.5" y="99.5" />
-          <SelectedNodes />
-          <Categories />
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/entity/UserTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="42" lean-forward="true" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/service/Service.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="24" lean-forward="true" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/TeacherDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="32" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/Dao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/dao/StudentDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="8" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/impl/AbstractDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/UserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="28" lean-forward="true" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/impl/StudentDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="783">
-          <caret line="49" column="45" lean-forward="true" selection-start-line="49" selection-start-column="45" selection-end-line="49" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/service/StudentService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="59" selection-start-line="4" selection-start-column="59" selection-end-line="4" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/service/TeacherService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -2353,7 +1647,7 @@
               <point x="0.0" y="16.5" />
             </edge>
           </edges>
-          <settings layout="Hierarchic Group" zoom="1.0" x="214.5" y="99.5" />
+          <settings layout="Hierarchic Group" zoom="1.0" x="215.0" y="100.0" />
           <SelectedNodes>
             <node>service.impl.UserServiceImpl</node>
           </SelectedNodes>
@@ -2387,43 +1681,11 @@
           </nodes>
           <notes />
           <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="612.5" y="166.0" />
+          <settings layout="Hierarchic Group" zoom="1.0" x="613.0" y="166.0" />
           <SelectedNodes />
           <Categories />
           <SCOPE>All</SCOPE>
           <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/impl/UserDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#359#360#0" expanded="true" />
-            <element signature="e#410#411#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/service/impl/StudentServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/impl/TeacherDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2434,33 +1696,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/service/impl/TeacherServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="24" column="13" lean-forward="true" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/service/impl/UserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/aop/LoggerAop.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="185">
           <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2629,7 +1868,7 @@
               <point x="-73.0" y="-6.0" />
             </edge>
           </edges>
-          <settings layout="Hierarchic Group" zoom="1.0" x="440.0" y="343.5" />
+          <settings layout="Hierarchic Group" zoom="1.0" x="440.0" y="194.0" />
           <SelectedNodes>
             <node>module=demo;context=/media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/resources/ApplicationContext.xml;bean_class=org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator;tag=aop:aspectj-autoproxy;offset=3707</node>
           </SelectedNodes>
@@ -2637,6 +1876,1134 @@
             <Category>Local context</Category>
             <Category>Properties</Category>
           </Categories>
+          <SCOPE>All</SCOPE>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/error.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="56" selection-start-line="8" selection-start-column="56" selection-end-line="8" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement />
+          <nodes>
+            <node x="177.0" y="468.0">com</node>
+            <node x="0.0" y="234.0">template</node>
+            <node x="441.0" y="156.0">netscape</node>
+            <node x="0.0" y="546.0">aop</node>
+            <node x="324.0" y="0.0">toolbarButtonGraphics</node>
+            <node x="172.0" y="546.0">sun</node>
+            <node x="269.0" y="78.0">groovyjarjarasm</node>
+            <node x="344.0" y="546.0">dao</node>
+            <node x="353.0" y="468.0">java</node>
+            <node x="0.0" y="156.0">freemarker</node>
+            <node x="188.0" y="390.0">javax</node>
+            <node x="393.0" y="312.0">action</node>
+            <node x="516.0" y="546.0">net</node>
+            <node x="212.0" y="234.0">javassist</node>
+            <node x="421.0" y="234.0">images</node>
+            <node x="0.0" y="468.0">ognl</node>
+            <node x="0.0" y="624.0">org</node>
+            <node x="372.0" y="390.0">antlr</node>
+            <node x="336.0" y="624.0">aj</node>
+            <node x="169.0" y="624.0">jdk</node>
+            <node x="227.0" y="156.0">META-INF</node>
+            <node x="197.0" y="312.0">groovy</node>
+            <node x="0.0" y="312.0">service</node>
+            <node x="0.0" y="0.0">groovyjarjarcommonscli</node>
+            <node x="0.0" y="78.0">groovyjarjarantlr</node>
+            <node x="0.0" y="390.0">entity</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="320.0" y="329.0" />
+          <SelectedNodes>
+            <node>com</node>
+          </SelectedNodes>
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/dao">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>dao</OriginalElement>
+          <nodes>
+            <node x="84.88541666666666" y="327.0">dao.Dao</node>
+            <node x="55.75" y="249.0">service.impl.StudentServiceImpl</node>
+            <node x="175.0625" y="410.0">dao.UserDao</node>
+            <node x="200.5" y="83.0">service.UserService</node>
+            <node x="0.0" y="166.0">service.StudentService</node>
+            <node x="95.52083333333334" y="576.0">dao.impl</node>
+            <node x="374.0" y="166.0">service.TeacherService</node>
+            <node x="169.5" y="493.0">dao.TeacherDao</node>
+            <node x="285.5" y="249.0">service.impl.TeacherServiceImpl</node>
+            <node x="10.5" y="493.0">dao.StudentDao</node>
+            <node x="184.0" y="166.0">service.impl.UserServiceImpl</node>
+            <node x="217.5" y="0.0">service.Service</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="dao.impl" target="dao.TeacherDao">
+              <point x="16.5" y="-16.5" />
+              <point x="178.02083333333334" y="546.0" />
+              <point x="238.5" y="546.0" />
+              <point x="0.0" y="16.5" />
+            </edge>
+            <edge source="dao.UserDao" target="dao.Dao">
+              <point x="0.0" y="-16.5" />
+              <point x="231.0625" y="385.0" />
+              <point x="143.38541666666666" y="385.0" />
+              <point x="19.5" y="16.5" />
+            </edge>
+            <edge source="dao.StudentDao" target="dao.UserDao">
+              <point x="0.0" y="-16.5" />
+              <point x="80.0" y="468.0" />
+              <point x="193.72916666666663" y="468.0" />
+              <point x="-37.33333333333334" y="16.5" />
+            </edge>
+            <edge source="service.impl.StudentServiceImpl" target="service.impl.UserServiceImpl">
+              <point x="49.25" y="-16.5" />
+              <point x="203.5" y="224.0" />
+              <point x="226.5" y="224.0" />
+              <point x="-42.5" y="16.5" />
+            </edge>
+            <edge source="service.StudentService" target="service.UserService">
+              <point x="0.0" y="-16.5" />
+              <point x="82.0" y="141.0" />
+              <point x="223.33333333333337" y="141.0" />
+              <point x="-45.66666666666666" y="16.5" />
+            </edge>
+            <edge source="service.impl.TeacherServiceImpl" target="service.TeacherService">
+              <point x="49.0" y="-16.5" />
+              <point x="432.5" y="224.0" />
+              <point x="455.5" y="224.0" />
+              <point x="0.0" y="16.5" />
+            </edge>
+            <edge source="service.impl.UserServiceImpl" target="service.UserService">
+              <point x="0.0" y="-16.5" />
+              <point x="0.0" y="16.5" />
+            </edge>
+            <edge source="service.impl.StudentServiceImpl" target="service.StudentService">
+              <point x="-49.25" y="-16.5" />
+              <point x="105.0" y="224.0" />
+              <point x="82.0" y="224.0" />
+              <point x="0.0" y="16.5" />
+            </edge>
+            <edge source="dao.impl" target="dao.UserDao">
+              <point x="49.50000000000001" y="-16.5" />
+              <point x="211.02083333333334" y="556.0" />
+              <point x="318.0" y="556.0" />
+              <point x="318.0" y="468.0" />
+              <point x="268.39583333333337" y="468.0" />
+              <point x="37.33333333333337" y="16.5" />
+            </edge>
+            <edge source="service.TeacherService" target="service.UserService">
+              <point x="0.0" y="-16.5" />
+              <point x="455.5" y="141.0" />
+              <point x="314.66666666666663" y="141.0" />
+              <point x="45.66666666666663" y="16.5" />
+            </edge>
+            <edge source="dao.TeacherDao" target="dao.UserDao">
+              <point x="0.0" y="-16.5" />
+              <point x="238.5" y="468.0" />
+              <point x="231.0625" y="468.0" />
+              <point x="0.0" y="16.5" />
+            </edge>
+            <edge source="dao.impl" target="dao.Dao">
+              <point x="-49.5" y="-16.5" />
+              <point x="112.02083333333334" y="556.0" />
+              <point x="0.0" y="556.0" />
+              <point x="0.0" y="385.0" />
+              <point x="104.38541666666666" y="385.0" />
+              <point x="-19.5" y="16.5" />
+            </edge>
+            <edge source="service.impl.TeacherServiceImpl" target="service.impl.UserServiceImpl">
+              <point x="-49.0" y="-16.5" />
+              <point x="334.5" y="224.0" />
+              <point x="311.5" y="224.0" />
+              <point x="42.5" y="16.5" />
+            </edge>
+            <edge source="service.UserService" target="service.Service">
+              <point x="0.0" y="-16.5" />
+              <point x="0.0" y="16.5" />
+            </edge>
+            <edge source="dao.impl" target="dao.StudentDao">
+              <point x="-16.5" y="-16.5" />
+              <point x="145.02083333333334" y="546.0" />
+              <point x="80.0" y="546.0" />
+              <point x="0.0" y="16.5" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0" x="159.0" y="185.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/dao.impl">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>dao.impl</OriginalElement>
+          <nodes>
+            <node x="763.0944700881447" y="0.0">entity.relation.StudentCourse</node>
+            <node x="518.6626499504512" y="675.0">service.StudentService</node>
+            <node x="1456.1814680801126" y="196.0">entity.user.Teacher</node>
+            <node x="780.6153034214781" y="675.0">service.impl.UserServiceImpl</node>
+            <node x="727.6339285714284" y="858.0">service.impl.StudentServiceImpl</node>
+            <node x="33.11904761904748" y="196.0">entity.collective.Organize</node>
+            <node x="727.8653034214781" y="512.0">service.UserService</node>
+            <node x="1500.8709832837844" y="858.0">dao.impl.TeacherDaoImpl</node>
+            <node x="1470.9814680801126" y="103.0">entity.Course</node>
+            <node x="1506.3209832837847" y="675.0">dao.TeacherDao</node>
+            <node x="1170.579316617118" y="858.0">service.impl.TeacherServiceImpl</node>
+            <node x="171.61904761904748" y="103.0">entity.Position</node>
+            <node x="1028.990303421478" y="675.0">dao.impl.UserDaoImpl</node>
+            <node x="377.96726190476176" y="196.0">entity.collective.College</node>
+            <node x="342.59226190476176" y="329.0">entity.collective.StudentClass</node>
+            <node x="150.16991537578883" y="512.0">entity.user.Student</node>
+            <node x="713.8653034214781" y="329.0">service.Service</node>
+            <node x="1072.240303421478" y="329.0">dao.Dao</node>
+            <node x="1043.740303421478" y="512.0">dao.impl.AbstractDaoImpl</node>
+            <node x="853.6153034214781" y="103.0">entity.user.User</node>
+            <node x="911.7403034214782" y="512.0">dao.UserDao</node>
+            <node x="379.9255952380951" y="858.0">dao.impl.StudentDaoImpl</node>
+            <node x="211.9672619047617" y="196.0">entity.relation.ClassPosition</node>
+            <node x="1270.4819700881449" y="675.0">service.TeacherService</node>
+            <node x="309.3861367548114" y="675.0">dao.StudentDao</node>
+            <node x="53.113095238095184" y="329.0">entity.relation.OrganizePosition</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="dao.UserDao" target="entity.user.User">
+              <point x="-28.0" y="-16.5" />
+              <point x="939.7403034214782" y="176.0" />
+              <point x="901.4486367548114" y="176.0" />
+              <point x="6.833333333333314" y="16.5" />
+            </edge>
+            <edge source="entity.user.Student" target="entity.collective.StudentClass">
+              <point x="31.14285714285711" y="-16.5" />
+              <point x="235.81277251864594" y="452.0" />
+              <point x="354.925595238095" y="452.0" />
+              <point x="-61.66666666666674" y="16.5" />
+            </edge>
+            <edge source="dao.impl.StudentDaoImpl" target="dao.StudentDao">
+              <point x="-14.333333333333258" y="-16.5" />
+              <point x="451.59226190476187" y="818.0" />
+              <point x="378.8861367548114" y="818.0" />
+              <point x="0.0" y="16.5" />
+            </edge>
+            <edge source="entity.user.Teacher" target="entity.collective.StudentClass">
+              <point x="-20.25" y="16.5" />
+              <point x="1489.9314680801126" y="289.0" />
+              <point x="483.864989177489" y="289.0" />
+              <point x="67.27272727272725" y="-16.5" />
+            </edge>
+            <edge source="service.UserService" target="entity.user.User">
+              <point x="34.25" y="-16.5" />
+              <point x="830.6153034214781" y="492.0" />
+              <point x="827.3653034214781" y="492.0" />
+              <point x="827.3653034214781" y="166.0" />
+              <point x="874.1153034214781" y="166.0" />
+              <point x="-20.5" y="16.5" />
+            </edge>
+            <edge source="service.StudentService" target="entity.user.Student">
+              <point x="-41.0" y="-16.5" />
+              <point x="559.6626499504512" y="585.0" />
+              <point x="248.26991537578874" y="585.0" />
+              <point x="43.59999999999991" y="16.5" />
+            </edge>
+            <edge source="dao.StudentDao" target="entity.user.Student">
+              <point x="-46.33333333333326" y="-16.5" />
+              <point x="332.55280342147813" y="655.0" />
+              <point x="204.66991537578883" y="655.0" />
+              <point x="0.0" y="16.5" />
+            </edge>
+            <edge source="service.impl.UserServiceImpl" target="dao.UserDao">
+              <point x="21.25" y="-16.5" />
+              <point x="886.8653034214781" y="635.0" />
+              <point x="946.7403034214782" y="635.0" />
+              <point x="-21.0" y="16.5" />
+            </edge>
+            <edge source="service.impl.UserServiceImpl" target="service.UserService">
+              <point x="-63.75" y="-16.5" />
+              <point x="801.8653034214781" y="605.0" />
+              <point x="796.3653034214781" y="605.0" />
+              <point x="0.0" y="16.5" />
+            </edge>
+            <edge source="entity.user.Teacher" target="entity.Course">
+              <point x="-21.59999999999991" y="-16.5" />
+              <point x="1488.5814680801127" y="176.0" />
+              <point x="1483.4814680801126" y="176.0" />
+              <point x="-37.5" y="16.5" />
+            </edge>
+            <edge source="service.TeacherService" target="entity.user.Teacher">
+              <point x="40.75" y="-16.5" />
+              <point x="1392.7319700881449" y="655.0" />
+              <point x="1441.9459832837845" y="655.0" />
+              <point x="1441.9459832837845" y="299.0" />
+              <point x="1503.4314680801126" y="299.0" />
+              <point x="-6.75" y="16.5" />
+            </edge>
+            <edge source="entity.user.Student" target="entity.relation.ClassPosition">
+              <point x="10.380952380952294" y="-16.5" />
+              <point x="215.05086775674113" y="412.0" />
+              <point x="240.68154761904742" y="412.0" />
+              <point x="240.68154761904742" y="309.0" />
+              <point x="221.0922619047617" y="309.0" />
+              <point x="-63.875" y="16.5" />
+            </edge>
+            <edge source="service.impl.TeacherServiceImpl" target="service.impl.UserServiceImpl">
+              <point x="-78.39999999999998" y="-16.5" />
+              <point x="1190.1793166171178" y="758.0" />
+              <point x="886.8653034214781" y="758.0" />
+              <point x="21.25" y="16.5" />
+            </edge>
+            <edge source="dao.impl.UserDaoImpl" target="dao.impl.AbstractDaoImpl">
+              <point x="0.0" y="-16.5" />
+              <point x="1101.490303421478" y="655.0" />
+              <point x="1108.990303421478" y="655.0" />
+              <point x="-21.75" y="16.5" />
+            </edge>
+            <edge source="dao.impl.StudentDaoImpl" target="dao.impl.AbstractDaoImpl">
+              <point x="43.0" y="-16.5" />
+              <point x="508.9255952380951" y="828.0" />
+              <point x="693.1626499504512" y="828.0" />
+              <point x="693.1626499504512" y="655.0" />
+              <point x="1065.490303421478" y="655.0" />
+              <point x="-65.25" y="16.5" />
+            </edge>
+            <edge source="entity.Course" target="entity.relation.StudentCourse">
+              <point x="-12.5" y="-16.5" />
+              <point x="1508.4814680801126" y="73.0" />
+              <point x="873.7819700881447" y="73.0" />
+              <point x="30.1875" y="16.5" />
+            </edge>
+            <edge source="dao.impl.StudentDaoImpl" target="dao.impl.UserDaoImpl">
+              <point x="71.66666666666674" y="-16.5" />
+              <point x="537.5922619047619" y="838.0" />
+              <point x="1065.240303421478" y="838.0" />
+              <point x="-36.25" y="16.5" />
+            </edge>
+            <edge source="entity.Course" target="entity.user.Teacher">
+              <point x="12.5" y="16.5" />
+              <point x="1533.4814680801126" y="176.0" />
+              <point x="1531.7814680801125" y="176.0" />
+              <point x="21.59999999999991" y="-16.5" />
+            </edge>
+            <edge source="dao.StudentDao" target="dao.UserDao">
+              <point x="46.33333333333326" y="-16.5" />
+              <point x="425.21947008814465" y="615.0" />
+              <point x="918.7403034214782" y="615.0" />
+              <point x="-49.0" y="16.5" />
+            </edge>
+            <edge source="service.impl.StudentServiceImpl" target="service.impl.UserServiceImpl">
+              <point x="39.39999999999998" y="-16.5" />
+              <point x="865.5339285714285" y="778.0" />
+              <point x="801.8653034214781" y="778.0" />
+              <point x="-63.75" y="16.5" />
+            </edge>
+            <edge source="entity.relation.ClassPosition" target="entity.Position">
+              <point x="36.5" y="-16.5" />
+              <point x="321.4672619047617" y="176.0" />
+              <point x="265.2440476190475" y="176.0" />
+              <point x="40.125" y="16.5" />
+            </edge>
+            <edge source="entity.relation.StudentCourse" target="entity.Course">
+              <point x="70.4375" y="16.5" />
+              <point x="914.0319700881447" y="53.0" />
+              <point x="1558.4814680801126" y="53.0" />
+              <point x="37.5" y="-16.5" />
+            </edge>
+            <edge source="dao.impl.UserDaoImpl" target="entity.user.User">
+              <point x="58.0" y="-16.5" />
+              <point x="1159.490303421478" y="655.0" />
+              <point x="1228.240303421478" y="655.0" />
+              <point x="1228.240303421478" y="166.0" />
+              <point x="915.1153034214781" y="166.0" />
+              <point x="20.5" y="16.5" />
+            </edge>
+            <edge source="service.impl.UserServiceImpl" target="entity.user.User">
+              <point x="-21.25" y="-16.5" />
+              <point x="844.3653034214781" y="605.0" />
+              <point x="875.3653034214781" y="605.0" />
+              <point x="875.3653034214781" y="176.0" />
+              <point x="887.7819700881448" y="176.0" />
+              <point x="-6.833333333333314" y="16.5" />
+            </edge>
+            <edge source="entity.collective.StudentClass" target="entity.user.Teacher">
+              <point x="53.818181818181756" y="-16.5" />
+              <point x="470.4104437229435" y="279.0" />
+              <point x="1476.4314680801126" y="279.0" />
+              <point x="-33.75" y="16.5" />
+            </edge>
+            <edge source="dao.impl.StudentDaoImpl" target="entity.user.Student">
+              <point x="-43.0" y="-16.5" />
+              <point x="422.9255952380951" y="828.0" />
+              <point x="171.5365820424554" y="828.0" />
+              <point x="171.5365820424554" y="655.0" />
+              <point x="182.86991537578888" y="655.0" />
+              <point x="-21.799999999999955" y="16.5" />
+            </edge>
+            <edge source="service.impl.StudentServiceImpl" target="service.StudentService">
+              <point x="-39.400000000000034" y="-16.5" />
+              <point x="786.7339285714285" y="798.0" />
+              <point x="600.6626499504512" y="798.0" />
+              <point x="0.0" y="16.5" />
+            </edge>
+            <edge source="service.TeacherService" target="service.UserService">
+              <point x="-40.75" y="-16.5" />
+              <point x="1311.2319700881449" y="595.0" />
+              <point x="842.0319700881448" y="595.0" />
+              <point x="45.66666666666663" y="16.5" />
+            </edge>
+            <edge source="dao.impl.TeacherDaoImpl" target="entity.user.Teacher">
+              <point x="68.4000000000002" y="-16.5" />
+              <point x="1654.7709832837845" y="838.0" />
+              <point x="1665.8209832837847" y="838.0" />
+              <point x="1665.8209832837847" y="289.0" />
+              <point x="1557.4314680801126" y="289.0" />
+              <point x="47.25" y="16.5" />
+            </edge>
+            <edge source="service.impl.StudentServiceImpl" target="entity.user.Student">
+              <point x="-78.80000000000007" y="-16.5" />
+              <point x="747.3339285714285" y="808.0" />
+              <point x="472.0694700881447" y="808.0" />
+              <point x="472.0694700881447" y="595.0" />
+              <point x="226.4699153757888" y="595.0" />
+              <point x="21.799999999999955" y="16.5" />
+            </edge>
+            <edge source="service.impl.TeacherServiceImpl" target="dao.UserDao">
+              <point x="39.19999999999993" y="-16.5" />
+              <point x="1307.7793166171177" y="828.0" />
+              <point x="1443.9819700881449" y="828.0" />
+              <point x="1443.9819700881449" y="585.0" />
+              <point x="1002.7403034214782" y="585.0" />
+              <point x="35.0" y="16.5" />
+            </edge>
+            <edge source="service.impl.TeacherServiceImpl" target="entity.user.Teacher">
+              <point x="78.39999999999998" y="-16.5" />
+              <point x="1346.9793166171178" y="838.0" />
+              <point x="1478.5709832837845" y="838.0" />
+              <point x="1478.5709832837845" y="309.0" />
+              <point x="1516.9314680801126" y="309.0" />
+              <point x="6.75" y="16.5" />
+            </edge>
+            <edge source="entity.relation.OrganizePosition" target="entity.collective.Organize">
+              <point x="-43.75" y="-16.5" />
+              <point x="96.86309523809518" y="309.0" />
+              <point x="112.86904761904748" y="309.0" />
+              <point x="21.75" y="16.5" />
+            </edge>
+            <edge source="entity.collective.StudentClass" target="entity.user.Student">
+              <point x="12.333333333333258" y="16.5" />
+              <point x="428.925595238095" y="482.0" />
+              <point x="251.3842010900746" y="482.0" />
+              <point x="46.71428571428578" y="-16.5" />
+            </edge>
+            <edge source="entity.user.Student" target="entity.user.User">
+              <point x="51.904761904761926" y="-16.5" />
+              <point x="256.57467728055076" y="492.0" />
+              <point x="621.3782487091221" y="492.0" />
+              <point x="621.3782487091221" y="156.0" />
+              <point x="860.4486367548114" y="156.0" />
+              <point x="-34.16666666666666" y="16.5" />
+            </edge>
+            <edge source="dao.impl.AbstractDaoImpl" target="dao.Dao">
+              <point x="0.0" y="-16.5" />
+              <point x="19.5" y="16.5" />
+            </edge>
+            <edge source="entity.user.Student" target="entity.relation.OrganizePosition">
+              <point x="-10.380952380952294" y="-16.5" />
+              <point x="194.28896299483654" y="412.0" />
+              <point x="74.98809523809518" y="412.0" />
+              <point x="-65.625" y="16.5" />
+            </edge>
+            <edge source="entity.relation.ClassPosition" target="entity.user.Student">
+              <point x="-9.125" y="16.5" />
+              <point x="275.8422619047617" y="309.0" />
+              <point x="256.2529761904761" y="309.0" />
+              <point x="256.2529761904761" y="442.0" />
+              <point x="230.6222963281698" y="442.0" />
+              <point x="25.952380952380963" y="-16.5" />
+            </edge>
+            <edge source="dao.impl.UserDaoImpl" target="dao.UserDao">
+              <point x="-29.0" y="-16.5" />
+              <point x="1072.490303421478" y="635.0" />
+              <point x="988.7403034214782" y="635.0" />
+              <point x="21.0" y="16.5" />
+            </edge>
+            <edge source="entity.collective.StudentClass" target="entity.collective.College">
+              <point x="0.0" y="-16.5" />
+              <point x="-12.875" y="16.5" />
+            </edge>
+            <edge source="dao.impl.TeacherDaoImpl" target="dao.impl.UserDaoImpl">
+              <point x="-68.39999999999986" y="-16.5" />
+              <point x="1517.9709832837846" y="738.0" />
+              <point x="1137.740303421478" y="738.0" />
+              <point x="36.25" y="16.5" />
+            </edge>
+            <edge source="dao.impl.TeacherDaoImpl" target="dao.TeacherDao">
+              <point x="1.1368683772161603E-13" y="-16.5" />
+              <point x="1586.3709832837844" y="838.0" />
+              <point x="1575.3209832837847" y="838.0" />
+              <point x="0.0" y="16.5" />
+            </edge>
+            <edge source="dao.impl.StudentDaoImpl" target="entity.collective.StudentClass">
+              <point x="14.333333333333258" y="-16.5" />
+              <point x="480.2589285714284" y="818.0" />
+              <point x="508.1626499504511" y="818.0" />
+              <point x="508.1626499504511" y="482.0" />
+              <point x="478.2589285714285" y="482.0" />
+              <point x="61.66666666666674" y="16.5" />
+            </edge>
+            <edge source="entity.relation.StudentCourse" target="entity.user.Student">
+              <point x="-10.0625" y="16.5" />
+              <point x="833.5319700881447" y="83.0" />
+              <point x="15.571428571428669" y="83.0" />
+              <point x="15.571428571428669" y="462.0" />
+              <point x="168.33658204245557" y="462.0" />
+              <point x="-36.33333333333326" y="-16.5" />
+            </edge>
+            <edge source="dao.UserDao" target="dao.Dao">
+              <point x="28.0" y="-16.5" />
+              <point x="995.7403034214782" y="492.0" />
+              <point x="1091.740303421478" y="492.0" />
+              <point x="-19.5" y="16.5" />
+            </edge>
+            <edge source="service.impl.StudentServiceImpl" target="dao.UserDao">
+              <point x="0.0" y="-16.5" />
+              <point x="826.1339285714284" y="788.0" />
+              <point x="704.1626499504512" y="788.0" />
+              <point x="704.1626499504512" y="625.0" />
+              <point x="932.7403034214782" y="625.0" />
+              <point x="-35.0" y="16.5" />
+            </edge>
+            <edge source="service.StudentService" target="service.UserService">
+              <point x="41.0" y="-16.5" />
+              <point x="641.6626499504512" y="605.0" />
+              <point x="750.6986367548114" y="605.0" />
+              <point x="-45.66666666666666" y="16.5" />
+            </edge>
+            <edge source="entity.user.Student" target="entity.relation.StudentCourse">
+              <point x="-41.523809523809405" y="-16.5" />
+              <point x="163.14610585197943" y="472.0" />
+              <point x="10.380952380952522" y="472.0" />
+              <point x="10.380952380952522" y="73.0" />
+              <point x="813.4069700881447" y="73.0" />
+              <point x="-30.1875" y="16.5" />
+            </edge>
+            <edge source="entity.relation.OrganizePosition" target="entity.user.Student">
+              <point x="65.625" y="16.5" />
+              <point x="206.23809523809518" y="382.0" />
+              <point x="209.86039156626498" y="382.0" />
+              <point x="5.190476190476147" y="-16.5" />
+            </edge>
+            <edge source="entity.collective.Organize" target="entity.user.Student">
+              <point x="-36.25" y="16.5" />
+              <point x="54.86904761904748" y="269.0" />
+              <point x="32.23214285714289" y="269.0" />
+              <point x="32.23214285714289" y="442.0" />
+              <point x="178.71753442340787" y="442.0" />
+              <point x="-25.952380952380963" y="-16.5" />
+            </edge>
+            <edge source="service.impl.TeacherServiceImpl" target="service.TeacherService">
+              <point x="0.0" y="-16.5" />
+              <point x="1268.579316617118" y="818.0" />
+              <point x="1351.9819700881449" y="818.0" />
+              <point x="0.0" y="16.5" />
+            </edge>
+            <edge source="entity.collective.StudentClass" target="entity.relation.ClassPosition">
+              <point x="-53.818181818181756" y="-16.5" />
+              <point x="362.77408008658" y="299.0" />
+              <point x="312.3422619047617" y="299.0" />
+              <point x="27.375" y="16.5" />
+            </edge>
+            <edge source="dao.impl.TeacherDaoImpl" target="dao.impl.AbstractDaoImpl">
+              <point x="-34.19999999999993" y="-16.5" />
+              <point x="1552.1709832837846" y="728.0" />
+              <point x="1495.8209832837847" y="728.0" />
+              <point x="1495.8209832837847" y="575.0" />
+              <point x="1195.990303421478" y="575.0" />
+              <point x="65.25" y="16.5" />
+            </edge>
+            <edge source="entity.collective.College" target="entity.collective.StudentClass">
+              <point x="12.875" y="16.5" />
+              <point x="442.34226190476176" y="249.0" />
+              <point x="430.04680735930725" y="249.0" />
+              <point x="13.454545454545496" y="-16.5" />
+            </edge>
+            <edge source="entity.user.Student" target="entity.collective.Organize">
+              <point x="-20.761904761904816" y="-16.5" />
+              <point x="183.90801061388402" y="432.0" />
+              <point x="37.42261904761904" y="432.0" />
+              <point x="37.42261904761904" y="279.0" />
+              <point x="69.36904761904748" y="279.0" />
+              <point x="-21.75" y="16.5" />
+            </edge>
+            <edge source="dao.TeacherDao" target="entity.user.Teacher">
+              <point x="34.5" y="-16.5" />
+              <point x="1609.8209832837847" y="309.0" />
+              <point x="1530.4314680801126" y="309.0" />
+              <point x="20.25" y="16.5" />
+            </edge>
+            <edge source="dao.TeacherDao" target="dao.UserDao">
+              <point x="-34.5" y="-16.5" />
+              <point x="1540.8209832837847" y="565.0" />
+              <point x="1016.7403034214782" y="565.0" />
+              <point x="49.0" y="16.5" />
+            </edge>
+            <edge source="entity.user.Teacher" target="entity.user.User">
+              <point x="-43.200000000000045" y="-16.5" />
+              <point x="1466.9814680801126" y="156.0" />
+              <point x="928.7819700881448" y="156.0" />
+              <point x="34.16666666666663" y="16.5" />
+            </edge>
+            <edge source="dao.StudentDao" target="entity.collective.StudentClass">
+              <point x="0.0" y="-16.5" />
+              <point x="378.8861367548114" y="605.0" />
+              <point x="457.1626499504511" y="605.0" />
+              <point x="457.1626499504511" y="482.0" />
+              <point x="453.59226190476176" y="482.0" />
+              <point x="37.0" y="16.5" />
+            </edge>
+            <edge source="entity.relation.OrganizePosition" target="entity.Position">
+              <point x="43.75" y="-16.5" />
+              <point x="184.36309523809518" y="299.0" />
+              <point x="159.61904761904748" y="299.0" />
+              <point x="159.61904761904748" y="166.0" />
+              <point x="184.99404761904748" y="166.0" />
+              <point x="-40.125" y="16.5" />
+            </edge>
+            <edge source="entity.relation.ClassPosition" target="entity.collective.StudentClass">
+              <point x="63.875" y="16.5" />
+              <point x="348.8422619047617" y="279.0" />
+              <point x="389.68317099567076" y="279.0" />
+              <point x="-26.90909090909099" y="-16.5" />
+            </edge>
+            <edge source="entity.collective.Organize" target="entity.relation.OrganizePosition">
+              <point x="36.25" y="16.5" />
+              <point x="127.36904761904748" y="309.0" />
+              <point x="126.02976190476193" y="309.0" />
+              <point x="-14.583333333333258" y="-16.5" />
+            </edge>
+            <edge source="service.UserService" target="service.Service">
+              <point x="-34.25" y="-16.5" />
+              <point x="762.1153034214781" y="492.0" />
+              <point x="765.3653034214781" y="492.0" />
+              <point x="0.0" y="16.5" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0" x="760.0" y="460.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://Persistence/JavaeeElement:/1a002afe/sessionFactory/demo/hibernate/Hibernate/PersistenceModel">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>Persistence</ID>
+          <OriginalElement>JavaeeElement:/1a002afe/sessionFactory/demo/hibernate/Hibernate/PersistenceModel</OriginalElement>
+          <nodes>
+            <node x="515.375" y="200.0">OrganizePosition#file:///media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/java/entity/relation/OrganizePosition.java</node>
+            <node x="51.833333333333314" y="213.0">Teacher#file:///media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/java/entity/user/Teacher.java</node>
+            <node x="554.4177631578947" y="358.0">Organize#file:///media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/java/entity/collective/Organize.java</node>
+            <node x="416.375" y="539.0">Student#file:///media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/java/entity/user/Student.java</node>
+            <node x="0.0" y="332.0">Course#file:///media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/java/entity/Course.java</node>
+            <node x="365.375" y="200.0">ClassPosition#file:///media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/java/entity/relation/ClassPosition.java</node>
+            <node x="210.82061403508774" y="358.0">StudentClass#file:///media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/java/entity/collective/StudentClass.java</node>
+            <node x="429.16337719298247" y="26.0">Position#file:///media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/java/entity/Position.java</node>
+            <node x="188.375" y="187.0">College#file:///media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/java/entity/collective/College.java</node>
+            <node x="30.583333333333314" y="0.0">User#file:///media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/java/entity/user/User.java</node>
+            <node x="186.91436403508774" y="622.0">StudentCourse#file:///media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/java/entity/relation/StudentCourse.java</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="Teacher#file:///media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/java/entity/user/Teacher.java" target="User#file:///media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/java/entity/user/User.java">
+              <point x="0.0" y="-16.5" />
+              <point x="97.83333333333331" y="162.0" />
+              <point x="78.33333333333331" y="162.0" />
+              <point x="-47.75" y="68.5" />
+            </edge>
+            <edge source="StudentCourse#file:///media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/java/entity/relation/StudentCourse.java" target="Student#file:///media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/java/entity/user/Student.java">
+              <point x="20.125" y="-42.5" />
+              <point x="287.5393640350877" y="592.0" />
+              <point x="439.625" y="592.0" />
+              <point x="-23.25" y="16.5" />
+            </edge>
+            <edge source="ClassPosition#file:///media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/java/entity/relation/ClassPosition.java" target="Student#file:///media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/java/entity/user/Student.java">
+              <point x="16.25" y="29.5" />
+              <point x="446.625" y="312.0" />
+              <point x="457.375" y="312.0" />
+              <point x="-5.8125" y="-16.5" />
+            </edge>
+            <edge source="ClassPosition#file:///media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/java/entity/relation/ClassPosition.java" target="Position#file:///media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/java/entity/Position.java">
+              <point x="0.0" y="-29.5" />
+              <point x="430.375" y="162.0" />
+              <point x="468.41337719298247" y="162.0" />
+              <point x="-39.25" y="42.5" />
+            </edge>
+            <edge source="Course#file:///media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/java/entity/Course.java" target="Teacher#file:///media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/java/entity/user/Teacher.java">
+              <point x="-41.25" y="-68.5" />
+              <point x="41.25" y="312.0" />
+              <point x="67.16666666666663" y="312.0" />
+              <point x="-30.666666666666686" y="16.5" />
+            </edge>
+            <edge source="Student#file:///media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/java/entity/user/Student.java" target="Organize#file:///media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/java/entity/collective/Organize.java">
+              <point x="40.6875" y="-16.5" />
+              <point x="503.5625" y="519.0" />
+              <point x="632.9177631578947" y="519.0" />
+              <point x="0.0" y="42.5" />
+            </edge>
+            <edge source="Student#file:///media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/java/entity/user/Student.java" target="ClassPosition#file:///media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/java/entity/relation/ClassPosition.java">
+              <point x="5.8125" y="-16.5" />
+              <point x="468.6875" y="489.0" />
+              <point x="480.92269736842104" y="489.0" />
+              <point x="480.92269736842104" y="312.0" />
+              <point x="479.125" y="312.0" />
+              <point x="48.750000000000014" y="29.5" />
+            </edge>
+            <edge source="Organize#file:///media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/java/entity/collective/Organize.java" target="OrganizePosition#file:///media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/java/entity/relation/OrganizePosition.java">
+              <point x="-39.25" y="-42.5" />
+              <point x="593.6677631578947" y="312.0" />
+              <point x="614.75" y="312.0" />
+              <point x="19.875" y="29.5" />
+            </edge>
+            <edge source="OrganizePosition#file:///media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/java/entity/relation/OrganizePosition.java" target="Student#file:///media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/java/entity/user/Student.java">
+              <point x="-59.625" y="29.5" />
+              <point x="535.25" y="312.0" />
+              <point x="506.3656798245614" y="312.0" />
+              <point x="506.3656798245614" y="499.0" />
+              <point x="480.3125" y="499.0" />
+              <point x="17.4375" y="-16.5" />
+            </edge>
+            <edge source="Student#file:///media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/java/entity/user/Student.java" target="StudentCourse#file:///media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/java/entity/relation/StudentCourse.java">
+              <point x="23.25" y="16.5" />
+              <point x="486.125" y="602.0" />
+              <point x="327.7893640350877" y="602.0" />
+              <point x="60.375" y="-42.5" />
+            </edge>
+            <edge source="StudentClass#file:///media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/java/entity/collective/StudentClass.java" target="Student#file:///media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/java/entity/user/Student.java">
+              <point x="39.25" y="42.5" />
+              <point x="328.5706140350877" y="499.0" />
+              <point x="445.4375" y="499.0" />
+              <point x="-17.4375" y="-16.5" />
+            </edge>
+            <edge source="Student#file:///media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/java/entity/user/Student.java" target="StudentClass#file:///media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/java/entity/collective/StudentClass.java">
+              <point x="-29.0625" y="-16.5" />
+              <point x="433.8125" y="509.0" />
+              <point x="250.07061403508774" y="509.0" />
+              <point x="-39.25" y="42.5" />
+            </edge>
+            <edge source="College#file:///media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/java/entity/collective/College.java" target="StudentClass#file:///media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/java/entity/collective/StudentClass.java">
+              <point x="39.25" y="42.5" />
+              <point x="306.125" y="312.0" />
+              <point x="289.3206140350877" y="312.0" />
+              <point x="0.0" y="-42.5" />
+            </edge>
+            <edge source="Course#file:///media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/java/entity/Course.java" target="StudentCourse#file:///media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/java/entity/relation/StudentCourse.java">
+              <point x="41.25" y="68.5" />
+              <point x="123.75" y="519.0" />
+              <point x="76.73837719298245" y="519.0" />
+              <point x="76.73837719298245" y="592.0" />
+              <point x="247.28936403508774" y="592.0" />
+              <point x="-20.125" y="-42.5" />
+            </edge>
+            <edge source="ClassPosition#file:///media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/java/entity/relation/ClassPosition.java" target="StudentClass#file:///media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/java/entity/collective/StudentClass.java">
+              <point x="-16.25" y="29.5" />
+              <point x="414.125" y="312.0" />
+              <point x="352.1206140350878" y="312.0" />
+              <point x="62.80000000000001" y="-42.5" />
+            </edge>
+            <edge source="OrganizePosition#file:///media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/java/entity/relation/OrganizePosition.java" target="Organize#file:///media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/java/entity/collective/Organize.java">
+              <point x="59.625" y="29.5" />
+              <point x="654.5" y="312.0" />
+              <point x="672.1677631578947" y="312.0" />
+              <point x="39.25" y="-42.5" />
+            </edge>
+            <edge source="Teacher#file:///media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/java/entity/user/Teacher.java" target="Course#file:///media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/java/entity/Course.java">
+              <point x="0.0" y="16.5" />
+              <point x="97.83333333333331" y="312.0" />
+              <point x="123.75" y="312.0" />
+              <point x="41.25" y="-68.5" />
+            </edge>
+            <edge source="Student#file:///media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/java/entity/user/Student.java" target="OrganizePosition#file:///media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/java/entity/relation/OrganizePosition.java">
+              <point x="29.0625" y="-16.5" />
+              <point x="491.9375" y="509.0" />
+              <point x="543.9177631578947" y="509.0" />
+              <point x="543.9177631578947" y="312.0" />
+              <point x="575.0" y="312.0" />
+              <point x="-19.875" y="29.5" />
+            </edge>
+            <edge source="StudentClass#file:///media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/java/entity/collective/StudentClass.java" target="Teacher#file:///media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/java/entity/user/Teacher.java">
+              <point x="-62.80000000000001" y="-42.5" />
+              <point x="226.52061403508773" y="302.0" />
+              <point x="128.5" y="302.0" />
+              <point x="30.666666666666686" y="16.5" />
+            </edge>
+            <edge source="OrganizePosition#file:///media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/java/entity/relation/OrganizePosition.java" target="Position#file:///media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/java/entity/Position.java">
+              <point x="0.0" y="-29.5" />
+              <point x="594.875" y="162.0" />
+              <point x="546.9133771929825" y="162.0" />
+              <point x="39.25" y="42.5" />
+            </edge>
+            <edge source="StudentCourse#file:///media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/java/entity/relation/StudentCourse.java" target="Course#file:///media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/java/entity/Course.java">
+              <point x="-60.375" y="-42.5" />
+              <point x="207.03936403508774" y="602.0" />
+              <point x="65.73837719298245" y="602.0" />
+              <point x="65.73837719298245" y="519.0" />
+              <point x="41.25" y="519.0" />
+              <point x="-41.25" y="68.5" />
+            </edge>
+            <edge source="Student#file:///media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/java/entity/user/Student.java" target="User#file:///media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/java/entity/user/User.java">
+              <point x="-40.6875" y="-16.5" />
+              <point x="422.1875" y="519.0" />
+              <point x="177.875" y="519.0" />
+              <point x="177.875" y="162.0" />
+              <point x="173.83333333333331" y="162.0" />
+              <point x="47.75" y="68.5" />
+            </edge>
+            <edge source="StudentClass#file:///media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/java/entity/collective/StudentClass.java" target="College#file:///media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/java/entity/collective/College.java">
+              <point x="-31.400000000000034" y="-42.5" />
+              <point x="257.92061403508774" y="292.0" />
+              <point x="227.625" y="292.0" />
+              <point x="-39.25" y="42.5" />
+            </edge>
+            <edge source="StudentClass#file:///media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/java/entity/collective/StudentClass.java" target="ClassPosition#file:///media/root/28B007E1B007B47A/JAVA/JAVA/SSH_Demo/src/main/java/entity/relation/ClassPosition.java">
+              <point x="31.399999999999977" y="-42.5" />
+              <point x="320.7206140350877" y="302.0" />
+              <point x="381.625" y="302.0" />
+              <point x="-48.75" y="29.5" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0" x="477.0" y="354.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Properties</Category>
+            <Category>Embeddables</Category>
+            <Category>Superclasses</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/UserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/service/StudentService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="59" selection-start-line="4" selection-start-column="59" selection-end-line="4" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/service/TeacherService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="43" selection-start-line="12" selection-start-column="43" selection-end-line="12" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/service/impl/TeacherServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="31" column="51" lean-forward="true" selection-start-line="31" selection-start-column="51" selection-end-line="31" selection-end-column="51" />
+          <folding>
+            <element signature="e#813#814#0" expanded="true" />
+            <element signature="e#841#842#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/service/impl/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/service/UserServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/impl/UserDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-orm/5.0.8.RELEASE/spring-orm-5.0.8.RELEASE-sources.jar!/org/springframework/orm/hibernate5/support/HibernateDaoSupport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="55" column="22" selection-start-line="55" selection-start-column="22" selection-end-line="55" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/impl/AbstractDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="29" column="25" lean-forward="true" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
+          <folding>
+            <element signature="e#404#405#0" expanded="true" />
+            <element signature="e#459#460#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://48afbc8a-e81e-488e-8d15-09c6cceffe98/schema/ssh/table/Student">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/ApplicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="74" column="56" lean-forward="true" selection-start-line="74" selection-start-column="56" selection-end-line="74" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///etc/jdk-11/lib/src.zip!/java.base/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="1223" selection-start-line="1223" selection-end-line="1223" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///etc/jdk-11/lib/src.zip!/java.base/java/lang/reflect/Method.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="367">
+          <caret line="565" selection-start-line="565" selection-end-line="565" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-orm/5.0.8.RELEASE/spring-orm-5.0.8.RELEASE-sources.jar!/org/springframework/orm/hibernate5/HibernateTemplate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="1225" selection-start-line="1225" selection-end-line="1225" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/5.3.6.Final/hibernate-core-5.3.6.Final-sources.jar!/org/hibernate/engine/spi/SessionImplementor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="76" column="28" selection-start-line="76" selection-start-column="28" selection-end-line="76" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/entity/user/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/entity/user/Teacher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/entity/user/Student.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="26" column="27" lean-forward="true" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/entity/Course.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="743">
+          <caret line="100" column="20" selection-start-line="100" selection-start-column="20" selection-end-line="100" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/entity/Position.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="41" column="19" lean-forward="true" selection-start-line="41" selection-start-column="19" selection-end-line="41" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/entity/collective/College.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="59" column="37" lean-forward="true" selection-start-line="59" selection-start-column="37" selection-end-line="59" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/entity/collective/Organize.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="810">
+          <caret line="76" column="20" selection-start-line="76" selection-start-column="20" selection-end-line="76" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/entity/collective/StudentClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="810">
+          <caret line="111" column="18" lean-forward="true" selection-start-line="111" selection-start-column="18" selection-end-line="111" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/entity/relation/ClassPosition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="76" column="20" selection-start-line="76" selection-start-column="20" selection-end-line="76" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/entity/relation/OrganizePosition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="648">
+          <caret line="73" column="19" lean-forward="true" selection-start-line="73" selection-start-column="19" selection-end-line="73" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/entity/relation/StudentCourse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="653">
+          <caret line="82" column="55" lean-forward="true" selection-start-line="82" selection-start-column="55" selection-end-line="82" selection-end-column="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/5.3.6.Final/hibernate-core-5.3.6.Final-sources.jar!/org/hibernate/criterion/Criterion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="25" column="17" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/5.3.6.Final/hibernate-core-5.3.6.Final-sources.jar!/org/hibernate/criterion/DetachedCriteria.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="43" column="14" selection-start-line="43" selection-start-column="14" selection-end-line="43" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/5.3.6.Final/hibernate-core-5.3.6.Final-sources.jar!/org/hibernate/Session.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="851">
+          <caret line="1149" column="37" selection-start-line="1149" selection-start-column="37" selection-end-line="1149" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/5.3.6.Final/hibernate-core-5.3.6.Final-sources.jar!/org/hibernate/SharedSessionContract.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="120" column="13" selection-start-line="120" selection-start-column="13" selection-end-line="120" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/javax/persistence/javax.persistence-api/2.2/javax.persistence-api-2.2-sources.jar!/javax/persistence/criteria/CriteriaQuery.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="190" column="21" selection-start-line="190" selection-start-column="21" selection-end-line="190" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/javax/persistence/javax.persistence-api/2.2/javax.persistence-api-2.2-sources.jar!/javax/persistence/criteria/Root.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="27" column="17" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/5.3.6.Final/hibernate-core-5.3.6.Final-sources.jar!/org/hibernate/query/criteria/internal/QueryStructure.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="122" column="23" selection-start-line="122" selection-start-column="23" selection-end-line="122" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/5.3.6.Final/hibernate-core-5.3.6.Final-sources.jar!/org/hibernate/query/criteria/internal/CriteriaQueryImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="152" column="32" selection-start-line="152" selection-start-column="32" selection-end-line="152" selection-end-column="32" />
+          <folding>
+            <element signature="e#4627#4628#0" expanded="true" />
+            <element signature="e#4675#4676#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/javax/persistence/javax.persistence-api/2.2/javax.persistence-api-2.2-sources.jar!/javax/persistence/criteria/AbstractQuery.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="43" column="16" selection-start-line="43" selection-start-column="16" selection-end-line="43" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/service/impl/StudentServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="32" column="5" lean-forward="true" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
+          <folding>
+            <element signature="e#814#815#0" expanded="true" />
+            <element signature="e#872#873#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/impl/StudentDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="34" column="30" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/impl/TeacherDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/service/StudentServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="27" column="36" lean-forward="true" selection-start-line="27" selection-start-column="36" selection-end-line="27" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

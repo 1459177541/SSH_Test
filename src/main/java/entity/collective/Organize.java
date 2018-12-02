@@ -12,7 +12,7 @@ public class Organize {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private Integer id;
 
     @Column(name = "o_name", nullable = false, length = 31)
     private String name;
@@ -29,7 +29,7 @@ public class Organize {
     @JoinColumn(name = "position")
     private Set<OrganizePosition> positions;
 
-    public int getId() {
+    public Integer getId() {
         return id;
     }
 
@@ -74,7 +74,7 @@ public class Organize {
             return false;
         }
         Organize organize = (Organize) o;
-        return id == organize.id;
+        return id.equals(organize.id);
     }
 
     @Override

@@ -1241,7 +1241,7 @@ s_id</ColNames>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="303" parent="247" name="student">
+    <column id="303" parent="247" name="classPosition">
       <Position>5</Position>
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
@@ -1257,7 +1257,7 @@ s_id</ColNames>
       <Type>btree</Type>
     </index>
     <index id="306" parent="247" name="FKibttduxxx7wnlj2legjfaa6as">
-      <ColNames>student</ColNames>
+      <ColNames>classPosition</ColNames>
       <Type>btree</Type>
     </index>
     <index id="307" parent="247" name="FKdmnu0g09oww0x1mcrflvk9ehb">
@@ -1274,7 +1274,7 @@ s_id</ColNames>
       <UnderlyingIndexName>UK_slbx8fb5mxx96mlgexr3nxpj9</UnderlyingIndexName>
     </key>
     <foreign-key id="310" parent="247" name="FKibttduxxx7wnlj2legjfaa6as">
-      <ColNames>student</ColNames>
+      <ColNames>classPosition</ColNames>
       <RefSchemaName>ssh</RefSchemaName>
       <RefTableName>ClassPosition</RefTableName>
       <RefColNames>id</RefColNames>

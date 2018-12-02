@@ -5,6 +5,9 @@ import entity.user.Teacher;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
+import javax.persistence.criteria.CriteriaBuilder;
+import javax.persistence.criteria.CriteriaQuery;
+import javax.persistence.criteria.Root;
 import java.util.Collection;
 import java.util.Optional;
 
@@ -22,11 +25,14 @@ public class TeacherDaoImpl extends UserDaoImpl<Teacher> implements TeacherDao {
     @Override
     public Teacher login(int id, String password) {
         assert getHibernateTemplate() != null;
-        return getHibernateTemplate().execute(session -> session
-                .createQuery("select Teacher from Teacher where id=:id and password=:password", Teacher.class)
-                .setParameter("id", id)
-                .setParameter("password", password)
-                .uniqueResult());
+        return getHibernateTemplate().execute(session -> {
+            CriteriaBuilder builder = session.getCriteriaBuilder();
+            CriteriaQuery<Teacher> criteria = builder.createQuery(Teacher.class);
+            Root<Teacher> root = criteria.from(Teacher.class);
+            criteria.where(builder.equal(root.get("id"), id),
+                    builder.and(builder.equal(root.get("password"), password)));
+            return session.createQuery(criteria).uniqueResult();
+        });
     }
 
     @Override

@@ -26,4 +26,9 @@ public class StudentServiceImpl extends UserServiceImpl<Student> implements Stud
     public Collection<Student> get() {
         return userDao.get();
     }
+
+    @Override
+    public boolean login(int id, String password) {
+        return userDao.login(id, password) != null;
+    }
 }

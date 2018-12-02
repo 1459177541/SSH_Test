@@ -24,7 +24,7 @@ public class Student extends User {
     private Set<Organize> organizes;
 
     @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
-    @JoinColumn(name = "student")
+    @JoinColumn(name = "classPosition")
     private ClassPosition classPosition;
 
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)

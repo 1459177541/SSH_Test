@@ -3,9 +3,14 @@ package dao.impl;
 import dao.StudentDao;
 import entity.collective.StudentClass;
 import entity.user.Student;
+import org.hibernate.criterion.DetachedCriteria;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
+import javax.persistence.criteria.CriteriaBuilder;
+import javax.persistence.criteria.CriteriaQuery;
+import javax.persistence.criteria.Predicate;
+import javax.persistence.criteria.Root;
 import java.util.Collection;
 import java.util.Optional;
 
@@ -24,11 +29,14 @@ public class StudentDaoImpl extends UserDaoImpl<Student> implements StudentDao {
     @Override
     public Student login(int id, String password) {
         assert getHibernateTemplate() != null;
-        return getHibernateTemplate().execute(session -> session
-                .createQuery("select Student from Student where id=:id and password = :password", Student.class)
-                .setParameter("id", id)
-                .setParameter("password", password)
-                .uniqueResult());
+        return getHibernateTemplate().execute(session -> {
+            CriteriaBuilder builder = session.getCriteriaBuilder();
+            CriteriaQuery<Student> criteria = builder.createQuery(Student.class);
+            Root<Student> root = criteria.from(Student.class);
+            criteria.where(builder.equal(root.get("id"), id),
+                    builder.and(builder.equal(root.get("password"), password)));
+            return session.createQuery(criteria).uniqueResult();
+        });
     }
 
     @Override
