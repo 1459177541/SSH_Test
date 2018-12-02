@@ -10,27 +10,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="25defb74-8661-49ea-a980-ffd802b910b3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/service/StudentServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/48afbc8a-e81e-488e-8d15-09c6cceffe98.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/48afbc8a-e81e-488e-8d15-09c6cceffe98.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/service/TeacherServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/demo.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/impl/StudentDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/impl/StudentDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/impl/TeacherDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/impl/TeacherDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/Course.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/Position.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/Position.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/collective/College.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/collective/College.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/collective/Organize.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/collective/Organize.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/collective/StudentClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/collective/StudentClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/relation/ClassPosition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/relation/ClassPosition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/relation/OrganizePosition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/relation/OrganizePosition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/relation/StudentCourse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/relation/StudentCourse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/user/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/user/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/user/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/user/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/impl/StudentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/impl/StudentServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/impl/TeacherServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/impl/TeacherServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/ApplicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ApplicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/entity/UserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/service/UserServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/service/StudentServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/service/StudentServiceTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -70,13 +52,6 @@
         <item name="Kali" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="ssh: schema" type="c314c289:MysqlImplModel$Schema" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="Kali" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="ssh: schema" type="c314c289:MysqlImplModel$Schema" />
-        <item name="Student: table" type="98d5ac3d:MysqlImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -183,10 +158,10 @@
           <entry key="PowerGround" value="24" />
           <entry key="Press" value="4" />
           <entry key="Press_Book" value="3" />
-          <entry key="Student" value="6" />
+          <entry key="Student" value="7" />
           <entry key="StudentClass" value="2" />
           <entry key="StudentCourse" value="2" />
-          <entry key="Teacher" value="1" />
+          <entry key="Teacher" value="2" />
           <entry key="User" value="40" />
           <entry key="UserGroundMap" value="1" />
           <entry key="UserServiceImpl" value="1" />
@@ -198,7 +173,7 @@
           <entry key="hibernate_sequence" value="1" />
           <entry key="iml" value="4" />
           <entry key="impl" value="4" />
-          <entry key="java" value="1559" />
+          <entry key="java" value="1573" />
           <entry key="js" value="5" />
           <entry key="jsp" value="150" />
           <entry key="log" value="23" />
@@ -217,9 +192,9 @@
         <counts>
           <entry key="CLASS" value="17" />
           <entry key="CSS" value="3" />
-          <entry key="Database Element" value="131" />
+          <entry key="Database Element" value="133" />
           <entry key="IDEA_MODULE" value="4" />
-          <entry key="JAVA" value="1559" />
+          <entry key="JAVA" value="1573" />
           <entry key="JSP" value="150" />
           <entry key="JavaScript" value="5" />
           <entry key="Markdown" value="2" />
@@ -234,15 +209,15 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cell" value="13" />
+          <entry key="cell" value="25" />
           <entry key="css" value="16" />
           <entry key="dummy" value="33" />
           <entry key="gitignore" value="13" />
-          <entry key="java" value="8310" />
+          <entry key="java" value="8477" />
           <entry key="jsp" value="776" />
           <entry key="properties" value="69" />
           <entry key="sql" value="47" />
-          <entry key="txt" value="619" />
+          <entry key="txt" value="628" />
           <entry key="xhtml" value="7" />
           <entry key="xml" value="1542" />
         </counts>
@@ -250,13 +225,13 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="16" />
-          <entry key="JAVA" value="8307" />
+          <entry key="JAVA" value="8474" />
           <entry key="JPA QL" value="3" />
           <entry key="JSP" value="776" />
-          <entry key="PLAIN_TEXT" value="665" />
+          <entry key="PLAIN_TEXT" value="674" />
           <entry key="Properties" value="69" />
           <entry key="SQL" value="47" />
-          <entry key="Scratch" value="13" />
+          <entry key="Scratch" value="25" />
           <entry key="XHTML" value="7" />
           <entry key="XML" value="1542" />
         </counts>
@@ -269,10 +244,10 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/service/StudentServiceTest.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/service/TeacherServiceTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="486">
-              <caret line="27" column="36" lean-forward="true" selection-start-line="27" selection-start-column="36" selection-end-line="27" selection-end-column="36" />
+            <state relative-caret-position="360">
+              <caret line="20" column="64" lean-forward="true" selection-start-line="20" selection-start-column="64" selection-end-line="20" selection-end-column="64" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -324,7 +299,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/dao/impl/PowerDaoImpl.java" />
         <option value="$PROJECT_DIR$/web/login/register.jsp" />
         <option value="$PROJECT_DIR$/web/login/registerSuccess.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
@@ -362,7 +336,6 @@
         <option value="$PROJECT_DIR$/src/main/java/service/impl/StudentServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/entity/user/Student.java" />
         <option value="$PROJECT_DIR$/src/main/java/dao/impl/AbstractDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/test/java/service/StudentServiceTest.java" />
         <option value="$PROJECT_DIR$/src/main/resources/ApplicationContext.xml" />
         <option value="$PROJECT_DIR$/src/main/java/entity/user/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/entity/Position.java" />
@@ -375,6 +348,8 @@
         <option value="$PROJECT_DIR$/src/main/java/entity/relation/StudentCourse.java" />
         <option value="$PROJECT_DIR$/src/main/java/dao/impl/StudentDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/dao/impl/TeacherDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/test/java/service/TeacherServiceTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/service/StudentServiceTest.java" />
       </list>
     </option>
   </component>
@@ -688,7 +663,7 @@
     <property name="SearchEverywhereHistoryKey" value="org.hibernate.collection.internal.PersistentSet&#9;PSI&#9;JAVA://org.hibernate.collection.internal.PersistentSet" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543756264402" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543756635604" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="CSS&#10;JSP" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last.edited.regexp" value="1459177541@qq.com" />
@@ -732,7 +707,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.StudentServiceTest.loginTest">
+  <component name="RunManager" selected="JUnit.TeacherServiceTest">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -773,18 +748,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserTest.info" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TeacherServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="entity.relation.*" />
+          <option name="PATTERN" value="service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="entity" />
-      <option name="MAIN_CLASS_NAME" value="entity.UserTest" />
-      <option name="METHOD_NAME" value="info" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="service" />
+      <option name="MAIN_CLASS_NAME" value="service.TeacherServiceTest" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -1086,19 +1059,19 @@
     <list>
       <item itemvalue="Tomcat Server.SSH_Demo" />
       <item itemvalue="Tomcat Server.Linux" />
-      <item itemvalue="JUnit.UserTest.info" />
       <item itemvalue="JUnit.UserTest.testSQL" />
       <item itemvalue="JUnit.UserTest.testShemExport" />
       <item itemvalue="JUnit.StudentServiceTest.loginTest" />
       <item itemvalue="JUnit.StudentServiceTest.registerTest" />
+      <item itemvalue="JUnit.TeacherServiceTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TeacherServiceTest" />
         <item itemvalue="JUnit.StudentServiceTest.loginTest" />
         <item itemvalue="JUnit.StudentServiceTest.registerTest" />
         <item itemvalue="JUnit.UserTest.testShemExport" />
         <item itemvalue="JUnit.UserTest.testSQL" />
-        <item itemvalue="JUnit.UserTest.info" />
       </list>
     </recent_temporary>
   </component>
@@ -1150,7 +1123,7 @@
       <workItem from="1542594516136" duration="696000" />
       <workItem from="1543233281789" duration="8742000" />
       <workItem from="1543242269483" duration="45000" />
-      <workItem from="1543751192744" duration="5070000" />
+      <workItem from="1543751192744" duration="5408000" />
     </task>
     <task id="LOCAL-00001" summary="Test IDEA Commit">
       <created>1539256030611</created>
@@ -1362,13 +1335,17 @@
       <option name="project" value="LOCAL" />
       <updated>1543241482989</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="调试">
+      <created>1543756310043</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1543756310043</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="UserTest_testShemExport - 2018.11.26 at 20h 14m 43s.xml">
-      <configuration name="UserTest.testShemExport" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="UserTest_testShemExport - 2018.11.26 at 20h 18m 01s.xml">
       <configuration name="UserTest.testShemExport" configurationId="JUnit" />
     </history-entry>
@@ -1396,9 +1373,12 @@
     <history-entry file="StudentServiceTest_loginTest - 2018.12.02 at 21h 04m 50s.xml">
       <configuration name="StudentServiceTest.loginTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="StudentServiceTest_loginTest - 2018.12.02 at 21h 11m 11s.xml">
+      <configuration name="StudentServiceTest.loginTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="149698000" />
+    <option name="totallyTimeSpent" value="150036000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -1492,7 +1472,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Test log4j..... success" />
     <MESSAGE value="Test register &amp; login(existence) success.But test login(Non-existence) fail." />
     <MESSAGE value="Use JPA-style. Error user login is fail." />
     <MESSAGE value="Tomcat start...fail." />
@@ -1517,146 +1496,14 @@
     <MESSAGE value="调整实体关系" />
     <MESSAGE value="遵从代码规范" />
     <MESSAGE value="更新dao层和service层" />
-    <option name="LAST_COMMIT_MESSAGE" value="更新dao层和service层" />
+    <MESSAGE value="调试" />
+    <option name="LAST_COMMIT_MESSAGE" value="调试" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/StudentDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://JAVA/service.impl.UserServiceImpl">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement>service.impl.UserServiceImpl</OriginalElement>
-          <nodes>
-            <node x="360.8541666666667" y="299.0">service.impl.StudentServiceImpl</node>
-            <node x="491.3541666666667" y="0.0">entity.user.User</node>
-            <node x="0.0" y="83.0">org.springframework.stereotype.Service</node>
-            <node x="224.94722222222225" y="83.0">service.UserService</node>
-            <node x="262.6041666666667" y="176.0">service.StudentService</node>
-            <node x="63.166666666666686" y="176.0">service.TeacherService</node>
-            <node x="71.16666666666669" y="299.0">service.impl.TeacherServiceImpl</node>
-            <node x="563.3541666666667" y="83.0">org.springframework.stereotype.Repository</node>
-            <node x="446.6041666666667" y="176.0">service.impl.UserServiceImpl</node>
-            <node x="207.69722222222225" y="0.0">service.Service</node>
-          </nodes>
-          <notes />
-          <edges>
-            <edge source="service.impl.UserServiceImpl" target="org.springframework.stereotype.Repository">
-              <point x="63.75" y="-16.5" />
-              <point x="595.3541666666667" y="156.0" />
-              <point x="584.6875" y="156.0" />
-              <point x="-42.666666666666664" y="16.5" />
-            </edge>
-            <edge source="service.UserService" target="entity.user.User">
-              <point x="34.25" y="-16.5" />
-              <point x="327.69722222222225" y="58.0" />
-              <point x="511.8541666666667" y="58.0" />
-              <point x="-20.5" y="16.5" />
-            </edge>
-            <edge source="service.impl.StudentServiceImpl" target="org.springframework.stereotype.Repository">
-              <point x="73.87500000000001" y="-16.5" />
-              <point x="533.2291666666667" y="279.0" />
-              <point x="669.4902777777777" y="279.0" />
-              <point x="42.66666666666663" y="16.5" />
-            </edge>
-            <edge source="service.impl.StudentServiceImpl" target="service.impl.UserServiceImpl">
-              <point x="24.625" y="-16.5" />
-              <point x="483.9791666666667" y="259.0" />
-              <point x="574.1041666666667" y="259.0" />
-              <point x="42.5" y="16.5" />
-            </edge>
-            <edge source="service.StudentService" target="service.UserService">
-              <point x="0.0" y="-16.5" />
-              <point x="344.6041666666667" y="156.0" />
-              <point x="293.44722222222225" y="156.0" />
-              <point x="0.0" y="16.5" />
-            </edge>
-            <edge source="service.impl.TeacherServiceImpl" target="org.springframework.stereotype.Service">
-              <point x="-73.5" y="-16.5" />
-              <point x="95.66666666666669" y="279.0" />
-              <point x="4.4444444444444" y="279.0" />
-              <point x="4.4444444444444" y="156.0" />
-              <point x="17.166666666666686" y="156.0" />
-              <point x="-34.333333333333314" y="16.5" />
-            </edge>
-            <edge source="service.impl.TeacherServiceImpl" target="service.TeacherService">
-              <point x="-24.5" y="-16.5" />
-              <point x="0.0" y="16.5" />
-            </edge>
-            <edge source="service.impl.UserServiceImpl" target="service.UserService">
-              <point x="-21.25" y="-16.5" />
-              <point x="510.3541666666667" y="136.0" />
-              <point x="339.1138888888889" y="136.0" />
-              <point x="45.66666666666663" y="16.5" />
-            </edge>
-            <edge source="service.impl.UserServiceImpl" target="entity.user.User">
-              <point x="21.25" y="-16.5" />
-              <point x="20.5" y="16.5" />
-            </edge>
-            <edge source="service.impl.StudentServiceImpl" target="service.StudentService">
-              <point x="-24.625" y="-16.5" />
-              <point x="434.7291666666667" y="229.0" />
-              <point x="344.6041666666667" y="229.0" />
-              <point x="0.0" y="16.5" />
-            </edge>
-            <edge source="service.TeacherService" target="service.UserService">
-              <point x="0.0" y="-16.5" />
-              <point x="144.66666666666669" y="156.0" />
-              <point x="247.78055555555557" y="156.0" />
-              <point x="-45.66666666666666" y="16.5" />
-            </edge>
-            <edge source="service.impl.UserServiceImpl" target="org.springframework.stereotype.Service">
-              <point x="-63.75" y="-16.5" />
-              <point x="467.8541666666667" y="146.0" />
-              <point x="85.83333333333331" y="146.0" />
-              <point x="34.333333333333314" y="16.5" />
-            </edge>
-            <edge source="service.impl.TeacherServiceImpl" target="org.springframework.stereotype.Repository">
-              <point x="73.5" y="-16.5" />
-              <point x="242.66666666666669" y="269.0" />
-              <point x="643.1875" y="269.0" />
-              <point x="643.1875" y="156.0" />
-              <point x="627.3541666666667" y="156.0" />
-              <point x="0.0" y="16.5" />
-            </edge>
-            <edge source="service.impl.TeacherServiceImpl" target="service.impl.UserServiceImpl">
-              <point x="24.5" y="-16.5" />
-              <point x="193.66666666666669" y="249.0" />
-              <point x="489.1041666666667" y="249.0" />
-              <point x="-42.5" y="16.5" />
-            </edge>
-            <edge source="service.UserService" target="service.Service">
-              <point x="-34.25" y="-16.5" />
-              <point x="0.0" y="16.5" />
-            </edge>
-            <edge source="service.impl.StudentServiceImpl" target="org.springframework.stereotype.Service">
-              <point x="-73.875" y="-16.5" />
-              <point x="385.4791666666667" y="239.0" />
-              <point x="39.833333333333314" y="239.0" />
-              <point x="39.833333333333314" y="156.0" />
-              <point x="51.5" y="156.0" />
-              <point x="0.0" y="16.5" />
-            </edge>
-          </edges>
-          <settings layout="Hierarchic Group" zoom="1.0" x="215.0" y="100.0" />
-          <SelectedNodes>
-            <node>service.impl.UserServiceImpl</node>
-          </SelectedNodes>
-          <Categories />
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
     <entry file="uml://JAVA/service.impl">
       <provider selected="true" editor-type-id="UmlEditorProvider">
         <state>
@@ -2780,13 +2627,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://48afbc8a-e81e-488e-8d15-09c6cceffe98/schema/ssh/table/Student">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/ApplicationContext.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="214">
@@ -2999,8 +2839,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/service/StudentServiceTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="27" column="36" lean-forward="true" selection-start-line="27" selection-start-column="36" selection-end-line="27" selection-end-column="36" />
+        <state relative-caret-position="468">
+          <caret line="26" column="34" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://48afbc8a-e81e-488e-8d15-09c6cceffe98/schema/ssh/table/Student">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://48afbc8a-e81e-488e-8d15-09c6cceffe98/schema/ssh/table/Teacher">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/service/TeacherServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="20" column="64" lean-forward="true" selection-start-line="20" selection-start-column="64" selection-end-line="20" selection-end-column="64" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
