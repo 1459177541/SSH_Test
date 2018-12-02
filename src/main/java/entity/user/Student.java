@@ -8,6 +8,7 @@ import entity.relation.OrganizePosition;
 import entity.relation.StudentCourse;
 
 import javax.persistence.*;
+import java.util.Objects;
 import java.util.Set;
 
 @Entity
@@ -73,5 +74,25 @@ public class Student extends User {
     public Student setOrganizePositions(Set<OrganizePosition> organizePositions) {
         this.organizePositions = organizePositions;
         return this;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) {
+            return true;
+        }
+        if (o == null || getClass() != o.getClass()) {
+            return false;
+        }
+        if (!super.equals(o)) {
+            return false;
+        }
+        Student student = (Student) o;
+        return Objects.equals(studentClass, student.studentClass);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(super.hashCode(), studentClass);
     }
 }

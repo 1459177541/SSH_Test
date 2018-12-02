@@ -13,7 +13,7 @@ import java.util.Optional;
 
 @Repository
 @Transactional
-public class TeacherDaoImpl extends UserDaoImpl<Teacher> implements TeacherDao {
+public class TeacherDaoImpl extends AbstractUserDaoImpl<Teacher> implements TeacherDao {
 
     @Override
     public Optional<Teacher> get(int id) {

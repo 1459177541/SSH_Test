@@ -9,18 +9,18 @@
     <constant name="struts.i18n.encoding" value="UTF-8"/>
     <constant name="struts.configuration.xml.reload" value="true"/>
 
-    <package name="login" namespace="/login" extends="struts-default">
-        <action name="login" class="action.UserAction" method="login">
-            <result name="success" type="redirect">/index.jsp</result>
-            <result name="input">/login/login.jsp</result>
-        </action>
-        <action name="registerView" class="action.UserAction" method="registerView">
-            <result name="success">/login/register.jsp</result>
-        </action>
-        <action name="register" class="action.UserAction" method="register">
-            <result name="input">/login/register.jsp</result>
-            <result name="success">/login/registerSuccess.jsp</result>
-        </action>
-    </package>
+    <!--<package name="login" namespace="/login" extends="struts-default">-->
+        <!--<action name="login" class="action.UserAction" method="login">-->
+            <!--<result name="success" type="redirect">/index.jsp</result>-->
+            <!--<result name="input">/login/login.jsp</result>-->
+        <!--</action>-->
+        <!--<action name="registerView" class="action.UserAction" method="registerView">-->
+            <!--<result name="success">/login/register.jsp</result>-->
+        <!--</action>-->
+        <!--<action name="register" class="action.UserAction" method="register">-->
+            <!--<result name="input">/login/register.jsp</result>-->
+            <!--<result name="success">/login/registerSuccess.jsp</result>-->
+        <!--</action>-->
+    <!--</package>-->
 
 </struts>

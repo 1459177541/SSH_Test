@@ -75,7 +75,7 @@ public class User implements Serializable {
             return false;
         }
         User user1 = (User) o;
-        return id == user1.id;
+        return id.equals(user1.id);
     }
 
     @Override

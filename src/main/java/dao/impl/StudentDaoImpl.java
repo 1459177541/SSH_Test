@@ -3,20 +3,18 @@ package dao.impl;
 import dao.StudentDao;
 import entity.collective.StudentClass;
 import entity.user.Student;
-import org.hibernate.criterion.DetachedCriteria;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
-import javax.persistence.criteria.Predicate;
 import javax.persistence.criteria.Root;
 import java.util.Collection;
 import java.util.Optional;
 
 @Repository
 @Transactional
-public class StudentDaoImpl extends UserDaoImpl<Student> implements StudentDao {
+public class StudentDaoImpl extends AbstractUserDaoImpl<Student> implements StudentDao {
 
     @Override
     public Optional<Student> get(int id) {

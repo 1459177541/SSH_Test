@@ -12,23 +12,23 @@ import java.util.Collection;
 
 @Service
 @Repository
-public class TeacherServiceImpl extends UserServiceImpl<Teacher> implements TeacherService {
+public class TeacherServiceImpl extends BaseUserServiceImpl<Teacher> implements TeacherService {
 
     @Override
     @Autowired
     @Qualifier("teacherDaoImpl")
-    public UserServiceImpl setUserDao(UserDao<Teacher> userDao) {
-        this.userDao = userDao;
+    public BaseUserServiceImpl setDao(UserDao<Teacher> dao) {
+        this.dao = dao;
         return this;
     }
 
     @Override
     public Collection<Teacher> get() {
-        return userDao.get();
+        return dao.get();
     }
 
     @Override
     public boolean login(int id, String password) {
-        return userDao.login(id, password) != null;
+        return dao.login(id, password) != null;
     }
 }
