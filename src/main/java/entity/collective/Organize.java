@@ -4,6 +4,7 @@ import entity.relation.OrganizePosition;
 import entity.user.Student;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 import java.util.Objects;
 import java.util.Set;
 
@@ -15,6 +16,7 @@ public class Organize {
     private Integer id;
 
     @Column(name = "o_name", nullable = false, length = 31)
+    @NotNull
     private String name;
 
     @ManyToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)

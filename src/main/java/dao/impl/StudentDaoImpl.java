@@ -1,8 +1,12 @@
 package dao.impl;
 
 import dao.StudentDao;
+import entity.Course;
+import entity.collective.Organize;
 import entity.collective.StudentClass;
+import entity.relation.StudentCourse;
 import entity.user.Student;
+import org.hibernate.Hibernate;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -10,11 +14,15 @@ import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Root;
 import java.util.Collection;
+import java.util.Objects;
 import java.util.Optional;
+import java.util.function.Function;
+import java.util.stream.Collectors;
 
 @Repository
 @Transactional
 public class StudentDaoImpl extends AbstractUserDaoImpl<Student> implements StudentDao {
+
 
     @Override
     public Optional<Student> get(int id) {
@@ -22,7 +30,6 @@ public class StudentDaoImpl extends AbstractUserDaoImpl<Student> implements Stud
                 .ofNullable(getHibernateTemplate())
                 .map(hibernateTemplate -> hibernateTemplate.get(Student.class, id));
     }
-
 
     @Override
     public Student login(int id, String password) {
@@ -43,6 +50,41 @@ public class StudentDaoImpl extends AbstractUserDaoImpl<Student> implements Stud
                 .setName(name)
                 .setPassword(password))
                 .setStudentClass(studentClass));
+    }
+
+    @Override
+    public boolean setClass(Student student, StudentClass studentClass) {
+        return update(student.setStudentClass(studentClass));
+    }
+
+    @Override
+    public Collection<Course> getCourse(int id) {
+        assert getHibernateTemplate() != null;
+        return Objects.requireNonNull(getHibernateTemplate()
+                .get(Student.class, id))
+                .getCourses()
+                .stream()
+                .map(StudentCourse::getCourse)
+                .collect(Collectors.toList());
+    }
+
+    @Override
+    public Collection<Organize> getOrganize(int id) {
+        assert getHibernateTemplate() != null;
+        return Objects.requireNonNull(getHibernateTemplate()
+                .get(Student.class, id))
+                .getOrganizes();
+    }
+
+    @Override
+    public Optional<Student> load(int id) {
+        return Optional
+                .ofNullable(getHibernateTemplate())
+                .map(hibernateTemplate -> hibernateTemplate.execute(session -> {
+                    Student student = session.get(Student.class, id);
+                    Hibernate.initialize(student);
+                    return student;
+                }));
     }
 
     @Override

@@ -1,6 +1,7 @@
 package entity.collective;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 import java.util.Objects;
 import java.util.Set;
 
@@ -12,6 +13,7 @@ public class College {
     private Integer id;
 
     @Column(name = "c_name", length = 31, nullable = false)
+    @NotNull
     private String name;
 
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)

@@ -1,6 +1,8 @@
 package service.impl;
 
+import dao.TeacherDao;
 import dao.UserDao;
+import entity.Course;
 import entity.user.Teacher;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -30,5 +32,15 @@ public class TeacherServiceImpl extends BaseUserServiceImpl<Teacher> implements 
     @Override
     public boolean login(int id, String password) {
         return dao.login(id, password) != null;
+    }
+
+    @Override
+    public boolean register(String name, String password) {
+        return register((Teacher) new Teacher().setName(name).setPassword(password));
+    }
+
+    @Override
+    public Collection<Course> getCourse(int id) {
+        return ((TeacherDao) dao).getCourse(id);
     }
 }

@@ -1,6 +1,7 @@
 package entity;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 import java.util.Objects;
 
@@ -12,6 +13,7 @@ public class Position implements Serializable {
     private Integer id;
 
     @Column(length = 31, nullable = false)
+    @NotNull
     private String name;
 
     public Position() {

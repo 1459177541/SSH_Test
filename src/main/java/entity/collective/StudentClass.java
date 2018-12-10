@@ -5,6 +5,7 @@ import entity.user.Student;
 import entity.user.Teacher;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 import java.util.Objects;
 import java.util.Set;
 
@@ -17,6 +18,7 @@ public class StudentClass {
     private Integer id;
 
     @Column(name = "c_name", length = 31)
+    @NotNull
     private String name;
 
     @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)

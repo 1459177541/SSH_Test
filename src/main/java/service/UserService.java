@@ -14,4 +14,6 @@ public interface UserService<T extends User> extends Service<T>{
 
     boolean register(T user);
 
+    boolean register(String name, String password);
+
 }

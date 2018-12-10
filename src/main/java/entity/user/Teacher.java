@@ -26,4 +26,13 @@ public class Teacher extends User {
         this.courses = courses;
         return this;
     }
+
+    public StudentClass getStudentClass() {
+        return studentClass;
+    }
+
+    public Teacher setStudentClass(StudentClass studentClass) {
+        this.studentClass = studentClass;
+        return this;
+    }
 }

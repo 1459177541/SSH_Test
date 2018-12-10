@@ -1,6 +1,7 @@
 package entity.user;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 import java.util.Objects;
 
@@ -13,9 +14,11 @@ public class User implements Serializable {
     private Integer id;
 
     @Column(name="u_name", length = 31, nullable = false, unique = true)
+    @NotNull
     private String name;
 
     @Column(name = "u_password", length = 31, nullable = false)
+    @NotNull
     private String password;
 
     @Column(name = "u_email", length = 31)

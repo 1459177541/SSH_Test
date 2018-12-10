@@ -4,6 +4,7 @@ import entity.relation.StudentCourse;
 import entity.user.Teacher;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 import java.util.Objects;
 import java.util.Set;
 
@@ -16,12 +17,15 @@ public class Course {
     private Integer id;
 
     @Column(name = "c_name", length = 31, nullable = false)
+    @NotNull
     private String name;
 
     @Column(name = "credit")
+    @NotNull
     private double credit;
 
     @Column(name = "period")
+    @NotNull
     private int period;
 
     @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
@@ -98,7 +102,7 @@ public class Course {
             return false;
         }
         Course course = (Course) o;
-        return id.equals(course.id);
+        return Objects.equals(id, course.id);
     }
 
     @Override

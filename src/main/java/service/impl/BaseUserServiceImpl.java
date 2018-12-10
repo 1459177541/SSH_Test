@@ -6,6 +6,7 @@ import org.springframework.stereotype.Repository;
 import org.springframework.stereotype.Service;
 import service.UserService;
 
+import javax.validation.Valid;
 import java.util.Optional;
 
 @Service
@@ -31,6 +32,7 @@ public abstract class BaseUserServiceImpl<T extends User> implements UserService
     }
 
     @Override
+    @Valid
     public boolean register(T user) {
         return dao.register(user);
     }
@@ -46,6 +48,7 @@ public abstract class BaseUserServiceImpl<T extends User> implements UserService
     }
 
     @Override
+    @Valid
     public boolean update(T user) {
         return dao.update(user);
     }

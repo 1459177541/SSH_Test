@@ -1,6 +1,7 @@
 package dao.impl;
 
 import dao.TeacherDao;
+import entity.Course;
 import entity.user.Teacher;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
@@ -9,6 +10,7 @@ import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Root;
 import java.util.Collection;
+import java.util.Objects;
 import java.util.Optional;
 
 @Repository
@@ -43,6 +45,12 @@ public class TeacherDaoImpl extends AbstractUserDaoImpl<Teacher> implements Teac
     @Override
     public boolean register(String name, String password) {
         return register((Teacher) new Teacher().setName(name).setPassword(password));
+    }
+
+    @Override
+    public Collection<Course> getCourse(int id) {
+        assert getHibernateTemplate() != null;
+        return Objects.requireNonNull(getHibernateTemplate().get(Teacher.class, id)).getCourses();
     }
 
     @Override

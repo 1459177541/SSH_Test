@@ -1,5 +1,7 @@
 package service;
 
+
+import entity.Course;
 import entity.user.Student;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
@@ -7,6 +9,8 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
+
+import java.util.List;
 
 @ExtendWith(SpringExtension.class)
 @ContextConfiguration("classpath:ApplicationContext.xml")
@@ -28,6 +32,16 @@ class StudentServiceTest {
                 .setPassword("123");
         Assertions.assertTrue(service.register(student));
         Assertions.assertTrue(service.login(student));
+    }
+
+    @Test
+    void setCourse(){
+        List<Course> courses = List.of(
+                new Course().setName("Course1").setCredit(1).setPeriod(15),
+                new Course().setName("Course2").setCredit(1).setPeriod(20)
+        );
+        Assertions.assertTrue(service.setCourse(1, courses));
+        Assertions.assertEquals(courses, service.getCourse(1));
     }
 
 
