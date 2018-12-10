@@ -10,25 +10,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="25defb74-8661-49ea-a980-ffd802b910b3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/dao/CourseDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dao/StudentDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/StudentDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/TeacherDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/TeacherDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dao/impl/StudentDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/impl/StudentDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/impl/TeacherDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/impl/TeacherDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/Course.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/Position.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/Position.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/collective/College.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/collective/College.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/collective/Organize.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/collective/Organize.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/collective/StudentClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/collective/StudentClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/user/Teacher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/user/Teacher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/user/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/user/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/StudentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/StudentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/TeacherService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/TeacherService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/impl/BaseUserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/impl/BaseUserServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/service/impl/StudentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/impl/StudentServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/impl/TeacherServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/impl/TeacherServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/service/StudentServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/service/StudentServiceTest.java" afterDir="false" />
     </list>
     <list id="5844e27e-d40a-4406-b8f6-26d2d8dee936" name="Revert: Delete jdbc.properties" comment="" />
@@ -167,7 +152,7 @@
           <entry key="Book" value="2" />
           <entry key="BookTag" value="1" />
           <entry key="BookTagMap" value="2" />
-          <entry key="Course" value="1" />
+          <entry key="Course" value="3" />
           <entry key="JAVA/" value="1" />
           <entry key="JAVA/dao" value="1" />
           <entry key="JAVA/entity" value="1" />
@@ -176,9 +161,10 @@
           <entry key="PowerGround" value="24" />
           <entry key="Press" value="4" />
           <entry key="Press_Book" value="3" />
-          <entry key="Student" value="9" />
+          <entry key="Student" value="10" />
           <entry key="StudentClass" value="2" />
           <entry key="StudentCourse" value="2" />
+          <entry key="Student_StudentCourse" value="1" />
           <entry key="Teacher" value="2" />
           <entry key="User" value="40" />
           <entry key="UserGroundMap" value="1" />
@@ -191,7 +177,7 @@
           <entry key="hibernate_sequence" value="1" />
           <entry key="iml" value="4" />
           <entry key="impl" value="4" />
-          <entry key="java" value="1787" />
+          <entry key="java" value="1792" />
           <entry key="js" value="5" />
           <entry key="jsp" value="164" />
           <entry key="log" value="23" />
@@ -210,9 +196,9 @@
         <counts>
           <entry key="CLASS" value="17" />
           <entry key="CSS" value="3" />
-          <entry key="Database Element" value="135" />
+          <entry key="Database Element" value="139" />
           <entry key="IDEA_MODULE" value="4" />
-          <entry key="JAVA" value="1787" />
+          <entry key="JAVA" value="1792" />
           <entry key="JSP" value="164" />
           <entry key="JavaScript" value="5" />
           <entry key="Markdown" value="2" />
@@ -231,11 +217,11 @@
           <entry key="css" value="16" />
           <entry key="dummy" value="46" />
           <entry key="gitignore" value="13" />
-          <entry key="java" value="9731" />
+          <entry key="java" value="9737" />
           <entry key="jsp" value="777" />
           <entry key="properties" value="69" />
           <entry key="sql" value="47" />
-          <entry key="txt" value="643" />
+          <entry key="txt" value="655" />
           <entry key="xhtml" value="7" />
           <entry key="xml" value="1571" />
         </counts>
@@ -243,10 +229,10 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="16" />
-          <entry key="JAVA" value="9728" />
+          <entry key="JAVA" value="9734" />
           <entry key="JPA QL" value="3" />
           <entry key="JSP" value="777" />
-          <entry key="PLAIN_TEXT" value="702" />
+          <entry key="PLAIN_TEXT" value="714" />
           <entry key="Properties" value="69" />
           <entry key="SQL" value="47" />
           <entry key="Scratch" value="25" />
@@ -264,8 +250,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/service/StudentServiceTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="16" column="6" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
+            <state relative-caret-position="774">
+              <caret line="43" column="62" selection-start-line="43" selection-start-column="62" selection-end-line="43" selection-end-column="62" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -364,10 +350,10 @@
         <option value="$PROJECT_DIR$/src/main/java/service/impl/BaseUserServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/entity/Course.java" />
         <option value="$PROJECT_DIR$/src/main/java/service/StudentService.java" />
-        <option value="$PROJECT_DIR$/src/test/java/service/StudentServiceTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/dao/StudentDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/service/impl/StudentServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/dao/impl/StudentDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/test/java/service/StudentServiceTest.java" />
       </list>
     </option>
   </component>
@@ -693,7 +679,7 @@
     <property name="TODO_SCOPE" value="All Places" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544451188315" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544451629506" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="CSS&#10;JSP" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last.edited.regexp" value="1459177541@qq.com" />
@@ -1098,9 +1084,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.StudentServiceTest.setCourse" />
+        <item itemvalue="JUnit.StudentServiceTest.registerTest" />
         <item itemvalue="JUnit.StudentServiceTest.loginTest" />
         <item itemvalue="JUnit.TeacherServiceTest" />
-        <item itemvalue="JUnit.StudentServiceTest.registerTest" />
         <item itemvalue="JUnit.UserTest.testShemExport" />
       </list>
     </recent_temporary>
@@ -1157,7 +1143,7 @@
       <workItem from="1543751192744" duration="6644000" />
       <workItem from="1544331231096" duration="3101000" />
       <workItem from="1544337875686" duration="477000" />
-      <workItem from="1544445255365" duration="5928000" />
+      <workItem from="1544445255365" duration="6212000" />
     </task>
     <task id="LOCAL-00001" summary="Test IDEA Commit">
       <created>1539256030611</created>
@@ -1397,16 +1383,17 @@
       <option name="project" value="LOCAL" />
       <updated>1544332765988</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="添加服务...测试失败">
+      <created>1544451235921</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1544451235921</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="StudentServiceTest_loginTest - 2018.12.02 at 21h 04m 50s.xml">
-      <configuration name="StudentServiceTest.loginTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="StudentServiceTest_loginTest - 2018.12.02 at 21h 11m 11s.xml">
-      <configuration name="StudentServiceTest.loginTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="TeacherServiceTest - 2018.12.02 at 21h 16m 50s.xml">
       <configuration name="TeacherServiceTest" configurationId="JUnit" />
     </history-entry>
@@ -1431,9 +1418,15 @@
     <history-entry file="StudentServiceTest_setCourse - 2018.12.10 at 22h 10m 04s.xml">
       <configuration name="StudentServiceTest.setCourse" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="StudentServiceTest_setCourse - 2018.12.10 at 22h 13m 15s.xml">
+      <configuration name="StudentServiceTest.setCourse" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="StudentServiceTest_setCourse - 2018.12.10 at 22h 14m 57s.xml">
+      <configuration name="StudentServiceTest.setCourse" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="160778000" />
+    <option name="totallyTimeSpent" value="161062000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -1527,7 +1520,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Tomcat start...fail." />
     <MESSAGE value="Tomcat start...success. 注解扫描不能使用通配符&quot;*&quot;" />
     <MESSAGE value="添加实体信息" />
     <MESSAGE value="修改映射文件。。。。未完成" />
@@ -1552,27 +1544,14 @@
     <MESSAGE value="调试" />
     <MESSAGE value="调整规范" />
     <MESSAGE value="调整" />
-    <option name="LAST_COMMIT_MESSAGE" value="调整" />
+    <MESSAGE value="添加服务...测试失败" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加服务...测试失败" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/5.3.6.Final/hibernate-core-5.3.6.Final-sources.jar!/org/hibernate/Criteria.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="370" column="20" selection-start-line="370" selection-start-column="20" selection-end-line="370" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/5.3.6.Final/hibernate-core-5.3.6.Final-sources.jar!/org/hibernate/SharedSessionContract.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="120" column="13" selection-start-line="120" selection-start-column="13" selection-end-line="120" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/action/UserAction.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/aop/LoggerAop.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1842,13 +1821,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://48afbc8a-e81e-488e-8d15-09c6cceffe98/schema/ssh/table/Student">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/entity/relation/StudentCourse.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1260">
@@ -1893,13 +1865,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/service/impl/StudentServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="444">
-          <caret line="71" selection-start-line="71" selection-end-line="71" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/5.3.6.Final/hibernate-core-5.3.6.Final-sources.jar!/org/hibernate/Hibernate.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="412">
@@ -1909,15 +1874,43 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/dao/impl/StudentDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="473">
-          <caret line="79" column="33" selection-start-line="79" selection-start-column="33" selection-end-line="79" selection-end-column="33" />
+        <state relative-caret-position="545">
+          <caret line="84" column="61" selection-start-line="84" selection-start-column="61" selection-end-line="84" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://48afbc8a-e81e-488e-8d15-09c6cceffe98/schema/ssh/table/Student">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://48afbc8a-e81e-488e-8d15-09c6cceffe98/schema/ssh/table/Student_StudentCourse">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://48afbc8a-e81e-488e-8d15-09c6cceffe98/schema/ssh/table/Course">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/service/impl/StudentServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="653">
+          <caret line="71" selection-start-line="71" selection-end-line="71" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/service/StudentServiceTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="6" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
+        <state relative-caret-position="774">
+          <caret line="43" column="62" selection-start-line="43" selection-start-column="62" selection-end-line="43" selection-end-column="62" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

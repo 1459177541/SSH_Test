@@ -77,12 +77,12 @@ public class StudentDaoImpl extends AbstractUserDaoImpl<Student> implements Stud
     }
 
     @Override
-    public Optional<Student> load(int id) {
+    public Optional<Student> loadCourse(int id) {
         return Optional
                 .ofNullable(getHibernateTemplate())
                 .map(hibernateTemplate -> hibernateTemplate.execute(session -> {
                     Student student = session.get(Student.class, id);
-                    Hibernate.initialize(student);
+                    Hibernate.initialize(student.getCourses());
                     return student;
                 }));
     }

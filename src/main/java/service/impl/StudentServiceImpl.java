@@ -10,11 +10,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Repository;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import service.StudentService;
 
 import java.util.Collection;
 import java.util.Objects;
 import java.util.Optional;
+import java.util.Set;
 import java.util.stream.Collectors;
 
 @Service
@@ -56,7 +58,7 @@ public class StudentServiceImpl extends BaseUserServiceImpl<Student> implements 
 
     @Override
     public boolean setCourse(int id, Collection<Course> courses) {
-        Optional<Student> studentOptional = ((StudentDao)dao).load(id);
+        Optional<Student> studentOptional = ((StudentDao)dao).loadCourse(id);
         if (!studentOptional.isPresent()) {
             return false;
         }

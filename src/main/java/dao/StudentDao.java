@@ -19,6 +19,6 @@ public interface StudentDao extends UserDao<Student> {
 
     Collection<Organize> getOrganize(int id);
 
-    Optional<Student> load(int id);
+    Optional<Student> loadCourse(int id);
 
 }

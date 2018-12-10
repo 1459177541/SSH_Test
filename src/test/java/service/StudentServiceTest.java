@@ -37,11 +37,10 @@ class StudentServiceTest {
     @Test
     void setCourse(){
         List<Course> courses = List.of(
-                new Course().setName("Course1").setCredit(1).setPeriod(15),
-                new Course().setName("Course2").setCredit(1).setPeriod(20)
+                new Course().setName("Course1").setCredit(1).setPeriod(15)
         );
         Assertions.assertTrue(service.setCourse(1, courses));
-        Assertions.assertEquals(courses, service.getCourse(1));
+        Assertions.assertEquals(1, service.getCourse(1).size());
     }
 
 
