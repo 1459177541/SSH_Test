@@ -1,6 +1,7 @@
 package service;
 
 
+import config.ContextConfig;
 import entity.Course;
 import entity.user.Student;
 import org.junit.jupiter.api.Assertions;
@@ -13,7 +14,7 @@ import org.springframework.test.context.junit.jupiter.SpringExtension;
 import java.util.List;
 
 @ExtendWith(SpringExtension.class)
-@ContextConfiguration("classpath:ApplicationContext.xml")
+@ContextConfiguration(classes = ContextConfig.class)
 class StudentServiceTest {
 
     @Autowired

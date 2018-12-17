@@ -4,7 +4,6 @@ import dao.TeacherDao;
 import entity.Course;
 import entity.user.Teacher;
 import org.springframework.stereotype.Repository;
-import org.springframework.transaction.annotation.Transactional;
 
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
@@ -14,7 +13,6 @@ import java.util.Objects;
 import java.util.Optional;
 
 @Repository
-@Transactional
 public class TeacherDaoImpl extends AbstractUserDaoImpl<Teacher> implements TeacherDao {
 
     @Override

@@ -12,7 +12,7 @@
       <introspection-schemas>*:*</introspection-schemas>
     </data-source>
     <data-source name="Kali" uuid="48afbc8a-e81e-488e-8d15-09c6cceffe98">
-      <database-info product="MySQL" version="5.5.5-10.1.37-MariaDB-1" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.46 ( Revision: 9cc87a48e75c2d2e87c1a293b2862ce651cb256e )" family="MARIADB" exact-version="5.5.5">
+      <database-info product="MySQL" version="5.5.5-10.1.37-MariaDB-3" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.46 ( Revision: 9cc87a48e75c2d2e87c1a293b2862ce651cb256e )" family="MARIADB" exact-version="5.5.5">
         <extra-name-characters>#@</extra-name-characters>
         <identifier-quote-string>`</identifier-quote-string>
       </database-info>

@@ -4,10 +4,8 @@ package dao.impl;
 import dao.UserDao;
 import entity.user.User;
 import org.springframework.stereotype.Repository;
-import org.springframework.transaction.annotation.Transactional;
 
 @Repository
-@Transactional
 public abstract class AbstractUserDaoImpl<T extends User> extends AbstractDaoImpl<T> implements UserDao<T> {
 
 
