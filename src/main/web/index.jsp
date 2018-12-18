@@ -1,12 +1,5 @@
 <%@ page import="java.util.Date" %>
 <%@ page import="entity.user.User" %>
-<%--
-  Created by IntelliJ IDEA.
-  User: 杨星辰
-  Date: 2018-09-28
-  Time: 21:13
-  To change this template use File | Settings | File Templates.
---%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>

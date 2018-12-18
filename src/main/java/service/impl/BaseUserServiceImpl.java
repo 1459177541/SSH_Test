@@ -22,13 +22,15 @@ public abstract class BaseUserServiceImpl<T extends User> implements UserService
     }
 
     @Override
-    public boolean login(T user) {
+    public T login(T user) {
         Optional<T> userOptional = dao.get(user.getId());
         if (userOptional.isPresent()){
-            User user1 = userOptional.get();
-            return user1.getPassword().equals(user.getPassword());
+            T user1 = userOptional.get();
+            if (user1.getPassword().equals(user.getPassword())) {
+                return user1;
+            }
         }
-        return false;
+        return null;
     }
 
     @Override

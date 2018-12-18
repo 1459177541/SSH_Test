@@ -9,9 +9,9 @@ public interface UserService<T extends User> extends Service<T>{
 
     Optional<T> get(int id);
 
-    boolean login(T user);
+    T login(T user);
 
-    boolean login(int id, String password);
+    T login(int id, String password);
 
     @Valid
     boolean register(T user);

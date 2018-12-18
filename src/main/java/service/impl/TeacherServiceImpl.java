@@ -31,9 +31,9 @@ public class TeacherServiceImpl extends BaseUserServiceImpl<Teacher> implements 
     }
 
     @Override
-    public boolean login(int id, String password) {
+    public Teacher login(int id, String password) {
         Objects.requireNonNull(password);
-        return dao.login(id, password) != null;
+        return dao.login(id, password);
     }
 
     @Override

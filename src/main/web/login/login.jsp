@@ -1,11 +1,3 @@
-<%@ taglib prefix="s" uri="/struts-tags" %>
-<%--
-  Created by IntelliJ IDEA.
-  User: root
-  Date: 18-10-11
-  Time: 下午6:47
-  To change this template use File | Settings | File Templates.
---%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -19,6 +11,21 @@
             <%--<s:submit name="login" value="登录" action="login"/>--%>
             <%--<s:submit name="register" value="注册" action="registerView"/>--%>
         <%--</s:form>--%>
+        <form method="post" action="/loginTo">
+            <label>
+                id：<input type="text" name="name"/>
+            </label><br/>
+            <label>
+                密码：<input type="password" name="password"/>
+            </label><br/>
+            <label>类型：
+                <select name="type">
+                    <option value="学生">学生</option>
+                    <option value="教师">教师</option>
+                </select>
+            </label> <br/>
+            <input type="submit" value="登录">
+        </form>
     </div>
 </body>
 </html>
