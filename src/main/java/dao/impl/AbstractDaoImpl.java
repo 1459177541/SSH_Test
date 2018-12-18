@@ -5,10 +5,12 @@ import dao.Dao;
 import org.hibernate.SessionFactory;
 import org.springframework.orm.hibernate5.support.HibernateDaoSupport;
 import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;
 
 @Repository
+@Transactional(rollbackFor = Exception.class)
 public abstract class AbstractDaoImpl<T> extends HibernateDaoSupport implements Dao<T> {
 
     @Resource

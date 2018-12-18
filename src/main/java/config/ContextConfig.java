@@ -1,10 +1,14 @@
 package config;
 
 import com.mchange.v2.c3p0.ComboPooledDataSource;
+import org.hibernate.SessionFactory;
+import org.springframework.beans.factory.FactoryBean;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.*;
 import org.springframework.core.env.Environment;
+import org.springframework.orm.hibernate5.HibernateTransactionManager;
 import org.springframework.orm.hibernate5.LocalSessionFactoryBean;
+import org.springframework.transaction.PlatformTransactionManager;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 import javax.sql.DataSource;
@@ -50,6 +54,14 @@ public class ContextConfig{
         properties.setProperty("hibernate.connection.driver_class", "com.mysql.jdbc.Driver");
         factoryBean.setHibernateProperties(properties);
         return factoryBean;
+    }
+
+    @Bean
+    public PlatformTransactionManager transactionManager(DataSource dataSource, SessionFactory sessionFactory){
+        HibernateTransactionManager transactionManager = new HibernateTransactionManager();
+        transactionManager.setDataSource(dataSource);
+        transactionManager.setSessionFactory(sessionFactory);
+        return transactionManager;
     }
 
 }
