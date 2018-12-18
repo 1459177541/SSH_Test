@@ -11,6 +11,7 @@ import org.springframework.stereotype.Service;
 import service.TeacherService;
 
 import java.util.Collection;
+import java.util.Objects;
 
 @Service
 @Repository
@@ -31,12 +32,13 @@ public class TeacherServiceImpl extends BaseUserServiceImpl<Teacher> implements 
 
     @Override
     public boolean login(int id, String password) {
+        Objects.requireNonNull(password);
         return dao.login(id, password) != null;
     }
 
     @Override
-    public boolean register(String name, String password) {
-        return register((Teacher) new Teacher().setName(name).setPassword(password));
+    public boolean register(int id, String name, String password) {
+        return register((Teacher) new Teacher().setId(id).setName(name).setPassword(password));
     }
 
     @Override

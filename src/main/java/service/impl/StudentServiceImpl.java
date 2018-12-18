@@ -36,12 +36,13 @@ public class StudentServiceImpl extends BaseUserServiceImpl<Student> implements 
 
     @Override
     public boolean login(int id, String password) {
+        Objects.requireNonNull(password);
         return dao.login(id, password) != null;
     }
 
     @Override
-    public boolean register(String name, String password) {
-        return register((Student) new Student().setName(name).setPassword(password));
+    public boolean register(int id, String name, String password) {
+        return register((Student) new Student().setId(id).setName(name).setPassword(password));
     }
 
     @Override
