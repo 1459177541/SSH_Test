@@ -2,11 +2,11 @@ package dao.impl;
 
 
 import dao.UserDao;
-import entity.user.User;
+import entity.user.BaseRole;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public abstract class AbstractUserDaoImpl<T extends User> extends AbstractDaoImpl<T> implements UserDao<T> {
+public abstract class AbstractUserDaoImpl<T extends BaseRole> extends AbstractDaoImpl<T> implements UserDao<T> {
 
 
     @Override

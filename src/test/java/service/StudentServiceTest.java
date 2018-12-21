@@ -22,17 +22,18 @@ class StudentServiceTest {
 
     @Test
     void loginTest() {
-        Assertions.assertTrue(service.login(1, "123"));
-        Assertions.assertFalse(service.login(1, "456"));
+        Assertions.assertNotNull(service.login(2018101, "123"));
+        Assertions.assertNull(service.login(2018101, "456"));
     }
 
     @Test
     void registerTest(){
         Student student = (Student) new Student()
+                .setId(2018101)
                 .setName("student1")
                 .setPassword("123");
         Assertions.assertTrue(service.register(student));
-        Assertions.assertTrue(service.login(student));
+        Assertions.assertNotNull(service.login(student));
     }
 
     @Test

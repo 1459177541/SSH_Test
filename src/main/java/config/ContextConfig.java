@@ -30,7 +30,7 @@ public class ContextConfig{
     }
 
     @Bean
-    public ComboPooledDataSource dataSource() throws PropertyVetoException {
+    public DataSource dataSource() throws PropertyVetoException {
         ComboPooledDataSource dataSource = new ComboPooledDataSource();
         dataSource.setDriverClass(environment.getProperty("jdbc.driverClass"));
         dataSource.setJdbcUrl(environment.getProperty("jdbc.url"));

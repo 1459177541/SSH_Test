@@ -1,10 +1,11 @@
 package dao;
 
+import entity.user.BaseRole;
 import entity.user.User;
 
 import java.util.Optional;
 
-public interface UserDao<T extends User> extends Dao<T> {
+public interface UserDao<T extends BaseRole> extends Dao<T> {
 
     Optional<T> get(int id);
 

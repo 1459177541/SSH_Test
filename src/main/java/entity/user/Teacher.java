@@ -7,7 +7,7 @@ import javax.persistence.*;
 import java.util.Set;
 
 @Entity
-public class Teacher extends User {
+public class Teacher extends BaseRole {
 
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     private Set<Course> courses;
@@ -16,6 +16,15 @@ public class Teacher extends User {
     private StudentClass studentClass;
 
     public Teacher() {
+        super();
+        getUser().setRole(Role.TEACHER);
+        getUser().setRoleInfo(this);
+    }
+
+    public Teacher(User user) {
+        super(user);
+        getUser().setRole(Role.TEACHER);
+        getUser().setRoleInfo(this);
     }
 
     public Set<Course> getCourses() {

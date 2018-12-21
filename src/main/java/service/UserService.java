@@ -1,11 +1,12 @@
 package service;
 
+import entity.user.BaseRole;
 import entity.user.User;
 
 import javax.validation.Valid;
 import java.util.Optional;
 
-public interface UserService<T extends User> extends Service<T>{
+public interface UserService<T extends BaseRole> extends Service<T>{
 
     Optional<T> get(int id);
 

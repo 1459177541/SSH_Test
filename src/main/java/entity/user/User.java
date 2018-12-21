@@ -5,11 +5,11 @@ import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 import java.util.Objects;
 
-@MappedSuperclass
+@Entity
 public class User implements Serializable {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "u_id")
     @NotNull
     private Integer id;
@@ -24,6 +24,14 @@ public class User implements Serializable {
 
     @Column(name = "u_email", length = 31)
     private String email;
+
+    @Column(name = "role", nullable = false)
+    private Role role;
+
+    @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    @JoinColumn(name = "info", nullable = false)
+    private BaseRole roleInfo;
+
 
     public User() {
     }
@@ -67,6 +75,24 @@ public class User implements Serializable {
 
     public User setEmail(String email) {
         this.email = email;
+        return this;
+    }
+
+    public Role getRole() {
+        return role;
+    }
+
+    public User setRole(Role role) {
+        this.role = role;
+        return this;
+    }
+
+    public BaseRole getRoleInfo() {
+        return roleInfo;
+    }
+
+    public User setRoleInfo(BaseRole roleInfo) {
+        this.roleInfo = roleInfo;
         return this;
     }
 

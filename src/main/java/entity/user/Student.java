@@ -12,7 +12,7 @@ import java.util.Objects;
 import java.util.Set;
 
 @Entity
-public class Student extends User {
+public class Student extends BaseRole {
 
     @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     @JoinColumn(name = "class")
@@ -30,6 +30,18 @@ public class Student extends User {
 
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private Set<OrganizePosition> organizePositions;
+
+    public Student() {
+        super();
+        getUser().setRole(Role.STUDENT);
+        getUser().setRoleInfo(this);
+    }
+
+    public Student(User user) {
+        super(user);
+        getUser().setRole(Role.STUDENT);
+        getUser().setRoleInfo(this);
+    }
 
     public StudentClass getStudentClass() {
         return studentClass;

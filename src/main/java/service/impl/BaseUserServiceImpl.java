@@ -1,6 +1,7 @@
 package service.impl;
 
 import dao.UserDao;
+import entity.user.BaseRole;
 import entity.user.User;
 import org.springframework.stereotype.Repository;
 import org.springframework.stereotype.Service;
@@ -11,7 +12,7 @@ import java.util.Optional;
 
 @Service
 @Repository
-public abstract class BaseUserServiceImpl<T extends User> implements UserService<T> {
+public abstract class BaseUserServiceImpl<T extends BaseRole> implements UserService<T> {
 
     protected UserDao<T> dao;
     public abstract BaseUserServiceImpl setDao(UserDao<T> dao);
