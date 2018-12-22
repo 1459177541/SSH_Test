@@ -6,6 +6,7 @@ import java.io.Serializable;
 import java.util.Objects;
 
 @Entity
+@Embeddable
 public class User implements Serializable {
 
     @Id
@@ -29,7 +30,7 @@ public class User implements Serializable {
     private Role role;
 
     @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
-    @JoinColumn(name = "info", nullable = false)
+    @JoinColumn(name = "info")
     private BaseRole roleInfo;
 
 
@@ -42,11 +43,11 @@ public class User implements Serializable {
         this.email = email;
     }
 
-    public int getId() {
+    public Integer getId() {
         return id;
     }
 
-    public User setId(int id) {
+    public User setId(Integer id) {
         this.id = id;
         return this;
     }

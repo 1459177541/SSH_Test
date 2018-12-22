@@ -36,7 +36,7 @@ public class LoggerAop {
         Class<?> c = joinPoint.getTarget().getClass();
         MethodSignature methodSignature = (MethodSignature)joinPoint.getSignature();
         Method method = c.getMethod(methodSignature.getName(), methodSignature.getParameterTypes());
-        LOGGER.info("{} {}.{}({})出错",
+        LOGGER.error("{} {}.{}({})出错",
                 method.getReturnType(),
                 c.getName(),
                 method.getName(),

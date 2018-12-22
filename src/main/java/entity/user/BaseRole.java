@@ -1,15 +1,15 @@
 package entity.user;
 
-import javax.persistence.CascadeType;
-import javax.persistence.Id;
-import javax.persistence.MappedSuperclass;
-import javax.persistence.OneToOne;
+import javax.persistence.*;
+import java.io.Serializable;
 
 @MappedSuperclass
-public abstract class BaseRole {
+public abstract class BaseRole implements Serializable {
+
     @Id
-    @OneToOne(mappedBy = "info", cascade = CascadeType.ALL)
-    private User user = new User();
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @OneToOne
+    protected User user = new User();
 
     public BaseRole() {
     }
