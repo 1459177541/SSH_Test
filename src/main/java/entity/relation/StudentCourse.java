@@ -14,11 +14,11 @@ public class StudentCourse {
     private Integer id;
 
     @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
-    @JoinColumn(name = "student")
+    @JoinColumn(name = "student", foreignKey = @ForeignKey(name = "student"))
     private Student student;
 
     @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
-    @JoinColumn(name = "course")
+    @JoinColumn(name = "course", foreignKey = @ForeignKey(name = "course"))
     private Course course;
 
     @Column(name = "score")

@@ -17,7 +17,7 @@ public class College {
     private String name;
 
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
-    @JoinColumn(name = "college")
+    @JoinColumn(name = "college", foreignKey = @ForeignKey(name = "class"))
     private Set<StudentClass> classes;
 
     public College() {

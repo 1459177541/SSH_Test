@@ -2,7 +2,7 @@ package entity.relation;
 
 import entity.Position;
 import entity.collective.Organize;
-import entity.user.Student;
+import entity.user.OrganizeMember;
 
 import javax.persistence.*;
 import java.util.Objects;
@@ -15,25 +15,16 @@ public class OrganizePosition {
     private Integer id;
 
     @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
-    @JoinColumn(name = "organize")
+    @JoinColumn(name = "organize", foreignKey = @ForeignKey(name = "organize"))
     private Organize organize;
 
     @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
-    @JoinColumn(name = "student")
-    private Student student;
+    @JoinColumn(name = "student", foreignKey = @ForeignKey(name = "student"))
+    private OrganizeMember student;
 
     @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
-    @JoinColumn(name = "position")
+    @JoinColumn(name = "position", foreignKey = @ForeignKey(name = "position"))
     private Position position;
-
-    public Integer getId() {
-        return id;
-    }
-
-    public OrganizePosition setId(int id) {
-        this.id = id;
-        return this;
-    }
 
     public Organize getOrganize() {
         return organize;
@@ -44,11 +35,16 @@ public class OrganizePosition {
         return this;
     }
 
-    public Student getStudent() {
+    public OrganizePosition setId(Integer id) {
+        this.id = id;
+        return this;
+    }
+
+    public OrganizeMember getStudent() {
         return student;
     }
 
-    public OrganizePosition setStudent(Student student) {
+    public OrganizePosition setStudent(OrganizeMember student) {
         this.student = student;
         return this;
     }

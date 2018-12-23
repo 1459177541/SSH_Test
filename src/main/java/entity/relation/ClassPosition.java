@@ -15,15 +15,15 @@ public class ClassPosition {
     private Integer id;
 
     @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
-    @JoinColumn(name = "class")
+    @JoinColumn(name = "class", foreignKey = @ForeignKey(name = "class"))
     private StudentClass studentClass;
 
     @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
-    @JoinColumn(name = "student")
+    @JoinColumn(name = "student", foreignKey = @ForeignKey(name = "student"))
     private Student student;
 
     @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
-    @JoinColumn(name = "position")
+    @JoinColumn(name = "position", foreignKey = @ForeignKey(name = "position"))
     private Position position;
 
     public ClassPosition() {

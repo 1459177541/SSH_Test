@@ -1,7 +1,6 @@
 package entity.user;
 
 import entity.Course;
-import entity.collective.StudentClass;
 
 import javax.persistence.*;
 import java.util.Set;
@@ -9,23 +8,8 @@ import java.util.Set;
 @Entity
 public class Teacher extends BaseRole {
 
-    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private Set<Course> courses;
-
-    @OneToOne(mappedBy = "headmaster", cascade = CascadeType.ALL)
-    private StudentClass studentClass;
-
-    public Teacher() {
-        super();
-        getUser().setRole(Role.TEACHER);
-        getUser().setRoleInfo(this);
-    }
-
-    public Teacher(User user) {
-        super(user);
-        getUser().setRole(Role.TEACHER);
-        getUser().setRoleInfo(this);
-    }
 
     public Set<Course> getCourses() {
         return courses;
@@ -36,12 +20,4 @@ public class Teacher extends BaseRole {
         return this;
     }
 
-    public StudentClass getStudentClass() {
-        return studentClass;
-    }
-
-    public Teacher setStudentClass(StudentClass studentClass) {
-        this.studentClass = studentClass;
-        return this;
-    }
 }

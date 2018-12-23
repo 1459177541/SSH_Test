@@ -29,11 +29,11 @@ public class Course {
     private int period;
 
     @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
-    @JoinColumn(name = "teacher")
+    @JoinColumn(name = "teacher", foreignKey = @ForeignKey(name = "course_teacher"))
     private Teacher teacher;
 
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
-    @JoinColumn(name = "course")
+    @JoinColumn(name = "course", foreignKey = @ForeignKey(name = "student"))
     private Set<StudentCourse> course;
 
     public Course() {

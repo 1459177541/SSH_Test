@@ -5,6 +5,7 @@ import entity.Course;
 import entity.collective.Organize;
 import entity.collective.StudentClass;
 import entity.relation.StudentCourse;
+import entity.user.OrganizeMember;
 import entity.user.Student;
 import org.hibernate.Hibernate;
 import org.springframework.stereotype.Repository;
@@ -16,6 +17,7 @@ import java.util.Collection;
 import java.util.Objects;
 import java.util.Optional;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 @Repository
 public class StudentDaoImpl extends AbstractUserDaoImpl<Student> implements StudentDao {
@@ -68,9 +70,11 @@ public class StudentDaoImpl extends AbstractUserDaoImpl<Student> implements Stud
     @Override
     public Collection<Organize> getOrganize(int id) {
         assert getHibernateTemplate() != null;
-        return Objects.requireNonNull(getHibernateTemplate()
-                .get(Student.class, id))
-                .getOrganizes();
+        return Stream.of(getHibernateTemplate().get(OrganizeMember.class, id))
+                .filter(Objects::nonNull)
+                .map(organizeMember -> organizeMember != null ? organizeMember.getOrganize() : null)
+                .filter(Objects::nonNull)
+                .collect(Collectors.toList());
     }
 
     @Override

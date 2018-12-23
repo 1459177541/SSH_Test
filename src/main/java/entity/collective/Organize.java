@@ -1,7 +1,7 @@
 package entity.collective;
 
 import entity.relation.OrganizePosition;
-import entity.user.Student;
+import entity.user.OrganizeMember;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
@@ -19,26 +19,13 @@ public class Organize {
     @NotNull
     private String name;
 
-    @ManyToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
-    @JoinTable(
-            name = "Organize_member",
-            joinColumns = @JoinColumn(name = "o_id"),
-            inverseJoinColumns = @JoinColumn(name = "s_id")
-    )
-    private Set<Student> member;
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @JoinColumn(name = "organize", foreignKey = @ForeignKey(name = "member"))
+    private Set<OrganizeMember> member;
 
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
-    @JoinColumn(name = "position")
+    @JoinColumn(name = "position", foreignKey = @ForeignKey(name = "position"))
     private Set<OrganizePosition> positions;
-
-    public Integer getId() {
-        return id;
-    }
-
-    public Organize setId(int id) {
-        this.id = id;
-        return this;
-    }
 
     public String getName() {
         return name;
@@ -49,11 +36,16 @@ public class Organize {
         return this;
     }
 
-    public Set<Student> getMember() {
+    public Organize setId(Integer id) {
+        this.id = id;
+        return this;
+    }
+
+    public Set<OrganizeMember> getMember() {
         return member;
     }
 
-    public Organize setMember(Set<Student> member) {
+    public Organize setMember(Set<OrganizeMember> member) {
         this.member = member;
         return this;
     }

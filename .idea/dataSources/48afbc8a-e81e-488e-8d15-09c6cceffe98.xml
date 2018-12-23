@@ -957,5 +957,505 @@
       <Charset>utf8mb4</Charset>
       <DefaultForCharset>0</DefaultForCharset>
     </collation>
+    <table id="240" parent="5" name="ClassPosition"/>
+    <table id="241" parent="5" name="College"/>
+    <table id="242" parent="5" name="Course"/>
+    <table id="243" parent="5" name="Organize"/>
+    <table id="244" parent="5" name="OrganizePosition"/>
+    <table id="245" parent="5" name="Position"/>
+    <table id="246" parent="5" name="Student"/>
+    <table id="247" parent="5" name="StudentClass"/>
+    <table id="248" parent="5" name="StudentCourse"/>
+    <table id="249" parent="5" name="Student_OrganizePosition"/>
+    <table id="250" parent="5" name="Student_StudentCourse"/>
+    <table id="251" parent="5" name="Teacher"/>
+    <table id="252" parent="5" name="Teacher_Course"/>
+    <table id="253" parent="5" name="User"/>
+    <table id="254" parent="5" name="hibernate_sequence"/>
+    <column id="255" parent="240" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="256" parent="240" name="position">
+      <Position>2</Position>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="257" parent="240" name="student">
+      <Position>3</Position>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="258" parent="240" name="class">
+      <Position>4</Position>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="259" parent="240" name="position">
+      <ColNames>position</ColNames>
+      <Type>btree</Type>
+    </index>
+    <index id="260" parent="240" name="student">
+      <ColNames>student</ColNames>
+      <Type>btree</Type>
+    </index>
+    <index id="261" parent="240" name="class">
+      <ColNames>class</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="262" parent="240" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="263" parent="240" name="position">
+      <ColNames>position</ColNames>
+      <RefSchemaName>ssh</RefSchemaName>
+      <RefTableName>Position</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <foreign-key id="264" parent="240" name="student">
+      <ColNames>student</ColNames>
+      <RefSchemaName>ssh</RefSchemaName>
+      <RefTableName>Student</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <foreign-key id="265" parent="240" name="class">
+      <ColNames>class</ColNames>
+      <RefSchemaName>ssh</RefSchemaName>
+      <RefTableName>StudentClass</RefTableName>
+      <RefColNames>c_id</RefColNames>
+    </foreign-key>
+    <column id="266" parent="241" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="267" parent="241" name="c_name">
+      <Position>2</Position>
+      <DataType>varchar(31)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="268" parent="241" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="269" parent="242" name="c_id">
+      <Position>1</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="270" parent="242" name="credit">
+      <Position>2</Position>
+      <DataType>double|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="271" parent="242" name="c_name">
+      <Position>3</Position>
+      <DataType>varchar(31)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="272" parent="242" name="period">
+      <Position>4</Position>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="273" parent="242" name="teacher">
+      <Position>5</Position>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="274" parent="242" name="course_teacher">
+      <ColNames>teacher</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="275" parent="242" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>c_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="276" parent="242" name="course_teacher">
+      <ColNames>teacher</ColNames>
+      <RefSchemaName>ssh</RefSchemaName>
+      <RefTableName>Teacher</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="277" parent="243" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="278" parent="243" name="o_name">
+      <Position>2</Position>
+      <DataType>varchar(31)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="279" parent="243" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="280" parent="244" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="281" parent="244" name="organize">
+      <Position>2</Position>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="282" parent="244" name="position">
+      <Position>3</Position>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="283" parent="244" name="student">
+      <Position>4</Position>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="284" parent="244" name="organize">
+      <ColNames>organize</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="285" parent="244" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="286" parent="244" name="organize">
+      <ColNames>organize</ColNames>
+      <RefSchemaName>ssh</RefSchemaName>
+      <RefTableName>Organize</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="287" parent="245" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="288" parent="245" name="name">
+      <Position>2</Position>
+      <DataType>varchar(31)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="289" parent="245" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="290" parent="246" name="DTYPE">
+      <Position>1</Position>
+      <DataType>varchar(31)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="291" parent="246" name="id">
+      <Position>2</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="292" parent="246" name="user">
+      <Position>3</Position>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="293" parent="246" name="classPosition">
+      <Position>4</Position>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="294" parent="246" name="class">
+      <Position>5</Position>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="295" parent="246" name="organize">
+      <Position>6</Position>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="296" parent="246" name="member">
+      <ColNames>organize</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="297" parent="246" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="298" parent="246" name="member">
+      <ColNames>organize</ColNames>
+      <RefSchemaName>ssh</RefSchemaName>
+      <RefTableName>Organize</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="299" parent="247" name="c_id">
+      <Position>1</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="300" parent="247" name="c_name">
+      <Position>2</Position>
+      <DataType>varchar(31)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="301" parent="247" name="college">
+      <Position>3</Position>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="302" parent="247" name="headmaster">
+      <Position>4</Position>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="303" parent="247" name="headmaster">
+      <ColNames>headmaster</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="304" parent="247" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>c_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="305" parent="247" name="headmaster">
+      <ColNames>headmaster</ColNames>
+      <RefSchemaName>ssh</RefSchemaName>
+      <RefTableName>Teacher</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="306" parent="248" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="307" parent="248" name="score">
+      <Position>2</Position>
+      <DataType>double|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="308" parent="248" name="course">
+      <Position>3</Position>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="309" parent="248" name="student">
+      <Position>4</Position>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="310" parent="248" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="311" parent="249" name="OrganizeMember_id">
+      <Position>1</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="312" parent="249" name="organizePositions_id">
+      <Position>2</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="313" parent="249" name="UK_htu7lbuxmqe2vp69fe75w3swu">
+      <ColNames>organizePositions_id</ColNames>
+      <Unique>1</Unique>
+      <Type>btree</Type>
+    </index>
+    <key id="314" parent="249" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>OrganizeMember_id
+organizePositions_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <key id="315" parent="249" name="UK_htu7lbuxmqe2vp69fe75w3swu">
+      <ColNames>organizePositions_id</ColNames>
+      <UnderlyingIndexName>UK_htu7lbuxmqe2vp69fe75w3swu</UnderlyingIndexName>
+    </key>
+    <foreign-key id="316" parent="249" name="FKhebedgf7mso223ipcdkjt09kv">
+      <ColNames>OrganizeMember_id</ColNames>
+      <RefSchemaName>ssh</RefSchemaName>
+      <RefTableName>Student</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <foreign-key id="317" parent="249" name="FK21wbqg0un1q1qyatxslx5yw38">
+      <ColNames>organizePositions_id</ColNames>
+      <RefSchemaName>ssh</RefSchemaName>
+      <RefTableName>OrganizePosition</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="318" parent="250" name="Student_id">
+      <Position>1</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="319" parent="250" name="courses_id">
+      <Position>2</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="320" parent="250" name="UK_f86sa1gnhcp8ywkcess5xhhdo">
+      <ColNames>courses_id</ColNames>
+      <Unique>1</Unique>
+      <Type>btree</Type>
+    </index>
+    <key id="321" parent="250" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>Student_id
+courses_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <key id="322" parent="250" name="UK_f86sa1gnhcp8ywkcess5xhhdo">
+      <ColNames>courses_id</ColNames>
+      <UnderlyingIndexName>UK_f86sa1gnhcp8ywkcess5xhhdo</UnderlyingIndexName>
+    </key>
+    <foreign-key id="323" parent="250" name="FKd8ito1ehmnrpnkp7j4li30tgd">
+      <ColNames>Student_id</ColNames>
+      <RefSchemaName>ssh</RefSchemaName>
+      <RefTableName>Student</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <foreign-key id="324" parent="250" name="FK1ja8v4jwuk0kav01yivmo5yv5">
+      <ColNames>courses_id</ColNames>
+      <RefSchemaName>ssh</RefSchemaName>
+      <RefTableName>StudentCourse</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="325" parent="251" name="DTYPE">
+      <Position>1</Position>
+      <DataType>varchar(31)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="326" parent="251" name="id">
+      <Position>2</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="327" parent="251" name="user">
+      <Position>3</Position>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="328" parent="251" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="329" parent="252" name="Teacher_id">
+      <Position>1</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="330" parent="252" name="courses_c_id">
+      <Position>2</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="331" parent="252" name="UK_a13ybj93aagaqorua5hx5al46">
+      <ColNames>courses_c_id</ColNames>
+      <Unique>1</Unique>
+      <Type>btree</Type>
+    </index>
+    <key id="332" parent="252" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>Teacher_id
+courses_c_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <key id="333" parent="252" name="UK_a13ybj93aagaqorua5hx5al46">
+      <ColNames>courses_c_id</ColNames>
+      <UnderlyingIndexName>UK_a13ybj93aagaqorua5hx5al46</UnderlyingIndexName>
+    </key>
+    <foreign-key id="334" parent="252" name="FKbu2ttppwqx95bw5c5jfry8v7y">
+      <ColNames>Teacher_id</ColNames>
+      <RefSchemaName>ssh</RefSchemaName>
+      <RefTableName>Teacher</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <foreign-key id="335" parent="252" name="FKap4gmtgwncrrte5g7tp9jygql">
+      <ColNames>courses_c_id</ColNames>
+      <RefSchemaName>ssh</RefSchemaName>
+      <RefTableName>Course</RefTableName>
+      <RefColNames>c_id</RefColNames>
+    </foreign-key>
+    <column id="336" parent="253" name="u_id">
+      <Position>1</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="337" parent="253" name="u_email">
+      <Position>2</Position>
+      <DataType>varchar(31)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="338" parent="253" name="u_name">
+      <Position>3</Position>
+      <DataType>varchar(31)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="339" parent="253" name="u_password">
+      <Position>4</Position>
+      <DataType>varchar(31)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="340" parent="253" name="UK_mjmvbh9n9802e1wmlanxff83m">
+      <ColNames>u_name</ColNames>
+      <Unique>1</Unique>
+      <Type>btree</Type>
+    </index>
+    <key id="341" parent="253" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>u_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <key id="342" parent="253" name="UK_mjmvbh9n9802e1wmlanxff83m">
+      <ColNames>u_name</ColNames>
+      <UnderlyingIndexName>UK_mjmvbh9n9802e1wmlanxff83m</UnderlyingIndexName>
+    </key>
+    <column id="343" parent="254" name="next_val">
+      <Position>1</Position>
+      <DataType>bigint(20)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
   </database-model>
 </dataSource>
