@@ -33,51 +33,6 @@ public class BaseRole implements Serializable {
         return this;
     }
 
-    public int getId() {
-        return user.getId();
-    }
-
-    public BaseRole setId(int id) {
-        if (user == null) {
-            user = new User();
-        }
-        user.setId(id);
-        return this;
-    }
-
-    public String getName() {
-        return user.getName();
-    }
-
-    public BaseRole setName(String name) {
-        if (user == null) {
-            user = new User();
-        }
-        user.setName(name);
-        return this;
-    }
-
-    public String getPassword() {
-        return user.getPassword();
-    }
-
-    public BaseRole setPassword(String password) {
-        if (user == null) {
-            user = new User();
-        }
-        user.setPassword(password);
-        return this;
-    }
-
-    public String getEmail() {
-        return user.getEmail();
-    }
-
-    public BaseRole setEmail(String email) {
-        user.setEmail(email);
-        return this;
-    }
-
     @Override
     public boolean equals(Object o) {
         if (this == o) {

@@ -5,7 +5,7 @@ import entity.user.Teacher;
 
 import java.util.Collection;
 
-public interface TeacherDao extends UserDao<Teacher> {
+public interface TeacherDao extends RoleDao<Teacher> {
 
     boolean register(String name, String password);
 

@@ -1,31 +1,25 @@
 package controller;
 
-import entity.user.Student;
-import entity.user.Teacher;
+
+import entity.user.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.Errors;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import service.StudentService;
-import service.TeacherService;
+import service.UserService;
 
 import javax.validation.constraints.NotNull;
 
 @Controller
 public class RootController {
 
-    private StudentService studentService;
-    private TeacherService teacherService;
-
-    private final String STUDENT_TYPE = "student";
-    private final String TEACHER_TYPE = "teacher";
+    private UserService userService;
 
     @Autowired
-    public RootController(StudentService studentService, TeacherService teacherService) {
-        this.studentService = studentService;
-        this.teacherService = teacherService;
+    public RootController(UserService userService) {
+        this.userService = userService;
     }
 
     @RequestMapping(value = {"/", "/index"}, method = RequestMethod.GET)
@@ -47,15 +41,11 @@ public class RootController {
         if (errors.hasErrors()) {
             return "login/login";
         }
-        if (STUDENT_TYPE.equals(type)) {
-            Student student = studentService.login(id, password);
-            model.addAttribute("user", student);
-        } else if (TEACHER_TYPE.equals(type)) {
-            Teacher teacher = teacherService.login(id, password);
-            model.addAttribute("user", teacher);
-        }else {
+        User user = userService.login(id, password);
+        if (user == null) {
             return "login/login";
         }
+        model.addAttribute("user", user);
         return "index";
     }
 
@@ -77,22 +67,14 @@ public class RootController {
         if (!password.equals(password2)){
             return "login/register";
         }
-        if (STUDENT_TYPE.equals(type)) {
-            studentService.register((Student) new Student()
-                    .setName(name)
-                    .setPassword(password)
-                    .setEmail(email)
-            );
-        } else if (TEACHER_TYPE.equals(type)) {
-            teacherService.register((Teacher) new Teacher()
-                    .setName(name)
-                    .setPassword(password)
-                    .setEmail(email)
-            );
-        }else {
-            return "login/register";
+        if (userService.register(new User()
+                .setName(name)
+                .setPassword(password)
+                .setEmail(email)
+        )) {
+            return "login/registerSuccess";
         }
-        return "login/registerSuccess";
+        return "login/register";
     }
 
 }

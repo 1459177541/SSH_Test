@@ -1,9 +1,13 @@
 package entity.user;
 
+import entity.Role;
+
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import java.io.Serializable;
+import java.util.Date;
 import java.util.Objects;
+import java.util.Set;
 
 @Entity
 @Embeddable
@@ -11,29 +15,33 @@ public class User implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "u_id")
+    @Column(name = "id")
     @NotNull
     private Integer id;
 
-    @Column(name="u_name", length = 31, nullable = false, unique = true)
+    @Column(name = "name", length = 31, nullable = false, unique = true)
     @NotNull
     private String name;
 
-    @Column(name = "u_password", length = 31, nullable = false)
+    @Column(name = "password", length = 31, nullable = false)
     @NotNull
     private String password;
 
-    @Column(name = "u_email", length = 31)
+    @Column(name = "email", length = 31)
     private String email;
 
-    public User() {
-    }
+    @Column(name = "mobile", length = 20)
+    private String mobile;
 
-    public User(String name, String password, String email) {
-        this.name = name;
-        this.password = password;
-        this.email = email;
-    }
+    @Column(name = "gen_time")
+    private Date gen_time;
+
+    @ManyToMany(fetch = FetchType.EAGER)
+    @JoinTable(name = "User_role",
+            joinColumns = @JoinColumn(name = "role_id"),
+            inverseJoinColumns = @JoinColumn(name = "u_id")
+    )
+    private Set<Role> roles;
 
     public Integer getId() {
         return id;
@@ -71,6 +79,33 @@ public class User implements Serializable {
         return this;
     }
 
+    public String getMobile() {
+        return mobile;
+    }
+
+    public User setMobile(String mobile) {
+        this.mobile = mobile;
+        return this;
+    }
+
+    public Date getGen_time() {
+        return gen_time;
+    }
+
+    public User setGen_time(Date gen_time) {
+        this.gen_time = gen_time;
+        return this;
+    }
+
+    public Set<Role> getRoles() {
+        return roles;
+    }
+
+    public User setRoles(Set<Role> roles) {
+        this.roles = roles;
+        return this;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) {
@@ -79,21 +114,12 @@ public class User implements Serializable {
         if (o == null || getClass() != o.getClass()) {
             return false;
         }
-        User user1 = (User) o;
-        return id.equals(user1.id);
+        User user = (User) o;
+        return id.equals(user.id);
     }
 
     @Override
     public int hashCode() {
         return Objects.hash(id);
-    }
-
-    @Override
-    public String toString() {
-        return "User{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", email='" + email + '\'' +
-                '}';
     }
 }

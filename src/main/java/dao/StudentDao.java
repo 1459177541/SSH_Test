@@ -9,7 +9,7 @@ import entity.user.Student;
 import java.util.Collection;
 import java.util.Optional;
 
-public interface StudentDao extends UserDao<Student> {
+public interface StudentDao extends RoleDao<Student> {
 
     boolean register(String name, String password, StudentClass studentClass);
 

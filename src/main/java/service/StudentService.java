@@ -6,7 +6,7 @@ import entity.user.Student;
 
 import java.util.Collection;
 
-public interface StudentService extends UserService<Student> {
+public interface StudentService extends RoleService<Student> {
 
 
     Collection<Course> getCourse(int id);

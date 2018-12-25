@@ -1,11 +1,12 @@
 package service.impl;
 
 import dao.StudentDao;
-import dao.UserDao;
+import dao.RoleDao;
 import entity.Course;
 import entity.collective.Organize;
 import entity.relation.StudentCourse;
 import entity.user.Student;
+import entity.user.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Repository;
@@ -19,12 +20,12 @@ import java.util.stream.Collectors;
 
 @Service
 @Repository
-public class StudentServiceImpl extends BaseUserServiceImpl<Student> implements StudentService {
+public class StudentServiceImpl extends BaseRoleServiceImpl<Student> implements StudentService {
 
     @Override
     @Autowired
     @Qualifier("studentDaoImpl")
-    public BaseUserServiceImpl setDao(UserDao<Student> dao) {
+    public BaseRoleServiceImpl setDao(RoleDao<Student> dao) {
         this.dao = dao;
         return this;
     }
@@ -32,17 +33,6 @@ public class StudentServiceImpl extends BaseUserServiceImpl<Student> implements 
     @Override
     public Collection<Student> get() {
         return dao.get();
-    }
-
-    @Override
-    public Student login(int id, String password) {
-        Objects.requireNonNull(password);
-        return dao.login(id, password);
-    }
-
-    @Override
-    public boolean register(int id, String name, String password) {
-        return register((Student) new Student().setId(id).setName(name).setPassword(password));
     }
 
     @Override

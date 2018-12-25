@@ -1,22 +1,28 @@
 package service;
 
-import entity.user.BaseRole;
 import entity.user.User;
 
-import javax.validation.Valid;
 import java.util.Optional;
 
-public interface UserService<T extends BaseRole> extends Service<T>{
+public interface UserService extends Service<User>{
 
-    Optional<T> get(int id);
+    User login(User user);
 
-    T login(T user);
+    default User login(int id, String password){
+        return login(new User()
+                .setId(id)
+                .setPassword(password)
+        );
+    }
 
-    T login(int id, String password);
+    boolean register(User user);
 
-    @Valid
-    boolean register(T user);
+    default boolean register(int id, String password){
+        return register(new User()
+                .setId(id)
+                .setPassword(password)
+        );
+    }
 
-    boolean register(int id, String name, String password);
-
+    Optional<User> get(int id);
 }

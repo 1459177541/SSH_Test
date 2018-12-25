@@ -7,6 +7,7 @@ import entity.collective.StudentClass;
 import entity.relation.StudentCourse;
 import entity.user.OrganizeMember;
 import entity.user.Student;
+import entity.user.User;
 import org.hibernate.Hibernate;
 import org.springframework.stereotype.Repository;
 
@@ -20,7 +21,7 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 @Repository
-public class StudentDaoImpl extends AbstractUserDaoImpl<Student> implements StudentDao {
+public class StudentDaoImpl extends AbstractRoleDaoImpl<Student> implements StudentDao {
 
 
     @Override
@@ -45,9 +46,10 @@ public class StudentDaoImpl extends AbstractUserDaoImpl<Student> implements Stud
 
     @Override
     public boolean register(String name, String password, StudentClass studentClass) {
-        return register(((Student)new Student()
-                .setName(name)
-                .setPassword(password))
+        return register(((Student) new Student()
+                .setUser(new User()
+                        .setName(name)
+                        .setPassword(password)))
                 .setStudentClass(studentClass));
     }
 

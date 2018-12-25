@@ -1,18 +1,27 @@
 package dao;
 
-import entity.user.BaseRole;
 import entity.user.User;
 
-import java.util.Optional;
+public interface UserDao extends Dao<User>{
 
-public interface UserDao<T extends BaseRole> extends Dao<T> {
+    User login(User user);
 
-    Optional<T> get(int id);
+    default User login(int id, String password){
+        return login(new User()
+                .setId(id)
+                .setPassword(password)
+        );
+    }
 
-    boolean delete(int id);
+    boolean register(User user);
 
-    T login(int id, String password);
+    default boolean register(int id, String password){
+        return register(new User()
+                .setId(id)
+                .setPassword(password)
+        );
+    }
 
-    boolean register(T user);
+    User get(int id);
 
 }
