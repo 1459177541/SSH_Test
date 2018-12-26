@@ -20,7 +20,7 @@ public class StudentController {
         this.service = service;
     }
 
-    @RequestMapping("/student/{id}")
+    @RequestMapping("student/{id}")
     public String student(@PathVariable int id, Model model){
         Optional<Student> student = service.get(id);
         if (!student.isPresent()) {

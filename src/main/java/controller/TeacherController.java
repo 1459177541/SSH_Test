@@ -21,7 +21,7 @@ public class TeacherController {
         this.service = service;
     }
 
-    @RequestMapping("/teacher/{id}")
+    @RequestMapping("teacher/{id}")
     public String teacher(@PathVariable int id, Model model){
         Optional<Teacher> teacher = service.get(id);
         if (!teacher.isPresent()) {
