@@ -3,6 +3,7 @@ package entity;
 import lombok.Data;
 
 import javax.persistence.*;
+import java.util.Map;
 import java.util.Set;
 
 @Entity
@@ -20,7 +21,12 @@ public class Group {
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private Set<Group> cGroup;
 
-    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
-    private Set<RoleType> roleTypes;
-
+    @ElementCollection(fetch = FetchType.LAZY)
+    @CollectionTable(
+            name = "GroupInfo",
+            joinColumns = @JoinColumn(name = "gid")
+    )
+    @Column(name = "value", length = 64)
+    @MapKeyJoinColumn(name = "tid", referencedColumnName = "tid")
+    private Map<InfoType, String> info;
 }

@@ -4,6 +4,7 @@ import lombok.Data;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.Map;
 import java.util.Set;
 
 @Data
@@ -28,7 +29,13 @@ public class RoleType implements Serializable {
     @JoinColumn(name = "group", foreignKey = @ForeignKey(name = "group", foreignKeyDefinition = "group of this"))
     private Group group;
 
-    @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
-    private Set<RoleTypeInfo> info;
+    @ElementCollection(fetch = FetchType.LAZY)
+    @CollectionTable(
+            name = "RoleTypeInfo",
+            joinColumns = @JoinColumn(name = "rid")
+    )
+    @Column(name = "value", length = 64)
+    @MapKeyJoinColumn(name = "tid", referencedColumnName = "tid")
+    private Map<InfoType, String> info;
 
 }

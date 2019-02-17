@@ -5,6 +5,7 @@ import lombok.Data;
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Date;
+import java.util.Map;
 import java.util.Set;
 
 @Entity
@@ -28,9 +29,15 @@ public class User implements Serializable {
     private Date lastLogin;
 
     @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
-    private Set<UserInfo> info;
-
-    @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     private Set<Role> roleTypes;
+
+    @ElementCollection(fetch = FetchType.LAZY)
+    @CollectionTable(
+            name = "UserInfo",
+            joinColumns = @JoinColumn(name = "uid")
+    )
+    @Column(name = "value", length = 64)
+    @MapKeyJoinColumn(name = "tid", referencedColumnName = "tid")
+    private Map<InfoType, String> info;
 
 }

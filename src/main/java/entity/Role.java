@@ -4,7 +4,7 @@ import lombok.Data;
 
 import javax.persistence.*;
 import java.io.Serializable;
-import java.util.Set;
+import java.util.Map;
 
 @Entity
 @Data
@@ -18,7 +18,13 @@ public class Role implements Serializable {
     @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     private RoleType rid;
 
-    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
-    private Set<RoleInfo> infos;
+    @ElementCollection(fetch = FetchType.LAZY)
+    @CollectionTable(
+            name = "RoleInfo",
+            joinColumns = {@JoinColumn(name = "uid"), @JoinColumn(name = "rid")}
+    )
+    @Column(name = "value", length = 64)
+    @MapKeyJoinColumn(name = "tid", referencedColumnName = "tid")
+    private Map<InfoType, String> info;
 
 }

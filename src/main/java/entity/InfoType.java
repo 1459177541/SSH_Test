@@ -11,7 +11,7 @@ public class InfoType implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Integer id;
+    private Integer tid;
 
     @Column(length = 16, nullable = false, unique = true)
     private String name;
