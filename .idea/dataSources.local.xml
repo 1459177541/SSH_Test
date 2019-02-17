@@ -12,7 +12,7 @@
       <introspection-schemas>*:*</introspection-schemas>
     </data-source>
     <data-source name="Kali" uuid="48afbc8a-e81e-488e-8d15-09c6cceffe98">
-      <database-info product="MySQL" version="5.5.5-10.1.37-MariaDB-3" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.46 ( Revision: 9cc87a48e75c2d2e87c1a293b2862ce651cb256e )" dbms="MYSQL" exact-version="10.1.37" exact-driver-version="5.1">
+      <database-info product="MySQL" version="5.5.5-10.3.12-MariaDB-2" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.46 ( Revision: 9cc87a48e75c2d2e87c1a293b2862ce651cb256e )" dbms="MYSQL" exact-version="10.3.12" exact-driver-version="5.1">
         <extra-name-characters>#@</extra-name-characters>
         <identifier-quote-string>`</identifier-quote-string>
       </database-info>
@@ -24,6 +24,7 @@
     <data-source name="jdbc" uuid="e8620f9c-11e1-4b72-b596-cc0495b0f996">
       <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="MYSQL" exact-version="0.0" />
       <user-name>root</user-name>
+      <introspection-schemas>*:</introspection-schemas>
     </data-source>
     <data-source name="sessionFactory/Hibernate" uuid="83b71e5e-6a9f-4257-8621-c099ea28b701">
       <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="MYSQL" exact-version="0.0" />

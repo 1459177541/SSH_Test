@@ -4,21 +4,20 @@ import lombok.Data;
 
 import javax.persistence.*;
 import java.io.Serializable;
-import java.util.Set;
 
 @Entity
 @Data
-public class Role implements Serializable {
+public class RoleInfo implements Serializable {
 
     @Id
     @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
-    private User uid;
+    private Role rid;
 
     @Id
     @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
-    private RoleType rid;
+    private InfoType tid;
 
-    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
-    private Set<RoleInfo> infos;
+    @Column(nullable = false, length = 32)
+    private String value;
 
 }
