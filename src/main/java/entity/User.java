@@ -1,6 +1,7 @@
 package entity;
 
 import lombok.Data;
+import lombok.ToString;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -10,11 +11,18 @@ import java.util.Set;
 
 @Entity
 @Data
+@ToString(exclude = {"loginInfo", "roles", "info"})
 public class User implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer uid;
+
+    @Column(length = 32, nullable = false, unique = true)
+    private String id;
+
+    @Column(nullable = false)
+    private UserStatus status;
 
     @Column(length = 32, nullable = false)
     private String name;
@@ -26,10 +34,11 @@ public class User implements Serializable {
     private Date registerDate;
 
     @Column(nullable = false)
-    private Date lastLogin;
+    @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    private Set<LoginInfo> loginInfo;
 
     @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
-    private Set<Role> roleTypes;
+    private Set<Role> roles;
 
     @ElementCollection(fetch = FetchType.LAZY)
     @CollectionTable(

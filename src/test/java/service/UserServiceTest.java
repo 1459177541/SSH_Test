@@ -14,22 +14,24 @@ import org.springframework.test.context.junit.jupiter.SpringExtension;
 @ContextConfiguration(classes = ContextConfig.class)
 class UserServiceTest {
 
-//    @Autowired
-//    UserService service;
-//
-//    @Test
-//    void loginTest() {
-//        Assertions.assertNotNull(service.login(1, "123"));
-//        Assertions.assertNull(service.login(1, "456"));
-//    }
-//
-//    @Test
-//    void registerTest(){
-//        User student = new User()
-//                .setName("user1")
-//                .setPassword("123");
-//        Assertions.assertTrue(service.register(student));
-//    }
+    @Autowired
+    UserService service;
+
+    @Test
+    void registerTest(){
+        User user = new User();
+        user.setId("super admin");
+        user.setName("super admin");
+        user.setPassword("admin");
+        Assertions.assertTrue(service.register(user));
+        Assertions.assertFalse(service.register(user));
+        User user1 = new User();
+        user1.setId("super admin");
+        user1.setPassword("admin");
+        Assertions.assertNotNull(service.login(user1, "127.0.0.1"));
+        user1.setPassword("fail");
+        Assertions.assertNull(service.login(user1, "127.0.0.1"));
+    }
 
     @Test
     void test(){

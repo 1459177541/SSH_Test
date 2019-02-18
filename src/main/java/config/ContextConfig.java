@@ -17,7 +17,7 @@ import java.util.Properties;
 @Configuration
 @ComponentScan(basePackages = {"aop","dao","entity","service"})
 @PropertySource({"classpath:jdbc.properties"})
-@EnableAspectJAutoProxy
+@EnableAspectJAutoProxy(exposeProxy = true)
 @EnableTransactionManagement
 public class ContextConfig{
 
@@ -46,7 +46,7 @@ public class ContextConfig{
         Properties properties = new Properties();
         properties.setProperty("dialect", "org.hibernate.dialect.MySQL5Dialect");
         properties.setProperty("hibernate.show_sql", "true");
-        properties.setProperty("hibernate.hbm2ddl.auto", "update");
+        properties.setProperty("hibernate.hbm2ddl.auto", "create");
         properties.setProperty("hibernate.format_sql", "true");
         properties.setProperty("hibernate.connection.url", "jdbc:mysql://localhost:3306/ssh");
         properties.setProperty("hibernate.connection.driver_class", "com.mysql.jdbc.Driver");

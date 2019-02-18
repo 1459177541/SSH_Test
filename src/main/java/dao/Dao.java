@@ -1,8 +1,11 @@
 package dao;
 
+import java.io.Serializable;
 import java.util.Collection;
 
 public interface Dao<T> {
+
+    T get(Serializable id);
 
     boolean add(T t);
 

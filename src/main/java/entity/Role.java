@@ -19,6 +19,9 @@ public class Role implements Serializable {
     @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     private RoleType rid;
 
+    @Column
+    private RoleStatus status;
+
     @ElementCollection(fetch = FetchType.LAZY)
     @CollectionTable(
             name = "RoleInfo",
@@ -39,7 +42,7 @@ public class Role implements Serializable {
 
     @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     @JoinColumn(name = "role_group", foreignKey = @ForeignKey(name = "join_group", foreignKeyDefinition = "join_group"))
-    private Group groupRole;
+    private Group group;
 
     @Data
     public static class RoleId implements Serializable{
