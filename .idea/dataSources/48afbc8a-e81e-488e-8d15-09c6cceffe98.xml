@@ -1846,23 +1846,57 @@
     <table id="486" parent="4" name="users">
       <Engine>PERFORMANCE_SCHEMA</Engine>
     </table>
-    <table id="487" parent="5" name="GroupInfo"/>
-    <table id="488" parent="5" name="Group_Task"/>
-    <table id="489" parent="5" name="Group_Task_UserRole"/>
-    <table id="490" parent="5" name="InfoType"/>
-    <table id="491" parent="5" name="LoginInfo"/>
-    <table id="492" parent="5" name="RoleGroup"/>
-    <table id="493" parent="5" name="RoleGroup_UserRole"/>
-    <table id="494" parent="5" name="RoleInfo"/>
-    <table id="495" parent="5" name="RoleType"/>
-    <table id="496" parent="5" name="RoleTypeInfo"/>
-    <table id="497" parent="5" name="TaskInfo"/>
-    <table id="498" parent="5" name="User"/>
-    <table id="499" parent="5" name="UserInfo"/>
-    <table id="500" parent="5" name="UserRole"/>
-    <table id="501" parent="5" name="User_LoginInfo"/>
-    <table id="502" parent="5" name="User_UserRole"/>
-    <table id="503" parent="5" name="hibernate_sequence"/>
+    <table id="487" parent="5" name="GroupInfo">
+      <Engine>MyISAM</Engine>
+    </table>
+    <table id="488" parent="5" name="Group_Task">
+      <Engine>MyISAM</Engine>
+    </table>
+    <table id="489" parent="5" name="Group_Task_UserRole">
+      <Engine>MyISAM</Engine>
+    </table>
+    <table id="490" parent="5" name="InfoType">
+      <Engine>MyISAM</Engine>
+    </table>
+    <table id="491" parent="5" name="LoginInfo">
+      <Engine>MyISAM</Engine>
+    </table>
+    <table id="492" parent="5" name="RoleGroup">
+      <Engine>MyISAM</Engine>
+    </table>
+    <table id="493" parent="5" name="RoleGroup_UserRole">
+      <Engine>MyISAM</Engine>
+    </table>
+    <table id="494" parent="5" name="RoleInfo">
+      <Engine>MyISAM</Engine>
+    </table>
+    <table id="495" parent="5" name="RoleType">
+      <Engine>MyISAM</Engine>
+    </table>
+    <table id="496" parent="5" name="RoleTypeInfo">
+      <Engine>MyISAM</Engine>
+    </table>
+    <table id="497" parent="5" name="TaskInfo">
+      <Engine>MyISAM</Engine>
+    </table>
+    <table id="498" parent="5" name="User">
+      <Engine>MyISAM</Engine>
+    </table>
+    <table id="499" parent="5" name="UserInfo">
+      <Engine>MyISAM</Engine>
+    </table>
+    <table id="500" parent="5" name="UserRole">
+      <Engine>MyISAM</Engine>
+    </table>
+    <table id="501" parent="5" name="User_LoginInfo">
+      <Engine>MyISAM</Engine>
+    </table>
+    <table id="502" parent="5" name="User_UserRole">
+      <Engine>MyISAM</Engine>
+    </table>
+    <table id="503" parent="5" name="hibernate_sequence">
+      <Engine>MyISAM</Engine>
+    </table>
     <column id="504" parent="328" name="PLUGIN_NAME">
       <Position>1</Position>
       <DataType>varchar(64)|0s</DataType>
@@ -12372,500 +12406,418 @@ join_uid_uid</ColNames>
 join_uid_uid</ColNames>
       <UnderlyingIndexName>UK_peq2mojlo2q5sqt0lxsrsit05</UnderlyingIndexName>
     </key>
-    <foreign-key id="2409" parent="489" name="FKmwbwmij3fn8xebjgegvlsqnl8">
-      <ColNames>Group_Task_tid</ColNames>
-      <RefSchemaName>ssh</RefSchemaName>
-      <RefTableName>Group_Task</RefTableName>
-      <RefColNames>tid</RefColNames>
-    </foreign-key>
-    <foreign-key id="2410" parent="489" name="FKbhon3x17sga4a2rq85h9inh0s">
-      <ColNames>join_rid_rid
-join_uid_uid</ColNames>
-      <RefSchemaName>ssh</RefSchemaName>
-      <RefTableName>UserRole</RefTableName>
-      <RefColNames>rid_rid
-uid_uid</RefColNames>
-    </foreign-key>
-    <column id="2411" parent="490" name="tid">
+    <column id="2409" parent="490" name="tid">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="2412" parent="490" name="name">
+    <column id="2410" parent="490" name="name">
       <Position>2</Position>
       <DataType>varchar(16)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="2413" parent="490" name="UK_2b69djy3mvk3w34y1rbtnoyme">
+    <index id="2411" parent="490" name="UK_2b69djy3mvk3w34y1rbtnoyme">
       <ColNames>name</ColNames>
       <Unique>1</Unique>
       <Type>btree</Type>
     </index>
-    <key id="2414" parent="490" name="PRIMARY">
+    <key id="2412" parent="490" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>tid</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="2415" parent="490" name="UK_2b69djy3mvk3w34y1rbtnoyme">
+    <key id="2413" parent="490" name="UK_2b69djy3mvk3w34y1rbtnoyme">
       <ColNames>name</ColNames>
       <UnderlyingIndexName>UK_2b69djy3mvk3w34y1rbtnoyme</UnderlyingIndexName>
     </key>
-    <column id="2416" parent="491" name="date">
+    <column id="2414" parent="491" name="date">
       <Position>1</Position>
       <DataType>datetime|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="2417" parent="491" name="ip">
+    <column id="2415" parent="491" name="ip">
       <Position>2</Position>
       <DataType>varchar(16)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="2418" parent="491" name="user_uid">
+    <column id="2416" parent="491" name="user_uid">
       <Position>3</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="2419" parent="491" name="FK9uq8xu4fp2dcd0u3bc3vxvf4">
+    <index id="2417" parent="491" name="FK9uq8xu4fp2dcd0u3bc3vxvf4">
       <ColNames>user_uid</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="2420" parent="491" name="PRIMARY">
+    <key id="2418" parent="491" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>date
 user_uid</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="2421" parent="491" name="FK9uq8xu4fp2dcd0u3bc3vxvf4">
-      <ColNames>user_uid</ColNames>
-      <RefSchemaName>ssh</RefSchemaName>
-      <RefTableName>User</RefTableName>
-      <RefColNames>uid</RefColNames>
-    </foreign-key>
-    <column id="2422" parent="492" name="gid">
+    <column id="2419" parent="492" name="gid">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="2423" parent="492" name="name">
+    <column id="2420" parent="492" name="name">
       <Position>2</Position>
       <DataType>varchar(16)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="2424" parent="492" name="registerDate">
+    <column id="2421" parent="492" name="registerDate">
       <Position>3</Position>
       <DataType>datetime|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="2425" parent="492" name="pid">
+    <column id="2422" parent="492" name="pid">
       <Position>4</Position>
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="2426" parent="492" name="PRIMARY">
+    <key id="2423" parent="492" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>gid</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="2427" parent="493" name="RoleGroup_gid">
+    <column id="2424" parent="493" name="RoleGroup_gid">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="2428" parent="493" name="roles_rid_rid">
+    <column id="2425" parent="493" name="roles_rid_rid">
       <Position>2</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="2429" parent="493" name="roles_uid_uid">
+    <column id="2426" parent="493" name="roles_uid_uid">
       <Position>3</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="2430" parent="493" name="UK_pfdn35yoowayem5pfc2fo8v6g">
+    <index id="2427" parent="493" name="UK_pfdn35yoowayem5pfc2fo8v6g">
       <ColNames>roles_rid_rid
 roles_uid_uid</ColNames>
       <Unique>1</Unique>
       <Type>btree</Type>
     </index>
-    <key id="2431" parent="493" name="PRIMARY">
+    <key id="2428" parent="493" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>RoleGroup_gid
 roles_rid_rid
 roles_uid_uid</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="2432" parent="493" name="UK_pfdn35yoowayem5pfc2fo8v6g">
+    <key id="2429" parent="493" name="UK_pfdn35yoowayem5pfc2fo8v6g">
       <ColNames>roles_rid_rid
 roles_uid_uid</ColNames>
       <UnderlyingIndexName>UK_pfdn35yoowayem5pfc2fo8v6g</UnderlyingIndexName>
     </key>
-    <foreign-key id="2433" parent="493" name="FKpm7kqi0uqtgfbfrijn908q087">
-      <ColNames>RoleGroup_gid</ColNames>
-      <RefSchemaName>ssh</RefSchemaName>
-      <RefTableName>RoleGroup</RefTableName>
-      <RefColNames>gid</RefColNames>
-    </foreign-key>
-    <foreign-key id="2434" parent="493" name="FKl3rvrxrxiji01n3vl2r3bjt04">
-      <ColNames>roles_rid_rid
-roles_uid_uid</ColNames>
-      <RefSchemaName>ssh</RefSchemaName>
-      <RefTableName>UserRole</RefTableName>
-      <RefColNames>rid_rid
-uid_uid</RefColNames>
-    </foreign-key>
-    <column id="2435" parent="494" name="uid">
+    <column id="2430" parent="494" name="uid">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="2436" parent="494" name="rid">
+    <column id="2431" parent="494" name="rid">
       <Position>2</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="2437" parent="494" name="value">
+    <column id="2432" parent="494" name="value">
       <Position>3</Position>
       <DataType>varchar(64)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="2438" parent="494" name="tid">
+    <column id="2433" parent="494" name="tid">
       <Position>4</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="2439" parent="494" name="PRIMARY">
+    <key id="2434" parent="494" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>uid
 rid
 tid</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="2440" parent="494" name="FKc5osw0j2fdv846avltvp6ywuh">
-      <ColNames>uid
-rid</ColNames>
-      <RefSchemaName>ssh</RefSchemaName>
-      <RefTableName>UserRole</RefTableName>
-      <RefColNames>rid_rid
-uid_uid</RefColNames>
-    </foreign-key>
-    <column id="2441" parent="495" name="rid">
+    <column id="2435" parent="495" name="rid">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="2442" parent="495" name="name">
+    <column id="2436" parent="495" name="name">
       <Position>2</Position>
       <DataType>varchar(32)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="2443" parent="495" name="role_group">
+    <column id="2437" parent="495" name="role_group">
       <Position>3</Position>
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="2444" parent="495" name="pid">
+    <column id="2438" parent="495" name="pid">
       <Position>4</Position>
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="2445" parent="495" name="UK_3gy88vxoivd1muufk8ymd9wqh">
+    <index id="2439" parent="495" name="UK_3gy88vxoivd1muufk8ymd9wqh">
       <ColNames>name</ColNames>
       <Unique>1</Unique>
       <Type>btree</Type>
     </index>
-    <key id="2446" parent="495" name="PRIMARY">
+    <key id="2440" parent="495" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>rid</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="2447" parent="495" name="UK_3gy88vxoivd1muufk8ymd9wqh">
+    <key id="2441" parent="495" name="UK_3gy88vxoivd1muufk8ymd9wqh">
       <ColNames>name</ColNames>
       <UnderlyingIndexName>UK_3gy88vxoivd1muufk8ymd9wqh</UnderlyingIndexName>
     </key>
-    <column id="2448" parent="496" name="rid">
+    <column id="2442" parent="496" name="rid">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="2449" parent="496" name="value">
+    <column id="2443" parent="496" name="value">
       <Position>2</Position>
       <DataType>varchar(64)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="2450" parent="496" name="tid">
+    <column id="2444" parent="496" name="tid">
       <Position>3</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="2451" parent="496" name="PRIMARY">
+    <key id="2445" parent="496" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>rid
 tid</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="2452" parent="497" name="tid">
+    <column id="2446" parent="497" name="tid">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="2453" parent="497" name="value">
+    <column id="2447" parent="497" name="value">
       <Position>2</Position>
       <DataType>varchar(64)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="2454" parent="497" name="iid">
+    <column id="2448" parent="497" name="iid">
       <Position>3</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="2455" parent="497" name="PRIMARY">
+    <key id="2449" parent="497" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>tid
 iid</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="2456" parent="498" name="uid">
+    <column id="2450" parent="498" name="uid">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="2457" parent="498" name="id">
+    <column id="2451" parent="498" name="id">
       <Position>2</Position>
       <DataType>varchar(32)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="2458" parent="498" name="name">
+    <column id="2452" parent="498" name="name">
       <Position>3</Position>
       <DataType>varchar(32)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="2459" parent="498" name="password">
+    <column id="2453" parent="498" name="password">
       <Position>4</Position>
       <DataType>varchar(32)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="2460" parent="498" name="registerDate">
+    <column id="2454" parent="498" name="registerDate">
       <Position>5</Position>
       <DataType>datetime|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="2461" parent="498" name="status">
+    <column id="2455" parent="498" name="status">
       <Position>6</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="2462" parent="498" name="UK_omjl8ijwi58yx57d9ejn4c0jt">
+    <index id="2456" parent="498" name="UK_omjl8ijwi58yx57d9ejn4c0jt">
       <ColNames>id</ColNames>
       <Unique>1</Unique>
       <Type>btree</Type>
     </index>
-    <key id="2463" parent="498" name="PRIMARY">
+    <key id="2457" parent="498" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>uid</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="2464" parent="498" name="UK_omjl8ijwi58yx57d9ejn4c0jt">
+    <key id="2458" parent="498" name="UK_omjl8ijwi58yx57d9ejn4c0jt">
       <ColNames>id</ColNames>
       <UnderlyingIndexName>UK_omjl8ijwi58yx57d9ejn4c0jt</UnderlyingIndexName>
     </key>
-    <column id="2465" parent="499" name="uid">
+    <column id="2459" parent="499" name="uid">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="2466" parent="499" name="value">
+    <column id="2460" parent="499" name="value">
       <Position>2</Position>
       <DataType>varchar(64)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="2467" parent="499" name="tid">
+    <column id="2461" parent="499" name="tid">
       <Position>3</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="2468" parent="499" name="PRIMARY">
+    <key id="2462" parent="499" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>uid
 tid</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="2469" parent="500" name="status">
+    <column id="2463" parent="500" name="status">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="2470" parent="500" name="rid_rid">
+    <column id="2464" parent="500" name="rid_rid">
       <Position>2</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="2471" parent="500" name="uid_uid">
+    <column id="2465" parent="500" name="uid_uid">
       <Position>3</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="2472" parent="500" name="role_group">
+    <column id="2466" parent="500" name="role_group">
       <Position>4</Position>
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="2473" parent="500" name="task">
+    <column id="2467" parent="500" name="task">
       <Position>5</Position>
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="2474" parent="500" name="FKj1rircuquxsuw8dopuo6dtru8">
+    <index id="2468" parent="500" name="FKj1rircuquxsuw8dopuo6dtru8">
       <ColNames>uid_uid</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="2475" parent="500" name="PRIMARY">
+    <key id="2469" parent="500" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>rid_rid
 uid_uid</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="2476" parent="500" name="FKnfrlo0q60vd5j45a4d9g0lx5j">
-      <ColNames>rid_rid</ColNames>
-      <RefSchemaName>ssh</RefSchemaName>
-      <RefTableName>RoleType</RefTableName>
-      <RefColNames>rid</RefColNames>
-    </foreign-key>
-    <foreign-key id="2477" parent="500" name="FKj1rircuquxsuw8dopuo6dtru8">
-      <ColNames>uid_uid</ColNames>
-      <RefSchemaName>ssh</RefSchemaName>
-      <RefTableName>User</RefTableName>
-      <RefColNames>uid</RefColNames>
-    </foreign-key>
-    <column id="2478" parent="501" name="User_uid">
+    <column id="2470" parent="501" name="User_uid">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="2479" parent="501" name="loginInfo_date">
+    <column id="2471" parent="501" name="loginInfo_date">
       <Position>2</Position>
       <DataType>datetime|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="2480" parent="501" name="loginInfo_user_uid">
+    <column id="2472" parent="501" name="loginInfo_user_uid">
       <Position>3</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="2481" parent="501" name="UK_ersvdjx38jx98tn6ry4ioyydb">
+    <index id="2473" parent="501" name="UK_ersvdjx38jx98tn6ry4ioyydb">
       <ColNames>loginInfo_date
 loginInfo_user_uid</ColNames>
       <Unique>1</Unique>
       <Type>btree</Type>
     </index>
-    <key id="2482" parent="501" name="PRIMARY">
+    <key id="2474" parent="501" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>User_uid
 loginInfo_date
 loginInfo_user_uid</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="2483" parent="501" name="UK_ersvdjx38jx98tn6ry4ioyydb">
+    <key id="2475" parent="501" name="UK_ersvdjx38jx98tn6ry4ioyydb">
       <ColNames>loginInfo_date
 loginInfo_user_uid</ColNames>
       <UnderlyingIndexName>UK_ersvdjx38jx98tn6ry4ioyydb</UnderlyingIndexName>
     </key>
-    <foreign-key id="2484" parent="501" name="FKlrsb7xoh461763tph42otl8ws">
-      <ColNames>User_uid</ColNames>
-      <RefSchemaName>ssh</RefSchemaName>
-      <RefTableName>User</RefTableName>
-      <RefColNames>uid</RefColNames>
-    </foreign-key>
-    <foreign-key id="2485" parent="501" name="FKcgo4xcu73kjlnbq5y1ps9llby">
-      <ColNames>loginInfo_date
-loginInfo_user_uid</ColNames>
-      <RefSchemaName>ssh</RefSchemaName>
-      <RefTableName>LoginInfo</RefTableName>
-      <RefColNames>date
-user_uid</RefColNames>
-    </foreign-key>
-    <column id="2486" parent="502" name="User_uid">
+    <column id="2476" parent="502" name="User_uid">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="2487" parent="502" name="roles_rid_rid">
+    <column id="2477" parent="502" name="roles_rid_rid">
       <Position>2</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="2488" parent="502" name="roles_uid_uid">
+    <column id="2478" parent="502" name="roles_uid_uid">
       <Position>3</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="2489" parent="502" name="UK_i10e96o3l7ri8smpka8madhnk">
+    <index id="2479" parent="502" name="UK_i10e96o3l7ri8smpka8madhnk">
       <ColNames>roles_rid_rid
 roles_uid_uid</ColNames>
       <Unique>1</Unique>
       <Type>btree</Type>
     </index>
-    <key id="2490" parent="502" name="PRIMARY">
+    <key id="2480" parent="502" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>User_uid
 roles_rid_rid
 roles_uid_uid</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="2491" parent="502" name="UK_i10e96o3l7ri8smpka8madhnk">
+    <key id="2481" parent="502" name="UK_i10e96o3l7ri8smpka8madhnk">
       <ColNames>roles_rid_rid
 roles_uid_uid</ColNames>
       <UnderlyingIndexName>UK_i10e96o3l7ri8smpka8madhnk</UnderlyingIndexName>
     </key>
-    <foreign-key id="2492" parent="502" name="FK1k3hq3yvxyv79qbqjfb6bniyp">
-      <ColNames>User_uid</ColNames>
-      <RefSchemaName>ssh</RefSchemaName>
-      <RefTableName>User</RefTableName>
-      <RefColNames>uid</RefColNames>
-    </foreign-key>
-    <foreign-key id="2493" parent="502" name="FKhhgg6k9eujhovne5o3bklh8ym">
-      <ColNames>roles_rid_rid
-roles_uid_uid</ColNames>
-      <RefSchemaName>ssh</RefSchemaName>
-      <RefTableName>UserRole</RefTableName>
-      <RefColNames>rid_rid
-uid_uid</RefColNames>
-    </foreign-key>
-    <column id="2494" parent="503" name="next_val">
+    <column id="2482" parent="503" name="next_val">
       <Position>1</Position>
       <DataType>bigint(20)|0s</DataType>
       <ColumnKind>normal</ColumnKind>

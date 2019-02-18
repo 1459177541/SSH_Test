@@ -2,6 +2,7 @@ package service;
 
 
 import config.ContextConfig;
+import dto.UserDto;
 import entity.User;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
@@ -19,22 +20,32 @@ class UserServiceTest {
 
     @Test
     void registerTest(){
+
         User user = new User();
         user.setId("super admin");
         user.setName("super admin");
         user.setPassword("admin");
         Assertions.assertTrue(service.register(user));
         Assertions.assertFalse(service.register(user));
-        User user1 = new User();
+
+        UserDto user1 = new UserDto();
         user1.setId("super admin");
         user1.setPassword("admin");
-        Assertions.assertNotNull(service.login(user1, "127.0.0.1"));
-        user1.setPassword("fail");
-        Assertions.assertNull(service.login(user1, "127.0.0.1"));
+        user1.setIp("127.0.0.1");
+        Assertions.assertFalse(service.login(user1).loginSuccess());
+
+        Assertions.assertTrue(service.adoptRegister(user1));
+        Assertions.assertTrue(service.login(user1).loginSuccess());
+
+        UserDto user2 = new UserDto();
+        user2.setId("super admin");
+        user2.setPassword("fail");
+        user2.setIp("127.0.0.1");
+        Assertions.assertFalse(service.login(user2).loginSuccess());
     }
 
     @Test
-    void test(){
+    void openTest(){
         
     }
 

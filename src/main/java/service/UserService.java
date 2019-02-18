@@ -1,5 +1,6 @@
 package service;
 
+import dto.UserDto;
 import entity.*;
 
 import java.util.Collection;
@@ -17,8 +18,9 @@ public interface UserService {
 
     Map<InfoType, String> getInfo(User user);
 
-    User login(User user, String ip);
+    UserDto login(UserDto user);
 
     boolean register(User user);
 
+    boolean adoptRegister(UserDto user);
 }

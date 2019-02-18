@@ -2,6 +2,8 @@ package service.impl;
 
 import dao.RoleDao;
 import dao.UserDao;
+import dto.LoginStatus;
+import dto.UserDto;
 import entity.*;
 
 import static entity.RoleStatus.COMMIT;
@@ -73,25 +75,31 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public User login(User user, String ip) {
-        User user1 = userDao.get(user.getId());
-        if (user1 == null || !Objects.equals(user.getPassword(), user1.getPassword())) {
-            return null;
+    public UserDto login(UserDto userDto) {
+        User user = userDao.get(userDto.getId());
+        if (user == null) {
+            userDto.setStatus(LoginStatus.USER_NON_EXISTENT);
+            return userDto;
         }
-        if (user1.getStatus() == UserStatus.COMMIT
-                || user1.getStatus() == UserStatus.WRITTEN_OFF
-                || user1.getStatus() == UserStatus.REJECT) {
-            return user1;
+        if (!Objects.equals(userDto.getPassword(), user.getPassword())) {
+            userDto.setStatus(LoginStatus.PASSWORD_ERROR);
+        } else if (user.getStatus() == UserStatus.COMMIT) {
+            userDto.setStatus(LoginStatus.WAIT_ADOPT);
+        } else if (user.getStatus() == UserStatus.REJECT) {
+            userDto.setStatus(LoginStatus.USER_NON_ADOPT);
+        } else if (user.getStatus() == UserStatus.WRITTEN_OFF) {
+            userDto.setStatus(LoginStatus.USER_ALREADY_WRITTEN_OFF);
+        } else {
+            LoginInfo info = new LoginInfo();
+            info.setUser(user);
+            info.setDate(new Date());
+            info.setIp(userDto.getIp());
+            userDao.login(info);
+
+            userDto.setLoginDate(info.getDate());
+            userDto.setStatus(LoginStatus.LOGIN_SUCCESS);
         }
-        user.setStatus(UserStatus.ON_LINE);
-        LoginInfo info = new LoginInfo();
-        info.setUser(user);
-        info.setDate(new Date());
-        info.setIp(ip);
-        if (userDao.login(info)) {
-            return userDao.get(user.getUid());
-        }
-        return null;
+        return userDto;
     }
 
     @Override
@@ -106,4 +114,17 @@ public class UserServiceImpl implements UserService {
         user.setStatus(UserStatus.COMMIT);
         return userDao.register(user);
     }
+
+    @Override
+    public boolean adoptRegister(UserDto userDto) {
+        User user = userDao.get(userDto.getId());
+        if (user == null) {
+            return false;
+        }
+        user.setStatus(UserStatus.ADOPT);
+        userDao.update(user);
+        return true;
+    }
+
+
 }

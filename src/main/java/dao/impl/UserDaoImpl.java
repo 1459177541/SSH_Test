@@ -16,7 +16,6 @@ import javax.persistence.criteria.Root;
 import java.io.Serializable;
 import java.util.Collection;
 import java.util.Map;
-import java.util.Objects;
 
 @Transactional(rollbackFor = Exception.class)
 @Repository
@@ -62,17 +61,6 @@ public class UserDaoImpl extends AbstractDaoImpl<User> implements UserDao {
 
     @Override
     public boolean login(LoginInfo info) {
-        User user = info.getUser();
-        if (null == user || null == user.getId()) {
-            return false;
-        }
-        User user1 = ((UserDao)AopContext.currentProxy()).get(user.getId());
-        if (null == user1) {
-            return false;
-        }
-        if (!Objects.equals(user.getPassword(), user1.getPassword())) {
-            return false;
-        }
         getHibernateTemplate().save(info);
         return true;
     }

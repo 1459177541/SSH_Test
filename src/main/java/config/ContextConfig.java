@@ -21,11 +21,11 @@ import java.util.Properties;
 @EnableTransactionManagement
 public class ContextConfig{
 
+    private final Environment environment;
+
     @Autowired
-    private Environment environment;
-    public ContextConfig setEnvironment(Environment environment) {
+    public ContextConfig(Environment environment) {
         this.environment = environment;
-        return this;
     }
 
     @Bean
@@ -44,7 +44,7 @@ public class ContextConfig{
         factoryBean.setDataSource(dataSource);
         factoryBean.setPackagesToScan("entity");
         Properties properties = new Properties();
-        properties.setProperty("dialect", "org.hibernate.dialect.MySQL5Dialect");
+        properties.setProperty("hibernate.dialect", "org.hibernate.dialect.MySQL5Dialect");
         properties.setProperty("hibernate.show_sql", "true");
         properties.setProperty("hibernate.hbm2ddl.auto", "create");
         properties.setProperty("hibernate.format_sql", "true");
