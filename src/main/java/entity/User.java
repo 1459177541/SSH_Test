@@ -34,11 +34,12 @@ public class User implements Serializable {
     @ElementCollection(fetch = FetchType.LAZY)
     @CollectionTable(
             name = "UserInfo",
-            joinColumns = @JoinColumn(name = "uid", foreignKey = @ForeignKey(foreignKeyDefinition = "info_uid"))
+            joinColumns = @JoinColumn(name = "uid",
+                    foreignKey = @ForeignKey(name = "info_user_id", foreignKeyDefinition = "info_user_id"))
     )
     @Column(name = "value", length = 64)
     @MapKeyJoinColumn(name = "tid", referencedColumnName = "tid",
-            foreignKey = @ForeignKey(foreignKeyDefinition = "info_tid"))
+            foreignKey = @ForeignKey(name = "info_task_id", foreignKeyDefinition = "info_task_id"))
     private Map<InfoType, String> info;
 
 }

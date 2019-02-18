@@ -17,7 +17,8 @@ public class Task implements Serializable {
     private Integer tid;
 
     @ManyToOne
-    @JoinColumn(name = "task_group", nullable = false, foreignKey = @ForeignKey(foreignKeyDefinition = "group"))
+    @JoinColumn(name = "task_group", nullable = false
+            , foreignKey = @ForeignKey(name = "tack_group", foreignKeyDefinition = "task_group"))
     private Group group;
 
     @Column(length = 32, nullable = false)
@@ -38,7 +39,8 @@ public class Task implements Serializable {
     @ElementCollection(fetch = FetchType.LAZY)
     @CollectionTable(
             name = "TaskInfo",
-            joinColumns = @JoinColumn(name = "tid", foreignKey = @ForeignKey(foreignKeyDefinition = "info_task_id"))
+            joinColumns = @JoinColumn(name = "tid"
+                    , foreignKey = @ForeignKey(name = "info_task_id", foreignKeyDefinition = "info_task_id"))
     )
     @Column(name = "value", length = 64)
     @MapKeyJoinColumn(name = "iid", referencedColumnName = "tid",

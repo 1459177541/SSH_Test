@@ -32,10 +32,11 @@ public class Group implements Serializable {
     @ElementCollection(fetch = FetchType.LAZY)
     @CollectionTable(
             name = "GroupInfo",
-            joinColumns = @JoinColumn(name = "gid", foreignKey = @ForeignKey(foreignKeyDefinition = "info_gid")))
+            joinColumns = @JoinColumn(name = "gid",
+                    foreignKey = @ForeignKey(name = "info_group_id", foreignKeyDefinition = "info_group_id")))
     @Column(name = "value", length = 64)
     @MapKeyJoinColumn(name = "tid", referencedColumnName = "tid",
-            foreignKey = @ForeignKey(foreignKeyDefinition = "info_tid"))
+            foreignKey = @ForeignKey(name = "info_task_id", foreignKeyDefinition = "info_task_id"))
     private Map<InfoType, String> info;
 
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)

@@ -19,7 +19,7 @@
       <case-sensitivity plain-identifiers="exact" quoted-identifiers="exact" />
       <secret-storage>master_key</secret-storage>
       <user-name>root</user-name>
-      <introspection-schemas>*:@</introspection-schemas>
+      <introspection-schemas>*:*</introspection-schemas>
     </data-source>
     <data-source name="jdbc" uuid="e8620f9c-11e1-4b72-b596-cc0495b0f996">
       <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="MYSQL" exact-version="0.0" />

@@ -44,11 +44,10 @@ public class ContextConfig{
         factoryBean.setDataSource(dataSource);
         factoryBean.setPackagesToScan("entity");
         Properties properties = new Properties();
-        properties.setProperty("dialect", "org.hibernate.dialect.MySQLDialect");
+        properties.setProperty("dialect", "org.hibernate.dialect.MySQL5Dialect");
         properties.setProperty("hibernate.show_sql", "true");
         properties.setProperty("hibernate.hbm2ddl.auto", "update");
-        properties.setProperty("show_sql", "true");
-        properties.setProperty("format_sql", "true");
+        properties.setProperty("hibernate.format_sql", "true");
         properties.setProperty("hibernate.connection.url", "jdbc:mysql://localhost:3306/ssh");
         properties.setProperty("hibernate.connection.driver_class", "com.mysql.jdbc.Driver");
         factoryBean.setHibernateProperties(properties);

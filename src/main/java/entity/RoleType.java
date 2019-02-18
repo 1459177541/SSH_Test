@@ -16,7 +16,8 @@ public class RoleType implements Serializable {
     private Integer rid;
 
     @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
-    @JoinColumn(name = "pid", foreignKey = @ForeignKey(name = "pid", foreignKeyDefinition = "parent"))
+    @JoinColumn(name = "pid",
+            foreignKey = @ForeignKey(name = "pid", foreignKeyDefinition = "parent"))
     private RoleType pid;
 
     @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL, mappedBy = "pid")
@@ -26,13 +27,15 @@ public class RoleType implements Serializable {
     private String name;
 
     @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
-    @JoinColumn(name = "role_group", foreignKey = @ForeignKey(name = "group", foreignKeyDefinition = "group"))
+    @JoinColumn(name = "role_group",
+            foreignKey = @ForeignKey(name = "role_group", foreignKeyDefinition = "role_group"))
     private Group group;
 
     @ElementCollection(fetch = FetchType.LAZY)
     @CollectionTable(
             name = "RoleTypeInfo",
-            joinColumns = @JoinColumn(name = "rid", foreignKey = @ForeignKey(foreignKeyDefinition = "info_rid"))
+            joinColumns = @JoinColumn(name = "rid",
+                    foreignKey = @ForeignKey(name = "info_role_id", foreignKeyDefinition = "info_role_id"))
     )
 
     @Column(name = "value", length = 64)
