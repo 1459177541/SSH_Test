@@ -1,14 +1,16 @@
 package entity;
 
 import lombok.Data;
+import lombok.ToString;
 
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Map;
 
 @Entity(name = "UserRole")
-@Data
 @IdClass(Role.RoleId.class)
+@Data
+@ToString(exclude = "info")
 public class Role implements Serializable {
 
     @Id

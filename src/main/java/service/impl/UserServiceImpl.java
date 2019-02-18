@@ -12,6 +12,7 @@ import service.UserService;
 import java.util.Collection;
 import java.util.Date;
 import java.util.Map;
+import java.util.Objects;
 import java.util.function.Consumer;
 
 @Service
@@ -74,8 +75,10 @@ public class UserServiceImpl implements UserService {
     @Override
     public User login(User user, String ip) {
         User user1 = userDao.get(user.getId());
-        if (null == user1
-                || user1.getStatus() == UserStatus.COMMIT
+        if (user1 == null || !Objects.equals(user.getPassword(), user1.getPassword())) {
+            return null;
+        }
+        if (user1.getStatus() == UserStatus.COMMIT
                 || user1.getStatus() == UserStatus.WRITTEN_OFF
                 || user1.getStatus() == UserStatus.REJECT) {
             return user1;

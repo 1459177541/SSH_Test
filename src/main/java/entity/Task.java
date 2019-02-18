@@ -1,6 +1,7 @@
 package entity;
 
 import lombok.Data;
+import lombok.ToString;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -10,6 +11,7 @@ import java.util.Set;
 
 @Entity(name = "Group_Task")
 @Data
+@ToString(exclude = {"info", "join"})
 public class Task implements Serializable {
 
     @Id
