@@ -1,10 +1,10 @@
 package dao.impl;
 
 import dao.UserDao;
-import entity.InfoType;
-import entity.LoginInfo;
-import entity.Role;
-import entity.User;
+import entity.po.InfoType;
+import entity.po.LoginInfo;
+import entity.po.Role;
+import entity.po.User;
 import org.hibernate.Hibernate;
 import org.springframework.aop.framework.AopContext;
 import org.springframework.stereotype.Repository;

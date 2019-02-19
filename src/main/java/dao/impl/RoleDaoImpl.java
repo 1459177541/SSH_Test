@@ -1,8 +1,8 @@
 package dao.impl;
 
 import dao.RoleDao;
-import entity.InfoType;
-import entity.Role;
+import entity.po.InfoType;
+import entity.po.Role;
 import org.hibernate.Hibernate;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;

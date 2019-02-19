@@ -2,8 +2,8 @@ package service;
 
 
 import config.ContextConfig;
-import dto.UserDto;
-import entity.User;
+import entity.dto.UserDto;
+import entity.po.User;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;

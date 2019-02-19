@@ -1,7 +1,7 @@
 package service;
 
-import dto.UserDto;
-import entity.*;
+import entity.dto.UserDto;
+import entity.po.*;
 
 import java.util.Collection;
 import java.util.Map;

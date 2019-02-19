@@ -1,7 +1,7 @@
 package dao;
 
-import entity.InfoType;
-import entity.Task;
+import entity.po.InfoType;
+import entity.po.Task;
 
 import java.util.Map;
 

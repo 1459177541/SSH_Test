@@ -15,7 +15,7 @@ import java.beans.PropertyVetoException;
 import java.util.Properties;
 
 @Configuration
-@ComponentScan(basePackages = {"aop","dao","entity","service"})
+@ComponentScan(basePackages = {"aop", "dao", "entity", "service"})
 @PropertySource({"classpath:jdbc.properties"})
 @EnableAspectJAutoProxy(exposeProxy = true)
 @EnableTransactionManagement
@@ -42,7 +42,7 @@ public class ContextConfig{
     public LocalSessionFactoryBean sessionFactory(DataSource dataSource){
         LocalSessionFactoryBean factoryBean = new LocalSessionFactoryBean();
         factoryBean.setDataSource(dataSource);
-        factoryBean.setPackagesToScan("entity");
+        factoryBean.setPackagesToScan("entity/po");
         Properties properties = new Properties();
         properties.setProperty("hibernate.dialect", "org.hibernate.dialect.MySQL5Dialect");
         properties.setProperty("hibernate.show_sql", "true");

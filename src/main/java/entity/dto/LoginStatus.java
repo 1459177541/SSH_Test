@@ -1,4 +1,4 @@
-package dto;
+package entity.dto;
 
 public enum LoginStatus {
 

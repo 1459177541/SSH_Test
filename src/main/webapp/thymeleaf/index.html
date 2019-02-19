@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-CN" xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <link rel="stylesheet" type="text/css" href="../css/index.css"/>
+</head>
+<body>
+    <div id="head">
+        <div id="icon">
+            SSH_DEMO
+        </div>
+        <div id="menu">
+
+        </div>
+        <div id="menu_user">
+            <div id="login" th:if="${user}">
+                <a href="/login">登录</a>或<a href="/register">注册</a>
+            </div>
+            <div id="user_home" th:el th:href="#">
+                欢迎你，<span th:value="${user.name}"/>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

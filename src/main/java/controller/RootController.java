@@ -1,8 +1,8 @@
 package controller;
 
 
-import dto.UserDto;
-import entity.User;
+import entity.dto.UserDto;
+import entity.po.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.Errors;

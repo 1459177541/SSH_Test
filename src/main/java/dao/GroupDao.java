@@ -1,7 +1,7 @@
 package dao;
 
-import entity.Group;
-import entity.InfoType;
+import entity.po.Group;
+import entity.po.InfoType;
 
 import java.util.Map;
 

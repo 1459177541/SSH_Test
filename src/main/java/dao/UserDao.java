@@ -1,9 +1,9 @@
 package dao;
 
-import entity.InfoType;
-import entity.LoginInfo;
-import entity.Role;
-import entity.User;
+import entity.po.InfoType;
+import entity.po.LoginInfo;
+import entity.po.Role;
+import entity.po.User;
 
 import java.util.Collection;
 import java.util.Map;

@@ -1,4 +1,4 @@
-package entity;
+package entity.po;
 
 public enum UserStatus {
     /**

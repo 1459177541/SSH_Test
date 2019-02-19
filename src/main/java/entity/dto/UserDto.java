@@ -1,9 +1,12 @@
-package dto;
+package entity.dto;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
-import entity.*;
+import entity.po.InfoType;
+import entity.po.LoginInfo;
+import entity.po.Role;
+import entity.po.User;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 

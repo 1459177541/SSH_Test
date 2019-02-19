@@ -2,11 +2,12 @@ package service.impl;
 
 import dao.RoleDao;
 import dao.UserDao;
-import dto.LoginStatus;
-import dto.UserDto;
-import entity.*;
+import entity.dto.LoginStatus;
+import entity.dto.UserDto;
 
-import static entity.RoleStatus.COMMIT;
+import static entity.po.RoleStatus.COMMIT;
+
+import entity.po.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import service.UserService;
