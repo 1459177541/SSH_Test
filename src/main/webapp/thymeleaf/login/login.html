@@ -1,21 +1,45 @@
 <!DOCTYPE html>
-<html lang="zh-CN" xmlns:th="http://www.thymeleaf.org">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>登陆</title>
 	<link rel="stylesheet" type="text/css" href="../../css/login.css">
 	<script src="../../js/jquery-3.3.1.js"></script>
-	<script src="../../js/login.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#login_submit").click(function () {
+                // var d = '{"id": $("#user_id").val(),"password": $("#user_pwd").val()}';
+                var d = JSON.stringify({id:$("#user_id").val(),password:$("#user_pwd").val()});
+                $.ajax({
+                    url: "/loginTo",
+                    method: "POST",
+                    async: true,
+                    contentType: "application/json",
+                    datatype: "json",
+                    cache: false,
+                    data: d,
+                    success: function (result) {
+                        alert('return:'+result);
+                        window.location.href = "/index";
+                    },
+                    error: function (data) {
+                        alert(data);
+                    }
+                });
+            })
+        });
+    </script>
 </head>
 <body>
     <div id="main">
         <div id="title">登录</div>
-        <form id="login" method="post">
+        <form id="login" method="post" th:object="${user}">
             <!--/*@thymesVar id="user" type="entity.dto.UserDto"*/-->
-            <div>用户名: <input class="input" type="text" placeholder="请输入用户名" name="name" th:value="*{user.name}"></div>
+            <div>用户名: <input id="user_id" class="input" type="text" placeholder="请输入用户id" name="id" th:field="*{id}"></div>
             <!--/*@thymesVar id="user" type="entity.dto.UserDto"*/-->
-            <div>密码: <input class="input" type="password" placeholder="请输入密码" name="password" th:value="*{user.password}"></div>
-            <input id="login_submit" type="button" value="登陆" onclick='commit("/loginTo")'>
+            <div>密码: <input id="user_pwd" class="input" type="password" placeholder="请输入密码" name="password" th:field="*{password}"></div>
+            <input id="login_submit" type="button" value="登陆">
         </form>
     </div>
 </body>

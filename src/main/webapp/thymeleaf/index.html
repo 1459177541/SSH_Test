@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="zh-CN" xmlns:th="http://www.thymeleaf.org">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>SSH-DEMO</title>
@@ -15,10 +16,10 @@
         </div>
         <div id="menu_user">
             <!--/*@thymesVar id="user" type="entity.dto.UserDto"*/-->
-            <div id="login" th:if="${!user}">
+            <div id="login" th:if="${user == null}">
                 <a href="/login">登录</a>或<a href="/register">注册</a>
             </div>
-            <div style="display:none" id="user_home" th:if="${user}">
+            <div style="display:none" id="user_home" th:if="${user != null}">
                 <!--/*@thymesVar id="user" type="entity.dto.UserDto"*/-->
                 欢迎你，<span th:value="${user.name}"></span>
             </div>

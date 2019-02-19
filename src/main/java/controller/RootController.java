@@ -5,7 +5,9 @@ import entity.dto.UserDto;
 import entity.po.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.validation.Errors;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import service.UserService;
@@ -34,24 +36,25 @@ public class RootController {
     }
 
     @RequestMapping(value = "login", method = GET)
-    public String login(){
+    public String login(Model model){
+        model.addAttribute("user", new UserDto());
         return "login/login";
     }
 
     @ResponseBody
     @RequestMapping(value = "/loginTo", method = POST)
-    public UserDto loginTo(@NotNull UserDto user,
-                          Errors errors,
-                          HttpServletRequest request) {
-            if (errors.hasErrors()) {
-                return user;
-            }
-            user.setIp(request.getHeader("X-Forwarded-For"));
-            return userService.login(user);
-        }
+    public UserDto loginTo(@RequestBody UserDto user,
+                           HttpServletRequest request,
+                           Model model) {
+        user.setIp(request.getHeader("X-Forwarded-For"));
+        UserDto userDto = userService.login(user);
+        model.addAttribute("user", userDto);
+        return userDto;
+    }
 
     @RequestMapping(value = "register", method = GET)
-    public String register(){
+    public String register(Model model){
+        model.addAttribute("user", new UserDto());
         return "login/register";
     }
 

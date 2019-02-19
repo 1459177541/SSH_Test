@@ -1,6 +1,7 @@
 // JavaScript Document
 
 function commit(to){
+    alert(to);
 	$("input.input").attr("disabled","disabled");
 	var d = JSON.stringify($('form').serializeObject());
 	alert(d);

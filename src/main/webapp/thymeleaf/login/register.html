@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="zh-CN" xmlns:th="http://www.thymeleaf.org">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>注册</title>
@@ -12,11 +13,11 @@
         <div id="title">注册</div>
         <form id="login" method="post">
             <!--/*@thymesVar id="user" type="entity.dto.UserDto"*/-->
-            <div>&nbsp;&nbsp;用户名: <input class="input" type="text" placeholder="请输入用户名" name="name" th:value="*{user.name}"></div>
+            <div>&nbsp;&nbsp;用户名: <input class="input" type="text" placeholder="请输入用户名" name="name" th:field="*{user.name}"></div>
             <!--/*@thymesVar id="user" type="entity.dto.UserDto"*/-->
-            <div>&nbsp;&nbsp;&nbsp;密码: <input class="input" type="password" placeholder="请输入密码" name="password" th:value="*{user.password}"></div>
+            <div>&nbsp;&nbsp;&nbsp;密码: <input class="input" type="password" placeholder="请输入密码" name="password" th:field="*{user.password}"></div>
             <!--/*@thymesVar id="user" type="entity.dto.UserDto"*/-->
-            <div>&nbsp;重复密码: <input class="input" type="password" placeholder="请再次输入密码" name="password" th:value="*{user.password}"></div>
+            <div>&nbsp;重复密码: <input class="input" type="password" placeholder="请再次输入密码" name="password" th:field="*{user.password}"></div>
             <input id="login_submit" type="submit" value="注册" onclick='commit("/reisterTo")'>
         </form>
     </div>
