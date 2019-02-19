@@ -1,0 +1,55 @@
+/* CSS Document */
+#main{
+	position: fixed;
+	top:10%;
+	height: 700px;
+	width: 600px;
+	border-radius: 5%;
+	border: 2px #64E77F solid;
+	background: rgba(230,230,230,0.5);
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+}
+#main #title{
+	text-shadow: 2px 2px 3px rgba(150,150,150,0.7);
+	font-size: 90px;
+	text-align: center;
+	top: 25px;
+	height: 150px;
+	display: block;
+	margin: 25px;
+}
+#main #login div{
+	font-size: 25px;
+	display: block;
+	height: 50px;
+	margin: 50px 15px;
+}
+#main #login div .input{
+	position: absolute;
+    transition: all 0.30s ease-in-out;
+	border: none;
+	background: rgba(255,255,255,0);
+    border-bottom: #35a5e5 3px solid;
+	height: 35px;
+	width: 430px;
+	right: 5%;
+	font-size: 30px;
+}
+#main #login div .input:focus{
+	transition: all 0.5s;
+	border: none;
+	border-bottom: #25f595 3px solid;	
+}
+#main #login #login_submit{
+	position: absolute;
+	width: 300px;
+	height: 100px;
+	left: 150px;
+	bottom: 50px;
+	background: rgba(150, 255, 150, 0.7);
+	border: none;
+	border-radius: 20px;
+	font-size: 30px;
+}
