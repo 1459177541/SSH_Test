@@ -17,7 +17,7 @@
         <!--<struts.version>2.5.17</struts.version>-->
         <spring.version>5.0.8.RELEASE</spring.version>
         <hibernate.version>5.3.6.Final</hibernate.version>
-        <mysql.version>8.0.9-rc</mysql.version>
+        <mysql.version>5.1.47</mysql.version>
         <slf.version>1.8.0-beta2</slf.version>
         <log4j.version>2.9.1</log4j.version>
         <junit.version>5.3.2</junit.version>
@@ -131,11 +131,11 @@
             <artifactId>mysql-connector-java</artifactId>
             <version>${mysql.version}</version>
         </dependency>
-        <!-- C3P0 依赖 -->
+        <!-- druid 依赖 -->
         <dependency>
-            <groupId>com.mchange</groupId>
-            <artifactId>c3p0</artifactId>
-            <version>0.9.5.2</version>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid</artifactId>
+            <version>1.1.13</version>
         </dependency>
         <!-- AspectJ依赖 -->
         <dependency>
