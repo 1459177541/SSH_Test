@@ -1,24 +1,40 @@
 /* CSS Document */
-#main{
-	position: fixed;
-	top:10%;
-	height: 700px;
-	width: 600px;
-	border-radius: 5%;
-	border: 2px #64E77F solid;
-	background: rgba(230,230,230,0.5);
-	margin: 0 auto;
-	left: 0;
-	right: 0;
+#bg{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #999;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;	
+}
+#main {
+    position: fixed;
+    width: 600px;
+    border-radius: 5%;
+    border: 2px #64E77F solid;
+    background: rgba(230, 230, 230, 0.5);
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+}
+.login {
+    top:300px;
+    height: 500px;
+}
+.register{
+    top: 100px;
+    height: 700px;
 }
 #main .title{
-	text-shadow: 2px 2px 3px rgba(150,150,150,0.7);
-	font-size: 90px;
-	text-align: center;
-	top: 25px;
-	height: 100px;
-	display: block;
-	margin: 25px;
+    position: static;
+    text-shadow: 2px 2px 3px rgba(150,150,150,0.7);
+    font-size: 90px;
+    text-align: center;
+    top: 25px;
+    height: 100px;
+    display: block;
+    margin: 50px 25px;
 }
 #main .form div{
 	font-size: 25px;
@@ -35,7 +51,7 @@
 	position: absolute;
     transition: all 0.30s ease-in-out;
 	border: none;
-	background: white;
+	background: rgba(0,0,0,0);
     color: black;
     border-bottom: white 3px solid;
 	height: 35px;

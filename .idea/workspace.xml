@@ -9,29 +9,11 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="25defb74-8661-49ea-a980-ffd802b910b3" name="Default Changelist" comment="DEBUG，完成注册及登录功能">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/register.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/48afbc8a-e81e-488e-8d15-09c6cceffe98.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/48afbc8a-e81e-488e-8d15-09c6cceffe98.xml" afterDir="false" />
+    <list default="true" id="25defb74-8661-49ea-a980-ffd802b910b3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/config/ContextConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/config/ContextConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/config/SpringMvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/config/SpringMvcConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/RootController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/RootController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/Dao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/Dao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/impl/UserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/impl/UserDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/dto/LoginStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/dto/LoginStatus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/dto/UserDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/dto/UserDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/po/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/po/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log4j2.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/login.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-3.3.1.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/jquery-3.3.1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/thymeleaf/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/thymeleaf/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/thymeleaf/login/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/thymeleaf/login/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/thymeleaf/login/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/thymeleaf/login/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/service/UserServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/service/UserServiceTest.java" afterDir="false" />
     </list>
     <list id="5844e27e-d40a-4406-b8f6-26d2d8dee936" name="Revert: Delete jdbc.properties" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -85,10 +67,10 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/register.js">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/thymeleaf/login/login.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
+            <state relative-caret-position="303">
+              <caret line="20" column="6" lean-forward="true" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -137,7 +119,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/resources/log4j.properties" />
         <option value="$PROJECT_DIR$/src/main/java/dao/CourseDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/entity/RoleStatus.java" />
         <option value="$PROJECT_DIR$/src/main/java/dao/GroupDao.java" />
@@ -179,15 +160,16 @@
         <option value="$PROJECT_DIR$/src/test/java/service/UserServiceTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/dao/Dao.java" />
         <option value="$PROJECT_DIR$/src/main/java/dao/impl/UserDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/css/login.css" />
         <option value="$PROJECT_DIR$/src/main/java/service/impl/UserServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/js/register.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/jquerysession.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/login.js" />
         <option value="$PROJECT_DIR$/src/main/java/controller/RootController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/thymeleaf/login/register.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/thymeleaf/login/login.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/thymeleaf/index.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/register.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/particles.min.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/thymeleaf/login/register.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/css/login.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/thymeleaf/login/login.html" />
       </list>
     </option>
   </component>
@@ -260,8 +242,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -361,14 +341,6 @@
               <item name="SSH_Demo" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SSH_Demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SSH_Demo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -453,6 +425,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -463,7 +437,7 @@
     <property name="TODO_SCOPE" value="All Places" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550651051562" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550651084632" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="CSS&#10;JSP" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
@@ -897,14 +871,8 @@
       <workItem from="1550567167258" duration="1817000" />
       <workItem from="1550573625858" duration="15839000" />
       <workItem from="1550623964738" duration="4959000" />
-      <workItem from="1550635502398" duration="15539000" />
-    </task>
-    <task id="LOCAL-00009" summary="添加实体信息">
-      <created>1539676693446</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1539676693446</updated>
+      <workItem from="1550635502398" duration="15585000" />
+      <workItem from="1550659579055" duration="2012000" />
     </task>
     <task id="LOCAL-00010" summary="修改映射文件。。。。未完成">
       <created>1539679290640</created>
@@ -1242,7 +1210,14 @@
       <option name="project" value="LOCAL" />
       <updated>1550589460590</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="DEBUG，完成注册及登录功能">
+      <created>1550651071065</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1550651071066</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1278,7 +1253,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="309586000" />
+    <option name="totallyTimeSpent" value="311644000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -1324,7 +1299,7 @@
       <window_info anchor="bottom" id="Problems" order="20" weight="0.3295838" />
       <window_info anchor="bottom" id="SQL Generator" order="21" weight="0.3295838" />
       <window_info anchor="bottom" id="Duplicate detector" order="22" weight="0.3295838" />
-      <window_info anchor="right" content_ui="combo" id="Project" order="0" sideWeight="0.67379075" visible="true" weight="0.17219251" />
+      <window_info anchor="right" content_ui="combo" id="Project" order="0" sideWeight="0.6726659" weight="0.17219251" />
       <window_info anchor="right" id="Database" order="1" sideWeight="0.72657746" weight="0.17005348" />
       <window_info anchor="right" id="Maven" order="2" sideWeight="0.49943757" weight="0.32994652" />
       <window_info anchor="right" id="Palette" order="3" />
@@ -1338,7 +1313,7 @@
       <window_info anchor="right" id="JSF" order="11" weight="0.32994652" />
       <window_info anchor="right" id="CDI" order="12" weight="0.32994652" />
       <window_info anchor="right" id="Bean Validation" order="13" weight="0.32994652" />
-      <window_info anchor="right" x="0" y="0" width="430" height="853" id="Documentation" order="14" sideWeight="0.32620922" side_tool="true" visible="true" weight="0.17219251" />
+      <window_info anchor="right" x="0" y="0" width="430" height="853" id="Documentation" order="14" sideWeight="0.32733408" side_tool="true" weight="0.17219251" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1431,16 +1406,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar:///etc/jdk-11/lib/src.zip!/java.base/java/util/concurrent/ThreadPoolExecutor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="627" selection-start-line="627" selection-end-line="627" />
-          <folding>
-            <element signature="e#25379#25380#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///etc/jdk-11/lib/src.zip!/java.base/java/lang/Thread.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="177">
@@ -1531,9 +1496,6 @@
           <caret line="80" column="27" selection-start-line="80" selection-start-column="27" selection-end-line="80" selection-end-column="27" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/login.css">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/js/jquery.sha1.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -1682,13 +1644,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/login.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="14" lean-forward="true" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/thymeleaf/user/home.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1774,20 +1729,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/thymeleaf/login/register.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="3" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/thymeleaf/login/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/thymeleaf/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
@@ -1797,8 +1738,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/js/register.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
+        <state relative-caret-position="378">
+          <caret line="27" column="16" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/particles.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="402">
+          <caret line="415" column="32" selection-start-line="415" selection-start-column="32" selection-end-line="415" selection-end-column="32" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/thymeleaf/login/register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="24" column="34" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/index.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/login.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/thymeleaf/login/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="20" column="6" lean-forward="true" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
         </state>
       </provider>
     </entry>
