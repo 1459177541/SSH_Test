@@ -11,45 +11,53 @@
 	left: 0;
 	right: 0;
 }
-#main #title{
+#main .title{
 	text-shadow: 2px 2px 3px rgba(150,150,150,0.7);
 	font-size: 90px;
 	text-align: center;
 	top: 25px;
-	height: 150px;
+	height: 100px;
 	display: block;
 	margin: 25px;
 }
-#main #login div{
+#main .form div{
 	font-size: 25px;
 	display: block;
 	height: 50px;
-	margin: 50px 15px;
+	margin: 30px 15px;
 }
-#main #login div .input{
+#error{
+    text-align: center;
+    color: red;
+    font-size: 20px;
+}
+#main .form div .input{
 	position: absolute;
     transition: all 0.30s ease-in-out;
 	border: none;
-	background: rgba(255,255,255,0);
-    border-bottom: #35a5e5 3px solid;
+	background: white;
+    color: black;
+    border-bottom: white 3px solid;
 	height: 35px;
 	width: 430px;
 	right: 5%;
 	font-size: 30px;
 }
-#main #login div .input:focus{
+#main .form div .input:focus{
 	transition: all 0.5s;
 	border: none;
-	border-bottom: #25f595 3px solid;	
+	border-bottom: blue 3px solid;
 }
-#main #login #login_submit{
-	position: absolute;
-	width: 300px;
-	height: 100px;
-	left: 150px;
-	bottom: 50px;
-	background: rgba(150, 255, 150, 0.7);
-	border: none;
-	border-radius: 20px;
-	font-size: 30px;
+#main .form .submit {
+    position: absolute;
+    width: 300px;
+    height: 100px;
+    left: 150px;
+    bottom: 50px;
+    background: rgba(150, 255, 150, 0.7);
+    color: white;
+    text-shadow: 2px 2px 3px black;
+    border: none;
+    border-radius: 20px;
+    font-size: 30px;
 }

@@ -80,12 +80,11 @@ public class UserServiceImpl implements UserService {
         User user = userDao.get(userDto.getId());
         if (user == null) {
             userDto.setStatus(LoginStatus.USER_NON_EXISTENT);
+            userDto.setInfo(userDto.getStatus().getNote());
             return userDto;
         }
         if (!Objects.equals(userDto.getPassword(), user.getPassword())) {
             userDto.setStatus(LoginStatus.PASSWORD_ERROR);
-        } else if (user.getStatus() == UserStatus.COMMIT) {
-            userDto.setStatus(LoginStatus.WAIT_ADOPT);
         } else if (user.getStatus() == UserStatus.REJECT) {
             userDto.setStatus(LoginStatus.USER_NON_ADOPT);
         } else if (user.getStatus() == UserStatus.WRITTEN_OFF) {
@@ -98,19 +97,31 @@ public class UserServiceImpl implements UserService {
             userDao.login(info);
 
             userDto.setLoginDate(info.getDate());
-            userDto.setStatus(LoginStatus.LOGIN_SUCCESS);
+            if (user.getStatus() == UserStatus.COMMIT) {
+                userDto.setStatus(LoginStatus.WAIT_ADOPT);
+            }else {
+                userDto.setStatus(LoginStatus.LOGIN_SUCCESS);
+            }
         }
+        userDto.setInfo(userDto.getStatus().getNote());
         return userDto;
     }
 
     @Override
-    public boolean register(User user) {
-        if (null == user.getId()
-                || "".equals(user.getId())
-                || null == user.getPassword()
-                || "".equals(user.getPassword())) {
+    public boolean register(UserDto userDto) {
+        if (null == userDto.getId()
+                || "".equals(userDto.getId())
+                || null == userDto.getPassword()
+                || "".equals(userDto.getPassword())) {
             return false;
         }
+        if (userDao.get(userDto.getId()) != null) {
+            return false;
+        }
+        User user = new User();
+        user.setId(userDto.getId());
+        user.setName(userDto.getName());
+        user.setPassword(userDto.getPassword());
         user.setRegisterDate(new Date());
         user.setStatus(UserStatus.COMMIT);
         return userDao.register(user);
@@ -127,5 +138,12 @@ public class UserServiceImpl implements UserService {
         return true;
     }
 
-
+    @Override
+    public UserDto getUserDto(String id) {
+        User user = userDao.get(id);
+        if (user == null) {
+            return null;
+        }
+        return new UserDto(user);
+    }
 }

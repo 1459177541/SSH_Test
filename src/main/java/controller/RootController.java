@@ -1,26 +1,29 @@
 package controller;
 
 
+import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.serializer.SerializerFeature;
 import entity.dto.UserDto;
-import entity.po.User;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.validation.Errors;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import service.UserService;
 
 import javax.servlet.http.HttpServletRequest;
-import javax.validation.constraints.NotNull;
+import javax.servlet.http.HttpSession;
 
-import java.util.Objects;
+import java.io.PrintWriter;
 
 import static org.springframework.web.bind.annotation.RequestMethod.GET;
 import static org.springframework.web.bind.annotation.RequestMethod.POST;
 
+@SuppressWarnings("SpringMVCViewInspection")
 @Controller
+@Slf4j
 public class RootController {
 
     private UserService userService;
@@ -41,15 +44,21 @@ public class RootController {
         return "login/login";
     }
 
-    @ResponseBody
     @RequestMapping(value = "/loginTo", method = POST)
-    public UserDto loginTo(@RequestBody UserDto user,
-                           HttpServletRequest request,
-                           Model model) {
+    @ResponseBody
+    public void loginTo(@RequestBody UserDto user,
+                        HttpServletRequest request,
+                        HttpSession session,
+                        PrintWriter printWriter) {
+        log.trace("注册{}", user);
         user.setIp(request.getHeader("X-Forwarded-For"));
         UserDto userDto = userService.login(user);
-        model.addAttribute("user", userDto);
-        return userDto;
+//        model.addAttribute("user", userDto);
+        session.setAttribute("user", userDto);
+        String json = JSON.toJSONString(userDto, SerializerFeature.PrettyFormat);
+        printWriter.write(json);
+        printWriter.flush();
+        printWriter.close();
     }
 
     @RequestMapping(value = "register", method = GET)
@@ -59,20 +68,31 @@ public class RootController {
     }
 
     @RequestMapping(value = "registerTo", method = POST)
-    public String registerTo(@NotNull User user,
-                             Errors errors1,
-                             @NotNull String password2,
-                             Errors errors2) {
-        if (errors1.hasErrors() || errors2.hasErrors()) {
-            return "login/register";
-        }
-        if (!Objects.equals(user.getPassword(), password2)){
-            return "login/register";
-        }
+    @ResponseBody
+    public void registerTo(@RequestBody UserDto user,
+                           PrintWriter printWriter) {
+        log.trace("注册{}", user);
         if (userService.register(user)) {
-            return "login/registerSuccess";
+            printWriter.write("{'result':'success'}");
+        }else {
+            printWriter.write("{'result':'fail'}");
         }
-        return "login/register";
+        printWriter.flush();
+        printWriter.close();
+    }
+
+    @RequestMapping(value = "/checkUserName", method = POST)
+    @ResponseBody
+    public void checkUserName(@RequestBody UserDto user,
+                              PrintWriter printWriter) {
+        UserDto userDto = userService.getUserDto(user.getId());
+        if (userDto == null) {
+            printWriter.write("{'result':'non-exist'}");
+        } else {
+            printWriter.write("{'result':'exist'}");
+        }
+        printWriter.flush();
+        printWriter.close();
     }
 
 }

@@ -30,7 +30,7 @@ public class ContextConfig{
     }
 
     @Bean
-    public Slf4jLogFilter slf4jLogFilter(){
+    public Slf4jLogFilter slf4j(){
         Slf4jLogFilter filter = new Slf4jLogFilter();
         filter.setStatementExecutableSqlLogEnable(true);
         filter.setStatementSqlPrettyFormat(true);
@@ -45,7 +45,7 @@ public class ContextConfig{
         dataSource.setUsername(environment.getProperty("jdbc.username"));
         dataSource.setPassword(environment.getProperty("jdbc.password"));
 
-        dataSource.setFilters("stat,slf4jLogFilter,wall");
+        dataSource.setFilters("stat,slf4j,wall");
 
         dataSource.setMaxActive(20);
         dataSource.setInitialSize(1);

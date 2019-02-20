@@ -28,7 +28,7 @@ public enum LoginStatus {
     WAIT_ADOPT("等待通过")
     ;
 
-    private String note;
+    private final String note;
 
     LoginStatus(String note) {
         this.note = note;

@@ -21,7 +21,7 @@ class UserServiceTest {
     @Test
     void registerTest(){
 
-        User user = new User();
+        UserDto user = new UserDto();
         user.setId("super admin");
         user.setName("super admin");
         user.setPassword("admin");

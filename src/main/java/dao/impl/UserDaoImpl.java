@@ -5,8 +5,8 @@ import entity.po.InfoType;
 import entity.po.LoginInfo;
 import entity.po.Role;
 import entity.po.User;
+import lombok.extern.slf4j.Slf4j;
 import org.hibernate.Hibernate;
-import org.springframework.aop.framework.AopContext;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -19,6 +19,7 @@ import java.util.Map;
 
 @Transactional(rollbackFor = Exception.class)
 @Repository
+@Slf4j
 public class UserDaoImpl extends AbstractDaoImpl<User> implements UserDao {
 
     @Override
@@ -61,15 +62,14 @@ public class UserDaoImpl extends AbstractDaoImpl<User> implements UserDao {
 
     @Override
     public boolean login(LoginInfo info) {
+        log.info("登录:{}", info.getUser());
         getHibernateTemplate().save(info);
         return true;
     }
 
     @Override
     public boolean register(User user) {
-        if (((UserDao) AopContext.currentProxy()).get(user.getId()) != null) {
-            return false;
-        }
+        log.info("注册：{}", user);
         getHibernateTemplate().save(user);
         return true;
     }

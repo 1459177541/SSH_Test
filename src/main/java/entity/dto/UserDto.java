@@ -18,6 +18,8 @@ public class UserDto implements Serializable {
 
     private LoginStatus status;
 
+    private String info;
+
     private String name;
 
     private String ip;

@@ -20,7 +20,9 @@ public interface UserService {
 
     UserDto login(UserDto user);
 
-    boolean register(User user);
+    boolean register(UserDto user);
 
     boolean adoptRegister(UserDto user);
+
+    UserDto getUserDto(String id);
 }
