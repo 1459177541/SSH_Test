@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+	<link rel="stylesheet" type="text/css" href="../../css/login.css">
+    <link rel="stylesheet" type="text/css" href="../../css/index.css">
+	<script src="../../js/jquery-3.3.1.js"></script>
+    <script src="../../js/jquery.sha1.js"></script>
+	<script src="../../js/register.js"></script>
+</head>
+<body>
+    <div id="head">
+        <a href="/index">
+            <div id="icon">
+                SSH DEMO
+            </div>
+        </a>
+    </div>
+    <div id="main">
+        <div class="title">注册</div>
+        <form class="form">
+            <!--/*@thymesVar id="user" type="entity.dto.UserDto"*/-->
+            <div>&nbsp;&nbsp;id:
+                <input id="user_id" class="input" type="text" placeholder="请输入id" name="id" th:field="*{user.id}">
+            </div>
+            <!--/*@thymesVar id="user" type="entity.dto.UserDto"*/-->
+            <div>&nbsp;&nbsp;用户名:
+                <input id="user_name" class="input" type="text" placeholder="请输入用户名" name="name" th:field="*{user.name}">
+            </div>
+            <!--/*@thymesVar id="user" type="entity.dto.UserDto"*/-->
+            <div>&nbsp;&nbsp;&nbsp;密码:
+                <input id="user_pwd" class="input" type="password" placeholder="请输入密码" name="password" th:field="*{user.password}">
+            </div>
+            <!--/*@thymesVar id="user" type="entity.dto.UserDto"*/-->
+            <div>&nbsp;重复密码:
+                <input id="user_pwd2" class="input" type="password" placeholder="请再次输入密码" name="password" th:field="*{user.password}">
+            </div>
+            <p id="error">&nbsp;</p>
+            <input class="submit" type="button" value="注册">
+        </form>
+    </div>
+</body>
+</html>

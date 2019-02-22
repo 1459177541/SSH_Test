@@ -1,44 +1,24 @@
 /* CSS Document */
-body{
-    overflow-x:hidden;
-    overflow-y:hidden;
-}
-#bg{
-  position: absolute;
-  width: 120%;
-  height: 120%;
-  background-color: #999;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% 50%;	
-}
-#main {
-    position: fixed;
-    width: 600px;
-    border-radius: 5%;
-    border: 2px #64E77F solid;
-    background: rgba(230, 230, 230, 0.5);
-    margin: 0 auto;
-    left: 0;
-    right: 0;
-}
-.login {
-    top:260px;
-    height: 500px;
-}
-.register{
-    top: 100px;
-    height: 700px;
+#main{
+	position: fixed;
+	top:10%;
+	height: 700px;
+	width: 600px;
+	border-radius: 5%;
+	border: 2px #64E77F solid;
+	background: rgba(230,230,230,0.5);
+	margin: 0 auto;
+	left: 0;
+	right: 0;
 }
 #main .title{
-    position: static;
-    text-shadow: 2px 2px 3px rgba(150,150,150,0.7);
-    font-size: 90px;
-    text-align: center;
-    top: 25px;
-    height: 100px;
-    display: block;
-    margin: 50px 25px;
+	text-shadow: 2px 2px 3px rgba(150,150,150,0.7);
+	font-size: 90px;
+	text-align: center;
+	top: 25px;
+	height: 100px;
+	display: block;
+	margin: 25px;
 }
 #main .form div{
 	font-size: 25px;
@@ -55,7 +35,7 @@ body{
 	position: absolute;
     transition: all 0.30s ease-in-out;
 	border: none;
-	background: rgba(0,0,0,0);
+	background: white;
     color: black;
     border-bottom: white 3px solid;
 	height: 35px;
