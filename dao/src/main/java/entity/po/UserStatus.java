@@ -1,4 +1,4 @@
-package dao.entity.po;
+package entity.po;
 
 public enum UserStatus {
     /**

@@ -11,9 +11,8 @@ module dao {
     requires spring.data.jpa;
     requires java.naming;
     requires java.management;
-    requires lombok;
 
     exports dao;
     exports dao.api;
-    exports dao.entity.po;
+    exports entity.po;
 }

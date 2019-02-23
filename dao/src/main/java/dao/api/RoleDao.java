@@ -1,6 +1,6 @@
 package dao.api;
 
-import dao.entity.po.Role;
+import entity.po.Role;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 

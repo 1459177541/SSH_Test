@@ -3,7 +3,6 @@ package controller;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.serializer.SerializerFeature;
-import lombok.extern.slf4j.Slf4j;
 import entity.dto.UserDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -22,7 +21,7 @@ import static org.springframework.web.bind.annotation.RequestMethod.GET;
 import static org.springframework.web.bind.annotation.RequestMethod.POST;
 
 @Controller
-@Slf4j
+//@Slf4j
 public class RootController {
 
     private UserService userService;
@@ -49,7 +48,7 @@ public class RootController {
                         HttpServletRequest request,
                         HttpSession session,
                         PrintWriter printWriter) {
-        log.trace("注册{}", user);
+//        log.trace("注册{}", user);
         user.setIp(request.getHeader("X-Forwarded-For"));
         UserDto userDto = userService.login(user);
 //        model.addAttribute("user", userDto);
@@ -70,7 +69,7 @@ public class RootController {
     @ResponseBody
     public void registerTo(@RequestBody UserDto user,
                            PrintWriter printWriter) {
-        log.trace("注册{}", user);
+//        log.trace("注册{}", user);
         if (userService.register(user)) {
             printWriter.write("{'result':'success'}");
         }else {

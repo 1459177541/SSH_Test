@@ -8,6 +8,5 @@ module controller {
     requires spring.web;
     requires service;
     requires fastjson;
-    requires lombok;
     requires javax.servlet;
 }

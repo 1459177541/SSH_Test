@@ -1,7 +1,7 @@
 package dao.api;
 
-import dao.entity.po.LoginInfo;
-import dao.entity.po.User;
+import entity.po.LoginInfo;
+import entity.po.User;
 
 public interface LoginDao {
 

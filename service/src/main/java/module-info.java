@@ -4,7 +4,6 @@ module service {
     exports service;
 
     requires dao;
-    requires lombok;
     requires spring.context;
     requires spring.beans;
     requires org.hibernate.orm.core;
