@@ -1,6 +1,5 @@
 package entity.dto;
 
-import com.fasterxml.jackson.annotation.JsonFormat;
 import dao.entity.po.User;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -26,10 +25,8 @@ public class UserDto implements Serializable {
 
     private String password;
 
-    @JsonFormat(pattern = "yyyy-MM-dd hh:mm", locale = "zh", timezone = "GMT+8")
     private Date loginDate;
 
-    @JsonFormat(pattern = "yyyy-MM-dd hh:mm", locale = "zh", timezone = "GMT+8")
     private Date registerDate;
 
     public UserDto(User user) {
