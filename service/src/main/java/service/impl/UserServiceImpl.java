@@ -1,7 +1,8 @@
 package service.impl;
 
-import dao.api.RoleDao;
-import dao.api.UserDao;
+import dao.api.LoginRepository;
+import dao.api.RoleRepository;
+import dao.api.UserRepository;
 import entity.dto.LoginStatus;
 import entity.dto.UserDto;
 
@@ -22,13 +23,15 @@ import java.util.function.Consumer;
 @Service
 public class UserServiceImpl implements UserService {
 
-    private final UserDao userDao;
-    private final RoleDao roleDao;
+    private final UserRepository userRepository;
+    private final RoleRepository roleRepository;
+    private final LoginRepository loginRepository;
 
     @Autowired
-    public UserServiceImpl(UserDao userDao, RoleDao roleDao) {
-        this.userDao = userDao;
-        this.roleDao = roleDao;
+    public UserServiceImpl(UserRepository userRepository, RoleRepository roleRepository, LoginRepository loginRepository) {
+        this.userRepository = userRepository;
+        this.roleRepository = roleRepository;
+        this.loginRepository = loginRepository;
     }
 
 
@@ -57,7 +60,7 @@ public class UserServiceImpl implements UserService {
         consumer.accept(role);
         role.setRid(type);
         role.setStatus(COMMIT);
-        roleDao.save(role);
+        roleRepository.save(role);
         return true;
     }
     
@@ -68,21 +71,21 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public Collection<LoginInfo> getLoginInfo(User user) {
-        user = userDao.findById(user.getId());
+        user = userRepository.findById(user.getId());
         Hibernate.initialize(user.getLoginInfo());
         return user.getLoginInfo();
     }
 
     @Override
     public Map<InfoType, String> getInfo(User user) {
-        user = userDao.findById(user.getId());
+        user = userRepository.findById(user.getId());
         Hibernate.initialize(user.getInfo());
         return user.getInfo();
     }
 
     @Override
     public UserDto login(UserDto userDto) {
-        User user = userDao.findById(userDto.getId());
+        User user = userRepository.findById(userDto.getId());
         if (user == null) {
             userDto.setStatus(LoginStatus.USER_NON_EXISTENT);
             userDto.setInfo(userDto.getStatus().getNote());
@@ -99,7 +102,7 @@ public class UserServiceImpl implements UserService {
             info.setUser(user);
             info.setDate(new Date());
             info.setIp(userDto.getIp());
-            userDao.login(info);
+            loginRepository.save(info);
 
             userDto.setLoginDate(info.getDate());
             if (user.getStatus() == UserStatus.COMMIT) {
@@ -120,7 +123,7 @@ public class UserServiceImpl implements UserService {
                 || "".equals(userDto.getPassword())) {
             return false;
         }
-        if (userDao.findById(userDto.getId()) != null) {
+        if (userRepository.findById(userDto.getId()) != null) {
             return false;
         }
         User user = new User();
@@ -129,23 +132,23 @@ public class UserServiceImpl implements UserService {
         user.setPassword(userDto.getPassword());
         user.setRegisterDate(new Date());
         user.setStatus(UserStatus.COMMIT);
-        return userDao.save(user) != null;
+        return userRepository.save(user) != null;
     }
 
     @Override
     public boolean adoptRegister(UserDto userDto) {
-        User user = userDao.findById(userDto.getId());
+        User user = userRepository.findById(userDto.getId());
         if (user == null) {
             return false;
         }
         user.setStatus(UserStatus.ADOPT);
-        userDao.saveAndFlush(user);
+        userRepository.saveAndFlush(user);
         return true;
     }
 
     @Override
     public UserDto getUserDto(String id) {
-        User user = userDao.findById(id);
+        User user = userRepository.findById(id);
         if (user == null) {
             return null;
         }

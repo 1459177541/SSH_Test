@@ -2,24 +2,21 @@ package dao;
 
 import com.alibaba.druid.filter.logging.Slf4jLogFilter;
 import com.alibaba.druid.pool.DruidDataSource;
-import org.hibernate.SessionFactory;
+import org.hibernate.jpa.HibernatePersistenceProvider;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.core.env.Environment;
-import org.springframework.jndi.JndiObjectFactoryBean;
-import org.springframework.orm.hibernate5.HibernateTransactionManager;
 import org.springframework.orm.hibernate5.LocalSessionFactoryBean;
 import org.springframework.orm.jpa.JpaVendorAdapter;
 import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
 import org.springframework.orm.jpa.vendor.Database;
+import org.springframework.orm.jpa.vendor.HibernateJpaDialect;
 import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
-import org.springframework.transaction.PlatformTransactionManager;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
-import javax.persistence.EntityManagerFactory;
 import javax.sql.DataSource;
 import java.sql.SQLException;
 import java.util.Properties;
@@ -27,8 +24,8 @@ import java.util.Properties;
 
 @Configuration
 @PropertySource({"classpath:dataSource.properties"})
-@ComponentScan("dao")
-@EnableJpaRepositories
+@ComponentScan("dao.api")
+@EnableJpaRepositories(basePackages = "dao.api")
 public class DaoConfig {
 
     private final Environment environment;
@@ -76,7 +73,7 @@ public class DaoConfig {
     }
 
     @Bean
-    public LocalSessionFactoryBean sessionFactory(DataSource dataSource){
+    public LocalSessionFactoryBean entityManagerFactory(DataSource dataSource){
         LocalSessionFactoryBean factoryBean = new LocalSessionFactoryBean();
         factoryBean.setDataSource(dataSource);
         factoryBean.setPackagesToScan("po");
@@ -89,14 +86,6 @@ public class DaoConfig {
         properties.setProperty("hibernate.connection.driver_class", "com.mysql.jdbc.Driver");
         factoryBean.setHibernateProperties(properties);
         return factoryBean;
-    }
-
-    @Bean
-    public PlatformTransactionManager transactionManager(DataSource dataSource, SessionFactory sessionFactory){
-        HibernateTransactionManager transactionManager = new HibernateTransactionManager();
-        transactionManager.setDataSource(dataSource);
-        transactionManager.setSessionFactory(sessionFactory);
-        return transactionManager;
     }
 
     @Bean
@@ -114,15 +103,10 @@ public class DaoConfig {
         LocalContainerEntityManagerFactoryBean factoryBean = new LocalContainerEntityManagerFactoryBean();
         factoryBean.setDataSource(dataSource);
         factoryBean.setJpaVendorAdapter(adapter);
-        factoryBean.setPackagesToScan("dao.entity.po");
+        factoryBean.setPackagesToScan("entity.po");
+        factoryBean.setPersistenceProviderClass(HibernatePersistenceProvider.class);
+        factoryBean.setJpaDialect(new HibernateJpaDialect());
         return factoryBean;
-    }
-
-    @Bean
-    public JndiObjectFactoryBean jndiObjectFactoryBean(){
-        JndiObjectFactoryBean jndiObjectFactoryBean = new JndiObjectFactoryBean();
-        jndiObjectFactoryBean.setJndiName("jdbc/ssh");
-        return jndiObjectFactoryBean;
     }
 
 }
