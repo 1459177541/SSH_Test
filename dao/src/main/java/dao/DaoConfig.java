@@ -5,12 +5,11 @@ import com.alibaba.druid.pool.DruidDataSource;
 import org.hibernate.jpa.HibernatePersistenceProvider;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.core.env.Environment;
 import org.springframework.orm.hibernate5.LocalSessionFactoryBean;
-import org.springframework.orm.jpa.JpaVendorAdapter;
+import org.springframework.orm.jpa.JpaTransactionManager;
 import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
 import org.springframework.orm.jpa.vendor.Database;
 import org.springframework.orm.jpa.vendor.HibernateJpaDialect;
@@ -24,8 +23,7 @@ import java.util.Properties;
 
 @Configuration
 @PropertySource({"classpath:dataSource.properties"})
-@ComponentScan("dao.api")
-@EnableJpaRepositories(basePackages = "dao.api")
+@EnableJpaRepositories("dao.api")
 public class DaoConfig {
 
     private final Environment environment;
@@ -73,10 +71,10 @@ public class DaoConfig {
     }
 
     @Bean
-    public LocalSessionFactoryBean entityManagerFactory(DataSource dataSource){
+    public LocalSessionFactoryBean sessionFactoryBean(DataSource dataSource){
         LocalSessionFactoryBean factoryBean = new LocalSessionFactoryBean();
         factoryBean.setDataSource(dataSource);
-        factoryBean.setPackagesToScan("po");
+        factoryBean.setPackagesToScan("entity.po");
         Properties properties = new Properties();
         properties.setProperty("hibernate.dialect", "org.hibernate.dialect.MySQL5Dialect");
         properties.setProperty("hibernate.show_sql", "true");
@@ -89,7 +87,12 @@ public class DaoConfig {
     }
 
     @Bean
-    public JpaVendorAdapter jpaVendorAdapter(){
+    public JpaTransactionManager transactionManager(){
+        return new JpaTransactionManager();
+    }
+
+    @Bean
+    public HibernateJpaVendorAdapter jpaVendorAdapter(){
         HibernateJpaVendorAdapter adapter = new HibernateJpaVendorAdapter();
         adapter.setDatabase(Database.MYSQL);
         adapter.setShowSql(true);
@@ -99,10 +102,10 @@ public class DaoConfig {
     }
 
     @Bean
-    public LocalContainerEntityManagerFactoryBean entityManagerFactoryBean(DataSource dataSource, JpaVendorAdapter adapter) {
+    public LocalContainerEntityManagerFactoryBean entityManagerFactory(DataSource dataSource){
         LocalContainerEntityManagerFactoryBean factoryBean = new LocalContainerEntityManagerFactoryBean();
         factoryBean.setDataSource(dataSource);
-        factoryBean.setJpaVendorAdapter(adapter);
+        factoryBean.setJpaVendorAdapter(jpaVendorAdapter());
         factoryBean.setPackagesToScan("entity.po");
         factoryBean.setPersistenceProviderClass(HibernatePersistenceProvider.class);
         factoryBean.setJpaDialect(new HibernateJpaDialect());

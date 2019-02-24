@@ -10,5 +10,4 @@ import java.util.Map;
 @Repository
 public interface GroupRepository extends JpaRepository<Group, Integer> {
 
-    Map<InfoType, String> getInfo(Group group);
 }
