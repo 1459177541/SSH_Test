@@ -1,4 +1,4 @@
-package dao;
+package config;
 
 import com.alibaba.druid.filter.logging.Slf4jLogFilter;
 import com.alibaba.druid.pool.DruidDataSource;

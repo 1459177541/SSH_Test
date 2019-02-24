@@ -21,7 +21,7 @@
         <maven.compiler.target>${java.version}</maven.compiler.target>
         <!-- 统一各个框架版本 -->
         <spring.version>5.1.5.RELEASE</spring.version>
-        <slf.version>1.8.0-beta2</slf.version>
+        <slf.version>1.8.0-beta4</slf.version>
         <log4j.version>2.11.2</log4j.version>
         <junit.version>5.3.2</junit.version>
         <lombok.version>1.18.6</lombok.version>
@@ -86,15 +86,15 @@
         <!--&lt;!&ndash; SLF4J依赖 &ndash;&gt;-->
         <dependency>
             <groupId>org.slf4j</groupId>
-            <artifactId>jcl-over-slf4j</artifactId>
-            <version>${slf.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.slf4j</groupId>
             <artifactId>sl4j-api</artifactId>
             <version>${slf.version}</version>
         </dependency>
-        <!-- Log4j -->
+        <!--<dependency>-->
+            <!--<groupId>org.slf4j</groupId>-->
+            <!--<artifactId>slf4j-log4j12</artifactId>-->
+            <!--<version>${slf.version}</version>-->
+        <!--</dependency>-->
+        <!--&lt;!&ndash; Log4j &ndash;&gt;-->
         <dependency>
             <groupId>org.apache.logging.log4j</groupId>
             <artifactId>log4j-core</artifactId>
@@ -115,12 +115,6 @@
             <groupId>org.apache.logging.log4j</groupId>
             <artifactId>log4j-slf4j-impl</artifactId>
             <version>${log4j.version}</version>
-            <exclusions>
-                <exclusion>
-                    <artifactId>slf4j-api</artifactId>
-                    <groupId>org.slf4j</groupId>
-                </exclusion>
-            </exclusions>
         </dependency>
     </dependencies>
 

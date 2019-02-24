@@ -1,4 +1,4 @@
-package service;
+package config;
 
 import org.hibernate.SessionFactory;
 import org.springframework.context.annotation.Bean;
@@ -11,7 +11,7 @@ import org.springframework.transaction.PlatformTransactionManager;
 import javax.sql.DataSource;
 
 @Configuration
-@Import(dao.DaoConfig.class)
+@Import(config.DaoConfig.class)
 @ComponentScan({"service", "entity.dto"})
 
 public class ServiceConfig {

@@ -9,4 +9,10 @@ module controller {
     requires service;
     requires fastjson;
     requires javax.servlet;
+    requires org.hibernate.orm.core;
+    requires spring.orm;
+    requires java.sql;
+    requires druid;
+    requires spring.core;
+    requires spring.data.jpa;
 }

@@ -12,7 +12,6 @@ module dao {
     requires java.naming;
     requires java.management;
 
-    exports dao;
     exports dao.api;
     exports entity.po;
 }
