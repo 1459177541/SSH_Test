@@ -1,11 +1,8 @@
 package dao;
 
-import entity.po.InfoType;
 import entity.po.Task;
+import org.springframework.data.jpa.repository.JpaRepository;
 
-import java.util.Map;
+public interface TaskDao extends JpaRepository<Task, Integer> {
 
-public interface TaskDao extends Dao<Task> {
-
-    Map<InfoType, String> getInfo(Task task);
 }

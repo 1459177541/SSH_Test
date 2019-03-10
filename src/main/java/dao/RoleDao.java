@@ -1,14 +1,9 @@
 package dao;
 
-import entity.po.InfoType;
 import entity.po.Role;
+import org.springframework.data.jpa.repository.JpaRepository;
 
-import java.util.Map;
+public interface RoleDao extends JpaRepository<Role, Role.RoleId> {
 
-public interface RoleDao extends Dao<Role> {
-
-    Role alterStatus(Role role);
-
-    Map<InfoType, String> getInfo(Role role);
 
 }

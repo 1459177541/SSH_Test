@@ -1,11 +1,8 @@
 package dao;
 
 import entity.po.Group;
-import entity.po.InfoType;
+import org.springframework.data.jpa.repository.JpaRepository;
 
-import java.util.Map;
+public interface GroupDao extends JpaRepository<Group, Integer> {
 
-public interface GroupDao extends Dao<Group> {
-
-    Map<InfoType, String> getInfo(Group group);
 }

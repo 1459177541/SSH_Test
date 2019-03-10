@@ -1,13 +1,12 @@
 package service.impl;
 
+import dao.LoginDao;
 import dao.RoleDao;
 import dao.UserDao;
 import entity.dto.LoginStatus;
 import entity.dto.UserDto;
-
-import static entity.po.RoleStatus.COMMIT;
-
 import entity.po.*;
+import org.hibernate.Hibernate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import service.UserService;
@@ -18,16 +17,20 @@ import java.util.Map;
 import java.util.Objects;
 import java.util.function.Consumer;
 
+import static entity.po.RoleStatus.COMMIT;
+
 @Service
 public class UserServiceImpl implements UserService {
 
     private final UserDao userDao;
     private final RoleDao roleDao;
+    private final LoginDao loginDao;
 
     @Autowired
-    public UserServiceImpl(UserDao userDao, RoleDao roleDao) {
+    public UserServiceImpl(UserDao userDao, RoleDao roleDao, LoginDao loginDao) {
         this.userDao = userDao;
         this.roleDao = roleDao;
+        this.loginDao = loginDao;
     }
 
 
@@ -56,7 +59,7 @@ public class UserServiceImpl implements UserService {
         consumer.accept(role);
         role.setRid(type);
         role.setStatus(COMMIT);
-        roleDao.add(role);
+        roleDao.save(role);
         return true;
     }
     
@@ -67,17 +70,21 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public Collection<LoginInfo> getLoginInfo(User user) {
-        return userDao.getLoginInfo(user);
+        user = userDao.findById(user.getId());
+        Hibernate.initialize(user.getLoginInfo());
+        return user.getLoginInfo();
     }
 
     @Override
     public Map<InfoType, String> getInfo(User user) {
-        return userDao.getInfo(user);
+        user = userDao.findById(user.getId());
+        Hibernate.initialize(user.getInfo());
+        return user.getInfo();
     }
 
     @Override
     public UserDto login(UserDto userDto) {
-        User user = userDao.get(userDto.getId());
+        User user = userDao.findById(userDto.getId());
         if (user == null) {
             userDto.setStatus(LoginStatus.USER_NON_EXISTENT);
             userDto.setInfo(userDto.getStatus().getNote());
@@ -94,7 +101,7 @@ public class UserServiceImpl implements UserService {
             info.setUser(user);
             info.setDate(new Date());
             info.setIp(userDto.getIp());
-            userDao.login(info);
+            loginDao.save(info);
 
             userDto.setLoginDate(info.getDate());
             if (user.getStatus() == UserStatus.COMMIT) {
@@ -115,7 +122,7 @@ public class UserServiceImpl implements UserService {
                 || "".equals(userDto.getPassword())) {
             return false;
         }
-        if (userDao.get(userDto.getId()) != null) {
+        if (userDao.findById(userDto.getId()) != null) {
             return false;
         }
         User user = new User();
@@ -124,23 +131,23 @@ public class UserServiceImpl implements UserService {
         user.setPassword(userDto.getPassword());
         user.setRegisterDate(new Date());
         user.setStatus(UserStatus.COMMIT);
-        return userDao.register(user);
+        return userDao.save(user) != null;
     }
 
     @Override
     public boolean adoptRegister(UserDto userDto) {
-        User user = userDao.get(userDto.getId());
+        User user = userDao.findById(userDto.getId());
         if (user == null) {
             return false;
         }
         user.setStatus(UserStatus.ADOPT);
-        userDao.update(user);
+        userDao.saveAndFlush(user);
         return true;
     }
 
     @Override
     public UserDto getUserDto(String id) {
-        User user = userDao.get(id);
+        User user = userDao.findById(id);
         if (user == null) {
             return null;
         }

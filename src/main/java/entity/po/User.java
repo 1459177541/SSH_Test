@@ -2,6 +2,7 @@ package entity.po;
 
 import lombok.Data;
 import lombok.ToString;
+import org.hibernate.annotations.CreationTimestamp;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -31,6 +32,7 @@ public class User implements Serializable {
     private String password;
 
     @Column(updatable = false, nullable = false)
+    @CreationTimestamp
     private Date registerDate;
 
     @Column(nullable = false)

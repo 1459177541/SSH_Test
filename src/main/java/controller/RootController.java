@@ -53,7 +53,6 @@ public class RootController {
         log.trace("注册{}", user);
         user.setIp(request.getHeader("X-Forwarded-For"));
         UserDto userDto = userService.login(user);
-//        model.addAttribute("user", userDto);
         session.setAttribute("user", userDto);
         String json = JSON.toJSONString(userDto, SerializerFeature.PrettyFormat);
         printWriter.write(json);

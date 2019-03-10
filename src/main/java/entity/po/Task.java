@@ -2,6 +2,7 @@ package entity.po;
 
 import lombok.Data;
 import lombok.ToString;
+import org.hibernate.annotations.CreationTimestamp;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -30,6 +31,7 @@ public class Task implements Serializable {
     private Schemas schemas;
 
     @Column(nullable = false, updatable = false)
+    @CreationTimestamp
     private Date creatTime;
 
     @Column

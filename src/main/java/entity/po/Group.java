@@ -2,6 +2,7 @@ package entity.po;
 
 import lombok.Data;
 import lombok.ToString;
+import org.hibernate.annotations.CreationTimestamp;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -29,6 +30,7 @@ public class Group implements Serializable {
     private String name;
 
     @Column(nullable = false, updatable = false)
+    @CreationTimestamp
     private Date registerDate;
 
     @ElementCollection(fetch = FetchType.LAZY)
