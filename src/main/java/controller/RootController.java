@@ -1,25 +1,20 @@
 package controller;
 
 
-import com.alibaba.fastjson.JSON;
-import com.alibaba.fastjson.serializer.SerializerFeature;
+import entity.dto.Response;
 import entity.dto.UserDto;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 import service.UserService;
 
 import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpSession;
 
-import java.io.PrintWriter;
+import static org.springframework.http.MediaType.APPLICATION_JSON_UTF8_VALUE;
+import static org.springframework.http.MediaType.APPLICATION_JSON_VALUE;
 
-import static org.springframework.web.bind.annotation.RequestMethod.GET;
-import static org.springframework.web.bind.annotation.RequestMethod.POST;
 
 @SuppressWarnings("SpringMVCViewInspection")
 @Controller
@@ -33,65 +28,57 @@ public class RootController {
         this.userService = userService;
     }
 
-    @RequestMapping(value = {"", "index"}, method = GET)
+    @GetMapping(value = {"", "index"})
     public String index(){
         return "index";
     }
 
-    @RequestMapping(value = "login", method = GET)
+    @GetMapping(value = "login")
     public String login(Model model){
         model.addAttribute("user", new UserDto());
         return "login/login";
     }
 
-    @RequestMapping(value = "/loginTo", method = POST)
+    @PostMapping(value = "/loginTo",
+            consumes = APPLICATION_JSON_VALUE,
+            produces = APPLICATION_JSON_UTF8_VALUE)
     @ResponseBody
-    public void loginTo(@RequestBody UserDto user,
-                        HttpServletRequest request,
-                        HttpSession session,
-                        PrintWriter printWriter) {
-        log.trace("注册{}", user);
+    public Response<UserDto> loginTo(@RequestBody UserDto user,
+                                     HttpServletRequest request){
         user.setIp(request.getHeader("X-Forwarded-For"));
         UserDto userDto = userService.login(user);
-        session.setAttribute("user", userDto);
-        String json = JSON.toJSONString(userDto, SerializerFeature.PrettyFormat);
-        printWriter.write(json);
-        printWriter.flush();
-        printWriter.close();
+        return Response.success(userDto);
     }
 
-    @RequestMapping(value = "register", method = GET)
+    @GetMapping(value = "register")
     public String register(Model model){
         model.addAttribute("user", new UserDto());
         return "login/register";
     }
 
-    @RequestMapping(value = "registerTo", method = POST)
+    @PostMapping(value = "registerTo",
+            consumes = APPLICATION_JSON_VALUE,
+            produces = APPLICATION_JSON_UTF8_VALUE)
     @ResponseBody
-    public void registerTo(@RequestBody UserDto user,
-                           PrintWriter printWriter) {
-        log.trace("注册{}", user);
-        if (userService.register(user)) {
-            printWriter.write("{'result':'success'}");
+    public Response registerTo(@RequestBody UserDto user){
+        if (userService.register(user)){
+            return Response.success(null);
         }else {
-            printWriter.write("{'result':'fail'}");
+            return Response.refuse(null);
         }
-        printWriter.flush();
-        printWriter.close();
     }
 
-    @RequestMapping(value = "/checkUserName", method = POST)
+    @PostMapping(value = "/checkUserName",
+            consumes = APPLICATION_JSON_VALUE,
+            produces = APPLICATION_JSON_UTF8_VALUE)
     @ResponseBody
-    public void checkUserName(@RequestBody UserDto user,
-                              PrintWriter printWriter) {
+    public Response checkUserName(@RequestBody UserDto user){
         UserDto userDto = userService.getUserDto(user.getId());
         if (userDto == null) {
-            printWriter.write("{'result':'non-exist'}");
-        } else {
-            printWriter.write("{'result':'exist'}");
+            return Response.refuse(null, "non-exist");
+        }else {
+            return Response.success(userDto, "exist");
         }
-        printWriter.flush();
-        printWriter.close();
     }
 
 }

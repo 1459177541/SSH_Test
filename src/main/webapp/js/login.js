@@ -11,9 +11,10 @@ function commit() {
         cache: false,
         data: d,
         success: function (data) {
+            alert(data);
             var result = eval("("+data+")");
-            if (result.status === 'LOGIN_SUCCESS' || result.status === 'WAIT_ADOPT') {
-                // alert($.session.get('user'));
+            alert(result);
+            if (result.status === 'SUCCESS') {
                 window.location.href = "/index";
             } else {
                 $("#error").html(result.status+":"+result.info);

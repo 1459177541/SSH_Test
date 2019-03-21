@@ -58,10 +58,11 @@ function checkName() {
         data: d,
         success: function (data) {
             var result = eval("("+data+")");
-            if (result.result === 'exist') {
+            alert(result);
+            if (result.msg === 'exist') {
                 $("#user_id").css("border-bottom", "red 3px solid");
                 $("#error").html("用户已存在");
-            }else if (result.result === 'non-exist') {
+            }else if (result.msg === 'non-exist') {
                 $("#user_id").css("border-bottom", "green 3px solid");
             }else {
                 alert(result);
