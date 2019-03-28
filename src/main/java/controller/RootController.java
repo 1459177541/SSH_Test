@@ -6,7 +6,6 @@ import entity.dto.UserDto;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import service.UserService;
 
@@ -16,7 +15,6 @@ import static org.springframework.http.MediaType.APPLICATION_JSON_UTF8_VALUE;
 import static org.springframework.http.MediaType.APPLICATION_JSON_VALUE;
 
 
-@SuppressWarnings("SpringMVCViewInspection")
 @Controller
 @Slf4j
 public class RootController {
@@ -28,16 +26,16 @@ public class RootController {
         this.userService = userService;
     }
 
-    @GetMapping(value = {"", "index"})
-    public String index(){
-        return "index";
-    }
-
-    @GetMapping(value = "login")
-    public String login(Model model){
-        model.addAttribute("user", new UserDto());
-        return "login/login";
-    }
+//    @GetMapping(value = {"", "index"})
+//    public String index(){
+//        return "index";
+//    }
+//
+//    @GetMapping(value = "login")
+//    public String login(Model model){
+//        model.addAttribute("user", new UserDto());
+//        return "login/login";
+//    }
 
     @PostMapping(value = "/loginTo",
             consumes = APPLICATION_JSON_VALUE,
@@ -50,11 +48,11 @@ public class RootController {
         return Response.success(userDto);
     }
 
-    @GetMapping(value = "register")
-    public String register(Model model){
-        model.addAttribute("user", new UserDto());
-        return "login/register";
-    }
+//    @GetMapping(value = "register")
+//    public String register(Model model){
+//        model.addAttribute("user", new UserDto());
+//        return "login/register";
+//    }
 
     @PostMapping(value = "registerTo",
             consumes = APPLICATION_JSON_VALUE,
