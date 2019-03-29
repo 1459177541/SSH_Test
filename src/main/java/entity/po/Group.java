@@ -20,7 +20,7 @@ public class Group implements Serializable {
     private Integer gid;
 
     @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
-    @JoinColumn(name = "pid", foreignKey = @ForeignKey(name = "pid", foreignKeyDefinition = "parent"))
+    @JoinColumn(name = "pid", foreignKey = @ForeignKey(name = "pid"))
     private Group pid;
 
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "pid")
@@ -37,10 +37,10 @@ public class Group implements Serializable {
     @CollectionTable(
             name = "GroupInfo",
             joinColumns = @JoinColumn(name = "gid",
-                    foreignKey = @ForeignKey(name = "info_group_id", foreignKeyDefinition = "info_group_id")))
+                    foreignKey = @ForeignKey(name = "info_group_id")))
     @Column(name = "value", length = 64)
     @MapKeyJoinColumn(name = "tid", referencedColumnName = "tid",
-            foreignKey = @ForeignKey(name = "info_task_id", foreignKeyDefinition = "info_task_id"))
+            foreignKey = @ForeignKey(name = "info_task_id"))
     private Map<InfoType, String> info;
 
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)

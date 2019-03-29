@@ -9,17 +9,16 @@ import entity.po.*;
 import org.hibernate.Hibernate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import service.UserService;
 
-import java.util.Collection;
-import java.util.Date;
-import java.util.Map;
-import java.util.Objects;
+import java.util.*;
 import java.util.function.Consumer;
 
 import static entity.po.RoleStatus.COMMIT;
 
 @Service
+@Transactional(rollbackFor = Exception.class)
 public class UserServiceImpl implements UserService {
 
     private final UserDao userDao;
@@ -70,26 +69,35 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public Collection<LoginInfo> getLoginInfo(User user) {
-        user = userDao.findById(user.getId());
+        Optional<User> userOptional= userDao.findById(user.getId());
+        if (!userOptional.isPresent()) {
+            return Set.of();
+        }
+        user = userOptional.get();
         Hibernate.initialize(user.getLoginInfo());
         return user.getLoginInfo();
     }
 
     @Override
     public Map<InfoType, String> getInfo(User user) {
-        user = userDao.findById(user.getId());
+        Optional<User> userOptional= userDao.findById(user.getId());
+        if (!userOptional.isPresent()) {
+            return Map.of();
+        }
+        user = userOptional.get();
         Hibernate.initialize(user.getInfo());
         return user.getInfo();
     }
 
     @Override
     public UserDto login(UserDto userDto) {
-        User user = userDao.findById(userDto.getId());
-        if (user == null) {
+        Optional<User> userOptional = userDao.findById(userDto.getId());
+        if (!userOptional.isPresent()) {
             userDto.setStatus(LoginStatus.USER_NON_EXISTENT);
             userDto.setInfo(userDto.getStatus().getNote());
             return userDto;
         }
+        User user = userOptional.get();
         if (!Objects.equals(userDto.getPassword(), user.getPassword())) {
             userDto.setStatus(LoginStatus.PASSWORD_ERROR);
         } else if (user.getStatus() == UserStatus.REJECT) {
@@ -122,7 +130,7 @@ public class UserServiceImpl implements UserService {
                 || "".equals(userDto.getPassword())) {
             return false;
         }
-        if (userDao.findById(userDto.getId()) != null) {
+        if (userDao.existsById(userDto.getId())) {
             return false;
         }
         User user = new User();
@@ -136,21 +144,18 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public boolean adoptRegister(UserDto userDto) {
-        User user = userDao.findById(userDto.getId());
-        if (user == null) {
+        Optional<User> user = userDao.findById(userDto.getId());
+        if (!user.isPresent()) {
             return false;
         }
-        user.setStatus(UserStatus.ADOPT);
-        userDao.saveAndFlush(user);
+        user.get().setStatus(UserStatus.ADOPT);
+        userDao.saveAndFlush(user.get());
         return true;
     }
 
     @Override
     public UserDto getUserDto(String id) {
-        User user = userDao.findById(id);
-        if (user == null) {
-            return null;
-        }
-        return new UserDto(user);
+        Optional<User> user = userDao.findById(id);
+        return user.map(UserDto::new).orElse(null);
     }
 }

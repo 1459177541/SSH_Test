@@ -21,7 +21,7 @@ public class Task implements Serializable {
 
     @ManyToOne
     @JoinColumn(name = "task_group", nullable = false
-            , foreignKey = @ForeignKey(name = "tack_group", foreignKeyDefinition = "task_group"))
+            , foreignKey = @ForeignKey(name = "tack_group"))
     private Group group;
 
     @Column(length = 32, nullable = false)
@@ -44,11 +44,10 @@ public class Task implements Serializable {
     @CollectionTable(
             name = "TaskInfo",
             joinColumns = @JoinColumn(name = "tid"
-                    , foreignKey = @ForeignKey(name = "info_task_id", foreignKeyDefinition = "info_task_id"))
+                    , foreignKey = @ForeignKey(name = "info_task_id"))
     )
     @Column(name = "value", length = 64)
-    @MapKeyJoinColumn(name = "iid", referencedColumnName = "tid",
-            foreignKey = @ForeignKey(foreignKeyDefinition = "info_type_id"))
+    @MapKeyJoinColumn(name = "iid", referencedColumnName = "tid")
     private Map<InfoType, String> info;
 
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)

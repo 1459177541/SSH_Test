@@ -11,8 +11,6 @@ import java.util.Date;
 @NoArgsConstructor
 public class UserDto implements Serializable {
 
-    private Integer uid;
-
     private String id;
 
     private LoginStatus status;
@@ -30,7 +28,6 @@ public class UserDto implements Serializable {
     private Date registerDate;
 
     public UserDto(User user) {
-        this.uid = user.getUid();
         this.id = user.getId();
         this.name = user.getName();
         this.registerDate = user.getRegisterDate();

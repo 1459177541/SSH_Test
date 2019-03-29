@@ -1,7 +1,6 @@
 package entity.po;
 
-import lombok.Data;
-import lombok.ToString;
+import lombok.*;
 import org.hibernate.annotations.CreationTimestamp;
 
 import javax.persistence.*;
@@ -12,14 +11,14 @@ import java.util.Set;
 
 @Entity
 @Data
+@NoArgsConstructor
+@RequiredArgsConstructor
 @ToString(exclude = {"loginInfo", "roles", "info"})
 public class User implements Serializable {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private Integer uid;
-
     @Column(length = 32, nullable = false, unique = true)
+    @NonNull
     private String id;
 
     @Column(nullable = false)
@@ -46,11 +45,11 @@ public class User implements Serializable {
     @CollectionTable(
             name = "UserInfo",
             joinColumns = @JoinColumn(name = "uid",
-                    foreignKey = @ForeignKey(name = "info_user_id", foreignKeyDefinition = "info_user_id"))
+                    foreignKey = @ForeignKey(name = "info_user_id"))
     )
     @Column(name = "value", length = 64)
     @MapKeyJoinColumn(name = "tid", referencedColumnName = "tid",
-            foreignKey = @ForeignKey(name = "info_task_id", foreignKeyDefinition = "info_task_id"))
+            foreignKey = @ForeignKey(name = "info_task_id"))
     private Map<InfoType, String> info;
 
 }

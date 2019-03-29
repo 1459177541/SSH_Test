@@ -5,7 +5,6 @@ import entity.dto.Response;
 import entity.dto.UserDto;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import service.UserService;
 
@@ -15,7 +14,7 @@ import static org.springframework.http.MediaType.APPLICATION_JSON_UTF8_VALUE;
 import static org.springframework.http.MediaType.APPLICATION_JSON_VALUE;
 
 
-@Controller
+@RestController
 @Slf4j
 public class RootController {
 
@@ -26,21 +25,9 @@ public class RootController {
         this.userService = userService;
     }
 
-//    @GetMapping(value = {"", "index"})
-//    public String index(){
-//        return "index";
-//    }
-//
-//    @GetMapping(value = "login")
-//    public String login(Model model){
-//        model.addAttribute("user", new UserDto());
-//        return "login/login";
-//    }
-
-    @PostMapping(value = "/loginTo",
+    @PostMapping(value = "/login",
             consumes = APPLICATION_JSON_VALUE,
             produces = APPLICATION_JSON_UTF8_VALUE)
-    @ResponseBody
     public Response<UserDto> loginTo(@RequestBody UserDto user,
                                      HttpServletRequest request){
         user.setIp(request.getHeader("X-Forwarded-For"));
@@ -48,16 +35,9 @@ public class RootController {
         return Response.success(userDto);
     }
 
-//    @GetMapping(value = "register")
-//    public String register(Model model){
-//        model.addAttribute("user", new UserDto());
-//        return "login/register";
-//    }
-
-    @PostMapping(value = "registerTo",
+    @PostMapping(value = "/register",
             consumes = APPLICATION_JSON_VALUE,
             produces = APPLICATION_JSON_UTF8_VALUE)
-    @ResponseBody
     public Response registerTo(@RequestBody UserDto user){
         if (userService.register(user)){
             return Response.success(null);
@@ -69,7 +49,6 @@ public class RootController {
     @PostMapping(value = "/checkUserName",
             consumes = APPLICATION_JSON_VALUE,
             produces = APPLICATION_JSON_UTF8_VALUE)
-    @ResponseBody
     public Response checkUserName(@RequestBody UserDto user){
         UserDto userDto = userService.getUserDto(user.getId());
         if (userDto == null) {
